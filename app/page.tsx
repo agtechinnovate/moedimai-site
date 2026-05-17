@@ -20,7 +20,7 @@ const DOORS: AudienceDoor[] = [
   {
     eyebrow: "I AM AN INVESTOR OR PARTNER",
     title: "Company thesis",
-    body: "MoedimAI is building chemotype-verification infrastructure for African organic exports. Three hundred farmers live, three thousand in pipeline, nine crops, five tonnes per day of processing capacity.",
+    body: "MoedimAI is building chemotype-verification infrastructure for African organic exports. Three hundred farmers live, three thousand in pipeline, nine crops, 5 to 10 tonnes per day of processing capacity once the second distillation partner is online.",
     href: "/thesis",
     cta: "Read the thesis",
   },

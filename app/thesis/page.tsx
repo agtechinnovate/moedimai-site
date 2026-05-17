@@ -179,7 +179,7 @@ export default function ThesisPage() {
               <dd className="mt-3 text-sm text-cream-50/75">Crops, including tree crops</dd>
             </div>
             <div>
-              <dt className="font-display text-4xl text-gold-500 md:text-5xl">5 t/day</dt>
+              <dt className="font-display text-4xl text-gold-500 md:text-5xl">5-10 t/day</dt>
               <dd className="mt-3 text-sm text-cream-50/75">Processing capacity</dd>
             </div>
             <div>
@@ -217,58 +217,6 @@ export default function ThesisPage() {
               <dd className="text-gold-500">MoedimAI Verified</dd>
             </div>
           </dl>
-        </div>
-      </section>
-
-      <section className="border-t border-cream-50/10 bg-navy-800/40">
-        <div className="container py-16 md:py-20">
-          <h2 className="font-display text-3xl text-cream-50 md:text-4xl">
-            How the model compounds
-          </h2>
-          <div className="mt-6 max-w-3xl space-y-5 text-base text-cream-50/85 md:text-lg">
-            <p>
-              Verified chemotype data has three buyer audiences, and each one strengthens the
-              others.
-            </p>
-            <p>
-              Cosmetic, fragrance, and wellness buyers buy spec-matched oils with full traceability.
-              They pay organic-certified premium pricing because the chemotype proves it.
-            </p>
-            <p>
-              Insurance underwriters and development finance institutions price climate and yield
-              risk against verified historical performance. A farmer with three seasons of GC-MS,
-              NDVI, and harvest weight data is a different risk class to a farmer with none. We are
-              not the insurer. We make the underwriting possible.
-            </p>
-            <p>
-              Research institutions across Africa gain a queryable library of indigenous and
-              naturalized crop chemotypes. This is publication-grade scientific infrastructure that
-              does not exist today for the crops we work in.
-            </p>
-            <p>
-              The same data layer serves all three. The buyers fund operations, the insurers price
-              the risk, the researchers build the science. Each one increases the value of the data
-              for the next.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section className="container py-16 md:py-20">
-        <h2 className="font-display text-3xl text-cream-50 md:text-4xl">Where we are</h2>
-        <div className="mt-6 max-w-3xl space-y-5 text-base text-cream-50/85 md:text-lg">
-          <p>
-            Three hundred farmers are live in the Mount Kenya smallholder network today. Three
-            thousand are in pipeline for the next eighteen months. Nine crops are in commercial
-            production across essential oils and cold-pressed botanicals. Five tonnes per day of
-            processing capacity is operational. Supply is available across multiple layers, from
-            partner-sourced inventory to forward harvests from our own farms. Request more
-            information for current availability and lead times.
-          </p>
-          <p>
-            Operations span three jurisdictions. Mount Kenya is the production base. Rotterdam is
-            the EU port and distribution operation. Delaware is the US holding entity.
-          </p>
         </div>
       </section>
 

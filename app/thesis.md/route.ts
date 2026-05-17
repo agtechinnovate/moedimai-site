@@ -27,25 +27,9 @@ export function GET() {
 
 Insurance prices climate and yield risk. Banks and DFIs lend against verified performance. Research institutions advance crop science.
 
-## How the model compounds
-
-Verified chemotype data has three buyer audiences. Cosmetic, fragrance, and wellness buyers buy spec-matched oils with full traceability. Insurance underwriters and DFIs price climate and yield risk against verified historical performance. Research institutions gain a queryable library of indigenous and naturalized crop chemotypes.
-
-The same data layer serves all three. The buyers fund operations, the insurers price the risk, the researchers build the science. Each one increases the value of the data for the next.
-
-## Where we are
-
-- 300 farmers live in the Mount Kenya smallholder network
-- 3,000 in pipeline for the next 18 months
-- 9 crops in commercial production
-- 5 tonnes per day of processing capacity
-- Supply across multiple layers, from partner inventory to forward harvests from our own farms
-
-Operations span three jurisdictions. Mount Kenya is the production base. Rotterdam is the EU port and distribution operation. Delaware is the US holding entity.
-
 ## Contact
 
-Vivian Nwakah, Founder and CEO. vivian@moedimai.com
+Vivian Nwakah, Founder and CEO. vivian@moedimAI.com
 `;
   return new NextResponse(md, {
     headers: {
