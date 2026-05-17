@@ -1,0 +1,34 @@
+# Moedim
+
+> Moedim turns African smallholder botanicals into verified, traceable, buyer-ready ingredients. Headquartered in Nairobi with EU operations forming in Rotterdam (Moedim EU BV) and US holding in Delaware (Moedai LLC). Trust mark: Moedim Verified. Farmer recruitment: Jaribu by Moedim.
+
+## About
+
+- [About Moedim](https://www.moedimai.com/about.md): Company structure, founding, mission. (Page populated in Sprint W3.)
+- [Our approach](https://www.moedimai.com/approach.md): Jaribu farmer program, ICS, Muchiri processing partnership, 8-stage chemotype journey. (Sprint W3.)
+- [Team](https://www.moedimai.com/team.md): Vivian Nwakah and the Moedim leadership team. (Sprint W3.)
+
+## Buyers and B2B
+
+- [Buyers](https://www.moedimai.com/buyers.md): MoedimAI buyer supply desk. Verified African botanicals for cosmetic, fragrance, and wellness ingredient buyers.
+- [Wholesale RFQ](https://www.moedimai.com/wholesale.md): Request a quote, request samples, download technical buyer pack. (Sprint W4.)
+
+## Consumer shop
+
+- [Shop botanicals](https://www.moedimai.com/shop.md): Kenyan botanical oils with clear origin, safe-use guidance, and lot-level traceability.
+
+## Investors and partners
+
+- [Investors](https://www.moedimai.com/investors.md): Investment thesis, current traction, team. (Sprint W3.)
+
+## Farmers
+
+- [Jaribu by Moedim](https://www.moedimai.com/farmers.md): Smallholder onboarding, organic input support, training. (Sprint W3.)
+
+## Insights
+
+- [Journal](https://www.moedimai.com/journal.md): Buyer-useful, evidence-led writing on African botanical supply, verification, and organic certification. (Sprint W10 ships the first six posts.)
+
+## Contact
+
+- [Contact](https://www.moedimai.com/contact.md): Audience-routed contact forms (buyer / investor / farmer / press). Routing forms wire in W3 and W4.

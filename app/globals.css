@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  html {
+    @apply bg-navy-900 text-cream-50;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply font-sans;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display;
+  }
+
+  /* Definition lists are the GEO-friendly pattern for citable facts. */
+  dl.fact-list {
+    @apply grid grid-cols-[max-content_1fr] gap-x-4 gap-y-1.5 text-sm;
+  }
+
+  dl.fact-list dt {
+    @apply text-cream-50/70;
+  }
+
+  dl.fact-list dd {
+    @apply text-cream-50;
+  }
+
+  ::selection {
+    @apply bg-gold-500/30 text-cream-50;
+  }
+}
