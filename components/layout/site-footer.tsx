@@ -31,6 +31,16 @@ export function SiteFooter() {
                 </Link>
               </li>
               <li>
+                <Link href="/thesis" className="text-cream-50/80 hover:text-cream-50">
+                  Company thesis
+                </Link>
+              </li>
+              <li>
+                <Link href="/jaribu" className="text-cream-50/80 hover:text-cream-50">
+                  Jaribu by Moedim
+                </Link>
+              </li>
+              <li>
                 <Link href="/journal" className="text-cream-50/80 hover:text-cream-50">
                   Journal
                 </Link>
@@ -47,8 +57,8 @@ export function SiteFooter() {
               Operating across
             </h2>
             <p className="mt-4 text-sm text-cream-50/80">Kenya · Netherlands · United States</p>
-            <p className="mt-2 text-xs text-cream-50/50">
-              Sprint W1 preview. Final company addresses and legal pages ship in W12.
+            <p className="mt-2 text-xs text-cream-50/55">
+              Mount Kenya production base. Rotterdam EU operations. Delaware US holding.
             </p>
           </div>
         </div>

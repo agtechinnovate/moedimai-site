@@ -1,40 +1,89 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Shop botanicals",
   description:
-    "Moedim offers Kenyan botanical oils with clear origin, safe-use guidance, and lot-level traceability.",
+    "Kenyan essential and botanical oils, sold by the bottle. Clear origin, safe-use guidance, M-Pesa checkout, delivered across Kenya.",
 };
+
+const ESSENTIALS = [
+  "Rosemary",
+  "Eucalyptus",
+  "Peppermint",
+  "Tea Tree",
+  "English Lavender",
+  "Rose Geranium",
+  "Wild Basil",
+  "Leleshwa",
+  "Lippia",
+  "Immortelle",
+];
+
+const BOTANICALS = ["Moringa", "Baobab", "Neem"];
 
 export default function ShopPage() {
   return (
-    <section className="container py-16 md:py-24">
-      <p className="font-sans text-xs uppercase tracking-[0.18em] text-gold-500">
-        I want to buy oils
-      </p>
-      <h1 className="mt-4 max-w-3xl font-display text-4xl leading-tight md:text-5xl">
-        Shop the Moedim botanicals.
-      </h1>
-      <p className="mt-6 max-w-2xl text-base text-cream-50/80 md:text-lg">
-        Kenyan botanical oils with clear origin, safe-use guidance, and lot-level traceability.
-        Product pages, cart, and checkout land in Sprints W5–W7.
-      </p>
+    <>
+      <section className="container py-16 md:py-20">
+        <p className="font-sans text-xs uppercase tracking-[0.18em] text-gold-500">
+          I want to buy oils
+        </p>
+        <h1 className="mt-4 max-w-3xl font-display text-4xl leading-tight md:text-5xl">
+          Shop the Moedim botanicals.
+        </h1>
+        <p className="mt-6 max-w-2xl text-base text-cream-50/85 md:text-lg">
+          Kenyan essential and botanical oils, sold by the bottle. Clear origin, safe-use guidance,
+          M-Pesa checkout, delivered across Kenya.
+        </p>
+      </section>
 
-      <ul className="mt-12 grid max-w-3xl gap-3 text-sm text-cream-50/70 sm:grid-cols-2">
-        <li className="rounded-md border border-cream-50/10 px-3 py-2">Essential oils — 10 SKUs</li>
-        <li className="rounded-md border border-cream-50/10 px-3 py-2">Botanical oils — 3 SKUs</li>
-        <li className="rounded-md border border-cream-50/10 px-3 py-2">
-          Collections: Skin & Hair · Mind & Mood · Breathe & Relief · Carriers · The Rare Collection
-        </li>
-        <li className="rounded-md border border-cream-50/10 px-3 py-2">
-          Every product carries an evidence-status badge
-        </li>
-      </ul>
+      <section className="border-t border-cream-50/10 bg-navy-800/40">
+        <div className="container py-16 md:py-20">
+          <h2 className="font-display text-2xl text-cream-50 md:text-3xl">The catalogue</h2>
 
-      <p className="mt-12 max-w-xl text-sm text-cream-50/60">
-        Sprint W1 preview. Product pages, cart, M-Pesa checkout, and international checkout ship in
-        W5–W7. No medical or therapeutic claims appear on any product page — by design.
-      </p>
-    </section>
+          <h3 className="mt-10 text-sm font-semibold uppercase tracking-wider text-gold-500">
+            Essential oils
+          </h3>
+          <ul className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {ESSENTIALS.map((name) => (
+              <li
+                key={name}
+                className="rounded-md border border-cream-50/10 bg-navy-900/40 px-4 py-3"
+              >
+                <p className="font-display text-lg text-cream-50">{name}</p>
+              </li>
+            ))}
+          </ul>
+
+          <h3 className="mt-12 text-sm font-semibold uppercase tracking-wider text-gold-500">
+            Botanical and carrier oils
+          </h3>
+          <ul className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {BOTANICALS.map((name) => (
+              <li
+                key={name}
+                className="rounded-md border border-cream-50/10 bg-navy-900/40 px-4 py-3"
+              >
+                <p className="font-display text-lg text-cream-50">{name}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      <section className="container py-16 md:py-20">
+        <h2 className="font-display text-2xl text-cream-50 md:text-3xl">Sourcing in volume?</h2>
+        <p className="mt-4 max-w-2xl text-base text-cream-50/85 md:text-lg">
+          Bulk purchases ship from Mount Kenya by the kilogram with full documentation.
+        </p>
+        <Link
+          href="/buyers"
+          className="mt-6 inline-flex h-12 items-center justify-center rounded-md border border-gold-500 px-6 text-sm font-medium text-cream-50 transition-colors hover:bg-gold-500/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-500 focus-visible:ring-offset-2 focus-visible:ring-offset-navy-900"
+        >
+          Visit the buyer supply desk
+        </Link>
+      </section>
+    </>
   );
 }

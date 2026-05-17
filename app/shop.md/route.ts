@@ -6,42 +6,32 @@ export function GET() {
   return markdownResponse({
     title: "Shop Moedim botanicals",
     oneLine:
-      "Moedim offers Kenyan botanical oils with clear origin, safe-use guidance, and lot-level traceability.",
+      "Kenyan essential and botanical oils, sold by the bottle. Clear origin, safe-use guidance, M-Pesa checkout, delivered across Kenya.",
     body: `
-## Catalogue at launch
+## The catalogue
 
-### Essential oils (10ml at launch)
+### Essential oils
 
-- Rosemary — Rosmarinus officinalis — ISO 1342
-- Eucalyptus — Eucalyptus globulus — ISO 770
-- Peppermint — Mentha × piperita — ISO 856
-- Tea Tree — Melaleuca alternifolia — ISO 4730
-- English Lavender — Lavandula angustifolia — ISO 3515
-- Rose Geranium — Pelargonium graveolens — ISO 4731
-- Wild Basil — Ocimum spp. — custom chemotype
-- Leleshwa — Tarchonanthus camphoratus — Kenya-indigenous, custom chemotype
-- Lippia — Lippia javanica — custom chemotype
-- Immortelle — Helichrysum splendidum — African analog to H. italicum
+- Rosemary, Rosmarinus officinalis
+- Eucalyptus, Eucalyptus globulus
+- Peppermint, Mentha x piperita
+- Tea Tree, Melaleuca alternifolia
+- English Lavender, Lavandula angustifolia
+- Rose Geranium, Pelargonium graveolens
+- Wild Basil, Ocimum spp.
+- Leleshwa, Tarchonanthus camphoratus
+- Lippia, Lippia javanica
+- Immortelle, Helichrysum splendidum
 
-### Botanical / carrier oils (30ml at launch)
+### Cold-pressed botanical oils
 
-- Neem — Azadirachta indica
-- Baobab — Adansonia digitata
-- Moringa — Moringa oleifera
+- Moringa, Moringa oleifera
+- Baobab, Adansonia digitata
+- Neem, Azadirachta indica
 
-## Collections
+## Sourcing in volume
 
-- Skin & Hair
-- Mind & Mood
-- Breathe & Relief
-- Carriers & Botanical Oils
-- The Rare Collection
-
-Each product carries an evidence-status badge: active / pending / sample / expired / not applicable.
-
-## Sprint status
-
-Sprint W2 preview. Product pages, cart, M-Pesa checkout, and international checkout ship in W5–W7. No medical or therapeutic claims appear on any product page — by design.
+Bulk purchases ship from Mount Kenya by the kilogram with full documentation. Visit the buyer supply desk at /buyers.
 `.trim(),
   });
 }

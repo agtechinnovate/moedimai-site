@@ -1,34 +1,27 @@
 # Moedim
 
-> Moedim turns African smallholder botanicals into verified, traceable, buyer-ready ingredients. Headquartered in Nairobi with EU operations forming in Rotterdam (Moedim EU BV) and US holding in Delaware (Moedai LLC). Trust mark: Moedim Verified. Farmer recruitment: Jaribu by Moedim.
+> Moedim turns African smallholder botanicals into verified, traceable, buyer-ready ingredients. Thirteen Kenyan-grown oils, every lot GC-MS or fatty acid profiled, traceable from farm to dispatch. Sold by the bottle and by the kilogram. Headquartered in Mount Kenya with EU operations in Rotterdam and US holding in Delaware.
 
-## About
+## For buyers
 
-- [About Moedim](https://www.moedimai.com/about.md): Company structure, founding, mission. (Page populated in Sprint W3.)
-- [Our approach](https://www.moedimai.com/approach.md): Jaribu farmer program, ICS, Muchiri processing partnership, 8-stage chemotype journey. (Sprint W3.)
-- [Team](https://www.moedimai.com/team.md): Vivian Nwakah and the Moedim leadership team. (Sprint W3.)
+- [Buyer supply desk](https://www.moedimai.com/buyers.md): MoedimAI for cosmetic, fragrance, and wellness buyers. Thirteen Kenyan botanicals available by the kilogram with full documentation.
 
-## Buyers and B2B
+## For consumers
 
-- [Buyers](https://www.moedimai.com/buyers.md): MoedimAI buyer supply desk. Verified African botanicals for cosmetic, fragrance, and wellness ingredient buyers.
-- [Wholesale RFQ](https://www.moedimai.com/wholesale.md): Request a quote, request samples, download technical buyer pack. (Sprint W4.)
+- [Shop the botanicals](https://www.moedimai.com/shop.md): Kenyan essential and botanical oils sold by the bottle.
 
-## Consumer shop
+## For investors and partners
 
-- [Shop botanicals](https://www.moedimai.com/shop.md): Kenyan botanical oils with clear origin, safe-use guidance, and lot-level traceability.
+- [Company thesis](https://www.moedimai.com/thesis.md): Chemotype-verification infrastructure for African organic exports. Three hundred farmers live, three thousand in pipeline, nine crops, five tonnes per day of processing capacity.
 
-## Investors and partners
+## For farmers
 
-- [Investors](https://www.moedimai.com/investors.md): Investment thesis, current traction, team. (Sprint W3.)
+- [Jaribu by Moedim](https://www.moedimai.com/jaribu.md): Above-market prices for biomass, organic input support, and a path to certified export markets.
 
-## Farmers
+## Knowledge
 
-- [Jaribu by Moedim](https://www.moedimai.com/farmers.md): Smallholder onboarding, organic input support, training. (Sprint W3.)
-
-## Insights
-
-- [Journal](https://www.moedimai.com/journal.md): Buyer-useful, evidence-led writing on African botanical supply, verification, and organic certification. (Sprint W10 ships the first six posts.)
+- [The Moedim Journal](https://www.moedimai.com/journal.md): Buyer-useful, evidence-led writing on African botanical supply.
 
 ## Contact
 
-- [Contact](https://www.moedimai.com/contact.md): Audience-routed contact forms (buyer / investor / farmer / press). Routing forms wire in W3 and W4.
+- [Contact](https://www.moedimai.com/contact.md): vivian@moedimai.com. Routed forms by audience.

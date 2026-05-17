@@ -4,40 +4,40 @@ export const dynamic = "force-static";
 
 export function GET() {
   return markdownResponse({
-    title: "Buyer supply desk — MoedimAI",
+    title: "Buyer supply desk",
     oneLine:
-      "MoedimAI gives cosmetic, fragrance, and wellness buyers verified African botanical supply backed by traceability, lab evidence, and smallholder certification systems.",
+      "MoedimAI for cosmetic, fragrance, and wellness buyers. Thirteen Kenyan-grown botanicals available by the kilogram with full documentation.",
     body: `
 ## What MoedimAI supplies
 
-- 10 essential oils — steam-distilled at the Mount Kenya 5 t/day facility.
-- 3 botanical / carrier oils — cold-pressed, unrefined: Neem, Baobab, Moringa.
-- 9 of the 13 SKUs are Kenya-grown highland aromatics; 4 (Leleshwa, Wild Basil, Lippia, Immortelle) are Kenya-distinctive with custom chemotypes.
+- 10 essential oils, steam-distilled at the Mount Kenya facility.
+- 3 botanical and carrier oils, cold-pressed and unrefined: Neem, Baobab, Moringa.
+- 4 of the SKUs are Kenya-distinctive with custom chemotypes: Leleshwa, Wild Basil, Lippia, Immortelle.
 
 ## What each shipment carries
 
 Every Moedim Verified evidence packet includes:
 
-- COA — GC-MS chromatogram (essential oils) or FAME fatty-acid profile (cold-pressed)
-- SDS / MSDS
-- IFRA certificate of conformity
+- COA, GC-MS chromatogram for essential oils or FAME fatty-acid profile for cold-pressed oils
+- SDS or MSDS, safety data sheet
+- IFRA certificate of conformity for fragrance use
 - Allergen statement
 - Pesticide residue panel
 - Heavy metals panel
 - Microbiology panel
-- Organic conversion evidence (where applicable)
+- Organic conversion evidence where applicable
 - Chain of custody
-- Phytosanitary certificate (per shipment)
+- Phytosanitary certificate per shipment
 
-Each document carries one of five explicit status labels: active, pending, sample (template), expired, or not applicable. Moedim never displays evidence as active without a real document on file.
+## How buyer engagement works
 
-## How to get started
+1. Request a sample. We ship samples plus the current lot GC-MS profile to your facility.
+2. Place an order. We confirm pricing, lead time, and lot allocation within 48 hours.
+3. Receive with full documentation. Every shipment includes Certificate of Analysis, lot traceability record, and origin documentation. KEPHIS phytosanitary clearance arranged for export consignments.
 
-Sprint W4 wires the live RFQ form at /wholesale. Until then, contact vivian@moedimai.com.
+## Contact
 
-## Sprint status
-
-This is the Sprint W2 preview of /buyers. The technical buyer pack, RFQ form, sample-request flow, and buyer portal land in Sprints W4 through W9.
+vivian@moedimai.com
 `.trim(),
   });
 }
