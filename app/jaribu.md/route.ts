@@ -15,13 +15,13 @@ export function GET() {
 
 **A path to certified export markets.** Your crops connect to EU, US, and local buyers through MoedimAI's certified supply chain. Every farmer is part of a Group of Operators certificate.
 
-**Field support.** Field coordinators visit regularly. Agronomy guidance, satellite-driven crop monitoring, and weather alerts come to you on WhatsApp.
+**Field support.** Field coordinators visit regularly. Agronomy guidance, satellite-driven crop monitoring, and weather alerts are part of the program.
 
 ## Get in touch
 
 If you grow rosemary, lavender, eucalyptus, tea tree, lemongrass, baobab, moringa, neem, immortelle, rose geranium, leleshwa, wild basil, lippia, or peppermint, or want to start, reach out.
 
-Email: vivian@moedimai.com
+Email: vivian@moedimAI.com
 `;
   return new NextResponse(md, {
     headers: {

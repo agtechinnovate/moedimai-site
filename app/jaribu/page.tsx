@@ -22,7 +22,7 @@ const OFFERS: ReadonlyArray<{ heading: string; body: string }> = [
   },
   {
     heading: "Field support",
-    body: "Field coordinators visit regularly. Agronomy guidance, satellite-driven crop monitoring, and weather alerts come to you on WhatsApp.",
+    body: "Field coordinators visit regularly. Agronomy guidance, satellite-driven crop monitoring, and weather alerts are part of the program.",
   },
 ];
 
@@ -78,24 +78,14 @@ export default function JaribuPage() {
             start, reach out. Tell us where you farm, how much land you have, and what you grow
             today.
           </p>
-          <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
-            <a
-              href="https://wa.me/254000000000?text=I%27d%20like%20to%20join%20Jaribu%20by%20MoedimAI"
-              className="inline-flex h-12 items-center justify-center rounded-md bg-gold-500 px-6 text-sm font-medium text-navy-900 transition-colors hover:bg-gold-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-300 focus-visible:ring-offset-2 focus-visible:ring-offset-navy-900"
-            >
-              Message on WhatsApp
-            </a>
+          <div className="mt-8">
             <a
               href="mailto:vivian@moedimAI.com?subject=Jaribu%20enrolment%20enquiry"
-              className="inline-flex h-12 items-center justify-center rounded-md border border-gold-500 px-6 text-sm font-medium text-cream-50 transition-colors hover:bg-gold-500/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-500 focus-visible:ring-offset-2 focus-visible:ring-offset-navy-900"
+              className="inline-flex h-12 items-center justify-center rounded-md bg-gold-500 px-6 text-sm font-medium text-navy-900 transition-colors hover:bg-gold-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-300 focus-visible:ring-offset-2 focus-visible:ring-offset-navy-900"
             >
-              Send us an email
+              Email vivian@moedimAI.com
             </a>
           </div>
-          <p className="mt-6 text-sm text-cream-50/65">
-            Or call our field coordinators directly during business hours, Monday to Saturday, 8am
-            to 6pm EAT.
-          </p>
         </div>
       </section>
     </>
