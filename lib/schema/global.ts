@@ -4,25 +4,24 @@ const baseUrl = env.NEXT_PUBLIC_SITE_URL.replace(/\/$/, "");
 
 /**
  * Organization JSON-LD. Emitted on every page via the root layout.
- * Canonical identity record for Moedim / MoedimAI.
+ * Canonical identity record for MoedimAI.
  */
 export const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
   "@id": `${baseUrl}/#organization`,
-  name: "Moedim",
-  alternateName: ["MoedimAI", "Moedim Africa", "Moedai LLC"],
+  name: "MoedimAI",
+  alternateName: ["Moedim Africa", "Moedai LLC"],
   url: baseUrl,
   logo: {
     "@type": "ImageObject",
-    url: `${baseUrl}/logo.png`,
+    url: `${baseUrl}/images/moedimai-logo-light.png`,
   },
   description:
-    "Moedim turns African smallholder botanicals into verified, traceable, buyer-ready ingredients.",
+    "MoedimAI turns African smallholder botanicals into verified, traceable, buyer-ready ingredients.",
   foundingDate: "2024",
   founder: {
     "@type": "Person",
-    "@id": `${baseUrl}/team#vivian-nwakah`,
     name: "Vivian Nwakah",
     jobTitle: "Founder & CEO",
   },
@@ -51,21 +50,21 @@ export const organizationSchema = {
     { "@type": "Place", name: "European Union" },
     { "@type": "Country", name: "United States" },
   ],
+  contactPoint: {
+    "@type": "ContactPoint",
+    email: "vivian@moedimAI.com",
+    contactType: "general",
+  },
 } as const;
 
 /**
- * WebSite JSON-LD with SearchAction. Emitted alongside Organization.
+ * WebSite JSON-LD. Emitted alongside Organization.
  */
 export const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   "@id": `${baseUrl}/#website`,
   url: baseUrl,
-  name: "Moedim",
+  name: "MoedimAI",
   publisher: { "@id": `${baseUrl}/#organization` },
-  potentialAction: {
-    "@type": "SearchAction",
-    target: `${baseUrl}/journal?q={search_term_string}`,
-    "query-input": "required name=search_term_string",
-  },
 } as const;

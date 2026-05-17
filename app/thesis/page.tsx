@@ -157,7 +157,7 @@ export default function ThesisPage() {
           <figure className="overflow-hidden rounded-lg border border-cream-50/10 bg-navy-900/40">
             <img
               src="/images/qc-team.jpg"
-              alt="QC team at work in the Moedim processing facility"
+              alt="QC team at work in the MoedimAI processing facility"
               className="h-80 w-full object-cover md:h-96"
             />
             <figcaption className="px-4 py-3 text-xs text-cream-50/60">
@@ -200,7 +200,7 @@ export default function ThesisPage() {
             </h2>
             <div className="mt-6 space-y-5 text-base text-cream-50/85 md:text-lg">
               <p>
-                Moedim sits at the intersection of three structural shifts in the global botanical
+                MoedimAI sits at the intersection of three structural shifts in the global botanical
                 supply chain.
               </p>
               <p>
@@ -246,7 +246,7 @@ export default function ThesisPage() {
               </div>
               <div className="flex justify-between gap-4">
                 <dt className="text-cream-50/60">Trust mark</dt>
-                <dd className="text-gold-500">Moedim Verified</dd>
+                <dd className="text-gold-500">MoedimAI Verified</dd>
               </div>
             </dl>
           </aside>
@@ -314,22 +314,22 @@ export default function ThesisPage() {
             For investor materials, partnership inquiries, or research collaboration, contact Vivian
             Nwakah, Founder and CEO, at{" "}
             <a
-              href="mailto:vivian@moedimai.com"
+              href="mailto:vivian@moedimAI.com"
               className="text-gold-500 underline-offset-4 hover:underline"
             >
-              vivian@moedimai.com
+              vivian@moedimAI.com
             </a>
             .
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-3">
             <a
-              href="mailto:vivian@moedimai.com?subject=Investor%20information%20request"
+              href="mailto:vivian@moedimAI.com?subject=Investor%20information%20request"
               className="inline-flex h-12 items-center justify-center rounded-md bg-gold-500 px-6 text-sm font-medium text-navy-900 transition-colors hover:bg-gold-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-300 focus-visible:ring-offset-2 focus-visible:ring-offset-navy-900"
             >
-              Request more information
+              Contact now
             </a>
             <a
-              href="mailto:vivian@moedimai.com?subject=Book%20a%20call"
+              href="mailto:vivian@moedimAI.com?subject=Book%20a%20call"
               className="inline-flex h-12 items-center justify-center rounded-md border border-gold-500 px-6 text-sm font-medium text-cream-50 transition-colors hover:bg-gold-500/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-500 focus-visible:ring-offset-2 focus-visible:ring-offset-navy-900"
             >
               Book a call

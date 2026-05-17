@@ -1,5 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
-import { BrandMark } from "./brand-mark";
 
 export function SiteFooter() {
   const year = new Date().getFullYear();
@@ -9,9 +9,9 @@ export function SiteFooter() {
       <div className="container py-12">
         <div className="grid gap-10 md:grid-cols-3">
           <div>
-            <BrandMark surface="moedim" size="md" />
-            <p className="mt-3 max-w-xs text-sm text-cream-50/70">
-              Moedim turns African smallholder botanicals into verified, traceable, buyer-ready
+            <img src="/images/moedimai-logo-dark.png" alt="MoedimAI" className="h-10 w-auto" />
+            <p className="mt-4 max-w-xs text-sm text-cream-50/70">
+              MoedimAI turns African smallholder botanicals into verified, traceable, buyer-ready
               ingredients.
             </p>
           </div>
@@ -26,36 +26,29 @@ export function SiteFooter() {
                 </Link>
               </li>
               <li>
-                <Link href="/shop" className="text-cream-50/80 hover:text-cream-50">
-                  Shop
-                </Link>
-              </li>
-              <li>
                 <Link href="/thesis" className="text-cream-50/80 hover:text-cream-50">
                   Company thesis
                 </Link>
               </li>
               <li>
                 <Link href="/jaribu" className="text-cream-50/80 hover:text-cream-50">
-                  Jaribu by Moedim
-                </Link>
-              </li>
-              <li>
-                <Link href="/journal" className="text-cream-50/80 hover:text-cream-50">
-                  Journal
-                </Link>
-              </li>
-              <li>
-                <Link href="/contact" className="text-cream-50/80 hover:text-cream-50">
-                  Contact
+                  Jaribu by MoedimAI
                 </Link>
               </li>
             </ul>
           </div>
           <div>
             <h2 className="text-sm font-semibold uppercase tracking-wider text-cream-50/60">
-              Operating across
+              Contact
             </h2>
+            <p className="mt-4 text-sm">
+              <a
+                href="mailto:vivian@moedimAI.com"
+                className="text-gold-500 underline-offset-4 hover:underline"
+              >
+                vivian@moedimAI.com
+              </a>
+            </p>
             <p className="mt-4 text-sm text-cream-50/80">Kenya · Netherlands · United States</p>
             <p className="mt-2 text-xs text-cream-50/55">
               Mount Kenya production base. Rotterdam EU operations. Delaware US holding.

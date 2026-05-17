@@ -36,56 +36,49 @@ const config: Config = {
         sans: ["var(--font-inter)", "system-ui", "sans-serif"],
       },
       colors: {
+        // Brand palette aligned with the MoedimAI deck and demo.
         navy: {
-          900: "#0E1A36",
+          900: "#0A1A3A",
           800: "#16264A",
           700: "#1F3158",
         },
         gold: {
-          500: "#D4A24C",
-          300: "#E8C079",
+          500: "#C9A961",
+          300: "#E0C588",
         },
         cream: {
           50: "#F5EFE0",
           100: "#FFFFFF",
         },
         teal: {
-          500: "#5B8FB5",
-          300: "#87B4D1",
+          500: "#1C7293",
+          300: "#5B8FB5",
         },
         terracotta: {
-          // Warm earth tone reserved for Jaribu by Moedim farmer-facing surface.
           500: "#B25E3F",
           300: "#D89479",
         },
         verifiedGreen: {
-          // Pairs with gold for the Moedim Verified trust mark.
           500: "#3F8A6E",
           300: "#7AB59B",
         },
         success: "#6FAE76",
-        warning: "#D4A24C",
+        warning: "#C9A961",
         danger: "#C36B5F",
-        // Semantic brand surfaces. Use these in components, not the raw scale.
         brand: {
-          moedim: {
-            bg: "#0E1A36",
-            ink: "#F5EFE0",
-            accent: "#D4A24C",
-          },
           moedimai: {
-            bg: "#16264A",
+            bg: "#0A1A3A",
             ink: "#F5EFE0",
-            accent: "#5B8FB5",
+            accent: "#C9A961",
           },
           verified: {
             bg: "#FFFFFF",
-            ink: "#0E1A36",
+            ink: "#0A1A3A",
             accent: "#3F8A6E",
-            mark: "#D4A24C",
+            mark: "#C9A961",
           },
           jaribu: {
-            bg: "#0E1A36",
+            bg: "#0A1A3A",
             ink: "#F5EFE0",
             accent: "#B25E3F",
           },

@@ -2,7 +2,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Jaribu by Moedim",
+  title: "Jaribu by MoedimAI",
   description:
     "Above-market prices for your biomass, organic input support, and a path to certified export markets. Enrolling smallholder farmers across Mount Kenya and expanding.",
 };
@@ -18,7 +18,7 @@ const OFFERS: ReadonlyArray<{ heading: string; body: string }> = [
   },
   {
     heading: "A path to certified export markets",
-    body: "Your crops connect to EU, US, and local buyers through Moedim's certified supply chain. Every farmer is part of a Group of Operators certificate.",
+    body: "Your crops connect to EU, US, and local buyers through MoedimAI's certified supply chain. Every farmer is part of a Group of Operators certificate.",
   },
   {
     heading: "Field support",
@@ -44,7 +44,7 @@ export default function JaribuPage() {
             I am a farmer
           </p>
           <h1 className="mt-5 max-w-3xl font-display text-4xl leading-tight text-cream-50 md:text-5xl">
-            Jaribu by Moedim
+            Jaribu by MoedimAI
           </h1>
           <p className="mt-6 max-w-2xl text-base text-cream-50/85 md:text-lg">
             Above-market prices for your biomass, organic input support, and a path to certified
@@ -80,13 +80,13 @@ export default function JaribuPage() {
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
             <a
-              href="https://wa.me/254000000000?text=I%27d%20like%20to%20join%20Jaribu%20by%20Moedim"
+              href="https://wa.me/254000000000?text=I%27d%20like%20to%20join%20Jaribu%20by%20MoedimAI"
               className="inline-flex h-12 items-center justify-center rounded-md bg-gold-500 px-6 text-sm font-medium text-navy-900 transition-colors hover:bg-gold-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-300 focus-visible:ring-offset-2 focus-visible:ring-offset-navy-900"
             >
               Message on WhatsApp
             </a>
             <a
-              href="mailto:vivian@moedimai.com?subject=Jaribu%20enrolment%20enquiry"
+              href="mailto:vivian@moedimAI.com?subject=Jaribu%20enrolment%20enquiry"
               className="inline-flex h-12 items-center justify-center rounded-md border border-gold-500 px-6 text-sm font-medium text-cream-50 transition-colors hover:bg-gold-500/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-500 focus-visible:ring-offset-2 focus-visible:ring-offset-navy-900"
             >
               Send us an email

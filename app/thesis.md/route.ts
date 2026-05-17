@@ -3,13 +3,13 @@ import { NextResponse } from "next/server";
 export const dynamic = "force-static";
 
 export function GET() {
-  const md = `# Moedim company thesis
+  const md = `# MoedimAI company thesis
 
 > Chemotype-verification infrastructure for African organic exports. Climate-resilient agriculture with value addition in Kenya and blockchain provenance.
 
 ## The thesis
 
-Moedim sits at the intersection of three structural shifts in the global botanical supply chain.
+MoedimAI sits at the intersection of three structural shifts in the global botanical supply chain.
 
 EU and US buyers no longer accept commodity-grade African botanicals. They buy chemical profiles, not crops. A cosmetics buyer in Provence does not buy lavender, they buy linalyl acetate 30 to 45 percent and camphor below 0.5 percent.
 

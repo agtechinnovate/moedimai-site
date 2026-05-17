@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 export const dynamic = "force-static";
 
 export function GET() {
-  const md = `# Jaribu by Moedim
+  const md = `# Jaribu by MoedimAI
 
 > Above-market prices for your biomass, organic input support, and a path to certified export markets. Enrolling smallholder farmers across Mount Kenya and expanding.
 
@@ -13,7 +13,7 @@ export function GET() {
 
 **Organic input support.** Access to approved organic seeds, compost, and pest control inputs. Training on EU 2018/848 and USDA NOP organic standards delivered in Swahili and English.
 
-**A path to certified export markets.** Your crops connect to EU, US, and local buyers through Moedim's certified supply chain. Every farmer is part of a Group of Operators certificate.
+**A path to certified export markets.** Your crops connect to EU, US, and local buyers through MoedimAI's certified supply chain. Every farmer is part of a Group of Operators certificate.
 
 **Field support.** Field coordinators visit regularly. Agronomy guidance, satellite-driven crop monitoring, and weather alerts come to you on WhatsApp.
 
