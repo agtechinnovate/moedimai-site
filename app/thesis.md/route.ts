@@ -7,15 +7,13 @@ export function GET() {
 
 > Chemotype-verification infrastructure for African organic exports. Climate-resilient agriculture with value addition in Kenya and blockchain provenance.
 
-## The thesis
+## At a glance
 
-MoedimAI sits at the intersection of three structural shifts in the global botanical supply chain.
-
-EU and US buyers no longer accept commodity-grade African botanicals. They buy chemical profiles, not crops. A cosmetics buyer in Provence does not buy lavender, they buy linalyl acetate 30 to 45 percent and camphor below 0.5 percent.
-
-Smallholder agriculture across sub-Saharan Africa is digitally invisible. The same farmer who can be GAP certified, organic certified, and chemotype-verified in Provence or Bulgaria cannot be in Kenya, because the data infrastructure does not exist.
-
-Africa is structurally well-positioned to grow these crops. Climate, soil, altitude, and labour economics are aligned. The single missing layer is verification. We are building the verification layer.
+- Founder: Vivian Nwakah
+- Operations: Mount Kenya
+- EU platform: Rotterdam
+- US entity: Delaware
+- Trust mark: MoedimAI Verified
 
 ## Three pillars
 
@@ -29,25 +27,9 @@ Africa is structurally well-positioned to grow these crops. Climate, soil, altit
 
 Insurance prices climate and yield risk. Banks and DFIs lend against verified performance. Research institutions advance crop science.
 
-## How the model compounds
-
-Verified chemotype data has three buyer audiences. Cosmetic, fragrance, and wellness buyers buy spec-matched oils with full traceability. Insurance underwriters and DFIs price climate and yield risk against verified historical performance. Research institutions gain a queryable library of indigenous and naturalized crop chemotypes.
-
-The same data layer serves all three. The buyers fund operations, the insurers price the risk, the researchers build the science. Each one increases the value of the data for the next.
-
-## Where we are
-
-- 300 farmers live in the Mount Kenya smallholder network
-- 3,000 in pipeline for the next 18 months
-- 9 crops in commercial production
-- 5 tonnes per day of processing capacity
-- Supply across multiple layers, from partner inventory to forward harvests from our own farms
-
-Operations span three jurisdictions. Mount Kenya is the production base. Rotterdam is the EU port and distribution operation. Delaware is the US holding entity.
-
 ## Contact
 
-Vivian Nwakah, Founder and CEO. vivian@moedimai.com
+Vivian Nwakah, Founder and CEO. vivian@moedimAI.com
 `;
   return new NextResponse(md, {
     headers: {

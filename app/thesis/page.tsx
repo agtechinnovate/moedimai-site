@@ -179,7 +179,7 @@ export default function ThesisPage() {
               <dd className="mt-3 text-sm text-cream-50/75">Crops, including tree crops</dd>
             </div>
             <div>
-              <dt className="font-display text-4xl text-gold-500 md:text-5xl">5 t/day</dt>
+              <dt className="font-display text-4xl text-gold-500 md:text-5xl">5-10 t/day</dt>
               <dd className="mt-3 text-sm text-cream-50/75">Processing capacity</dd>
             </div>
             <div>
@@ -193,115 +193,30 @@ export default function ThesisPage() {
       </section>
 
       <section className="container py-16 md:py-20">
-        <div className="grid gap-12 lg:grid-cols-3">
-          <div className="lg:col-span-2">
-            <h2 className="font-display text-3xl text-cream-50 md:text-4xl">
-              What we are building
-            </h2>
-            <div className="mt-6 space-y-5 text-base text-cream-50/85 md:text-lg">
-              <p>
-                MoedimAI sits at the intersection of three structural shifts in the global botanical
-                supply chain.
-              </p>
-              <p>
-                The first is that EU and US buyers no longer accept commodity-grade African
-                botanicals. They buy chemical profiles, not crops. A cosmetics buyer in Provence
-                does not buy lavender, they buy linalyl acetate 30 to 45 percent and camphor below
-                0.5 percent. African producers who cannot prove their chemotype on a Certificate of
-                Analysis are excluded from the highest-value tier of the market.
-              </p>
-              <p>
-                The second is that smallholder agriculture across sub-Saharan Africa is digitally
-                invisible. The same farmer who can be GAP certified, organic certified, and
-                chemotype-verified in Provence or Bulgaria cannot be in Kenya, because the data
-                infrastructure does not exist. Buyers either pay a premium to certified Northern
-                Hemisphere producers or accept unverifiable risk from African suppliers. There is no
-                third option today.
-              </p>
-              <p>
-                The third is that Africa is structurally well-positioned to grow these crops.
-                Climate, soil, altitude, and labour economics are aligned. The single missing layer
-                is verification. We are building the verification layer.
-              </p>
+        <div className="mx-auto max-w-md">
+          <p className="text-xs uppercase tracking-[0.22em] text-gold-500">At a glance</p>
+          <dl className="mt-4 space-y-3 text-sm">
+            <div className="flex justify-between gap-4 border-b border-cream-50/10 pb-3">
+              <dt className="text-cream-50/60">Founder</dt>
+              <dd className="text-cream-50">Vivian Nwakah</dd>
             </div>
-          </div>
-          <aside className="lg:pt-3">
-            <p className="text-xs uppercase tracking-[0.22em] text-gold-500">At a glance</p>
-            <dl className="mt-4 space-y-3 text-sm">
-              <div className="flex justify-between gap-4 border-b border-cream-50/10 pb-3">
-                <dt className="text-cream-50/60">Founder</dt>
-                <dd className="text-cream-50">Vivian Nwakah</dd>
-              </div>
-              <div className="flex justify-between gap-4 border-b border-cream-50/10 pb-3">
-                <dt className="text-cream-50/60">Operations</dt>
-                <dd className="text-cream-50">Mount Kenya</dd>
-              </div>
-              <div className="flex justify-between gap-4 border-b border-cream-50/10 pb-3">
-                <dt className="text-cream-50/60">EU platform</dt>
-                <dd className="text-cream-50">Rotterdam</dd>
-              </div>
-              <div className="flex justify-between gap-4 border-b border-cream-50/10 pb-3">
-                <dt className="text-cream-50/60">US entity</dt>
-                <dd className="text-cream-50">Delaware</dd>
-              </div>
-              <div className="flex justify-between gap-4">
-                <dt className="text-cream-50/60">Trust mark</dt>
-                <dd className="text-gold-500">MoedimAI Verified</dd>
-              </div>
-            </dl>
-          </aside>
-        </div>
-      </section>
-
-      <section className="border-t border-cream-50/10 bg-navy-800/40">
-        <div className="container py-16 md:py-20">
-          <h2 className="font-display text-3xl text-cream-50 md:text-4xl">
-            How the model compounds
-          </h2>
-          <div className="mt-6 max-w-3xl space-y-5 text-base text-cream-50/85 md:text-lg">
-            <p>
-              Verified chemotype data has three buyer audiences, and each one strengthens the
-              others.
-            </p>
-            <p>
-              Cosmetic, fragrance, and wellness buyers buy spec-matched oils with full traceability.
-              They pay organic-certified premium pricing because the chemotype proves it.
-            </p>
-            <p>
-              Insurance underwriters and development finance institutions price climate and yield
-              risk against verified historical performance. A farmer with three seasons of GC-MS,
-              NDVI, and harvest weight data is a different risk class to a farmer with none. We are
-              not the insurer. We make the underwriting possible.
-            </p>
-            <p>
-              Research institutions across Africa gain a queryable library of indigenous and
-              naturalized crop chemotypes. This is publication-grade scientific infrastructure that
-              does not exist today for the crops we work in.
-            </p>
-            <p>
-              The same data layer serves all three. The buyers fund operations, the insurers price
-              the risk, the researchers build the science. Each one increases the value of the data
-              for the next.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section className="container py-16 md:py-20">
-        <h2 className="font-display text-3xl text-cream-50 md:text-4xl">Where we are</h2>
-        <div className="mt-6 max-w-3xl space-y-5 text-base text-cream-50/85 md:text-lg">
-          <p>
-            Three hundred farmers are live in the Mount Kenya smallholder network today. Three
-            thousand are in pipeline for the next eighteen months. Nine crops are in commercial
-            production across essential oils and cold-pressed botanicals. Five tonnes per day of
-            processing capacity is operational. Supply is available across multiple layers, from
-            partner-sourced inventory to forward harvests from our own farms. Request more
-            information for current availability and lead times.
-          </p>
-          <p>
-            Operations span three jurisdictions. Mount Kenya is the production base. Rotterdam is
-            the EU port and distribution operation. Delaware is the US holding entity.
-          </p>
+            <div className="flex justify-between gap-4 border-b border-cream-50/10 pb-3">
+              <dt className="text-cream-50/60">Operations</dt>
+              <dd className="text-cream-50">Mount Kenya</dd>
+            </div>
+            <div className="flex justify-between gap-4 border-b border-cream-50/10 pb-3">
+              <dt className="text-cream-50/60">EU platform</dt>
+              <dd className="text-cream-50">Rotterdam</dd>
+            </div>
+            <div className="flex justify-between gap-4 border-b border-cream-50/10 pb-3">
+              <dt className="text-cream-50/60">US entity</dt>
+              <dd className="text-cream-50">Delaware</dd>
+            </div>
+            <div className="flex justify-between gap-4">
+              <dt className="text-cream-50/60">Trust mark</dt>
+              <dd className="text-gold-500">MoedimAI Verified</dd>
+            </div>
+          </dl>
         </div>
       </section>
 
