@@ -1,18 +1,18 @@
-# Moedim, verified African botanicals
+# MoedimAI, verified African botanicals
 
-Moedim turns African smallholder botanicals into verified, traceable, buyer-ready ingredients. Thirteen Kenyan-grown botanical oils, sold by the bottle and by the kilogram. Every lot is GC-MS profiled or fatty-acid profiled, traceable from farm to dispatch, and shipped worldwide from Mount Kenya operations.
+MoedimAI turns African smallholder botanicals into verified, traceable, buyer-ready ingredients. Thirteen Kenyan-grown botanical oils, sold by the bottle and by the kilogram. Every lot is GC-MS profiled or fatty-acid profiled, traceable from farm to dispatch, and shipped worldwide from Mount Kenya operations.
 
 ## Brand architecture
 
-- **Moedim** is the public consumer and product brand. It appears on the storefront, packaging, and retail communications.
+- **MoedimAI** is the public consumer and product brand. It appears on the storefront, packaging, and retail communications.
 - **MoedimAI** is the verification and B2B platform brand. It appears on buyer-facing pages, the buyer portal, investor materials, and technical documents.
-- **Moedim Verified** is the trust mark applied to lots, COA bundles, and evidence packets surfaced to buyers.
-- **Jaribu by Moedim** is the farmer recruitment surface, smallholder onboarding, training, organic input support.
+- **MoedimAI Verified** is the trust mark applied to lots, COA bundles, and evidence packets surfaced to buyers.
+- **Jaribu by MoedimAI** is the farmer recruitment surface, smallholder onboarding, training, organic input support.
 
 ## Structure
 
 - **Mount Kenya** is the production base.
-- **Rotterdam** is the EU port and distribution operation (Moedim EU BV, in formation).
+- **Rotterdam** is the EU port and distribution operation (MoedimAI EU BV, in formation).
 - **Delaware** is the US holding entity (Moedai LLC).
 
 ## Founder
@@ -48,9 +48,9 @@ Vivian Nwakah, Founder and CEO. Previously founded Medsaf, a pharmaceutical supp
 - Baobab, Adansonia digitata
 - Neem, Azadirachta indica
 
-## How buyers verify a Moedim lot
+## How buyers verify a MoedimAI lot
 
-Every lot supplied to a buyer carries a Moedim Verified evidence packet. The packet includes:
+Every lot supplied to a buyer carries a MoedimAI Verified evidence packet. The packet includes:
 
 - COA, GC-MS chromatogram for essential oils or FAME fatty acid profile for cold-pressed oils
 - SDS or MSDS, safety data sheet
@@ -66,7 +66,7 @@ Every lot supplied to a buyer carries a Moedim Verified evidence packet. The pac
 ## How sample requests work
 
 1. The buyer requests a sample by emailing the supply desk with the oils they want to evaluate.
-2. Moedim ships samples plus the current lot GC-MS profile to the buyer facility.
+2. MoedimAI ships samples plus the current lot GC-MS profile to the buyer facility.
 3. Once the sample matches spec, the buyer submits volume and delivery requirements. Pricing, lead time, and lot allocation confirm within 48 hours.
 4. Every shipment includes Certificate of Analysis, lot traceability record, and origin documentation. KEPHIS phytosanitary clearance arranged for export consignments.
 
@@ -79,6 +79,6 @@ Every lot supplied to a buyer carries a Moedim Verified evidence packet. The pac
 
 ## Editorial standards
 
-Moedim does not make therapeutic, medical, or "chemical-free" claims. Product copy stays specific: named compounds, named origin, named certifications, named availability.
+MoedimAI does not make therapeutic, medical, or "chemical-free" claims. Product copy stays specific: named compounds, named origin, named certifications, named availability.
 
 Tagline: From African soil to the world.

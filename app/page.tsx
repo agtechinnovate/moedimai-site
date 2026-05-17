@@ -5,7 +5,7 @@ interface AudienceDoor {
   eyebrow: string;
   title: string;
   body: string;
-  href: "/buyers" | "/shop" | "/thesis" | "/jaribu";
+  href: "/buyers" | "/thesis" | "/jaribu";
   cta: string;
 }
 
@@ -18,22 +18,15 @@ const DOORS: AudienceDoor[] = [
     cta: "View buyer supply desk",
   },
   {
-    eyebrow: "I WANT TO BUY OILS",
-    title: "Shop the botanicals",
-    body: "Kenyan essential and botanical oils, sold by the bottle. Clear origin, safe-use guidance, M-Pesa checkout, delivered across Kenya.",
-    href: "/shop",
-    cta: "Shop botanicals",
-  },
-  {
     eyebrow: "I AM AN INVESTOR OR PARTNER",
     title: "Company thesis",
-    body: "Moedim is building chemotype-verification infrastructure for African organic exports. Three hundred farmers live, three thousand in pipeline, nine crops, five tonnes per day of processing capacity.",
+    body: "MoedimAI is building chemotype-verification infrastructure for African organic exports. Three hundred farmers live, three thousand in pipeline, nine crops, five tonnes per day of processing capacity.",
     href: "/thesis",
     cta: "Read the thesis",
   },
   {
     eyebrow: "I AM A FARMER",
-    title: "Jaribu by Moedim",
+    title: "Jaribu by MoedimAI",
     body: "Above-market prices for your biomass, organic input support, and a path to certified export markets. We're enrolling smallholder farmers across Mount Kenya and expanding.",
     href: "/jaribu",
     cta: "Get in touch",
@@ -46,12 +39,16 @@ export default function HomePage() {
       <section className="relative overflow-hidden">
         <div
           aria-hidden
-          className="absolute inset-0 bg-cover bg-center opacity-30"
+          className="absolute inset-0 bg-cover bg-center opacity-70"
           style={{ backgroundImage: "url('/images/lavender-field.jpg')" }}
         />
         <div
           aria-hidden
-          className="absolute inset-0 bg-gradient-to-b from-navy-900/80 via-navy-900/75 to-navy-900"
+          className="absolute inset-0 bg-gradient-to-r from-navy-900/95 via-navy-900/60 to-navy-900/30"
+        />
+        <div
+          aria-hidden
+          className="absolute inset-0 bg-gradient-to-b from-navy-900/40 via-transparent to-navy-900"
         />
         <div className="container relative py-20 md:py-28">
           <p className="font-sans text-xs uppercase tracking-[0.22em] text-gold-500">
@@ -62,40 +59,40 @@ export default function HomePage() {
             <br />
             traceable to the lot.
           </h1>
-          <p className="mt-6 max-w-2xl text-base text-cream-50/85 md:text-lg">
+          <p className="mt-6 max-w-2xl text-base text-cream-50/90 md:text-lg">
             Thirteen Kenyan-grown botanical oils, sold by the bottle and by the kilogram. Every lot
             is GC-MS profiled, traceable from farm to dispatch, and shipped worldwide from our Mount
             Kenya operations.
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-3">
             <Link
-              href="/shop"
+              href="/buyers"
               className="inline-flex h-12 items-center justify-center rounded-md bg-gold-500 px-6 text-sm font-medium text-navy-900 transition-colors hover:bg-gold-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-300 focus-visible:ring-offset-2 focus-visible:ring-offset-navy-900"
             >
-              Shop the oils
+              Buyer supply desk
             </Link>
             <Link
-              href="/buyers"
+              href="/thesis"
               className="inline-flex h-12 items-center justify-center rounded-md border border-gold-500 px-6 text-sm font-medium text-cream-50 transition-colors hover:bg-gold-500/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-500 focus-visible:ring-offset-2 focus-visible:ring-offset-navy-900"
             >
-              Buyer supply desk
+              Read the thesis
             </Link>
           </div>
           <dl className="mt-12 grid max-w-3xl grid-cols-2 gap-x-8 gap-y-4 text-sm md:grid-cols-4">
             <div>
-              <dt className="text-cream-50/60">Origin</dt>
+              <dt className="text-cream-50/70">Origin</dt>
               <dd className="mt-1 text-cream-50">Mount Kenya</dd>
             </div>
             <div>
-              <dt className="text-cream-50/60">EU operations</dt>
+              <dt className="text-cream-50/70">EU operations</dt>
               <dd className="mt-1 text-cream-50">Rotterdam</dd>
             </div>
             <div>
-              <dt className="text-cream-50/60">US holding</dt>
+              <dt className="text-cream-50/70">US holding</dt>
               <dd className="mt-1 text-cream-50">Delaware</dd>
             </div>
             <div>
-              <dt className="text-cream-50/60">Trust mark</dt>
+              <dt className="text-cream-50/70">Trust mark</dt>
               <dd className="mt-1">
                 <BrandMark surface="verified" size="sm" />
               </dd>
@@ -113,14 +110,34 @@ export default function HomePage() {
             Choose your path
           </h2>
           <p className="mt-3 max-w-2xl text-sm text-cream-50/70 md:text-base">
-            One brand, four doors. Each one takes you where you want to go.
+            One brand, three doors. Each one takes you where you want to go.
           </p>
 
-          <div className="mt-10 grid gap-6 sm:grid-cols-2">
+          <div className="mt-10 grid gap-6 md:grid-cols-3">
             {DOORS.map((door) => (
               <AudienceDoorCard key={door.href} door={door} />
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="border-t border-cream-50/10">
+        <div className="container py-16 text-center md:py-20">
+          <p className="text-xs uppercase tracking-[0.22em] text-gold-500">Get in touch</p>
+          <h2 className="mt-4 font-display text-3xl text-cream-50 md:text-4xl">
+            Talk to Vivian directly.
+          </h2>
+          <p className="mt-4 text-base text-cream-50/85 md:text-lg">
+            Buyer inquiries, investor introductions, partnership conversations, press.
+          </p>
+          <p className="mt-6">
+            <a
+              href="mailto:vivian@moedimAI.com"
+              className="font-display text-2xl text-gold-500 underline-offset-4 hover:underline md:text-3xl"
+            >
+              vivian@moedimAI.com
+            </a>
+          </p>
         </div>
       </section>
     </>

@@ -1,14 +1,10 @@
-# Moedim
+# MoedimAI
 
-> Moedim turns African smallholder botanicals into verified, traceable, buyer-ready ingredients. Thirteen Kenyan-grown oils, every lot GC-MS or fatty acid profiled, traceable from farm to dispatch. Sold by the bottle and by the kilogram. Headquartered in Mount Kenya with EU operations in Rotterdam and US holding in Delaware.
+> MoedimAI turns African smallholder botanicals into verified, traceable, buyer-ready ingredients. Thirteen Kenyan-grown oils, every lot GC-MS or fatty acid profiled, traceable from farm to dispatch. Sold by the bottle and by the kilogram. Headquartered in Mount Kenya with EU operations in Rotterdam and US holding in Delaware.
 
 ## For buyers
 
 - [Buyer supply desk](https://www.moedimai.com/buyers.md): MoedimAI for cosmetic, fragrance, and wellness buyers. Thirteen Kenyan botanicals available by the kilogram with full documentation.
-
-## For consumers
-
-- [Shop the botanicals](https://www.moedimai.com/shop.md): Kenyan essential and botanical oils sold by the bottle.
 
 ## For investors and partners
 
@@ -16,12 +12,8 @@
 
 ## For farmers
 
-- [Jaribu by Moedim](https://www.moedimai.com/jaribu.md): Above-market prices for biomass, organic input support, and a path to certified export markets.
-
-## Knowledge
-
-- [The Moedim Journal](https://www.moedimai.com/journal.md): Buyer-useful, evidence-led writing on African botanical supply.
+- [Jaribu by MoedimAI](https://www.moedimai.com/jaribu.md): Above-market prices for biomass, organic input support, and a path to certified export markets.
 
 ## Contact
 
-- [Contact](https://www.moedimai.com/contact.md): vivian@moedimai.com. Routed forms by audience.
+vivian@moedimAI.com

@@ -1,25 +1,27 @@
+/* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
-import { BrandMark } from "./brand-mark";
 
 interface NavItem {
   label: string;
-  href: "/" | "/buyers" | "/shop" | "/thesis" | "/journal" | "/contact";
+  href: "/" | "/buyers" | "/thesis" | "/jaribu";
 }
 
 const NAV_ITEMS: NavItem[] = [
   { label: "Buyers", href: "/buyers" },
-  { label: "Shop", href: "/shop" },
   { label: "Thesis", href: "/thesis" },
-  { label: "Journal", href: "/journal" },
-  { label: "Contact", href: "/contact" },
+  { label: "Jaribu", href: "/jaribu" },
 ];
 
 export function SiteHeader() {
   return (
     <header className="border-b border-cream-50/10 bg-navy-900/80 backdrop-blur supports-[backdrop-filter]:bg-navy-900/60">
-      <div className="container flex h-16 items-center justify-between gap-6">
-        <Link href="/" className="flex items-center" aria-label="Moedim home">
-          <BrandMark surface="moedim" size="md" />
+      <div className="container flex h-20 items-center justify-between gap-6">
+        <Link href="/" className="flex items-center" aria-label="MoedimAI home">
+          <img
+            src="/images/moedimai-logo-dark.png"
+            alt="MoedimAI"
+            className="h-10 w-auto md:h-12"
+          />
         </Link>
         <nav aria-label="Primary" className="flex items-center gap-1 sm:gap-2">
           {NAV_ITEMS.map((item) => (

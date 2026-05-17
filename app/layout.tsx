@@ -24,25 +24,25 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL(env.NEXT_PUBLIC_SITE_URL),
   title: {
-    default: "Moedim, verified African botanicals",
-    template: "%s · Moedim",
+    default: "MoedimAI, verified African botanicals",
+    template: "%s · MoedimAI",
   },
   description:
-    "Moedim turns African smallholder botanicals into verified, traceable, buyer-ready ingredients.",
+    "MoedimAI turns African smallholder botanicals into verified, traceable, buyer-ready ingredients.",
   robots: { index: true, follow: true },
   openGraph: {
     type: "website",
-    siteName: "Moedim",
-    title: "Moedim, verified African botanicals",
+    siteName: "MoedimAI",
+    title: "MoedimAI, verified African botanicals",
     description:
-      "Moedim turns African smallholder botanicals into verified, traceable, buyer-ready ingredients.",
+      "MoedimAI turns African smallholder botanicals into verified, traceable, buyer-ready ingredients.",
   },
 };
 
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#0E1A36",
+  themeColor: "#0A1A3A",
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
