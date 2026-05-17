@@ -7,15 +7,13 @@ export function GET() {
 
 > Chemotype-verification infrastructure for African organic exports. Climate-resilient agriculture with value addition in Kenya and blockchain provenance.
 
-## The thesis
+## At a glance
 
-MoedimAI sits at the intersection of three structural shifts in the global botanical supply chain.
-
-EU and US buyers no longer accept commodity-grade African botanicals. They buy chemical profiles, not crops. A cosmetics buyer in Provence does not buy lavender, they buy linalyl acetate 30 to 45 percent and camphor below 0.5 percent.
-
-Smallholder agriculture across sub-Saharan Africa is digitally invisible. The same farmer who can be GAP certified, organic certified, and chemotype-verified in Provence or Bulgaria cannot be in Kenya, because the data infrastructure does not exist.
-
-Africa is structurally well-positioned to grow these crops. Climate, soil, altitude, and labour economics are aligned. The single missing layer is verification. We are building the verification layer.
+- Founder: Vivian Nwakah
+- Operations: Mount Kenya
+- EU platform: Rotterdam
+- US entity: Delaware
+- Trust mark: MoedimAI Verified
 
 ## Three pillars
 

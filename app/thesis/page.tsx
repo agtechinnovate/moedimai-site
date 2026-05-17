@@ -193,63 +193,30 @@ export default function ThesisPage() {
       </section>
 
       <section className="container py-16 md:py-20">
-        <div className="grid gap-12 lg:grid-cols-3">
-          <div className="lg:col-span-2">
-            <h2 className="font-display text-3xl text-cream-50 md:text-4xl">
-              What we are building
-            </h2>
-            <div className="mt-6 space-y-5 text-base text-cream-50/85 md:text-lg">
-              <p>
-                MoedimAI sits at the intersection of three structural shifts in the global botanical
-                supply chain.
-              </p>
-              <p>
-                The first is that EU and US buyers no longer accept commodity-grade African
-                botanicals. They buy chemical profiles, not crops. A cosmetics buyer in Provence
-                does not buy lavender, they buy linalyl acetate 30 to 45 percent and camphor below
-                0.5 percent. African producers who cannot prove their chemotype on a Certificate of
-                Analysis are excluded from the highest-value tier of the market.
-              </p>
-              <p>
-                The second is that smallholder agriculture across sub-Saharan Africa is digitally
-                invisible. The same farmer who can be GAP certified, organic certified, and
-                chemotype-verified in Provence or Bulgaria cannot be in Kenya, because the data
-                infrastructure does not exist. Buyers either pay a premium to certified Northern
-                Hemisphere producers or accept unverifiable risk from African suppliers. There is no
-                third option today.
-              </p>
-              <p>
-                The third is that Africa is structurally well-positioned to grow these crops.
-                Climate, soil, altitude, and labour economics are aligned. The single missing layer
-                is verification. We are building the verification layer.
-              </p>
+        <div className="mx-auto max-w-md">
+          <p className="text-xs uppercase tracking-[0.22em] text-gold-500">At a glance</p>
+          <dl className="mt-4 space-y-3 text-sm">
+            <div className="flex justify-between gap-4 border-b border-cream-50/10 pb-3">
+              <dt className="text-cream-50/60">Founder</dt>
+              <dd className="text-cream-50">Vivian Nwakah</dd>
             </div>
-          </div>
-          <aside className="lg:pt-3">
-            <p className="text-xs uppercase tracking-[0.22em] text-gold-500">At a glance</p>
-            <dl className="mt-4 space-y-3 text-sm">
-              <div className="flex justify-between gap-4 border-b border-cream-50/10 pb-3">
-                <dt className="text-cream-50/60">Founder</dt>
-                <dd className="text-cream-50">Vivian Nwakah</dd>
-              </div>
-              <div className="flex justify-between gap-4 border-b border-cream-50/10 pb-3">
-                <dt className="text-cream-50/60">Operations</dt>
-                <dd className="text-cream-50">Mount Kenya</dd>
-              </div>
-              <div className="flex justify-between gap-4 border-b border-cream-50/10 pb-3">
-                <dt className="text-cream-50/60">EU platform</dt>
-                <dd className="text-cream-50">Rotterdam</dd>
-              </div>
-              <div className="flex justify-between gap-4 border-b border-cream-50/10 pb-3">
-                <dt className="text-cream-50/60">US entity</dt>
-                <dd className="text-cream-50">Delaware</dd>
-              </div>
-              <div className="flex justify-between gap-4">
-                <dt className="text-cream-50/60">Trust mark</dt>
-                <dd className="text-gold-500">MoedimAI Verified</dd>
-              </div>
-            </dl>
-          </aside>
+            <div className="flex justify-between gap-4 border-b border-cream-50/10 pb-3">
+              <dt className="text-cream-50/60">Operations</dt>
+              <dd className="text-cream-50">Mount Kenya</dd>
+            </div>
+            <div className="flex justify-between gap-4 border-b border-cream-50/10 pb-3">
+              <dt className="text-cream-50/60">EU platform</dt>
+              <dd className="text-cream-50">Rotterdam</dd>
+            </div>
+            <div className="flex justify-between gap-4 border-b border-cream-50/10 pb-3">
+              <dt className="text-cream-50/60">US entity</dt>
+              <dd className="text-cream-50">Delaware</dd>
+            </div>
+            <div className="flex justify-between gap-4">
+              <dt className="text-cream-50/60">Trust mark</dt>
+              <dd className="text-gold-500">MoedimAI Verified</dd>
+            </div>
+          </dl>
         </div>
       </section>
 
