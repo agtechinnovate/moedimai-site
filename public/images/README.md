@@ -1,26 +1,19 @@
 # Site images
 
-Drop the photos here with these exact filenames. The pages reference these paths.
+Where each photo lands on the site.
 
-## Operational photos (priority · investor section)
+## Investor section (/thesis)
 
-These are real operational shots from Mount Kenya. They land on `/thesis`.
+Only 2 photos per direction from Vivian: founder and QC team.
 
-- `vivian-at-facility.jpg` · founder at the distillation facility
-- `processing-tanks-wide.jpg` · wide shot of the stainless distillation tanks with green piping
-- `processing-tank-closeup.jpg` · single distillation tank, close-up
-- `qc-packaging.jpg` · packaging and QC room with operators
-- `farm-landscape.jpg` · outdoor landscape, Mount Kenya grounds
+- `vivian-at-facility.jpg` Vivian at the Mount Kenya distillation facility. Used as `/thesis` hero background and in the 2-photo grid.
+- `qc-team.jpg` QC team on the floor at the Mount Kenya facility. Used in the 2-photo grid on `/thesis`.
 
-## Product and plant photos
+## Consumer and buyer pages
 
-These land on `/buyers` and the homepage.
-
-- `lavender-field.jpg` · lavender field at dusk, mountains in background
-- `rosemary-plant.jpg` · rosemary close-up, outdoor
-- `immortelle-jar.jpg` · dried immortelle in a glass jar, white background
-- `botanical-powder.jpg` · botanical powder with scoop, white background
-
-## Format
-
-Save as `.jpg` (or `.jpeg`). Aim for 1600px on the long edge or larger. Next.js handles compression and srcset.
+- `lavender-field.jpg` Lavender field at sunset. Used as `/` homepage hero background.
+- `rosemary-plant.jpg` Rosemary close-up. Used on the `/buyers` catalogue strip.
+- `immortelle-jar.jpg` Dried immortelle in a glass jar. Used on the `/buyers` catalogue strip.
+- `botanical-powder.jpg` Cold-pressed botanical powder with scoop. Used on the `/buyers` catalogue strip.
+- `chamomile-flowers.jpg` Chamomile flowers, top-down. Used as `/shop` hero background.
+- `wildflowers.jpg` Purple wildflowers in bokeh. Used as `/jaribu` hero background.

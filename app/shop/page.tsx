@@ -25,17 +25,28 @@ const BOTANICALS = ["Moringa", "Baobab", "Neem"];
 export default function ShopPage() {
   return (
     <>
-      <section className="container py-16 md:py-20">
-        <p className="font-sans text-xs uppercase tracking-[0.18em] text-gold-500">
-          I want to buy oils
-        </p>
-        <h1 className="mt-4 max-w-3xl font-display text-4xl leading-tight md:text-5xl">
-          Shop the Moedim botanicals.
-        </h1>
-        <p className="mt-6 max-w-2xl text-base text-cream-50/85 md:text-lg">
-          Kenyan essential and botanical oils, sold by the bottle. Clear origin, safe-use guidance,
-          M-Pesa checkout, delivered across Kenya.
-        </p>
+      <section className="relative overflow-hidden">
+        <div
+          aria-hidden
+          className="absolute inset-0 bg-cover bg-center opacity-20"
+          style={{ backgroundImage: "url('/images/chamomile-flowers.jpg')" }}
+        />
+        <div
+          aria-hidden
+          className="absolute inset-0 bg-gradient-to-b from-navy-900/85 via-navy-900/80 to-navy-900"
+        />
+        <div className="container relative py-16 md:py-20">
+          <p className="font-sans text-xs uppercase tracking-[0.18em] text-gold-500">
+            I want to buy oils
+          </p>
+          <h1 className="mt-4 max-w-3xl font-display text-4xl leading-tight md:text-5xl">
+            Shop the Moedim botanicals.
+          </h1>
+          <p className="mt-6 max-w-2xl text-base text-cream-50/85 md:text-lg">
+            Kenyan essential and botanical oils, sold by the bottle. Clear origin, safe-use
+            guidance, M-Pesa checkout, delivered across Kenya.
+          </p>
+        </div>
       </section>
 
       <section className="border-t border-cream-50/10 bg-navy-800/40">

@@ -33,7 +33,7 @@ export default function JaribuPage() {
         <div
           aria-hidden
           className="absolute inset-0 bg-cover bg-center opacity-25"
-          style={{ backgroundImage: "url('/images/farm-landscape.jpg')" }}
+          style={{ backgroundImage: "url('/images/wildflowers.jpg')" }}
         />
         <div
           aria-hidden

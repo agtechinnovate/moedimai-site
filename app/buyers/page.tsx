@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import type { Metadata } from "next";
 import { BrandMark } from "@/components/layout/brand-mark";
 
@@ -57,7 +58,31 @@ export default function BuyersPage() {
         <div className="container py-16 md:py-20">
           <h2 className="font-display text-2xl text-cream-50 md:text-3xl">Available now</h2>
 
-          <h3 className="mt-10 text-sm font-semibold uppercase tracking-wider text-gold-500">
+          <div className="mt-8 grid gap-4 sm:grid-cols-3">
+            <figure className="overflow-hidden rounded-lg border border-cream-50/10 bg-navy-900/40">
+              <img
+                src="/images/rosemary-plant.jpg"
+                alt="Rosemary plant close-up"
+                className="h-48 w-full object-cover md:h-56"
+              />
+            </figure>
+            <figure className="overflow-hidden rounded-lg border border-cream-50/10 bg-navy-900/40">
+              <img
+                src="/images/immortelle-jar.jpg"
+                alt="Dried immortelle in a glass jar"
+                className="h-48 w-full object-cover md:h-56"
+              />
+            </figure>
+            <figure className="overflow-hidden rounded-lg border border-cream-50/10 bg-navy-900/40">
+              <img
+                src="/images/botanical-powder.jpg"
+                alt="Cold-pressed botanical powder with scoop"
+                className="h-48 w-full object-cover md:h-56"
+              />
+            </figure>
+          </div>
+
+          <h3 className="mt-12 text-sm font-semibold uppercase tracking-wider text-gold-500">
             Essential oils (steam distilled)
           </h3>
           <ul className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">

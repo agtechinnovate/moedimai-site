@@ -143,50 +143,26 @@ export default function ThesisPage() {
 
       <section className="container py-16 md:py-20">
         <h2 className="sr-only">Inside the operation</h2>
-        <div className="grid gap-4 md:grid-cols-3 lg:grid-cols-4">
-          <figure className="overflow-hidden rounded-lg border border-cream-50/10 bg-navy-900/40 md:col-span-2">
-            <img
-              src="/images/processing-tanks-wide.jpg"
-              alt="Stainless steel distillation tanks at the Mount Kenya processing facility"
-              className="h-64 w-full object-cover md:h-80"
-            />
-            <figcaption className="px-4 py-3 text-xs text-cream-50/60">
-              Mount Kenya distillation facility
-            </figcaption>
-          </figure>
+        <div className="grid gap-6 md:grid-cols-2">
           <figure className="overflow-hidden rounded-lg border border-cream-50/10 bg-navy-900/40">
             <img
               src="/images/vivian-at-facility.jpg"
-              alt="Vivian Nwakah at the distillation facility"
-              className="h-64 w-full object-cover md:h-80"
-            />
-            <figcaption className="px-4 py-3 text-xs text-cream-50/60">Founder on site</figcaption>
-          </figure>
-          <figure className="overflow-hidden rounded-lg border border-cream-50/10 bg-navy-900/40">
-            <img
-              src="/images/processing-tank-closeup.jpg"
-              alt="Close-up of a single stainless steel distillation tank"
-              className="h-64 w-full object-cover md:h-80"
+              alt="Vivian Nwakah at the Mount Kenya distillation facility"
+              className="h-80 w-full object-cover md:h-96"
             />
             <figcaption className="px-4 py-3 text-xs text-cream-50/60">
-              Steam distillation column
+              Vivian Nwakah at the Mount Kenya distillation facility.
             </figcaption>
-          </figure>
-          <figure className="overflow-hidden rounded-lg border border-cream-50/10 bg-navy-900/40 md:col-span-2">
-            <img
-              src="/images/qc-packaging.jpg"
-              alt="Packaging and QC operators in the Moedim facility"
-              className="h-64 w-full object-cover md:h-80"
-            />
-            <figcaption className="px-4 py-3 text-xs text-cream-50/60">Packaging and QC</figcaption>
           </figure>
           <figure className="overflow-hidden rounded-lg border border-cream-50/10 bg-navy-900/40">
             <img
-              src="/images/farm-landscape.jpg"
-              alt="Land near the Mount Kenya processing facility"
-              className="h-64 w-full object-cover md:h-80"
+              src="/images/qc-team.jpg"
+              alt="QC team at work in the Moedim processing facility"
+              className="h-80 w-full object-cover md:h-96"
             />
-            <figcaption className="px-4 py-3 text-xs text-cream-50/60">On the ground</figcaption>
+            <figcaption className="px-4 py-3 text-xs text-cream-50/60">
+              QC team on the floor at the Mount Kenya facility.
+            </figcaption>
           </figure>
         </div>
       </section>
