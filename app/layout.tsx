@@ -24,16 +24,16 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL(env.NEXT_PUBLIC_SITE_URL),
   title: {
-    default: "Moedim — verified African botanicals",
+    default: "Moedim, verified African botanicals",
     template: "%s · Moedim",
   },
   description:
-    "Moedim turns African smallholder botanicals into verified, traceable, buyer-ready ingredients. Sprint W1 preview.",
+    "Moedim turns African smallholder botanicals into verified, traceable, buyer-ready ingredients.",
   robots: { index: true, follow: true },
   openGraph: {
     type: "website",
     siteName: "Moedim",
-    title: "Moedim — verified African botanicals",
+    title: "Moedim, verified African botanicals",
     description:
       "Moedim turns African smallholder botanicals into verified, traceable, buyer-ready ingredients.",
   },

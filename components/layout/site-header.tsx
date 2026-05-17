@@ -3,14 +3,13 @@ import { BrandMark } from "./brand-mark";
 
 interface NavItem {
   label: string;
-  href: "/" | "/buyers" | "/shop" | "/journal" | "/contact";
+  href: "/" | "/buyers" | "/shop" | "/thesis" | "/journal" | "/contact";
 }
 
-// W1 navigation: only the 5 routes that exist. Investors / Farmers / Team / Press / About
-// arrive in W3 (Recognition Spine).
 const NAV_ITEMS: NavItem[] = [
   { label: "Buyers", href: "/buyers" },
   { label: "Shop", href: "/shop" },
+  { label: "Thesis", href: "/thesis" },
   { label: "Journal", href: "/journal" },
   { label: "Contact", href: "/contact" },
 ];

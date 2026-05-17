@@ -2,89 +2,106 @@ import Link from "next/link";
 import { BrandMark } from "@/components/layout/brand-mark";
 
 interface AudienceDoor {
-  surface: "moedimai" | "moedim" | "moedimai-investor" | "jaribu";
   eyebrow: string;
   title: string;
   body: string;
-  href?: "/buyers" | "/shop" | "/journal" | "/contact";
+  href: "/buyers" | "/shop" | "/thesis" | "/jaribu";
   cta: string;
-  comingSoon?: boolean;
 }
 
-// Four-door pattern per V3 §2. The two routes not built in W1 (`investors`,
-// `farmers`) are surfaced honestly as "Coming W3" — placeholder-safe per W0.
 const DOORS: AudienceDoor[] = [
   {
-    surface: "moedimai",
-    eyebrow: "I source cosmetic ingredients",
+    eyebrow: "I SOURCE COSMETIC INGREDIENTS",
     title: "Buyer supply desk",
-    body: "Verified African botanical supply backed by lab evidence, traceability, and smallholder certification systems.",
+    body: "Thirteen Kenyan botanicals available now in bulk. GC-MS specifications, lot-level traceability, samples on request, and direct shipping from Mount Kenya to your facility.",
     href: "/buyers",
     cta: "View buyer supply desk",
   },
   {
-    surface: "moedim",
-    eyebrow: "I want to buy oils",
+    eyebrow: "I WANT TO BUY OILS",
     title: "Shop the botanicals",
-    body: "Kenyan botanical oils with clear origin, safe-use guidance, and lot-level traceability.",
+    body: "Kenyan essential and botanical oils, sold by the bottle. Clear origin, safe-use guidance, M-Pesa checkout, delivered across Kenya.",
     href: "/shop",
     cta: "Shop botanicals",
   },
   {
-    surface: "moedimai-investor",
-    eyebrow: "I am an investor or partner",
+    eyebrow: "I AM AN INVESTOR OR PARTNER",
     title: "Company thesis",
-    body: "Moedim is building data and trust infrastructure for African smallholder botanical supply.",
-    cta: "Coming in W3 (Recognition Spine)",
-    comingSoon: true,
+    body: "Moedim is building chemotype-verification infrastructure for African organic exports. Three hundred farmers live, three thousand in pipeline, nine crops, five tonnes per day of processing capacity.",
+    href: "/thesis",
+    cta: "Read the thesis",
   },
   {
-    surface: "jaribu",
-    eyebrow: "I am a farmer",
+    eyebrow: "I AM A FARMER",
     title: "Jaribu by Moedim",
-    body: "Smallholder onboarding, organic input support, and the YMCA Agricultural School training hub.",
-    cta: "Coming in W3 (Recognition Spine)",
-    comingSoon: true,
+    body: "Above-market prices for your biomass, organic input support, and a path to certified export markets. We're enrolling smallholder farmers across Mount Kenya and expanding.",
+    href: "/jaribu",
+    cta: "Get in touch",
   },
 ];
 
 export default function HomePage() {
   return (
     <>
-      <section className="container py-16 md:py-24">
-        <p className="font-sans text-xs uppercase tracking-[0.18em] text-gold-500">
-          Sprint W1 preview
-        </p>
-        <h1 className="mt-4 max-w-3xl font-display text-4xl leading-tight text-cream-50 md:text-6xl">
-          Verified African botanicals,
-          <br />
-          traceable to the lot.
-        </h1>
-        <p className="mt-6 max-w-2xl text-base text-cream-50/80 md:text-lg">
-          Moedim turns African smallholder botanicals into verified, traceable, buyer-ready
-          ingredients. The page below routes you to the right door — buyer, shopper, investor, or
-          farmer.
-        </p>
-        <dl className="mt-10 grid max-w-2xl grid-cols-2 gap-x-8 gap-y-3 text-sm md:grid-cols-4">
-          <div>
-            <dt className="text-cream-50/60">Origin</dt>
-            <dd className="mt-1 text-cream-50">Mount Kenya</dd>
+      <section className="relative overflow-hidden">
+        <div
+          aria-hidden
+          className="absolute inset-0 bg-cover bg-center opacity-30"
+          style={{ backgroundImage: "url('/images/lavender-field.jpg')" }}
+        />
+        <div
+          aria-hidden
+          className="absolute inset-0 bg-gradient-to-b from-navy-900/80 via-navy-900/75 to-navy-900"
+        />
+        <div className="container relative py-20 md:py-28">
+          <p className="font-sans text-xs uppercase tracking-[0.22em] text-gold-500">
+            Rooted in Africa. Refined for the world.
+          </p>
+          <h1 className="mt-5 max-w-3xl font-display text-4xl leading-[1.05] text-cream-50 md:text-6xl">
+            Verified African botanicals,
+            <br />
+            traceable to the lot.
+          </h1>
+          <p className="mt-6 max-w-2xl text-base text-cream-50/85 md:text-lg">
+            Thirteen Kenyan-grown botanical oils, sold by the bottle and by the kilogram. Every lot
+            is GC-MS profiled, traceable from farm to dispatch, and shipped worldwide from our Mount
+            Kenya operations.
+          </p>
+          <div className="mt-8 flex flex-wrap items-center gap-3">
+            <Link
+              href="/shop"
+              className="inline-flex h-12 items-center justify-center rounded-md bg-gold-500 px-6 text-sm font-medium text-navy-900 transition-colors hover:bg-gold-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-300 focus-visible:ring-offset-2 focus-visible:ring-offset-navy-900"
+            >
+              Shop the oils
+            </Link>
+            <Link
+              href="/buyers"
+              className="inline-flex h-12 items-center justify-center rounded-md border border-gold-500 px-6 text-sm font-medium text-cream-50 transition-colors hover:bg-gold-500/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-500 focus-visible:ring-offset-2 focus-visible:ring-offset-navy-900"
+            >
+              Buyer supply desk
+            </Link>
           </div>
-          <div>
-            <dt className="text-cream-50/60">EU operations</dt>
-            <dd className="mt-1 text-cream-50">Rotterdam</dd>
-          </div>
-          <div>
-            <dt className="text-cream-50/60">US holding</dt>
-            <dd className="mt-1 text-cream-50">Delaware</dd>
-          </div>
-          <div>
-            <dt className="text-cream-50/60">Trust mark</dt>
-            <dd className="mt-1">
-              <BrandMark surface="verified" size="sm" />
-            </dd>
-          </div>
-        </dl>
+          <dl className="mt-12 grid max-w-3xl grid-cols-2 gap-x-8 gap-y-4 text-sm md:grid-cols-4">
+            <div>
+              <dt className="text-cream-50/60">Origin</dt>
+              <dd className="mt-1 text-cream-50">Mount Kenya</dd>
+            </div>
+            <div>
+              <dt className="text-cream-50/60">EU operations</dt>
+              <dd className="mt-1 text-cream-50">Rotterdam</dd>
+            </div>
+            <div>
+              <dt className="text-cream-50/60">US holding</dt>
+              <dd className="mt-1 text-cream-50">Delaware</dd>
+            </div>
+            <div>
+              <dt className="text-cream-50/60">Trust mark</dt>
+              <dd className="mt-1">
+                <BrandMark surface="verified" size="sm" />
+              </dd>
+            </div>
+          </dl>
+        </div>
       </section>
 
       <section
@@ -96,19 +113,14 @@ export default function HomePage() {
             Choose your path
           </h2>
           <p className="mt-3 max-w-2xl text-sm text-cream-50/70 md:text-base">
-            One site, four audiences. Each door takes you to the right level of detail.
+            One brand, four doors. Each one takes you where you want to go.
           </p>
 
           <div className="mt-10 grid gap-6 sm:grid-cols-2">
             {DOORS.map((door) => (
-              <AudienceDoorCard key={door.eyebrow} door={door} />
+              <AudienceDoorCard key={door.href} door={door} />
             ))}
           </div>
-
-          <p className="mt-10 text-xs text-cream-50/50">
-            Investor and Jaribu doors arrive in Sprint W3 (Recognition Spine). Routes shown are
-            placeholder-safe per the W0 preflight.
-          </p>
         </div>
       </section>
     </>
@@ -116,43 +128,24 @@ export default function HomePage() {
 }
 
 function AudienceDoorCard({ door }: { door: AudienceDoor }) {
-  const card = (
-    <article
-      className={[
-        "group flex h-full flex-col justify-between rounded-lg border border-cream-50/10 bg-navy-900/60 p-6 transition-colors",
-        door.comingSoon ? "opacity-70" : "hover:border-gold-500/40 hover:bg-navy-900",
-      ].join(" ")}
-    >
-      <div>
-        <p className="font-sans text-xs uppercase tracking-[0.16em] text-gold-500">
-          {door.eyebrow}
-        </p>
-        <h3 className="mt-3 font-display text-xl text-cream-50 md:text-2xl">{door.title}</h3>
-        <p className="mt-3 text-sm text-cream-50/75 md:text-base">{door.body}</p>
-      </div>
-      <div className="mt-6 flex items-center justify-between">
-        <span className="text-sm text-cream-50/60">{door.cta}</span>
-        {door.comingSoon ? (
-          <span className="rounded-full border border-cream-50/15 px-2 py-1 text-[0.7rem] uppercase tracking-wider text-cream-50/60">
-            Coming W3
-          </span>
-        ) : (
-          <span className="text-gold-500 transition-transform group-hover:translate-x-0.5">→</span>
-        )}
-      </div>
-    </article>
-  );
-
-  if (door.comingSoon || !door.href) {
-    return <div aria-disabled="true">{card}</div>;
-  }
-
   return (
     <Link
       href={door.href}
-      className="rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-500 focus-visible:ring-offset-2 focus-visible:ring-offset-navy-900"
+      className="group block rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-500 focus-visible:ring-offset-2 focus-visible:ring-offset-navy-900"
     >
-      {card}
+      <article className="flex h-full flex-col justify-between rounded-lg border border-cream-50/10 bg-navy-900/60 p-6 transition-colors hover:border-gold-500/40 hover:bg-navy-900">
+        <div>
+          <p className="font-sans text-xs uppercase tracking-[0.16em] text-gold-500">
+            {door.eyebrow}
+          </p>
+          <h3 className="mt-3 font-display text-xl text-cream-50 md:text-2xl">{door.title}</h3>
+          <p className="mt-3 text-sm text-cream-50/75 md:text-base">{door.body}</p>
+        </div>
+        <div className="mt-6 flex items-center justify-between text-sm">
+          <span className="text-cream-50/70">{door.cta}</span>
+          <span className="text-gold-500 transition-transform group-hover:translate-x-0.5">→</span>
+        </div>
+      </article>
     </Link>
   );
 }
