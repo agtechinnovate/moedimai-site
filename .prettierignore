@@ -1,0 +1,4 @@
+.next/
+node_modules/
+docs/website/*.md
+legacy/static-site/README.md

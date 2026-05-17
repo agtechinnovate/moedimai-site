@@ -1,0 +1,95 @@
+# Moedim — verified African botanicals
+
+Moedim is an organic agricultural supply chain company connecting Kenyan smallholder farmers to EU and US essential-oil and botanical buyers. The company turns African smallholder botanicals into verified, traceable, buyer-ready ingredients.
+
+## Brand architecture
+
+- **Moedim** is the public consumer/product brand. It appears on the storefront, packaging, and retail communications.
+- **MoedimAI** is the verification and B2B platform brand. It appears on buyer-facing pages, the buyer portal, investor materials, and technical documents.
+- **Moedim Verified** is the trust mark applied to lots, COA bundles, and evidence packets surfaced to buyers.
+- **Jaribu by Moedim** is the farmer-recruitment surface — out-grower onboarding, training, organic input support.
+
+## Structure
+
+- **Moedim Africa Ltd** — Kenya operating entity. Manages farmer relationships, processing partnership with Muchiri's Mount Kenya facility (5 t/day distillation), QC, and Kenyan retail.
+- **Moedim EU BV** — Netherlands operating entity (in formation). Manages EU buyer relationships and Rotterdam port operations.
+- **Moedai LLC** — US Delaware holding entity. Seller of record for international shipments via Stripe US.
+
+## Founder
+
+Vivian Nwakah, founder and CEO. Previously founded Medsaf, a pharmaceutical supply-chain platform in Nigeria.
+
+## Scale (as of Sprint W2)
+
+- 300 active smallholder farmers (3,000 in onboarding pipeline)
+- 9 export-ready essential oils + 3 botanical oils = 13 SKUs
+- 5 t/day processing capacity at the Mount Kenya distillation facility
+- First commercial supply: Q1 2027
+- Operating across Kenya, the Netherlands, and the United States
+
+## What Moedim supplies
+
+### Essential oils (steam-distilled, 10ml bottles)
+
+- Rosemary (Rosmarinus officinalis) — ISO 1342
+- Eucalyptus (Eucalyptus globulus) — ISO 770
+- Peppermint (Mentha × piperita) — ISO 856
+- Tea Tree (Melaleuca alternifolia) — ISO 4730
+- English Lavender (Lavandula angustifolia) — ISO 3515
+- Rose Geranium (Pelargonium graveolens) — ISO 4731
+- Wild Basil (Ocimum spp.) — Kenya-distinctive, custom chemotype
+- Leleshwa (Tarchonanthus camphoratus) — Kenya-indigenous, custom chemotype
+- Lippia (Lippia javanica) — Kenya-distinctive, custom chemotype
+- Immortelle (Helichrysum splendidum) — African analog to H. italicum, custom chemotype
+
+### Botanical / carrier oils (cold-pressed, 30ml bottles)
+
+- Neem (Azadirachta indica)
+- Baobab (Adansonia digitata)
+- Moringa (Moringa oleifera)
+
+## How buyers verify a Moedim lot
+
+Every lot supplied to a buyer carries a Moedim Verified evidence packet. The packet contains:
+
+- COA — GC-MS chromatogram (essential oils) or FAME fatty-acid profile (cold-pressed oils)
+- SDS / MSDS — safety data sheet
+- IFRA — certificate of conformity for fragrance use
+- Allergen statement
+- Pesticide residue panel
+- Heavy metals panel
+- Microbiology panel
+- Organic conversion evidence (where applicable)
+- Chain of custody
+- Phytosanitary certificate (per shipment)
+
+Each document carries one of five explicit status labels: **active** (real, current), **pending** (lab cycle in progress), **sample** (template — not a real Moedim lot), **expired**, or **not applicable**. Moedim never displays evidence as `active` without an actual document on file. A document marked `sample` is a publicly-shareable example, not a verifiable claim.
+
+## How sample requests work
+
+1. A foreign bulk buyer submits an RFQ through the wholesale page with company, contact, country, products of interest, target volume, desired chemotype, intended use, and required documents.
+2. Moedim reviews the inquiry within 48 hours and either approves the company, asks for additional information, or declines.
+3. Approved buyers receive a magic-link sample-request page. They select up to five oils, each shipped as a 5 ml bottle at $25 plus international shipping (DHL Express default).
+4. Each sample ships with its Moedim Verified evidence packet for the active lot.
+5. After delivery, Moedim runs a 30-day nurture sequence and schedules a 30-minute call to discuss bulk volumes and pricing.
+
+## How consumer retail works (Kenya, first)
+
+Kenyan retail customers pay through M-Pesa STK Push. Each order generates a KRA eTIMS-compliant electronic tax invoice in real time. International retail launches after Stripe and international shipping wire in.
+
+## Where Moedim operates
+
+- **Mount Kenya highlands** — primary growing region for essential oils.
+- **Kenyan lowlands** — Neem, Baobab, and Moringa.
+- **Rotterdam, Netherlands** — EU import + distribution platform (in formation, Moedim EU BV).
+- **Delaware, United States** — US holding entity, Moedai LLC.
+
+## Editorial standards
+
+Moedim does not make therapeutic, medical, or "chemical-free" claims. All product copy is capability-first: specific compounds, specific origin, specific certifications, specific availability. Aspirational marketing language is deliberately absent from the buyer surface.
+
+---
+
+Tagline: *From African soil to the world.*
+
+Moedim turns African smallholder botanicals into verified, traceable, buyer-ready ingredients.
