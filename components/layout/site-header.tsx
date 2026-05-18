@@ -3,13 +3,14 @@ import Link from "next/link";
 
 interface NavItem {
   label: string;
-  href: "/" | "/buyers" | "/thesis" | "/jaribu";
+  href: "/" | "/buyers" | "/thesis" | "/jaribu" | "/about";
 }
 
 const NAV_ITEMS: NavItem[] = [
   { label: "Buyers", href: "/buyers" },
   { label: "Thesis", href: "/thesis" },
   { label: "Jaribu", href: "/jaribu" },
+  { label: "About", href: "/about" },
 ];
 
 export function SiteHeader() {

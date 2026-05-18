@@ -16,7 +16,7 @@ export function GET() {
 
 ## What each shipment carries
 
-Every Moedim Verified evidence packet includes:
+Every MoedimAI Verified evidence packet includes:
 
 - COA, GC-MS chromatogram for essential oils or FAME fatty-acid profile for cold-pressed oils
 - SDS or MSDS, safety data sheet

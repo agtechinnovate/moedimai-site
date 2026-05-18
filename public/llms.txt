@@ -14,6 +14,13 @@
 
 - [Jaribu by MoedimAI](https://www.moedimai.com/jaribu.md): Above-market prices for biomass, organic input support, and a path to certified export markets.
 
+## About the company
+
+- [About MoedimAI](https://www.moedimai.com/about.md): Kenyan production company with EU operations in Rotterdam and a US holding in Delaware. Founded and led by Vivian Nwakah.
+- [Our approach](https://www.moedimai.com/approach.md): Five steps from smallholder plot to verified lot. ICS, processing, QC, and dispatch under EU 2018/848 and USDA NOP.
+- [Team](https://www.moedimai.com/team.md): Vivian Nwakah and the Mount Kenya and Rotterdam team.
+- [Press](https://www.moedimai.com/press.md): Press kit, fact sheet, logos, and media inquiries.
+
 ## Contact
 
 vivian@moedimAI.com

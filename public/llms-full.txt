@@ -77,6 +77,19 @@ Every lot supplied to a buyer carries a MoedimAI Verified evidence packet. The p
 - Rotterdam, Netherlands, EU import and distribution platform.
 - Delaware, United States, holding entity.
 
+## Public pages
+
+- /, homepage, audience doors for buyers, investors, and farmers.
+- /buyers, buyer supply desk with catalogue, evidence packet, and engagement steps.
+- /thesis, investor thesis with chemotype journey, three pillars, and operating metrics.
+- /jaribu, farmer program with offers and email enrolment.
+- /about, company structure, where MoedimAI operates, and founder.
+- /approach, five-step process from plot to lot, plus operating principles.
+- /team, Vivian Nwakah and the Mount Kenya and Rotterdam team.
+- /press, fact sheet, brand assets, founder bio, media inquiries inbox.
+
+Markdown mirrors exist at the matching .md route for every public page (for example /about.md).
+
 ## Editorial standards
 
 MoedimAI does not make therapeutic, medical, or "chemical-free" claims. Product copy stays specific: named compounds, named origin, named certifications, named availability.

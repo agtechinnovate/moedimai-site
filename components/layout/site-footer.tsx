@@ -35,6 +35,26 @@ export function SiteFooter() {
                   Jaribu by MoedimAI
                 </Link>
               </li>
+              <li>
+                <Link href="/about" className="text-cream-50/80 hover:text-cream-50">
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link href="/approach" className="text-cream-50/80 hover:text-cream-50">
+                  Our approach
+                </Link>
+              </li>
+              <li>
+                <Link href="/team" className="text-cream-50/80 hover:text-cream-50">
+                  Team
+                </Link>
+              </li>
+              <li>
+                <Link href="/press" className="text-cream-50/80 hover:text-cream-50">
+                  Press
+                </Link>
+              </li>
             </ul>
           </div>
           <div>
