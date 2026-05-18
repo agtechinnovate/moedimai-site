@@ -10,5 +10,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/buyers`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
     { url: `${baseUrl}/thesis`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     { url: `${baseUrl}/jaribu`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${baseUrl}/about`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${baseUrl}/approach`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${baseUrl}/team`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
+    { url: `${baseUrl}/press`, lastModified: now, changeFrequency: "monthly", priority: 0.5 },
   ];
 }

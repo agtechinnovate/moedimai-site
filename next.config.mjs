@@ -7,6 +7,12 @@ const nextConfig = {
   experimental: {
     typedRoutes: true,
   },
+  async redirects() {
+    return [
+      { source: "/investors", destination: "/thesis", permanent: true },
+      { source: "/farmers", destination: "/jaribu", permanent: true },
+    ];
+  },
 };
 
 export default nextConfig;
