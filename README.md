@@ -5,13 +5,16 @@ Previous sprint: W1 — Foundation and brand system (merged).
 
 Dedicated Next.js 14 App Router app for the Moedim / MoedimAI public site. This repository is the dedicated public website repo.
 
-This is the _website_ app — distinct from the existing platform admin at `admin.moedimai.com` (which manages farmer ops, QC, harvest, M-Pesa to farmers, ICS, and certification).
+This is the _website_ app — distinct from the platform app at `app.moedim.ai` and the public farmer intake surface at `intake.moedim.ai`.
 
 | Surface                                          | URL                                          | Owner                                   |
 | ------------------------------------------------ | -------------------------------------------- | --------------------------------------- |
-| Public website (this app)                        | `www.moedimai.com`                           | Website implementation owner per sprint |
-| Website light admin (this app, subdomain routed) | `manage.moedimai.com` (added in Sprints W3+) | Website implementation owner            |
-| Platform admin (existing, separate codebase)     | `admin.moedimai.com`                         | Existing platform team                  |
+| Public website (this app)                        | `www.moedim.ai`                              | Website implementation owner per sprint |
+| Farmer intake (separate app)                     | `intake.moedim.ai/intake`                    | Platform/intake implementation owner    |
+| Platform app (separate codebase)                 | `app.moedim.ai`                              | Platform team                           |
+| Website light admin (this app, subdomain routed) | `manage.moedim.ai` (added in Sprints W3+)    | Website implementation owner            |
+
+The canonical public brand URL is `https://www.moedim.ai`. The apex `https://moedim.ai` should redirect to `https://www.moedim.ai` once DNS points at the website host. The legacy `https://www.moedimai.com` can remain live during transition and should eventually redirect to the canonical `www.moedim.ai` domain after sign-off. Do not merge this website with `app.moedim.ai` or embed the intake app in this repo.
 
 ---
 

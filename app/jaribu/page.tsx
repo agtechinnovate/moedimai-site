@@ -80,10 +80,10 @@ export default function JaribuPage() {
           </p>
           <div className="mt-8">
             <a
-              href="mailto:vivian@moedimAI.com?subject=Jaribu%20enrolment%20enquiry"
+              href="mailto:info@moedim.ai?subject=Jaribu%20enrolment%20enquiry"
               className="inline-flex h-12 items-center justify-center rounded-md bg-gold-500 px-6 text-sm font-medium text-navy-900 transition-colors hover:bg-gold-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-300 focus-visible:ring-offset-2 focus-visible:ring-offset-navy-900"
             >
-              Email vivian@moedimAI.com
+              Email info@moedim.ai
             </a>
           </div>
         </div>

@@ -15,7 +15,7 @@ import { z } from "zod";
 
 const publicSchema = z.object({
   // Site
-  NEXT_PUBLIC_SITE_URL: z.string().url().default("http://localhost:3000"),
+  NEXT_PUBLIC_SITE_URL: z.string().url().default("https://www.moedim.ai"),
 
   // Analytics — all optional
   NEXT_PUBLIC_PLAUSIBLE_DOMAIN: z.string().min(1).optional(),

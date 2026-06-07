@@ -162,13 +162,13 @@ export default function BuyersPage() {
 
           <div className="mt-12 flex flex-wrap items-center gap-3">
             <a
-              href="mailto:vivian@moedimAI.com?subject=Buyer%20information%20request"
+              href="mailto:info@moedim.ai?subject=Buyer%20information%20request"
               className="inline-flex h-12 items-center justify-center rounded-md bg-gold-500 px-6 text-sm font-medium text-navy-900 transition-colors hover:bg-gold-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-300 focus-visible:ring-offset-2 focus-visible:ring-offset-navy-900"
             >
               Contact now
             </a>
             <a
-              href="mailto:vivian@moedimAI.com?subject=RFQ%20submission"
+              href="mailto:info@moedim.ai?subject=RFQ%20submission"
               className="inline-flex h-12 items-center justify-center rounded-md border border-gold-500 px-6 text-sm font-medium text-cream-50 transition-colors hover:bg-gold-500/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-500 focus-visible:ring-offset-2 focus-visible:ring-offset-navy-900"
             >
               Submit an RFQ
@@ -177,10 +177,10 @@ export default function BuyersPage() {
           <p className="mt-6 text-sm text-cream-50/70">
             Direct contact:{" "}
             <a
-              href="mailto:vivian@moedimAI.com"
+              href="mailto:info@moedim.ai"
               className="text-gold-500 underline-offset-4 hover:underline"
             >
-              vivian@moedimAI.com
+              info@moedim.ai
             </a>
           </p>
         </div>
