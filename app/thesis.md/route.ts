@@ -29,7 +29,7 @@ Insurance prices climate and yield risk. Banks and DFIs lend against verified pe
 
 ## Contact
 
-Vivian Nwakah, Founder and CEO. vivian@moedimAI.com
+Vivian Nwakah, Founder and CEO. info@moedim.ai
 `;
   return new NextResponse(md, {
     headers: {

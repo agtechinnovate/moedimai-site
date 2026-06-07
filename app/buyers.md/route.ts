@@ -37,7 +37,7 @@ Every Moedim Verified evidence packet includes:
 
 ## Contact
 
-vivian@moedimai.com
+info@moedim.ai
 `.trim(),
   });
 }

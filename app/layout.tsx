@@ -29,9 +29,13 @@ export const metadata: Metadata = {
   },
   description:
     "MoedimAI turns African smallholder botanicals into verified, traceable, buyer-ready ingredients.",
+  alternates: {
+    canonical: "/",
+  },
   robots: { index: true, follow: true },
   openGraph: {
     type: "website",
+    url: "/",
     siteName: "MoedimAI",
     title: "MoedimAI, verified African botanicals",
     description:

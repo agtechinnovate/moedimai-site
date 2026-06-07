@@ -2,6 +2,21 @@
 const nextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
+  async redirects() {
+    return [
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "moedim.ai" }],
+        destination: "https://www.moedim.ai/:path*",
+        permanent: true,
+      },
+      {
+        source: "/intake",
+        destination: "https://intake.moedim.ai/intake",
+        permanent: false,
+      },
+    ];
+  },
   async rewrites() {
     return {
       beforeFiles: [

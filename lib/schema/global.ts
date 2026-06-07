@@ -52,7 +52,7 @@ export const organizationSchema = {
   ],
   contactPoint: {
     "@type": "ContactPoint",
-    email: "vivian@moedimAI.com",
+    email: "info@moedim.ai",
     contactType: "general",
   },
 } as const;

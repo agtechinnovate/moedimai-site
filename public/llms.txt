@@ -4,16 +4,18 @@
 
 ## For buyers
 
-- [Buyer supply desk](https://www.moedimai.com/buyers.md): MoedimAI for cosmetic, fragrance, and wellness buyers. Thirteen Kenyan botanicals available by the kilogram with full documentation.
+- [Buyer supply desk](https://www.moedim.ai/buyers.md): MoedimAI for cosmetic, fragrance, and wellness buyers. Thirteen Kenyan botanicals available by the kilogram with full documentation.
 
 ## For investors and partners
 
-- [Company thesis](https://www.moedimai.com/thesis.md): Chemotype-verification infrastructure for African organic exports. Three hundred farmers live, three thousand in pipeline, nine crops, 5 to 10 tonnes per day of processing capacity once the second distillation partner is online.
+- [Company thesis](https://www.moedim.ai/thesis.md): Chemotype-verification infrastructure for African organic exports. Three hundred farmers live, three thousand in pipeline, nine crops, 5 to 10 tonnes per day of processing capacity once the second distillation partner is online.
 
 ## For farmers
 
-- [Jaribu by MoedimAI](https://www.moedimai.com/jaribu.md): Above-market prices for biomass, organic input support, and a path to certified export markets.
+- [Jaribu by MoedimAI](https://www.moedim.ai/jaribu.md): Above-market prices for biomass, organic input support, and a path to certified export markets.
+
+- [Farmer Intake](https://intake.moedim.ai/intake): Public farmer intake form hosted separately from the marketing website and platform app.
 
 ## Contact
 
-vivian@moedimAI.com
+info@moedim.ai

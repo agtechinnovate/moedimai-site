@@ -229,22 +229,22 @@ export default function ThesisPage() {
             For investor materials, partnership inquiries, or research collaboration, contact Vivian
             Nwakah, Founder and CEO, at{" "}
             <a
-              href="mailto:vivian@moedimAI.com"
+              href="mailto:info@moedim.ai"
               className="text-gold-500 underline-offset-4 hover:underline"
             >
-              vivian@moedimAI.com
+              info@moedim.ai
             </a>
             .
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-3">
             <a
-              href="mailto:vivian@moedimAI.com?subject=Investor%20information%20request"
+              href="mailto:info@moedim.ai?subject=Investor%20information%20request"
               className="inline-flex h-12 items-center justify-center rounded-md bg-gold-500 px-6 text-sm font-medium text-navy-900 transition-colors hover:bg-gold-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-300 focus-visible:ring-offset-2 focus-visible:ring-offset-navy-900"
             >
               Contact now
             </a>
             <a
-              href="mailto:vivian@moedimAI.com?subject=Book%20a%20call"
+              href="mailto:info@moedim.ai?subject=Book%20a%20call"
               className="inline-flex h-12 items-center justify-center rounded-md border border-gold-500 px-6 text-sm font-medium text-cream-50 transition-colors hover:bg-gold-500/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-500 focus-visible:ring-offset-2 focus-visible:ring-offset-navy-900"
             >
               Book a call
