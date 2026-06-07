@@ -121,7 +121,7 @@ nav{position:sticky;top:0;z-index:50;backdrop-filter:blur(12px);background:rgba(
 .africa-view{position:relative;min-height:472px;border-right:1px solid var(--line);overflow:hidden;background:radial-gradient(520px 360px at 58% 48%,rgba(74,144,194,.11),transparent 72%),linear-gradient(180deg,rgba(255,255,255,.018),transparent)}
 .africa-view:before{content:"";position:absolute;inset:0;background:linear-gradient(rgba(255,255,255,.018) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.018) 1px,transparent 1px);background-size:36px 36px;opacity:.7}
 .africa-map{position:absolute;inset:26px 22px 24px 22px;width:calc(100% - 44px);height:calc(100% - 50px);filter:drop-shadow(0 28px 40px rgba(0,0,0,.28))}
-.continent{fill:#111927;stroke:rgba(151,177,205,.18);stroke-width:1.4}
+.continent{fill:#111927;stroke:rgba(151,177,205,.24);stroke-width:1.6}
 .map-line{fill:none;stroke:rgba(255,255,255,.055);stroke-width:.9}
 .country-active{fill:rgba(74,144,194,.26);stroke:rgba(121,184,224,.88);stroke-width:1.4}
 .country-watch{fill:rgba(200,162,74,.16);stroke:rgba(200,162,74,.72);stroke-width:1.2}
@@ -149,6 +149,8 @@ nav{position:sticky;top:0;z-index:50;backdrop-filter:blur(12px);background:rgba(
 .map-label.small{font-size:8.5px;fill:#8290A5}
 .map-label.blue{fill:var(--cyan-bri)}
 .map-label.gold{fill:var(--gold)}
+.map-label.africa-title{font-size:26px;letter-spacing:.18em;fill:rgba(233,238,245,.26)}
+.map-label.coast{font-size:8px;letter-spacing:.16em;fill:rgba(138,151,171,.56)}
 .map-pin{fill:var(--cyan-bri);stroke:#06101A;stroke-width:2}
 .map-legend{position:absolute;left:18px;bottom:17px;display:flex;gap:10px;flex-wrap:wrap;font-family:var(--mono);font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
 .map-legend span{display:flex;align-items:center;gap:6px;border:1px solid var(--line);border-radius:5px;padding:5px 7px;background:rgba(10,13,19,.72);backdrop-filter:blur(8px)}
@@ -410,11 +412,11 @@ footer{border-top:1px solid var(--line);padding:44px 0 38px;background:rgba(0,0,
           <svg class="africa-map" viewBox="0 0 560 470" role="img" aria-label="Map of Africa with Kenya, Uganda, and Tanzania highlighted, active operating cells, and weather overlays">
             <defs>
               <clipPath id="africaClip">
-                <path d="M286 18C250 22 231 42 216 72C205 93 177 85 158 106C136 130 147 157 123 174C96 193 98 225 114 247C134 274 120 304 143 331C160 350 186 357 195 390C203 421 223 445 244 456C262 466 284 456 293 435C306 404 326 383 350 358C371 336 383 308 413 286C443 264 484 228 481 198C479 178 449 171 439 143C430 118 437 90 414 62C388 30 332 13 286 18Z"></path>
+                <path d="M240 20C205 25 178 45 160 74C136 74 113 87 98 112C79 127 77 151 91 173C76 198 85 228 111 249C137 271 150 303 144 331C139 362 151 391 177 405C205 420 227 437 242 461C257 481 276 467 281 439C287 404 306 382 331 358C353 337 368 303 392 283C419 262 450 247 478 226C502 209 526 204 548 209C526 190 496 181 480 162C462 140 453 112 425 87C398 61 363 43 323 36C293 31 270 16 240 20Z"></path>
               </clipPath>
             </defs>
-            <path class="continent" d="M286 18C250 22 231 42 216 72C205 93 177 85 158 106C136 130 147 157 123 174C96 193 98 225 114 247C134 274 120 304 143 331C160 350 186 357 195 390C203 421 223 445 244 456C262 466 284 456 293 435C306 404 326 383 350 358C371 336 383 308 413 286C443 264 484 228 481 198C479 178 449 171 439 143C430 118 437 90 414 62C388 30 332 13 286 18Z"></path>
-            <path class="continent" d="M459 323C476 349 480 383 463 421C447 454 429 448 429 416C430 383 442 346 459 323Z" opacity=".58"></path>
+            <path class="continent" d="M240 20C205 25 178 45 160 74C136 74 113 87 98 112C79 127 77 151 91 173C76 198 85 228 111 249C137 271 150 303 144 331C139 362 151 391 177 405C205 420 227 437 242 461C257 481 276 467 281 439C287 404 306 382 331 358C353 337 368 303 392 283C419 262 450 247 478 226C502 209 526 204 548 209C526 190 496 181 480 162C462 140 453 112 425 87C398 61 363 43 323 36C293 31 270 16 240 20Z"></path>
+            <path class="continent" d="M463 315C483 345 489 384 470 424C452 458 432 450 433 415C434 379 448 343 463 315Z" opacity=".62"></path>
             <g clip-path="url(#africaClip)">
               <path class="sat-sweep" d="M92 76L515 216L497 283L74 144Z"></path>
               <path class="map-line" d="M160 112C230 132 322 132 430 111"></path>
@@ -452,6 +454,11 @@ footer{border-top:1px solid var(--line);padding:44px 0 38px;background:rgba(0,0,
             <text x="398" y="318" class="map-label small blue" data-country="tanzania">Tanzania</text>
             <text x="126" y="82" class="map-label">Africa map view</text>
             <text x="126" y="100" class="map-label small">Example countries and cells highlighted</text>
+            <text x="154" y="161" class="map-label africa-title">AFRICA</text>
+            <text x="66" y="306" class="map-label coast">Atlantic Ocean</text>
+            <text x="410" y="386" class="map-label coast">Indian Ocean</text>
+            <text x="470" y="190" class="map-label coast">Horn of Africa</text>
+            <text x="219" y="112" class="map-label coast">Sahara</text>
             <text x="302" y="377" class="map-label gold">Rainfall stress front</text>
           </svg>
           <div class="map-legend">
