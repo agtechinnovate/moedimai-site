@@ -114,7 +114,8 @@ nav{position:sticky;top:0;z-index:50;backdrop-filter:blur(12px);background:rgba(
 .map-dash-top{display:flex;align-items:center;gap:12px;justify-content:space-between;padding:13px 16px;border-bottom:1px solid var(--line);background:rgba(0,0,0,.18)}
 .map-dash-title{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--cyan)}
 .map-dash-meta{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
-.layer-pill{font-family:var(--mono);font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);border:1px solid var(--line);border-radius:5px;padding:4px 8px;background:rgba(255,255,255,.025)}
+.layer-pill{appearance:none;font-family:var(--mono);font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);border:1px solid var(--line);border-radius:5px;padding:4px 8px;background:rgba(255,255,255,.025);cursor:pointer}
+.layer-pill:focus-visible,.country-row:focus-visible,.cell:focus-visible{outline:2px solid var(--cyan-bri);outline-offset:3px}
 .layer-pill.on{color:var(--cyan-bri);border-color:var(--line-cy);background:rgba(74,144,194,.08)}
 .map-dash-body{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(290px,.85fr)}
 .africa-view{position:relative;min-height:472px;border-right:1px solid var(--line);overflow:hidden;background:radial-gradient(520px 360px at 58% 48%,rgba(74,144,194,.11),transparent 72%),linear-gradient(180deg,rgba(255,255,255,.018),transparent)}
@@ -124,9 +125,12 @@ nav{position:sticky;top:0;z-index:50;backdrop-filter:blur(12px);background:rgba(
 .map-line{fill:none;stroke:rgba(255,255,255,.055);stroke-width:.9}
 .country-active{fill:rgba(74,144,194,.26);stroke:rgba(121,184,224,.88);stroke-width:1.4}
 .country-watch{fill:rgba(200,162,74,.16);stroke:rgba(200,162,74,.72);stroke-width:1.2}
-.cell{fill:rgba(111,190,139,.28);stroke:rgba(167,230,190,.9);stroke-width:1.1}
+.country-active,.country-watch,.cell,.map-pin,.map-label,.weather-band,.weather-dash,.sat-sweep{transition:opacity .2s,filter .2s,stroke-width .2s}
+.cell{fill:rgba(111,190,139,.28);stroke:rgba(167,230,190,.9);stroke-width:1.1;cursor:pointer}
 .cell.watch{fill:rgba(200,162,74,.26);stroke:rgba(224,198,116,.95)}
 .cell.risk{fill:rgba(224,135,90,.28);stroke:rgba(224,135,90,.95)}
+.cell.active{stroke-width:2.7;filter:drop-shadow(0 0 9px rgba(121,184,224,.68))}
+.cell.risk.active{filter:drop-shadow(0 0 10px rgba(224,135,90,.72))}
 .weather-band{fill:none;stroke:rgba(74,144,194,.28);stroke-width:28;stroke-linecap:round}
 .weather-band.hot{stroke:rgba(224,135,90,.18);stroke-width:22}
 .weather-dash{fill:none;stroke:rgba(121,184,224,.52);stroke-width:1.5;stroke-dasharray:4 8}
@@ -148,8 +152,10 @@ nav{position:sticky;top:0;z-index:50;backdrop-filter:blur(12px);background:rgba(
 .side-head{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 12px;border-bottom:1px solid var(--line);font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--cyan)}
 .side-head span{color:var(--faint)}
 .country-list,.weather-stack{padding:11px 12px}
-.country-row{display:grid;grid-template-columns:88px 1fr auto;gap:10px;align-items:center;padding:9px 0;border-bottom:1px solid rgba(255,255,255,.045)}
+.country-row{appearance:none;width:100%;border:0;border-bottom:1px solid rgba(255,255,255,.045);background:transparent;color:inherit;font:inherit;text-align:left;display:grid;grid-template-columns:88px 1fr auto;gap:10px;align-items:center;padding:9px 0;cursor:pointer;transition:opacity .2s,background .2s,padding .2s}
 .country-row:last-child{border-bottom:none}
+.country-row:hover,.country-row.active{background:rgba(74,144,194,.055)}
+.country-row.active{padding-left:8px;padding-right:8px}
 .country-name{font-size:13px;color:var(--ink);font-weight:650}
 .country-bar{height:6px;border-radius:10px;background:rgba(255,255,255,.07);overflow:hidden}
 .country-bar i{display:block;height:100%;border-radius:inherit;background:linear-gradient(90deg,var(--cyan),var(--ok))}
@@ -166,6 +172,22 @@ nav{position:sticky;top:0;z-index:50;backdrop-filter:blur(12px);background:rgba(
 .alert-tile .n{font-family:var(--mono);font-size:20px;color:var(--ink);line-height:1}
 .alert-tile .t{font-family:var(--mono);font-size:9px;letter-spacing:.08em;text-transform:uppercase;color:var(--faint);margin-top:5px}
 .alert-tile.risk .n{color:var(--risk)}
+.cell-detail{border:1px solid var(--line-cy);border-radius:10px;background:rgba(74,144,194,.065);padding:12px 12px;margin-bottom:12px}
+.cell-detail .micro{font-family:var(--mono);font-size:9.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--cyan);margin-bottom:6px}
+.cell-detail h3{font-family:var(--serif);font-size:18px;color:var(--ink);margin-bottom:5px;letter-spacing:0}
+.cell-detail p{font-size:12.5px;color:var(--muted);line-height:1.48}
+.cell-detail .action{margin-top:9px;font-family:var(--mono);font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--gold)}
+.map-dashboard.hide-countries .country-active,.map-dashboard.hide-countries .country-watch{opacity:.08}
+.map-dashboard.hide-cells .cell,.map-dashboard.hide-cells .map-pin{opacity:.08;pointer-events:none}
+.map-dashboard.hide-ndvi .sat-sweep,.map-dashboard.hide-ndvi .weather-dash{opacity:.06}
+.map-dashboard.hide-rainfall .weather-band,.map-dashboard.hide-rainfall .weather-dash,.map-dashboard.hide-rainfall .map-label.gold{opacity:.07}
+.map-dashboard.hide-risk .cell.risk,.map-dashboard.hide-risk .weather-band.hot{opacity:.08}
+.map-dashboard[data-active-country="kenya"] [data-country]:not([data-country="kenya"]),
+.map-dashboard[data-active-country="tanzania"] [data-country]:not([data-country="tanzania"]),
+.map-dashboard[data-active-country="uganda"] [data-country]:not([data-country="uganda"]){opacity:.22}
+.map-dashboard[data-active-country="kenya"] .country-row:not([data-country="kenya"]),
+.map-dashboard[data-active-country="tanzania"] .country-row:not([data-country="tanzania"]),
+.map-dashboard[data-active-country="uganda"] .country-row:not([data-country="uganda"]){opacity:.62}
 .sat-grid{display:grid;grid-template-columns:1.05fr 1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:11px;overflow:hidden;margin-top:18px}
 .sat-card{background:var(--bg2);padding:18px 18px}
 .sat-card .sh{font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--cyan);margin-bottom:7px}
@@ -338,15 +360,15 @@ footer{border-top:1px solid var(--line);padding:44px 0 38px;background:rgba(0,0,
       <div class="rcell al"><div class="k">6</div><div class="l">Preemptive alerts</div></div>
     </div>
     <div class="scenario-note rev">Illustrative customer operating scenario, not current live MoedimAI footprint.</div>
-    <div class="map-dashboard rev" aria-label="Illustrative satellite map dashboard for an example East Africa customer network">
+    <div class="map-dashboard rev" data-active-country="kenya" aria-label="Illustrative satellite map dashboard for an example East Africa customer network">
       <div class="map-dash-top">
         <div class="map-dash-title">Satellite map view · East Africa operating cells</div>
         <div class="map-dash-meta">
-          <span class="layer-pill on">Countries</span>
-          <span class="layer-pill on">Cells</span>
-          <span class="layer-pill on">NDVI</span>
-          <span class="layer-pill on">Rainfall</span>
-          <span class="layer-pill">Lot risk</span>
+          <button type="button" class="layer-pill on" data-layer="countries" aria-pressed="true">Countries</button>
+          <button type="button" class="layer-pill on" data-layer="cells" aria-pressed="true">Cells</button>
+          <button type="button" class="layer-pill on" data-layer="ndvi" aria-pressed="true">NDVI</button>
+          <button type="button" class="layer-pill on" data-layer="rainfall" aria-pressed="true">Rainfall</button>
+          <button type="button" class="layer-pill on" data-layer="risk" aria-pressed="true">Lot risk</button>
         </div>
       </div>
       <div class="map-dash-body">
@@ -373,24 +395,24 @@ footer{border-top:1px solid var(--line);padding:44px 0 38px;background:rgba(0,0,
               <path class="weather-band" d="M183 148C250 178 329 191 424 213"></path>
               <path class="weather-band hot" d="M322 279C360 296 393 314 420 341"></path>
               <path class="weather-dash" d="M198 172C265 198 337 211 414 238"></path>
-              <path class="country-watch" d="M346 202L376 199L389 220L370 239L344 232Z"></path>
-              <path class="country-active" d="M368 225L404 229L424 252L405 280L374 270L360 247Z"></path>
-              <path class="country-active" d="M340 269L386 271L407 296L389 332L348 322L329 293Z"></path>
+              <path class="country-watch" data-country="uganda" d="M346 202L376 199L389 220L370 239L344 232Z"></path>
+              <path class="country-active" data-country="kenya" d="M368 225L404 229L424 252L405 280L374 270L360 247Z"></path>
+              <path class="country-active" data-country="tanzania" d="M340 269L386 271L407 296L389 332L348 322L329 293Z"></path>
             </g>
-            <polygon class="cell" points="360,207 369,212 369,223 360,228 351,223 351,212"></polygon>
-            <polygon class="cell watch" points="378,220 387,225 387,236 378,241 369,236 369,225"></polygon>
-            <polygon class="cell" points="392,238 401,243 401,254 392,259 383,254 383,243"></polygon>
-            <polygon class="cell risk" points="410,253 419,258 419,269 410,274 401,269 401,258"></polygon>
-            <polygon class="cell" points="378,262 387,267 387,278 378,283 369,278 369,267"></polygon>
-            <polygon class="cell watch" points="356,286 365,291 365,302 356,307 347,302 347,291"></polygon>
-            <polygon class="cell" points="377,302 386,307 386,318 377,323 368,318 368,307"></polygon>
-            <polygon class="cell risk" points="397,314 406,319 406,330 397,335 388,330 388,319"></polygon>
-            <circle class="map-pin" cx="391" cy="251" r="4"></circle>
-            <circle class="map-pin" cx="359" cy="219" r="3.5"></circle>
-            <circle class="map-pin" cx="374" cy="306" r="3.5"></circle>
-            <text x="350" y="191" class="map-label small blue">Uganda</text>
-            <text x="411" y="247" class="map-label small blue">Kenya</text>
-            <text x="398" y="318" class="map-label small blue">Tanzania</text>
+            <polygon class="cell" data-country="uganda" data-cell="ug-north" tabindex="0" role="button" aria-label="Select Uganda northern operating cell" points="360,207 369,212 369,223 360,228 351,223 351,212"></polygon>
+            <polygon class="cell watch" data-country="uganda" data-cell="ug-rain" tabindex="0" role="button" aria-label="Select Uganda rainfall watch cell" points="378,220 387,225 387,236 378,241 369,236 369,225"></polygon>
+            <polygon class="cell" data-country="kenya" data-cell="ke-north" tabindex="0" role="button" aria-label="Select Kenya northern operating cell" points="392,238 401,243 401,254 392,259 383,254 383,243"></polygon>
+            <polygon class="cell risk active" data-country="kenya" data-cell="ke-rosemary" tabindex="0" role="button" aria-label="Select Kenya rosemary risk cell" points="410,253 419,258 419,269 410,274 401,269 401,258"></polygon>
+            <polygon class="cell" data-country="kenya" data-cell="ke-central" tabindex="0" role="button" aria-label="Select Kenya central operating cell" points="378,262 387,267 387,278 378,283 369,278 369,267"></polygon>
+            <polygon class="cell watch" data-country="tanzania" data-cell="tz-north" tabindex="0" role="button" aria-label="Select Tanzania northern watch cell" points="356,286 365,291 365,302 356,307 347,302 347,291"></polygon>
+            <polygon class="cell" data-country="tanzania" data-cell="tz-central" tabindex="0" role="button" aria-label="Select Tanzania central operating cell" points="377,302 386,307 386,318 377,323 368,318 368,307"></polygon>
+            <polygon class="cell risk" data-country="tanzania" data-cell="tz-weather" tabindex="0" role="button" aria-label="Select Tanzania weather risk cell" points="397,314 406,319 406,330 397,335 388,330 388,319"></polygon>
+            <circle class="map-pin" data-country="kenya" cx="391" cy="251" r="4"></circle>
+            <circle class="map-pin" data-country="uganda" cx="359" cy="219" r="3.5"></circle>
+            <circle class="map-pin" data-country="tanzania" cx="374" cy="306" r="3.5"></circle>
+            <text x="350" y="191" class="map-label small blue" data-country="uganda">Uganda</text>
+            <text x="411" y="247" class="map-label small blue" data-country="kenya">Kenya</text>
+            <text x="398" y="318" class="map-label small blue" data-country="tanzania">Tanzania</text>
             <text x="126" y="82" class="map-label">Africa map view</text>
             <text x="126" y="100" class="map-label small">Example countries and cells highlighted</text>
             <text x="302" y="377" class="map-label gold">Rainfall stress front</text>
@@ -402,47 +424,53 @@ footer{border-top:1px solid var(--line);padding:44px 0 38px;background:rgba(0,0,
           </div>
         </div>
         <div class="dash-side">
+          <div class="cell-detail" aria-live="polite">
+            <div class="micro">Selected cell</div>
+            <h3 data-cell-title>Kenya rosemary risk cell</h3>
+            <p data-cell-copy>NDVI softened across two rosemary clusters while the next weather window shows below-normal rainfall. Dispatch a field check before this becomes a buyer-packet or certification delay.</p>
+            <div class="action" data-cell-action>Recommended: assign field verification today.</div>
+          </div>
           <div class="side-section">
             <div class="side-head">Countries involved <span>3 example</span></div>
             <div class="country-list">
-              <div class="country-row warn">
+              <button type="button" class="country-row warn active" data-country="kenya" aria-pressed="true">
                 <div class="country-name">Kenya</div>
                 <div class="country-bar"><i style="width:78%"></i></div>
                 <div class="country-count">8 cells</div>
-              </div>
-              <div class="country-row">
+              </button>
+              <button type="button" class="country-row" data-country="tanzania" aria-pressed="false">
                 <div class="country-name">Tanzania</div>
                 <div class="country-bar"><i style="width:64%"></i></div>
                 <div class="country-count">6 cells</div>
-              </div>
-              <div class="country-row">
+              </button>
+              <button type="button" class="country-row" data-country="uganda" aria-pressed="false">
                 <div class="country-name">Uganda</div>
                 <div class="country-bar"><i style="width:42%"></i></div>
                 <div class="country-count">4 cells</div>
-              </div>
+              </button>
             </div>
           </div>
           <div class="side-section">
             <div class="side-head">Satellite and weather read <span>on demand</span></div>
             <div class="weather-stack">
               <div class="weather-item">
-                <div><b>Vegetation signal</b><p>NDVI softening across two rosemary cell clusters.</p></div>
-                <div class="weather-value risk">-12%</div>
+                <div><b data-veg-title>Vegetation signal</b><p data-veg-copy>NDVI softening across two rosemary cell clusters.</p></div>
+                <div class="weather-value risk" data-veg-value>-12%</div>
               </div>
               <div class="weather-item">
-                <div><b>Rainfall anomaly</b><p>Below-normal rain projected for the next field window.</p></div>
-                <div class="weather-value risk">-18%</div>
+                <div><b data-rain-title>Rainfall anomaly</b><p data-rain-copy>Below-normal rain projected for the next field window.</p></div>
+                <div class="weather-value risk" data-rain-value>-18%</div>
               </div>
               <div class="weather-item">
-                <div><b>Cloud-free pass</b><p>Fresh satellite read available for plot-boundary comparison.</p></div>
-                <div class="weather-value">14:20</div>
+                <div><b data-pass-title>Cloud-free pass</b><p data-pass-copy>Fresh satellite read available for plot-boundary comparison.</p></div>
+                <div class="weather-value" data-pass-value>14:20</div>
               </div>
             </div>
           </div>
           <div class="alert-strip" aria-label="Map dashboard alert counts">
-            <div class="alert-tile risk"><div class="n">6</div><div class="t">Preemptive alerts</div></div>
-            <div class="alert-tile"><div class="n">18</div><div class="t">Cells monitored</div></div>
-            <div class="alert-tile"><div class="n">42</div><div class="t">Lots on watch</div></div>
+            <div class="alert-tile risk"><div class="n" data-alerts-count>6</div><div class="t">Preemptive alerts</div></div>
+            <div class="alert-tile"><div class="n" data-cells-count>18</div><div class="t">Cells monitored</div></div>
+            <div class="alert-tile"><div class="n" data-lots-count>42</div><div class="t">Lots on watch</div></div>
             <div class="alert-tile"><div class="n">3</div><div class="t">Country teams</div></div>
           </div>
         </div>
@@ -578,6 +606,151 @@ footer{border-top:1px solid var(--line);padding:44px 0 38px;background:rgba(0,0,
 <script>
 const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
 document.querySelectorAll('.rev').forEach((el,i)=>{el.style.transitionDelay=(Math.min(i,3)*70)+'ms';io.observe(el)});
+
+document.querySelectorAll('.map-dashboard').forEach((dashboard)=>{
+  const layerClasses={countries:'hide-countries',cells:'hide-cells',ndvi:'hide-ndvi',rainfall:'hide-rainfall',risk:'hide-risk'};
+  const countryReads={
+    kenya:{
+      defaultCell:'ke-rosemary',
+      vegCopy:'NDVI softening across two rosemary cell clusters.',
+      vegValue:'-12%',
+      rainCopy:'Below-normal rain projected for the next field window.',
+      rainValue:'-18%',
+      passValue:'14:20',
+      passCopy:'Fresh satellite read available for plot-boundary comparison.',
+      alerts:'6',
+      cells:'8',
+      lots:'16'
+    },
+    tanzania:{
+      defaultCell:'tz-weather',
+      vegCopy:'Mixed vigor across northern aromatic-crop plots.',
+      vegValue:'-7%',
+      rainCopy:'Storm risk may interrupt harvest routing for two cell groups.',
+      rainValue:'+24%',
+      passValue:'13:05',
+      passCopy:'Cloud gap found over northern Tanzania cell boundary.',
+      alerts:'3',
+      cells:'6',
+      lots:'11'
+    },
+    uganda:{
+      defaultCell:'ug-rain',
+      vegCopy:'Vegetation signal is mostly stable, with one watch cell.',
+      vegValue:'+3%',
+      rainCopy:'Rainfall watch remains open across the western supply corridor.',
+      rainValue:'-9%',
+      passValue:'15:10',
+      passCopy:'New read available for supplier-group boundary comparison.',
+      alerts:'2',
+      cells:'4',
+      lots:'8'
+    }
+  };
+  const cellReads={
+    'ke-rosemary':{
+      country:'kenya',
+      title:'Kenya rosemary risk cell',
+      copy:'NDVI softened across two rosemary clusters while the next weather window shows below-normal rainfall. Dispatch a field check before this becomes a buyer-packet or certification delay.',
+      action:'Recommended: assign field verification today.'
+    },
+    'ke-north':{
+      country:'kenya',
+      title:'Kenya northern supplier cell',
+      copy:'Satellite vegetation is steady, but the current pass shows one plot-boundary change that should be compared against field records.',
+      action:'Recommended: request plot-boundary evidence.'
+    },
+    'ke-central':{
+      country:'kenya',
+      title:'Kenya central operating cell',
+      copy:'Current read is stable enough for harvest planning. Keep the cell in the next weather window and continue buyer-packet preparation.',
+      action:'Recommended: keep lots in planned route.'
+    },
+    'tz-weather':{
+      country:'tanzania',
+      title:'Tanzania weather risk cell',
+      copy:'Rainfall pressure is moving into the northern cell. The platform would preemptively check pickup timing and evidence readiness for lots on watch.',
+      action:'Recommended: review harvest routing window.'
+    },
+    'tz-north':{
+      country:'tanzania',
+      title:'Tanzania northern watch cell',
+      copy:'A moderate vegetation deviation is visible near the active supplier cluster. Field teams should confirm whether this is crop stress or a normal stage change.',
+      action:'Recommended: queue field photo evidence.'
+    },
+    'tz-central':{
+      country:'tanzania',
+      title:'Tanzania central operating cell',
+      copy:'No acute vegetation alert is visible. The cell remains useful for on-demand buyer-readiness and logistics checks.',
+      action:'Recommended: monitor next satellite pass.'
+    },
+    'ug-rain':{
+      country:'uganda',
+      title:'Uganda rainfall watch cell',
+      copy:'The weather layer shows a mild rainfall deficit. The system would ask whether inspection timing or agronomy evidence needs to move earlier.',
+      action:'Recommended: keep on 72-hour watch.'
+    },
+    'ug-north':{
+      country:'uganda',
+      title:'Uganda northern operating cell',
+      copy:'Vegetation is stable and the supplier boundary has not shifted since the prior pass. This cell is clear for normal monitoring.',
+      action:'Recommended: no dispatch change.'
+    }
+  };
+  const setText=(selector,value)=>{const el=dashboard.querySelector(selector);if(el)el.textContent=value};
+  const syncCountry=(country)=>{
+    const read=countryReads[country];
+    if(!read)return;
+    dashboard.dataset.activeCountry=country;
+    dashboard.querySelectorAll('.country-row').forEach((row)=>{
+      const active=row.dataset.country===country;
+      row.classList.toggle('active',active);
+      row.setAttribute('aria-pressed',String(active));
+    });
+    setText('[data-veg-copy]',read.vegCopy);
+    setText('[data-veg-value]',read.vegValue);
+    setText('[data-rain-copy]',read.rainCopy);
+    setText('[data-rain-value]',read.rainValue);
+    setText('[data-pass-copy]',read.passCopy);
+    setText('[data-pass-value]',read.passValue);
+    setText('[data-alerts-count]',read.alerts);
+    setText('[data-cells-count]',read.cells);
+    setText('[data-lots-count]',read.lots);
+  };
+  const selectCell=(cellId)=>{
+    const read=cellReads[cellId];
+    if(!read)return;
+    syncCountry(read.country);
+    dashboard.querySelectorAll('.cell').forEach((cell)=>cell.classList.toggle('active',cell.dataset.cell===cellId));
+    setText('[data-cell-title]',read.title);
+    setText('[data-cell-copy]',read.copy);
+    setText('[data-cell-action]',read.action);
+  };
+  dashboard.querySelectorAll('.layer-pill').forEach((button)=>{
+    button.addEventListener('click',()=>{
+      const layer=button.dataset.layer;
+      const className=layerClasses[layer];
+      if(!className)return;
+      const on=!button.classList.contains('on');
+      button.classList.toggle('on',on);
+      button.setAttribute('aria-pressed',String(on));
+      dashboard.classList.toggle(className,!on);
+    });
+  });
+  dashboard.querySelectorAll('.country-row').forEach((row)=>{
+    row.addEventListener('click',()=>selectCell(countryReads[row.dataset.country]?.defaultCell));
+  });
+  dashboard.querySelectorAll('.cell').forEach((cell)=>{
+    const choose=()=>selectCell(cell.dataset.cell);
+    cell.addEventListener('click',choose);
+    cell.addEventListener('keydown',(event)=>{
+      if(event.key==='Enter'||event.key===' '){
+        event.preventDefault();
+        choose();
+      }
+    });
+  });
+});
 </script>
 </body>
 </html>
