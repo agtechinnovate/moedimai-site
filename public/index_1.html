@@ -110,11 +110,69 @@ nav{position:sticky;top:0;z-index:50;backdrop-filter:blur(12px);background:rgba(
 .rcell.al .k{color:var(--risk)}
 @media(max-width:820px){.rail{grid-template-columns:repeat(3,1fr)}}
 .scenario-note{margin-top:16px;font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--faint)}
+.map-dashboard{margin-top:22px;border:1px solid var(--line);border-radius:13px;overflow:hidden;background:linear-gradient(180deg,var(--panel),var(--bg2));box-shadow:0 24px 70px rgba(0,0,0,.42)}
+.map-dash-top{display:flex;align-items:center;gap:12px;justify-content:space-between;padding:13px 16px;border-bottom:1px solid var(--line);background:rgba(0,0,0,.18)}
+.map-dash-title{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--cyan)}
+.map-dash-meta{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
+.layer-pill{font-family:var(--mono);font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);border:1px solid var(--line);border-radius:5px;padding:4px 8px;background:rgba(255,255,255,.025)}
+.layer-pill.on{color:var(--cyan-bri);border-color:var(--line-cy);background:rgba(74,144,194,.08)}
+.map-dash-body{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(290px,.85fr)}
+.africa-view{position:relative;min-height:472px;border-right:1px solid var(--line);overflow:hidden;background:radial-gradient(520px 360px at 58% 48%,rgba(74,144,194,.11),transparent 72%),linear-gradient(180deg,rgba(255,255,255,.018),transparent)}
+.africa-view:before{content:"";position:absolute;inset:0;background:linear-gradient(rgba(255,255,255,.018) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.018) 1px,transparent 1px);background-size:36px 36px;opacity:.7}
+.africa-map{position:absolute;inset:26px 22px 24px 22px;width:calc(100% - 44px);height:calc(100% - 50px);filter:drop-shadow(0 28px 40px rgba(0,0,0,.28))}
+.continent{fill:#111927;stroke:rgba(151,177,205,.18);stroke-width:1.4}
+.map-line{fill:none;stroke:rgba(255,255,255,.055);stroke-width:.9}
+.country-active{fill:rgba(74,144,194,.26);stroke:rgba(121,184,224,.88);stroke-width:1.4}
+.country-watch{fill:rgba(200,162,74,.16);stroke:rgba(200,162,74,.72);stroke-width:1.2}
+.cell{fill:rgba(111,190,139,.28);stroke:rgba(167,230,190,.9);stroke-width:1.1}
+.cell.watch{fill:rgba(200,162,74,.26);stroke:rgba(224,198,116,.95)}
+.cell.risk{fill:rgba(224,135,90,.28);stroke:rgba(224,135,90,.95)}
+.weather-band{fill:none;stroke:rgba(74,144,194,.28);stroke-width:28;stroke-linecap:round}
+.weather-band.hot{stroke:rgba(224,135,90,.18);stroke-width:22}
+.weather-dash{fill:none;stroke:rgba(121,184,224,.52);stroke-width:1.5;stroke-dasharray:4 8}
+.sat-sweep{fill:rgba(121,184,224,.07);stroke:rgba(121,184,224,.18);stroke-width:1}
+.map-label{font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;fill:#C8D7E6}
+.map-label.small{font-size:8.5px;fill:#8290A5}
+.map-label.blue{fill:var(--cyan-bri)}
+.map-label.gold{fill:var(--gold)}
+.map-pin{fill:var(--cyan-bri);stroke:#06101A;stroke-width:2}
+.map-legend{position:absolute;left:18px;bottom:17px;display:flex;gap:10px;flex-wrap:wrap;font-family:var(--mono);font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.map-legend span{display:flex;align-items:center;gap:6px;border:1px solid var(--line);border-radius:5px;padding:5px 7px;background:rgba(10,13,19,.72);backdrop-filter:blur(8px)}
+.legend-key{width:10px;height:10px;border-radius:2px;background:var(--cyan)}
+.legend-key.cellk{background:var(--ok)}
+.legend-key.weatherk{background:var(--risk)}
+.sat-readout{position:absolute;top:17px;left:18px;right:18px;display:flex;align-items:center;gap:10px;justify-content:space-between;pointer-events:none}
+.sat-readout .read{font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);border:1px solid var(--line);border-radius:5px;padding:5px 8px;background:rgba(10,13,19,.66);backdrop-filter:blur(8px)}
+.dash-side{padding:17px;background:rgba(0,0,0,.14)}
+.side-section{border:1px solid var(--line);border-radius:10px;background:rgba(255,255,255,.025);overflow:hidden;margin-bottom:12px}
+.side-head{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 12px;border-bottom:1px solid var(--line);font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--cyan)}
+.side-head span{color:var(--faint)}
+.country-list,.weather-stack{padding:11px 12px}
+.country-row{display:grid;grid-template-columns:88px 1fr auto;gap:10px;align-items:center;padding:9px 0;border-bottom:1px solid rgba(255,255,255,.045)}
+.country-row:last-child{border-bottom:none}
+.country-name{font-size:13px;color:var(--ink);font-weight:650}
+.country-bar{height:6px;border-radius:10px;background:rgba(255,255,255,.07);overflow:hidden}
+.country-bar i{display:block;height:100%;border-radius:inherit;background:linear-gradient(90deg,var(--cyan),var(--ok))}
+.country-row.warn .country-bar i{background:linear-gradient(90deg,var(--gold),var(--risk))}
+.country-count{font-family:var(--mono);font-size:11px;color:var(--muted)}
+.weather-item{display:grid;grid-template-columns:1fr auto;gap:8px;padding:10px 0;border-bottom:1px solid rgba(255,255,255,.045)}
+.weather-item:last-child{border-bottom:none}
+.weather-item b{display:block;font-size:13px;color:var(--ink);margin-bottom:2px}
+.weather-item p{font-size:12px;color:var(--muted);line-height:1.42}
+.weather-value{font-family:var(--mono);font-size:12px;color:var(--cyan);white-space:nowrap}
+.weather-value.risk{color:var(--risk)}
+.alert-strip{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:9px;overflow:hidden}
+.alert-tile{background:rgba(10,13,19,.64);padding:11px 12px}
+.alert-tile .n{font-family:var(--mono);font-size:20px;color:var(--ink);line-height:1}
+.alert-tile .t{font-family:var(--mono);font-size:9px;letter-spacing:.08em;text-transform:uppercase;color:var(--faint);margin-top:5px}
+.alert-tile.risk .n{color:var(--risk)}
 .sat-grid{display:grid;grid-template-columns:1.05fr 1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:11px;overflow:hidden;margin-top:18px}
 .sat-card{background:var(--bg2);padding:18px 18px}
 .sat-card .sh{font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--cyan);margin-bottom:7px}
 .sat-card h3{font-size:17px;color:var(--ink);margin-bottom:7px}
 .sat-card p{font-size:13px;color:var(--muted);line-height:1.55}
+@media(max-width:920px){.map-dash-body{grid-template-columns:1fr}.africa-view{border-right:none;border-bottom:1px solid var(--line);min-height:420px}.country-row{grid-template-columns:82px 1fr auto}}
+@media(max-width:620px){.map-dash-top{align-items:flex-start;flex-direction:column}.map-dash-meta{justify-content:flex-start}.africa-view{min-height:360px}.africa-map{inset:48px 8px 44px 8px;width:calc(100% - 16px);height:calc(100% - 92px)}.sat-readout{align-items:flex-start;flex-direction:column;gap:6px}.map-legend{left:12px;right:12px;bottom:12px}.country-row{grid-template-columns:76px 1fr auto}.alert-strip{grid-template-columns:1fr 1fr}.dash-side{padding:12px}.map-label{font-size:9.5px}.map-label.small{font-size:7.5px}}
 @media(max-width:820px){.sat-grid{grid-template-columns:1fr}}
 
 /* AI demo */
@@ -280,6 +338,116 @@ footer{border-top:1px solid var(--line);padding:44px 0 38px;background:rgba(0,0,
       <div class="rcell al"><div class="k">6</div><div class="l">Preemptive alerts</div></div>
     </div>
     <div class="scenario-note rev">Illustrative customer operating scenario, not current live MoedimAI footprint.</div>
+    <div class="map-dashboard rev" aria-label="Illustrative satellite map dashboard for an example East Africa customer network">
+      <div class="map-dash-top">
+        <div class="map-dash-title">Satellite map view · East Africa operating cells</div>
+        <div class="map-dash-meta">
+          <span class="layer-pill on">Countries</span>
+          <span class="layer-pill on">Cells</span>
+          <span class="layer-pill on">NDVI</span>
+          <span class="layer-pill on">Rainfall</span>
+          <span class="layer-pill">Lot risk</span>
+        </div>
+      </div>
+      <div class="map-dash-body">
+        <div class="africa-view">
+          <div class="sat-readout">
+            <div class="read">Sentinel-2 pass · cloud filtered</div>
+            <div class="read">Weather window · next 72h</div>
+          </div>
+          <svg class="africa-map" viewBox="0 0 560 470" role="img" aria-label="Map of Africa with Kenya, Uganda, and Tanzania highlighted, active operating cells, and weather overlays">
+            <defs>
+              <clipPath id="africaClip">
+                <path d="M286 18C250 22 231 42 216 72C205 93 177 85 158 106C136 130 147 157 123 174C96 193 98 225 114 247C134 274 120 304 143 331C160 350 186 357 195 390C203 421 223 445 244 456C262 466 284 456 293 435C306 404 326 383 350 358C371 336 383 308 413 286C443 264 484 228 481 198C479 178 449 171 439 143C430 118 437 90 414 62C388 30 332 13 286 18Z"></path>
+              </clipPath>
+            </defs>
+            <path class="continent" d="M286 18C250 22 231 42 216 72C205 93 177 85 158 106C136 130 147 157 123 174C96 193 98 225 114 247C134 274 120 304 143 331C160 350 186 357 195 390C203 421 223 445 244 456C262 466 284 456 293 435C306 404 326 383 350 358C371 336 383 308 413 286C443 264 484 228 481 198C479 178 449 171 439 143C430 118 437 90 414 62C388 30 332 13 286 18Z"></path>
+            <path class="continent" d="M459 323C476 349 480 383 463 421C447 454 429 448 429 416C430 383 442 346 459 323Z" opacity=".58"></path>
+            <g clip-path="url(#africaClip)">
+              <path class="sat-sweep" d="M92 76L515 216L497 283L74 144Z"></path>
+              <path class="map-line" d="M160 112C230 132 322 132 430 111"></path>
+              <path class="map-line" d="M116 218C220 205 334 205 474 214"></path>
+              <path class="map-line" d="M154 338C236 312 334 309 427 330"></path>
+              <path class="map-line" d="M243 29C238 126 244 259 274 452"></path>
+              <path class="map-line" d="M352 30C337 143 351 258 387 365"></path>
+              <path class="weather-band" d="M183 148C250 178 329 191 424 213"></path>
+              <path class="weather-band hot" d="M322 279C360 296 393 314 420 341"></path>
+              <path class="weather-dash" d="M198 172C265 198 337 211 414 238"></path>
+              <path class="country-watch" d="M346 202L376 199L389 220L370 239L344 232Z"></path>
+              <path class="country-active" d="M368 225L404 229L424 252L405 280L374 270L360 247Z"></path>
+              <path class="country-active" d="M340 269L386 271L407 296L389 332L348 322L329 293Z"></path>
+            </g>
+            <polygon class="cell" points="360,207 369,212 369,223 360,228 351,223 351,212"></polygon>
+            <polygon class="cell watch" points="378,220 387,225 387,236 378,241 369,236 369,225"></polygon>
+            <polygon class="cell" points="392,238 401,243 401,254 392,259 383,254 383,243"></polygon>
+            <polygon class="cell risk" points="410,253 419,258 419,269 410,274 401,269 401,258"></polygon>
+            <polygon class="cell" points="378,262 387,267 387,278 378,283 369,278 369,267"></polygon>
+            <polygon class="cell watch" points="356,286 365,291 365,302 356,307 347,302 347,291"></polygon>
+            <polygon class="cell" points="377,302 386,307 386,318 377,323 368,318 368,307"></polygon>
+            <polygon class="cell risk" points="397,314 406,319 406,330 397,335 388,330 388,319"></polygon>
+            <circle class="map-pin" cx="391" cy="251" r="4"></circle>
+            <circle class="map-pin" cx="359" cy="219" r="3.5"></circle>
+            <circle class="map-pin" cx="374" cy="306" r="3.5"></circle>
+            <text x="350" y="191" class="map-label small blue">Uganda</text>
+            <text x="411" y="247" class="map-label small blue">Kenya</text>
+            <text x="398" y="318" class="map-label small blue">Tanzania</text>
+            <text x="126" y="82" class="map-label">Africa map view</text>
+            <text x="126" y="100" class="map-label small">Example countries and cells highlighted</text>
+            <text x="302" y="377" class="map-label gold">Rainfall stress front</text>
+          </svg>
+          <div class="map-legend">
+            <span><i class="legend-key"></i>Country involved</span>
+            <span><i class="legend-key cellk"></i>Operating cell</span>
+            <span><i class="legend-key weatherk"></i>Weather risk</span>
+          </div>
+        </div>
+        <div class="dash-side">
+          <div class="side-section">
+            <div class="side-head">Countries involved <span>3 example</span></div>
+            <div class="country-list">
+              <div class="country-row warn">
+                <div class="country-name">Kenya</div>
+                <div class="country-bar"><i style="width:78%"></i></div>
+                <div class="country-count">8 cells</div>
+              </div>
+              <div class="country-row">
+                <div class="country-name">Tanzania</div>
+                <div class="country-bar"><i style="width:64%"></i></div>
+                <div class="country-count">6 cells</div>
+              </div>
+              <div class="country-row">
+                <div class="country-name">Uganda</div>
+                <div class="country-bar"><i style="width:42%"></i></div>
+                <div class="country-count">4 cells</div>
+              </div>
+            </div>
+          </div>
+          <div class="side-section">
+            <div class="side-head">Satellite and weather read <span>on demand</span></div>
+            <div class="weather-stack">
+              <div class="weather-item">
+                <div><b>Vegetation signal</b><p>NDVI softening across two rosemary cell clusters.</p></div>
+                <div class="weather-value risk">-12%</div>
+              </div>
+              <div class="weather-item">
+                <div><b>Rainfall anomaly</b><p>Below-normal rain projected for the next field window.</p></div>
+                <div class="weather-value risk">-18%</div>
+              </div>
+              <div class="weather-item">
+                <div><b>Cloud-free pass</b><p>Fresh satellite read available for plot-boundary comparison.</p></div>
+                <div class="weather-value">14:20</div>
+              </div>
+            </div>
+          </div>
+          <div class="alert-strip" aria-label="Map dashboard alert counts">
+            <div class="alert-tile risk"><div class="n">6</div><div class="t">Preemptive alerts</div></div>
+            <div class="alert-tile"><div class="n">18</div><div class="t">Cells monitored</div></div>
+            <div class="alert-tile"><div class="n">42</div><div class="t">Lots on watch</div></div>
+            <div class="alert-tile"><div class="n">3</div><div class="t">Country teams</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="sat-grid rev">
       <div class="sat-card">
         <div class="sh">Satellite intelligence</div>
