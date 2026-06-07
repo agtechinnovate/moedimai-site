@@ -109,6 +109,13 @@ nav{position:sticky;top:0;z-index:50;backdrop-filter:blur(12px);background:rgba(
 .rcell .l{font-size:10.5px;color:var(--faint);text-transform:uppercase;letter-spacing:.08em;margin-top:4px}
 .rcell.al .k{color:var(--risk)}
 @media(max-width:820px){.rail{grid-template-columns:repeat(3,1fr)}}
+.scenario-note{margin-top:16px;font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--faint)}
+.sat-grid{display:grid;grid-template-columns:1.05fr 1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:11px;overflow:hidden;margin-top:18px}
+.sat-card{background:var(--bg2);padding:18px 18px}
+.sat-card .sh{font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--cyan);margin-bottom:7px}
+.sat-card h3{font-size:17px;color:var(--ink);margin-bottom:7px}
+.sat-card p{font-size:13px;color:var(--muted);line-height:1.55}
+@media(max-width:820px){.sat-grid{grid-template-columns:1fr}}
 
 /* AI demo */
 .ai-grid{display:grid;grid-template-columns:1fr 1fr}
@@ -261,16 +268,34 @@ footer{border-top:1px solid var(--line);padding:44px 0 38px;background:rgba(0,0,
   <div class="wrap">
     <div class="sec-head rev">
       <div class="eyebrow">The platform</div>
-      <h2>One master account. Many governed deployments.</h2>
-      <p>Each tenant runs on the same operating graph with per-tenant data isolation, and activates only the modules it needs.</p>
+      <h2>A hypothetical customer network, governed from one account.</h2>
+      <p>For example: one enterprise could run country teams, processors, field agents, buyers, and certifier access from the same operating graph, with per-tenant data isolation and only the modules each deployment needs.</p>
     </div>
     <div class="rail rev">
-      <div class="rcell"><div class="k">3</div><div class="l">Countries</div></div>
-      <div class="rcell"><div class="k">18</div><div class="l">Deployments</div></div>
-      <div class="rcell"><div class="k">21.2k</div><div class="l">Verified producers</div></div>
-      <div class="rcell"><div class="k">42</div><div class="l">Lots in motion</div></div>
-      <div class="rcell"><div class="k">318</div><div class="l">Buyer packets</div></div>
-      <div class="rcell al"><div class="k">6</div><div class="l">Risk alerts</div></div>
+      <div class="rcell"><div class="k">3</div><div class="l">Example countries</div></div>
+      <div class="rcell"><div class="k">18</div><div class="l">Example deployments</div></div>
+      <div class="rcell"><div class="k">21.2k</div><div class="l">Modeled producers</div></div>
+      <div class="rcell"><div class="k">42</div><div class="l">Modeled lots</div></div>
+      <div class="rcell"><div class="k">318</div><div class="l">Example buyer packets</div></div>
+      <div class="rcell al"><div class="k">6</div><div class="l">Preemptive alerts</div></div>
+    </div>
+    <div class="scenario-note rev">Illustrative customer operating scenario, not current live MoedimAI footprint.</div>
+    <div class="sat-grid rev">
+      <div class="sat-card">
+        <div class="sh">Satellite intelligence</div>
+        <h3>Preempt risk before field teams arrive.</h3>
+        <p>Satellite vegetation, weather, and plot-boundary signals feed the graph to flag drought stress, land-use drift, abnormal crop vigor, and harvest disruption before they become certification or buyer-supply failures.</p>
+      </div>
+      <div class="sat-card">
+        <div class="sh">On-demand answers</div>
+        <h3>Ask for the field view now.</h3>
+        <p>Teams can request a current read on a cell, plot cluster, or supplier group: which areas changed, which plots need inspection, and which lots may need rerouting or extra evidence.</p>
+      </div>
+      <div class="sat-card">
+        <div class="sh">Closed loop</div>
+        <h3>Turn signals into action.</h3>
+        <p>The platform converts remote-sensing alerts into tasks, field checks, compliance evidence requests, and buyer-readiness decisions tied to the same producer and lot records.</p>
+      </div>
     </div>
   </div>
 </section>
