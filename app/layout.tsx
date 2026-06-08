@@ -25,11 +25,11 @@ export const metadata: Metadata = {
   metadataBase: new URL(PUBLIC_SITE_URL),
   applicationName: "MoedimAI",
   title: {
-    default: "MoedimAI | African crop management and export-ready supply",
+    default: "MoedimAI | AI for African bioeconomy and crop management",
     template: "%s · MoedimAI",
   },
   description:
-    "MoedimAI helps companies manage African crop programs, farmer networks, growing, harvest readiness, benchmarking, quality evidence, and movement to distribution or export.",
+    "MoedimAI uses technology and AI to help companies manage African bioeconomy supply chains: crops, farmers, satellite and weather intelligence, value addition, logistics routing, and export-ready supply.",
   keywords: [
     "African crop management partner",
     "manage crops grown in Africa",
@@ -43,6 +43,19 @@ export const metadata: Metadata = {
     "African farm production management",
     "trade infrastructure for agriculture",
     "agricultural bioeconomy operating system",
+    "bioeconomy agriculture company",
+    "Africa bioeconomy agriculture company",
+    "African bioeconomy company",
+    "circular bioeconomy agriculture",
+    "bioeconomy agriculture platform",
+    "biomass value chain Africa",
+    "bio based value chains Africa",
+    "agricultural value addition Africa",
+    "agro-processing value addition Africa",
+    "steam distillation crop processing",
+    "drying processing cold press agriculture",
+    "agricultural logistics routing Africa",
+    "end to end agricultural supply chain Africa",
     "verifiable agricultural supply chain",
     "specification-driven agricultural production",
     "buyer-grade supply verification",
@@ -57,6 +70,20 @@ export const metadata: Metadata = {
   creator: "MoedimAI",
   publisher: "MoedimAI",
   category: "Agricultural production management",
+  manifest: "/site.webmanifest",
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-48x48.png", sizes: "48x48", type: "image/png" },
+    ],
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
+    other: [
+      { rel: "icon", url: "/android-chrome-192x192.png", sizes: "192x192" },
+      { rel: "icon", url: "/android-chrome-512x512.png", sizes: "512x512" },
+    ],
+  },
   alternates: {
     canonical: "/",
     types: {
@@ -71,9 +98,9 @@ export const metadata: Metadata = {
     type: "website",
     url: "/",
     siteName: "MoedimAI",
-    title: "MoedimAI | African crop management and export-ready supply",
+    title: "MoedimAI | AI for African bioeconomy and crop management",
     description:
-      "Farmer network management, crop benchmarking, harvest readiness, quality evidence, and movement to distribution or export.",
+      "Technology and AI for African bioeconomy supply chains, crop management, value addition, logistics routing, and export-ready supply.",
     images: [
       {
         url: "/images/lavender-field.jpg",
@@ -85,9 +112,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "MoedimAI | African crop management and export-ready supply",
+    title: "MoedimAI | AI for African bioeconomy and crop management",
     description:
-      "An operating system for managing African crop programs from farm to distribution.",
+      "Technology and AI for African bioeconomy supply chains from farm to distribution.",
     images: ["/images/lavender-field.jpg"],
   },
 };

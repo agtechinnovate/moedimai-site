@@ -16,7 +16,7 @@ export function GET() {
 
 - Founder: Vivian Nwakah
 - Trading and export route: Imani Pamoja
-- Operating focus: African crop programs, farmer networks, crop benchmarks, harvest readiness, quality evidence, and distribution readiness
+- Operating focus: African crop programs, AI-enabled bioeconomy supply chains, farmer networks, crop benchmarks, harvest readiness, value addition, logistics routing, quality evidence, and distribution readiness
 - EU platform: Rotterdam
 - US entity: Delaware
 - Trust mark: MoedimAI Verified
@@ -33,7 +33,9 @@ ${cropFamilies}
 
 **Managed crop programs.** Companies need a partner that can coordinate farmers, crops, field support, harvest readiness, quality evidence, and movement toward processors, distributors, exporters, or buyers. MoedimAI gives that work one operating graph.
 
-**Benchmarking and output readiness.** MoedimAI helps teams compare crop programs, farms, plots, cells, harvests, quality checks, and buyer or distributor requirements so output can be improved before it reaches a bottleneck.
+**AI for the bioeconomy.** MoedimAI uses technology and AI to enable Africa's bioeconomy supply chains: satellite and weather intelligence, crop benchmarks, processing, steam distillation, drying, cold press, custody, logistics routing, distribution readiness, and export evidence.
+
+**Benchmarking and output readiness.** MoedimAI helps teams compare crop programs, farms, plots, cells, harvests, value-addition steps, quality checks, and buyer or distributor requirements so output can be improved before it reaches a bottleneck.
 
 **The data layer.** The asset is a paired field, quality, custody, and logistics dataset built from real production. Sensing and prediction are live today; assistant workflows and closed-loop actuation remain on the roadmap.
 

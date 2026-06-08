@@ -36,6 +36,7 @@ const baseUrl = PUBLIC_SITE_URL;
 const SPEC_ROWS: ReadonlyArray<{ label: string; value: React.ReactNode }> = [
   { label: "Trading route", value: "Imani Pamoja agricultural trading and export company" },
   { label: "Operating role", value: "Farmer networks, crop programs, harvest readiness, benchmarks" },
+  { label: "Technology layer", value: "AI-supported satellite/weather intelligence, operating graph, evidence, logistics" },
   { label: "EU operations", value: "Rotterdam" },
   { label: "US holding", value: "Delaware" },
   { label: "Trust mark", value: <BrandMark surface="verified" size="sm" /> },
@@ -96,11 +97,12 @@ export default function BuyersPage() {
           <BrandMark surface="moedimai" size="lg" /> manages crop programs from farmer to distribution.
         </h1>
         <p className="mt-6 max-w-3xl text-base text-cream-50/85 md:text-lg">
-          MoedimAI is for companies looking for a partner to manage crops grown in Africa and keep
-          the operating picture clear: farmers, growing, field support, harvest readiness,
-          benchmarking, quality evidence, and movement toward processors, distributors, exporters,
-          or buyers. Imani Pamoja is the connected agricultural trading and export company for
-          African farm output.
+          MoedimAI is for companies looking for a technology operating partner to manage crops
+          grown in Africa and keep the operating picture clear: farmers, AI-supported satellite and
+          weather intelligence, growing, field support, harvest readiness, value addition,
+          benchmarking, quality evidence, logistics routing, and movement toward processors,
+          distributors, exporters, or buyers. Imani Pamoja is the connected agricultural trading and
+          export company for African farm output.
         </p>
       </section>
 
@@ -174,7 +176,8 @@ export default function BuyersPage() {
             <h3 className="mt-3 font-display text-xl text-cream-50">Manage growing and harvest.</h3>
             <p className="mt-3 text-sm text-cream-50/80">
               MoedimAI tracks farmers, crop stages, field support, weather and satellite signals,
-              harvest readiness, quality checks, and benchmarks against the target.
+              value-addition steps, harvest readiness, quality checks, logistics, and benchmarks
+              against the target.
             </p>
           </li>
           <li className="rounded-lg border border-cream-50/10 bg-navy-900/40 p-6">

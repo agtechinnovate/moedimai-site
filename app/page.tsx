@@ -6,7 +6,7 @@ interface AudienceDoor {
   eyebrow: string;
   title: string;
   body: string;
-  href: "/buyers" | "/thesis" | "/jaribu";
+  href: "/buyers" | "/bioeconomy" | "/thesis" | "/jaribu";
   cta: string;
 }
 
@@ -20,10 +20,10 @@ const DOORS: AudienceDoor[] = [
   },
   {
     eyebrow: "I AM AN INVESTOR OR PARTNER",
-    title: "Company thesis",
-    body: "MoedimAI is trade infrastructure for the agricultural bioeconomy: a multi-tenant operating system for managing and verifying African crop supply.",
-    href: "/thesis",
-    cta: "Read the thesis",
+    title: "AI for the bioeconomy",
+    body: "Technology and AI for African bioeconomy supply chains: crops, satellite and weather signals, processing, logistics, and buyer-ready evidence.",
+    href: "/bioeconomy",
+    cta: "See bioeconomy layer",
   },
   {
     eyebrow: "I AM A FARMER",
@@ -63,7 +63,8 @@ export default function HomePage() {
           </h1>
           <p className="mt-6 max-w-2xl text-base text-cream-50/90 md:text-lg">
             MoedimAI helps companies manage the crops they grow or source in Africa: farmer
-            networks, growing programs, harvest readiness, benchmarking, quality evidence, and
+            networks, growing programs, AI-supported satellite and weather intelligence, harvest
+            readiness, benchmarking, value addition, logistics routing, quality evidence, and
             movement into processing, distribution, or export. Imani Pamoja is the connected
             trading and export company for African farm output.
           </p>
@@ -75,10 +76,10 @@ export default function HomePage() {
               See crop support
             </Link>
             <Link
-              href="/thesis"
+              href="/bioeconomy"
               className="inline-flex h-12 items-center justify-center rounded-md border border-gold-500 px-6 text-sm font-medium text-cream-50 transition-colors hover:bg-gold-500/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-500 focus-visible:ring-offset-2 focus-visible:ring-offset-navy-900"
             >
-              Read the thesis
+              AI for bioeconomy
             </Link>
           </div>
           <dl className="mt-12 grid max-w-3xl grid-cols-2 gap-x-8 gap-y-4 text-sm md:grid-cols-4">
@@ -125,6 +126,23 @@ export default function HomePage() {
 
       <section className="border-t border-cream-50/10">
         <div className="container py-16 md:py-20">
+          <div className="mb-10 rounded-md border border-cream-50/10 bg-navy-800/35 p-5 md:p-6">
+            <p className="text-xs uppercase tracking-[0.2em] text-gold-500">Bioeconomy technology</p>
+            <h2 className="mt-3 max-w-3xl font-sans text-xl font-semibold leading-snug text-cream-50 md:text-2xl">
+              Technology and AI for Africa&apos;s bioeconomy supply chains.
+            </h2>
+            <p className="mt-3 max-w-3xl text-sm leading-6 text-cream-50/75">
+              MoedimAI connects crop production, satellite and weather signals, value addition,
+              processing, steam distillation, drying, cold press, logistics routing, quality
+              evidence, and export readiness in one governed operating layer.
+            </p>
+            <Link
+              href="/bioeconomy"
+              className="mt-4 inline-flex text-sm font-medium text-gold-500 underline-offset-4 hover:underline"
+            >
+              Read the bioeconomy technology page
+            </Link>
+          </div>
           <p className="text-xs uppercase tracking-[0.22em] text-gold-500">Crop coverage</p>
           <h2 className="mt-4 max-w-3xl font-display text-3xl text-cream-50 md:text-4xl">
             Built for the crop families companies grow and source across African agriculture.
