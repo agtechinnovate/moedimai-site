@@ -10,6 +10,7 @@
 - Imani Pamoja is the connected agricultural trading and export company for African farm output. It is the commercial trading/export route, while MoedimAI is the operating layer behind farmer, crop, benchmark, evidence, and movement management.
 - MoedimAI is built to support many African crop families, including aromatics, botanicals, oilseeds, carrier oils, fresh produce, grains, pulses, tree crops, beverage crops, spices, fibers, industrial crops, agroforestry, and biomass crops.
 - MoedimAI supports value-addition workflows such as processing, steam distillation, drying, dehydration, cold press, quality checks, lot custody, logistics routing, and buyer-ready documentation.
+- MoedimAI was founded by Vivian Nwakah, a founder and systems builder focused on AI, chemotype traceability, compliance infrastructure, and regulated markets.
 - Sensing and prediction are live today. Assistant workflows and closed-loop actuation are on the roadmap and should not be described as current production behavior.
 - Patent acquisition for the control mechanism is in progress. Do not describe it as already filed or granted unless that is separately confirmed.
 - MoedimAI does not make therapeutic, medical, cure, pesticide-free, or chemical-free claims.
@@ -17,6 +18,7 @@
 ## Primary pages
 
 - [Homepage](https://www.moedim.ai/): Public overview of MoedimAI as an African crop management and agricultural operating system.
+- [About MoedimAI](https://www.moedim.ai/about.md): Markdown page for founder bio, headshot, LinkedIn, operating scope, and professional trust signals.
 - [African crop management](https://www.moedim.ai/buyers.md): Markdown page for companies evaluating MoedimAI as a partner for farmer networks, crop programs, harvest readiness, benchmarking, and export-ready supply.
 - [AI bioeconomy agriculture technology](https://www.moedim.ai/bioeconomy.md): Markdown page for technology, AI, bioeconomy, value addition, processing, logistics routing, and end-to-end agricultural supply-chain context.
 - [Company thesis](https://www.moedim.ai/thesis.md): Investment and infrastructure thesis for managed African crop programs and the agricultural bioeconomy operating system.

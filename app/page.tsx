@@ -71,12 +71,16 @@ export default function HomePage() {
           <div className="mt-8 flex flex-wrap items-center gap-3">
             <Link
               href="/buyers"
+              data-analytics-event="buyer_click"
+              data-analytics-label="home hero crop support"
               className="inline-flex h-12 items-center justify-center rounded-md bg-gold-500 px-6 text-sm font-medium text-navy-900 transition-colors hover:bg-gold-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-300 focus-visible:ring-offset-2 focus-visible:ring-offset-navy-900"
             >
               See crop support
             </Link>
             <Link
               href="/bioeconomy"
+              data-analytics-event="bioeconomy_click"
+              data-analytics-label="home hero bioeconomy"
               className="inline-flex h-12 items-center justify-center rounded-md border border-gold-500 px-6 text-sm font-medium text-cream-50 transition-colors hover:bg-gold-500/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-500 focus-visible:ring-offset-2 focus-visible:ring-offset-navy-900"
             >
               AI for bioeconomy
@@ -138,6 +142,8 @@ export default function HomePage() {
             </p>
             <Link
               href="/bioeconomy"
+              data-analytics-event="bioeconomy_click"
+              data-analytics-label="home bioeconomy note"
               className="mt-4 inline-flex text-sm font-medium text-gold-500 underline-offset-4 hover:underline"
             >
               Read the bioeconomy technology page
@@ -201,6 +207,8 @@ export default function HomePage() {
           <p className="mt-6">
             <a
               href="mailto:vivian@moedim.ai"
+              data-analytics-event="email_click"
+              data-analytics-label="home contact email"
               className="font-display text-2xl text-gold-500 underline-offset-4 hover:underline md:text-3xl"
             >
               vivian@moedim.ai
@@ -216,6 +224,8 @@ function AudienceDoorCard({ door }: { door: AudienceDoor }) {
   return (
     <Link
       href={door.href}
+      data-analytics-event="audience_path_click"
+      data-analytics-label={door.title}
       className="group block rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-500 focus-visible:ring-offset-2 focus-visible:ring-offset-navy-900"
     >
       <article className="flex h-full flex-col justify-between rounded-lg border border-cream-50/10 bg-navy-900/60 p-6 transition-colors hover:border-gold-500/40 hover:bg-navy-900">
