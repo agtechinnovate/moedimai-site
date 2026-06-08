@@ -26,6 +26,16 @@ export function SiteFooter() {
                 </Link>
               </li>
               <li>
+                <Link href="/bioeconomy" className="text-cream-50/80 hover:text-cream-50">
+                  Bioeconomy
+                </Link>
+              </li>
+              <li>
+                <Link href="/about" className="text-cream-50/80 hover:text-cream-50">
+                  About MoedimAI
+                </Link>
+              </li>
+              <li>
                 <Link href="/thesis" className="text-cream-50/80 hover:text-cream-50">
                   Company thesis
                 </Link>
@@ -44,6 +54,8 @@ export function SiteFooter() {
             <p className="mt-4 text-sm">
               <a
                 href="mailto:vivian@moedim.ai"
+                data-analytics-event="email_click"
+                data-analytics-label="footer email"
                 className="text-gold-500 underline-offset-4 hover:underline"
               >
                 vivian@moedim.ai

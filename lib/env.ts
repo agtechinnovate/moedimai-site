@@ -18,6 +18,7 @@ const publicSchema = z.object({
   NEXT_PUBLIC_SITE_URL: z.string().url().default("https://www.moedim.ai"),
 
   // Analytics — all optional
+  NEXT_PUBLIC_GA_MEASUREMENT_ID: z.string().min(1).optional(),
   NEXT_PUBLIC_PLAUSIBLE_DOMAIN: z.string().min(1).optional(),
   NEXT_PUBLIC_POSTHOG_KEY: z.string().min(1).optional(),
   NEXT_PUBLIC_POSTHOG_HOST: z.string().url().default("https://us.i.posthog.com"),
@@ -51,6 +52,7 @@ const serverSchema = z.object({
 
 const publicParsed = publicSchema.safeParse({
   NEXT_PUBLIC_SITE_URL: process.env.NEXT_PUBLIC_SITE_URL,
+  NEXT_PUBLIC_GA_MEASUREMENT_ID: process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID,
   NEXT_PUBLIC_PLAUSIBLE_DOMAIN: process.env.NEXT_PUBLIC_PLAUSIBLE_DOMAIN,
   NEXT_PUBLIC_POSTHOG_KEY: process.env.NEXT_PUBLIC_POSTHOG_KEY,
   NEXT_PUBLIC_POSTHOG_HOST: process.env.NEXT_PUBLIC_POSTHOG_HOST,

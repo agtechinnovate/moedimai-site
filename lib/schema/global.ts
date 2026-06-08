@@ -22,8 +22,11 @@ export const organizationSchema = {
   foundingDate: "2024",
   founder: {
     "@type": "Person",
+    "@id": `${baseUrl}/about#founder`,
     name: "Vivian Nwakah",
-    jobTitle: "Founder & CEO",
+    jobTitle: "Founder and Chief Executive Officer",
+    image: `${baseUrl}/images/vivian-nwakah-headshot.jpg`,
+    sameAs: ["https://www.linkedin.com/in/viviannwakah/"],
   },
   address: [
     { "@type": "PostalAddress", addressCountry: "KE", addressLocality: "Nairobi" },
