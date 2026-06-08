@@ -4,8 +4,8 @@ import type { ReactNode } from "react";
 import { AnalyticsProviders } from "@/components/analytics/providers";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
-import { env } from "@/lib/env";
 import { Schema, organizationSchema, websiteSchema } from "@/lib/schema";
+import { PUBLIC_SITE_URL } from "@/lib/site-url";
 import "./globals.css";
 
 const fraunces = Fraunces({
@@ -22,7 +22,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(env.NEXT_PUBLIC_SITE_URL),
+  metadataBase: new URL(PUBLIC_SITE_URL),
   applicationName: "MoedimAI",
   title: {
     default: "MoedimAI | Kenyan essential oils and verified botanical supply",

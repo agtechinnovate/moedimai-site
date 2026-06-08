@@ -1,4 +1,4 @@
-import { env } from "@/lib/env";
+import { PUBLIC_SITE_URL } from "@/lib/site-url";
 
 export interface ArticleSchemaInput {
   slug: string;
@@ -13,7 +13,7 @@ export interface ArticleSchemaInput {
   imageUrl?: string;
 }
 
-const baseUrl = env.NEXT_PUBLIC_SITE_URL.replace(/\/$/, "");
+const baseUrl = PUBLIC_SITE_URL;
 
 /**
  * Article JSON-LD for /journal/[slug]. Includes a Person record for the
