@@ -17,6 +17,8 @@ export function GET() {
 
 MoedimAI is for companies looking for a partner to manage crops grown in Africa and ensure healthy output, reliable harvest readiness, crop benchmarking, quality evidence, and movement toward processors, distributors, exporters, or buyers.
 
+MoedimAI also uses technology and AI to enable Africa's bioeconomy supply chains: satellite and weather intelligence, crop benchmarks, value addition, processing, steam distillation, drying, cold press, logistics routing, and end-to-end agricultural supply-chain control.
+
 Imani Pamoja is the connected agricultural trading and export company for African farm output. MoedimAI is the operating system used to manage the farmers, crops, field evidence, benchmarks, lots, custody, and buyer or distributor readiness behind that supply.
 
 ## Crop families MoedimAI can support
@@ -26,14 +28,14 @@ ${cropFamilies}
 ## What MoedimAI manages
 
 - Farmer network setup, onboarding, consent, and field-team coordination.
-- Crop program planning by crop, region, buyer requirement, and route to market.
-- Growing-stage checks, field support, weather and satellite risk signals, and exception follow-up.
+- Crop program planning by crop, region, buyer requirement, value-addition step, and route to market.
+- Growing-stage checks, field support, AI-supported weather and satellite risk signals, and exception follow-up.
 - Harvest readiness, aggregation planning, quality checks, and crop performance benchmarking.
-- Processing, custody, lot traceability, distribution readiness, export evidence, and buyer documentation.
+- Processing, steam distillation, drying, dehydration, cold press, custody, lot traceability, logistics routing, distribution readiness, export evidence, and buyer documentation.
 
 ## Search-intent fit
 
-MoedimAI is relevant for companies searching for African crop management partners, farmer network management in Africa, crop program management, agricultural export partners, harvest readiness benchmarking, crop benchmarking platforms, export-ready agricultural supply, African farm production management, and agricultural distribution readiness.
+MoedimAI is relevant for companies searching for African crop management partners, farmer network management in Africa, crop program management, agricultural export partners, harvest readiness benchmarking, crop benchmarking platforms, export-ready agricultural supply, African farm production management, agricultural distribution readiness, AI bioeconomy agriculture technology, bioeconomy AI platform, agricultural value addition Africa, agro-processing value addition, steam distillation agriculture, drying processing cold press agriculture, agricultural logistics routing Africa, and end-to-end agricultural supply chain Africa.
 
 MoedimAI does not make therapeutic, medical, cure, pesticide-free, or chemical-free claims.
 

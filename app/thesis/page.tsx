@@ -94,10 +94,10 @@ export default function ThesisPage() {
             The operating system for managed African crop programs.
           </h1>
           <p className="mt-8 max-w-3xl text-base text-cream-50/85 md:text-lg">
-            MoedimAI turns farmer networks, crop plans, field support, weather and satellite
-            signals, quality records, benchmarks, and buyer or distributor requirements into a
-            governed operating graph. Imani Pamoja is the connected agricultural trading and export
-            company for African farm output.
+            MoedimAI turns farmer networks, crop plans, field support, AI-supported weather and
+            satellite signals, value addition, quality records, logistics routing, benchmarks, and
+            buyer or distributor requirements into a governed operating graph. Imani Pamoja is the
+            connected agricultural trading and export company for African farm output.
           </p>
         </div>
       </section>
@@ -147,16 +147,12 @@ export default function ThesisPage() {
       <section className="container py-16 md:py-20">
         <div className="grid gap-6 md:grid-cols-3">
           <article className="rounded-lg border border-cream-50/10 bg-navy-900/40 p-6">
-            <p className="text-xs uppercase tracking-[0.16em] text-gold-500">
-              01 · Value addition in Kenya
-            </p>
-            <h3 className="mt-4 font-display text-2xl text-cream-50">
-              Farmers to managed crop programs
-            </h3>
+            <p className="text-xs uppercase tracking-[0.16em] text-gold-500">01 · Technology layer</p>
+            <h3 className="mt-4 font-display text-2xl text-cream-50">AI for the bioeconomy</h3>
             <p className="mt-4 text-sm text-cream-50/80 md:text-base">
-              MoedimAI helps companies organize farmer networks, crop plans, field teams, and
-              growing-stage evidence so African crop programs can be managed against a clear output
-              target.
+              MoedimAI helps companies organize farmer networks, crop plans, field teams,
+              satellite and weather signals, growing-stage evidence, value addition, and logistics
+              so African bioeconomy supply chains can be managed against a clear output target.
             </p>
           </article>
           <article className="rounded-lg border border-cream-50/10 bg-navy-900/40 p-6">

@@ -3,11 +3,12 @@ import Link from "next/link";
 
 interface NavItem {
   label: string;
-  href: "/" | "/buyers" | "/thesis" | "/jaribu";
+  href: "/" | "/buyers" | "/bioeconomy" | "/thesis" | "/jaribu";
 }
 
 const NAV_ITEMS: NavItem[] = [
   { label: "Buyers", href: "/buyers" },
+  { label: "Bioeconomy", href: "/bioeconomy" },
   { label: "Thesis", href: "/thesis" },
   { label: "Jaribu", href: "/jaribu" },
 ];
@@ -23,12 +24,12 @@ export function SiteHeader() {
             className="h-10 w-auto md:h-12"
           />
         </Link>
-        <nav aria-label="Primary" className="flex items-center gap-1 sm:gap-2">
+        <nav aria-label="Primary" className="flex items-center gap-0.5 sm:gap-1 md:gap-2">
           {NAV_ITEMS.map((item) => (
             <Link
               key={item.href}
               href={item.href}
-              className="rounded-md px-3 py-2 text-sm text-cream-50/80 transition-colors hover:bg-cream-50/5 hover:text-cream-50"
+              className="rounded-md px-2 py-2 text-xs text-cream-50/80 transition-colors hover:bg-cream-50/5 hover:text-cream-50 sm:px-3 sm:text-sm"
             >
               {item.label}
             </Link>
