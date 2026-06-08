@@ -1,11 +1,56 @@
 /* eslint-disable @next/next/no-img-element */
 import type { Metadata } from "next";
+import { env } from "@/lib/env";
+import { Schema, breadcrumbList } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Company thesis",
   description:
     "Chemotype-verification infrastructure for African organic exports. Climate-resilient agriculture with value addition in Kenya and blockchain provenance.",
+  alternates: {
+    canonical: "/thesis",
+    types: {
+      "text/markdown": [{ url: "/thesis.md", title: "Company thesis markdown" }],
+    },
+  },
+  openGraph: {
+    title: "MoedimAI company thesis",
+    description:
+      "Chemotype-verification infrastructure for African organic exports, value addition in Kenya, and verified smallholder supply.",
+    url: "/thesis",
+    images: [
+      {
+        url: "/images/vivian-at-facility.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Vivian Nwakah at the MoedimAI Mount Kenya facility",
+      },
+    ],
+  },
 };
+
+const baseUrl = env.NEXT_PUBLIC_SITE_URL.replace(/\/$/, "");
+
+const thesisPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": `${baseUrl}/thesis#webpage`,
+  url: `${baseUrl}/thesis`,
+  name: "MoedimAI company thesis",
+  description:
+    "Chemotype-verification infrastructure for African organic exports, value addition in Kenya, and verified smallholder supply.",
+  isPartOf: { "@id": `${baseUrl}/#website` },
+  about: [
+    { "@id": `${baseUrl}/#organization` },
+    "African organic exports",
+    "Chemotype verification",
+    "Smallholder agriculture",
+  ],
+  primaryImageOfPage: {
+    "@type": "ImageObject",
+    url: `${baseUrl}/images/vivian-at-facility.jpg`,
+  },
+} as const;
 
 const JOURNEY_STAGES: ReadonlyArray<{ name: string; weight: string; sub: string }> = [
   { name: "Seedling", weight: "30%", sub: "cultivar fit" },
@@ -21,6 +66,12 @@ const JOURNEY_STAGES: ReadonlyArray<{ name: string; weight: string; sub: string 
 export default function ThesisPage() {
   return (
     <>
+      <Schema
+        data={[
+          thesisPageSchema,
+          breadcrumbList([{ name: "Company thesis", path: "/thesis" }]),
+        ]}
+      />
       <section className="relative overflow-hidden">
         <div
           aria-hidden

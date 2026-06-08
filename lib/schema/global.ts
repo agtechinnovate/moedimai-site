@@ -36,14 +36,23 @@ export const organizationSchema = {
     },
   ],
   knowsAbout: [
+    "Kenyan essential oils",
+    "African botanicals",
+    "Cold-pressed botanical oils",
     "Organic essential oils",
+    "Rosemary essential oil",
+    "Lavender essential oil",
+    "Moringa oil",
+    "Baobab oil",
+    "Neem oil",
     "Agricultural supply chain",
     "Smallholder farmer programs",
     "EU organic certification",
     "USDA organic certification",
     "Kenyan agriculture",
-    "African botanicals",
     "GC-MS chemotype verification",
+    "Lot traceability",
+    "Certificate of Analysis documentation",
   ],
   areaServed: [
     { "@type": "Country", name: "Kenya" },
@@ -52,9 +61,17 @@ export const organizationSchema = {
   ],
   contactPoint: {
     "@type": "ContactPoint",
-    email: "info@moedim.ai",
-    contactType: "general",
+    email: "vivian@moedim.ai",
+    contactType: "sales",
+    areaServed: ["EU", "US", "KE"],
+    availableLanguage: ["English", "Swahili"],
   },
+  makesOffer: [
+    "Steam-distilled essential oils from Kenya",
+    "Cold-pressed botanical oils from Kenya",
+    "Buyer-ready traceability and documentation packets",
+    "Verified agricultural supply chain operating system",
+  ],
 } as const;
 
 /**
@@ -66,5 +83,8 @@ export const websiteSchema = {
   "@id": `${baseUrl}/#website`,
   url: baseUrl,
   name: "MoedimAI",
+  description:
+    "Kenyan essential oils, cold-pressed botanical oils, and verified African agricultural supply.",
   publisher: { "@id": `${baseUrl}/#organization` },
+  inLanguage: "en",
 } as const;

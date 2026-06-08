@@ -43,10 +43,10 @@ export function SiteFooter() {
             </h2>
             <p className="mt-4 text-sm">
               <a
-                href="mailto:info@moedim.ai"
+                href="mailto:vivian@moedim.ai"
                 className="text-gold-500 underline-offset-4 hover:underline"
               >
-                info@moedim.ai
+                vivian@moedim.ai
               </a>
             </p>
             <p className="mt-4 text-sm text-cream-50/80">Kenya · Netherlands · United States</p>

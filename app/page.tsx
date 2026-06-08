@@ -132,10 +132,10 @@ export default function HomePage() {
           </p>
           <p className="mt-6">
             <a
-              href="mailto:info@moedim.ai"
+              href="mailto:vivian@moedim.ai"
               className="font-display text-2xl text-gold-500 underline-offset-4 hover:underline md:text-3xl"
             >
-              info@moedim.ai
+              vivian@moedim.ai
             </a>
           </p>
         </div>
