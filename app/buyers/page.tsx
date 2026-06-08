@@ -1,8 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 import type { Metadata } from "next";
 import { BrandMark } from "@/components/layout/brand-mark";
-import { env } from "@/lib/env";
 import { Schema, breadcrumbList } from "@/lib/schema";
+import { PUBLIC_SITE_URL } from "@/lib/site-url";
 
 export const metadata: Metadata = {
   title: "Kenyan essential oils and botanical oils for buyers",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   },
 };
 
-const baseUrl = env.NEXT_PUBLIC_SITE_URL.replace(/\/$/, "");
+const baseUrl = PUBLIC_SITE_URL;
 
 const ESSENTIAL_OILS: ReadonlyArray<{ name: string; latin: string }> = [
   { name: "Rosemary", latin: "Rosmarinus officinalis" },

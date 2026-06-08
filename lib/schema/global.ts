@@ -1,6 +1,6 @@
-import { env } from "@/lib/env";
+import { PUBLIC_SITE_URL } from "@/lib/site-url";
 
-const baseUrl = env.NEXT_PUBLIC_SITE_URL.replace(/\/$/, "");
+const baseUrl = PUBLIC_SITE_URL;
 
 /**
  * Organization JSON-LD. Emitted on every page via the root layout.

@@ -1,9 +1,7 @@
 import type { MetadataRoute } from "next";
-import { env } from "@/lib/env";
+import { PUBLIC_SITE_URL } from "@/lib/site-url";
 
 export default function robots(): MetadataRoute.Robots {
-  const baseUrl = env.NEXT_PUBLIC_SITE_URL.replace(/\/$/, "");
-
   const aiCrawlers = [
     "GPTBot",
     "ChatGPT-User",
@@ -28,7 +26,6 @@ export default function robots(): MetadataRoute.Robots {
       { userAgent: "*", allow: "/", disallow: ["/api/"] },
       ...aiCrawlers.map((userAgent) => ({ userAgent, allow: "/" })),
     ],
-    sitemap: `${baseUrl}/sitemap.xml`,
-    host: baseUrl,
+    sitemap: `${PUBLIC_SITE_URL}/sitemap.xml`,
   };
 }

@@ -1,4 +1,4 @@
-import { env } from "@/lib/env";
+import { PUBLIC_SITE_URL } from "@/lib/site-url";
 
 export interface ProductSchemaInput {
   slug: string;
@@ -20,7 +20,7 @@ export interface ProductSchemaInput {
   aggregateRating?: { value: number; count: number };
 }
 
-const baseUrl = env.NEXT_PUBLIC_SITE_URL.replace(/\/$/, "");
+const baseUrl = PUBLIC_SITE_URL;
 
 /**
  * Product JSON-LD. Includes the moat-bearing fields — Latin binomial,

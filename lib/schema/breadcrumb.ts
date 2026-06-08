@@ -1,11 +1,11 @@
-import { env } from "@/lib/env";
+import { PUBLIC_SITE_URL } from "@/lib/site-url";
 
 interface BreadcrumbStep {
   name: string;
   path: string;
 }
 
-const baseUrl = env.NEXT_PUBLIC_SITE_URL.replace(/\/$/, "");
+const baseUrl = PUBLIC_SITE_URL;
 
 /**
  * BreadcrumbList JSON-LD. Use on every page except `/`.
