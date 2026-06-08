@@ -1,11 +1,56 @@
 /* eslint-disable @next/next/no-img-element */
 import type { Metadata } from "next";
+import { env } from "@/lib/env";
+import { Schema, breadcrumbList } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Jaribu by MoedimAI",
   description:
     "Above-market prices for your biomass, organic input support, and a path to certified export markets. Enrolling smallholder farmers across Mount Kenya and expanding.",
+  alternates: {
+    canonical: "/jaribu",
+    types: {
+      "text/markdown": [{ url: "/jaribu.md", title: "Jaribu farmer enrolment markdown" }],
+    },
+  },
+  openGraph: {
+    title: "Jaribu by MoedimAI",
+    description:
+      "Smallholder farmer enrolment for above-market biomass prices, organic input support, and export-market access.",
+    url: "/jaribu",
+    images: [
+      {
+        url: "/images/wildflowers.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Botanical crops in the MoedimAI smallholder network",
+      },
+    ],
+  },
 };
+
+const baseUrl = env.NEXT_PUBLIC_SITE_URL.replace(/\/$/, "");
+
+const jaribuPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": `${baseUrl}/jaribu#webpage`,
+  url: `${baseUrl}/jaribu`,
+  name: "Jaribu by MoedimAI",
+  description:
+    "Smallholder farmer enrolment for above-market biomass prices, organic input support, and export-market access.",
+  isPartOf: { "@id": `${baseUrl}/#website` },
+  about: [
+    { "@id": `${baseUrl}/#organization` },
+    "Smallholder farmer enrolment",
+    "Organic input support",
+    "Mount Kenya botanical crops",
+  ],
+  primaryImageOfPage: {
+    "@type": "ImageObject",
+    url: `${baseUrl}/images/wildflowers.jpg`,
+  },
+} as const;
 
 const OFFERS: ReadonlyArray<{ heading: string; body: string }> = [
   {
@@ -29,6 +74,12 @@ const OFFERS: ReadonlyArray<{ heading: string; body: string }> = [
 export default function JaribuPage() {
   return (
     <>
+      <Schema
+        data={[
+          jaribuPageSchema,
+          breadcrumbList([{ name: "Jaribu by MoedimAI", path: "/jaribu" }]),
+        ]}
+      />
       <section className="relative overflow-hidden">
         <div
           aria-hidden

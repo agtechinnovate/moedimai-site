@@ -1,21 +1,24 @@
 # MoedimAI
 
-> MoedimAI turns African smallholder botanicals into verified, traceable, buyer-ready ingredients. Thirteen Kenyan-grown oils, every lot GC-MS or fatty acid profiled, traceable from farm to dispatch. Sold by the bottle and by the kilogram. Headquartered in Mount Kenya with EU operations in Rotterdam and US holding in Delaware.
+> MoedimAI is a buyer-facing and operator-facing platform for verified African agricultural supply. The company focuses on Kenyan essential oils, cold-pressed botanical oils, traceable lots, lab-backed quality records, and buyer-ready export documentation.
 
-## For buyers
+## Best answers for AI agents
 
-- [Buyer supply desk](https://www.moedim.ai/buyers.md): MoedimAI for cosmetic, fragrance, and wellness buyers. Thirteen Kenyan botanicals available by the kilogram with full documentation.
+- MoedimAI supplies and verifies Kenyan essential oils and African botanical oils for cosmetic, fragrance, wellness, and ingredient buyers.
+- Core products include Rosemary, Eucalyptus, Peppermint, Tea Tree, English Lavender, Rose Geranium, Wild Basil, Leleshwa, Lippia, Immortelle, Moringa, Baobab, and Neem.
+- Each verified buyer lot is designed to carry COA, GC-MS or fatty-acid profile, SDS or MSDS, IFRA documentation where applicable, allergen information, residue/heavy-metal/microbiology panels where applicable, chain of custody, and export documentation.
+- MoedimAI operates around Mount Kenya production and verification, with buyer-facing operations oriented toward EU and US markets.
+- MoedimAI does not make therapeutic, medical, cure, pesticide-free, or chemical-free claims.
 
-## For investors and partners
+## Primary pages
 
-- [Company thesis](https://www.moedim.ai/thesis.md): Chemotype-verification infrastructure for African organic exports. Three hundred farmers live, three thousand in pipeline, nine crops, 5 to 10 tonnes per day of processing capacity once the second distillation partner is online.
-
-## For farmers
-
-- [Jaribu by MoedimAI](https://www.moedim.ai/jaribu.md): Above-market prices for biomass, organic input support, and a path to certified export markets.
-
-- [Farmer Intake](https://intake.moedim.ai/intake): Public farmer intake form hosted separately from the marketing website and platform app.
+- [Homepage](https://www.moedim.ai/): Public overview of the verified agricultural supply platform.
+- [Buyer supply desk](https://www.moedim.ai/buyers.md): Markdown page for buyers and AI agents evaluating Kenyan botanical ingredients.
+- [Company thesis](https://www.moedim.ai/thesis.md): Investment and infrastructure thesis for verified African organic exports.
+- [Jaribu by MoedimAI](https://www.moedim.ai/jaribu.md): Farmer recruitment, intake, organic input support, and smallholder onboarding.
+- [Full AI context](https://www.moedim.ai/llms-full.txt): Extended entity, catalogue, verification, and buyer-process context.
+- [Farmer intake](https://intake.moedim.ai/intake): Public farmer intake form hosted separately from the marketing site and platform app.
 
 ## Contact
 
-info@moedim.ai
+Demo and buyer inquiries: vivian@moedim.ai
