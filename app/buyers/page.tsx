@@ -1,23 +1,24 @@
 /* eslint-disable @next/next/no-img-element */
 import type { Metadata } from "next";
 import { BrandMark } from "@/components/layout/brand-mark";
-import { Schema, breadcrumbList } from "@/lib/schema";
+import { PROOF_CASE_FAQS } from "@/lib/content/seo";
+import { Schema, breadcrumbList, faqPage } from "@/lib/schema";
 import { PUBLIC_SITE_URL } from "@/lib/site-url";
 
 export const metadata: Metadata = {
-  title: "Kenyan essential oils and botanical oils for buyers",
+  title: "Buyer-grade supply proof case",
   description:
-    "Kenyan essential oils and cold-pressed botanical oils for buyer evaluation. Verified lots carry GC-MS or fatty acid profiles, traceability records, and export documentation.",
+    "Imani Pamoja is the tenant-zero proof case for MoedimAI's buyer-grade agricultural supply verification, with lot traceability, lab evidence, and export documentation.",
   alternates: {
     canonical: "/buyers",
     types: {
-      "text/markdown": [{ url: "/buyers.md", title: "Buyer supply desk markdown" }],
+      "text/markdown": [{ url: "/buyers.md", title: "Buyer-grade proof case markdown" }],
     },
   },
   openGraph: {
-    title: "Kenyan essential oils and botanical oils for buyers",
+    title: "MoedimAI buyer-grade supply proof case",
     description:
-      "Rosemary, lavender, eucalyptus, tea tree, immortelle, moringa, baobab, neem, and other Kenyan botanicals with lot traceability and documentation.",
+      "A botanical and oil proof case for verified agricultural supply, lab-backed quality evidence, and buyer-ready documentation.",
     url: "/buyers",
     images: [
       {
@@ -32,32 +33,32 @@ export const metadata: Metadata = {
 
 const baseUrl = PUBLIC_SITE_URL;
 
-const ESSENTIAL_OILS: ReadonlyArray<{ name: string; latin: string }> = [
-  { name: "Rosemary", latin: "Rosmarinus officinalis" },
-  { name: "Eucalyptus", latin: "Eucalyptus globulus" },
-  { name: "Peppermint", latin: "Mentha × piperita" },
-  { name: "Tea Tree", latin: "Melaleuca alternifolia" },
-  { name: "English Lavender", latin: "Lavandula angustifolia" },
-  { name: "Rose Geranium", latin: "Pelargonium graveolens" },
-  { name: "Wild Basil", latin: "Ocimum spp." },
-  { name: "Leleshwa", latin: "Tarchonanthus camphoratus" },
-  { name: "Lippia", latin: "Lippia javanica" },
-  { name: "Immortelle", latin: "Helichrysum splendidum" },
-];
-
-const BOTANICAL_OILS: ReadonlyArray<{ name: string; latin: string }> = [
-  { name: "Moringa", latin: "Moringa oleifera" },
-  { name: "Baobab", latin: "Adansonia digitata" },
-  { name: "Neem", latin: "Azadirachta indica" },
+const PROOF_CASE_LINES: ReadonlyArray<{ name: string; latin: string; note: string }> = [
+  {
+    name: "Baobab oil",
+    latin: "Adansonia digitata",
+    note: "Cold-pressed botanical oil line for buyer-grade evidence workflows.",
+  },
+  {
+    name: "Moringa oil",
+    latin: "Moringa oleifera",
+    note: "Cold-pressed botanical oil line tied to producer, lot, and quality records.",
+  },
+  {
+    name: "Avocado oil",
+    latin: "Persea americana",
+    note: "Oil line used to prove specification-driven production and buyer packet readiness.",
+  },
 ];
 
 const SPEC_ROWS: ReadonlyArray<{ label: string; value: React.ReactNode }> = [
-  { label: "Sourcing region", value: "Mount Kenya smallholder network" },
+  { label: "Proof case", value: "Imani Pamoja tenant-zero network" },
+  { label: "Public scale", value: "600+ farmers onboarded, ~900 acres, 20 cells" },
   { label: "EU operations", value: "Rotterdam" },
   { label: "US holding", value: "Delaware" },
   { label: "Trust mark", value: <BrandMark surface="verified" size="sm" /> },
-  { label: "Catalog", value: "10 essential oils, 3 botanical carrier oils" },
-  { label: "Volume", value: "Sample and kilogram conversations by request" },
+  { label: "Current oil lines", value: "Baobab, moringa, avocado" },
+  { label: "Volume", value: "Sample and buyer conversations by request" },
   { label: "Documentation", value: "GC-MS or FAME profile per lot, COA, traceability record" },
 ];
 
@@ -66,9 +67,9 @@ const buyerPageSchema = {
   "@type": "WebPage",
   "@id": `${baseUrl}/buyers#webpage`,
   url: `${baseUrl}/buyers`,
-  name: "Kenyan essential oils and botanical oils for buyers",
+  name: "MoedimAI buyer-grade supply proof case",
   description:
-    "Kenyan essential oils and cold-pressed botanical oils with GC-MS or fatty-acid profiles, COA, traceability records, and export documentation.",
+    "Imani Pamoja demonstrates buyer-grade agricultural supply verification with quality evidence, traceability records, and export documentation.",
   isPartOf: { "@id": `${baseUrl}/#website` },
   about: { "@id": `${baseUrl}/#organization` },
   primaryImageOfPage: {
@@ -80,15 +81,15 @@ const buyerPageSchema = {
 const buyerProductListSchema = {
   "@context": "https://schema.org",
   "@type": "ItemList",
-  "@id": `${baseUrl}/buyers#product-list`,
-  name: "MoedimAI Kenyan botanical ingredient catalogue",
-  itemListElement: [...ESSENTIAL_OILS, ...BOTANICAL_OILS].map((oil, idx) => ({
+  "@id": `${baseUrl}/buyers#proof-case-lines`,
+  name: "Imani Pamoja tenant-zero botanical oil proof case",
+  itemListElement: PROOF_CASE_LINES.map((oil, idx) => ({
     "@type": "ListItem",
     position: idx + 1,
     item: {
       "@type": "Product",
-      name: `${oil.name} oil`,
-      description: `${oil.name} botanical ingredient from the MoedimAI Kenyan supply network.`,
+      name: oil.name,
+      description: oil.note,
       brand: { "@id": `${baseUrl}/#organization` },
       manufacturer: { "@id": `${baseUrl}/#organization` },
       additionalProperty: [
@@ -106,26 +107,30 @@ export default function BuyersPage() {
         data={[
           buyerPageSchema,
           buyerProductListSchema,
-          breadcrumbList([{ name: "Buyer supply desk", path: "/buyers" }]),
+          faqPage(PROOF_CASE_FAQS),
+          breadcrumbList([{ name: "Buyer-grade proof case", path: "/buyers" }]),
         ]}
       />
       <section className="container py-16 md:py-20">
         <p className="font-sans text-xs uppercase tracking-[0.18em] text-gold-500">
-          I source cosmetic ingredients
+          Tenant-zero proof case
         </p>
         <h1 className="mt-4 max-w-3xl font-display text-4xl leading-tight md:text-5xl">
-          <BrandMark surface="moedimai" size="lg" /> for cosmetic, fragrance, and wellness buyers.
+          <BrandMark surface="moedimai" size="lg" /> buyer-grade supply verification in the field.
         </h1>
         <p className="mt-6 max-w-3xl text-base text-cream-50/85 md:text-lg">
-          Kenyan essential oils and cold-pressed carrier oils for buyer evaluation. Verified lots
-          carry GC-MS or fatty acid profiles, traceability records, and export documentation from
-          the Mount Kenya supply network.
+          Imani Pamoja is the live botanical and oil proof case for MoedimAI&apos;s agricultural
+          operating system. The point is not that MoedimAI is an ingredients company; the point is
+          that buyer specifications, farmer records, satellite and weather reads, lab evidence, lot
+          traceability, and export documentation can be governed in one system.
         </p>
       </section>
 
       <section className="border-t border-cream-50/10 bg-navy-800/40">
         <div className="container py-16 md:py-20">
-          <h2 className="font-display text-2xl text-cream-50 md:text-3xl">Buyer catalogue</h2>
+          <h2 className="font-display text-2xl text-cream-50 md:text-3xl">
+            Current proof-case lines
+          </h2>
 
           <div className="mt-8 grid gap-4 sm:grid-cols-3">
             <figure className="overflow-hidden rounded-lg border border-cream-50/10 bg-navy-900/40">
@@ -151,32 +156,15 @@ export default function BuyersPage() {
             </figure>
           </div>
 
-          <h3 className="mt-12 text-sm font-semibold uppercase tracking-wider text-gold-500">
-            Essential oils (steam distilled)
-          </h3>
           <ul className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-            {ESSENTIAL_OILS.map((oil) => (
+            {PROOF_CASE_LINES.map((oil) => (
               <li
                 key={oil.name}
                 className="rounded-md border border-cream-50/10 bg-navy-900/40 px-4 py-3"
               >
                 <p className="font-display text-lg text-cream-50">{oil.name}</p>
                 <p className="font-display text-sm italic text-cream-50/65">{oil.latin}</p>
-              </li>
-            ))}
-          </ul>
-
-          <h3 className="mt-12 text-sm font-semibold uppercase tracking-wider text-gold-500">
-            Cold-pressed botanical oils
-          </h3>
-          <ul className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-            {BOTANICAL_OILS.map((oil) => (
-              <li
-                key={oil.name}
-                className="rounded-md border border-cream-50/10 bg-navy-900/40 px-4 py-3"
-              >
-                <p className="font-display text-lg text-cream-50">{oil.name}</p>
-                <p className="font-display text-sm italic text-cream-50/65">{oil.latin}</p>
+                <p className="mt-3 text-sm text-cream-50/70">{oil.note}</p>
               </li>
             ))}
           </ul>
@@ -192,16 +180,16 @@ export default function BuyersPage() {
             <p className="font-display text-3xl text-gold-500">1</p>
             <h3 className="mt-3 font-display text-xl text-cream-50">Request a sample.</h3>
             <p className="mt-3 text-sm text-cream-50/80">
-              Pick the oils you want to evaluate. We confirm sample availability and share the
-              current lot evidence when available.
+              Share the buyer specification, destination market, evidence requirements, and sample
+              needs. We confirm whether the proof-case network has a relevant lot or data packet.
             </p>
           </li>
           <li className="rounded-lg border border-cream-50/10 bg-navy-900/40 p-6">
             <p className="font-display text-3xl text-gold-500">2</p>
             <h3 className="mt-3 font-display text-xl text-cream-50">Place an order.</h3>
             <p className="mt-3 text-sm text-cream-50/80">
-              Once the sample matches your spec, submit volume and delivery requirements. We confirm
-              pricing, lead time, and lot allocation against current supply.
+              MoedimAI works backward from the buyer specification and checks whether production,
+              lab, custody, and documentation evidence can support the target.
             </p>
           </li>
           <li className="rounded-lg border border-cream-50/10 bg-navy-900/40 p-6">
@@ -210,11 +198,31 @@ export default function BuyersPage() {
               Receive with full documentation.
             </h3>
             <p className="mt-3 text-sm text-cream-50/80">
-              Every shipment includes Certificate of Analysis, lot traceability record, and origin
-              documentation. KEPHIS phytosanitary clearance arranged for export consignments.
+              Buyer-ready packets are designed to include quality evidence, lot traceability,
+              origin records, custody events, and export documentation tied to the same graph.
             </p>
           </li>
         </ol>
+      </section>
+
+      <section className="border-t border-cream-50/10">
+        <div className="container py-16 md:py-20">
+          <p className="text-xs uppercase tracking-[0.22em] text-gold-500">Common questions</p>
+          <h2 className="mt-4 font-display text-3xl text-cream-50 md:text-4xl">
+            How the proof case translates to buyer-grade supply.
+          </h2>
+          <div className="mt-10 grid gap-5 md:grid-cols-2">
+            {PROOF_CASE_FAQS.map((faq) => (
+              <article
+                key={faq.question}
+                className="rounded-lg border border-cream-50/10 bg-navy-900/40 p-6"
+              >
+                <h3 className="font-display text-xl text-cream-50">{faq.question}</h3>
+                <p className="mt-3 text-sm leading-6 text-cream-50/75">{faq.answer}</p>
+              </article>
+            ))}
+          </div>
+        </div>
       </section>
 
       <section className="border-t border-cream-50/10 bg-navy-800/40">

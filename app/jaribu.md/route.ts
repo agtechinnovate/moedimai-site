@@ -21,7 +21,7 @@ export function GET() {
 
 If you grow rosemary, lavender, eucalyptus, tea tree, lemongrass, baobab, moringa, neem, immortelle, rose geranium, leleshwa, wild basil, lippia, or peppermint, or want to start, reach out.
 
-Email: info@moedim.ai
+Email: vivian@moedim.ai
 `;
   return new NextResponse(md, {
     headers: {

@@ -1,12 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
 import type { Metadata } from "next";
-import { Schema, breadcrumbList } from "@/lib/schema";
+import { CATEGORY_FAQS } from "@/lib/content/seo";
+import { Schema, breadcrumbList, faqPage } from "@/lib/schema";
 import { PUBLIC_SITE_URL } from "@/lib/site-url";
 
 export const metadata: Metadata = {
-  title: "Company thesis",
+  title: "Agricultural bioeconomy operating system thesis",
   description:
-    "Chemotype-verification infrastructure for African organic exports. Climate-resilient agriculture with value addition in Kenya and blockchain provenance.",
+    "MoedimAI is trade infrastructure for the agricultural bioeconomy: a multi-tenant operating graph for verified, financeable, exportable agricultural supply.",
   alternates: {
     canonical: "/thesis",
     types: {
@@ -14,9 +15,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "MoedimAI company thesis",
+    title: "MoedimAI agricultural bioeconomy thesis",
     description:
-      "Chemotype-verification infrastructure for African organic exports, value addition in Kenya, and verified smallholder supply.",
+      "Trade infrastructure for verified, financeable, exportable agricultural supply, with Imani Pamoja as the tenant-zero proof case.",
     url: "/thesis",
     images: [
       {
@@ -36,13 +37,15 @@ const thesisPageSchema = {
   "@type": "WebPage",
   "@id": `${baseUrl}/thesis#webpage`,
   url: `${baseUrl}/thesis`,
-  name: "MoedimAI company thesis",
+  name: "MoedimAI agricultural bioeconomy thesis",
   description:
-    "Chemotype-verification infrastructure for African organic exports, value addition in Kenya, and verified smallholder supply.",
+    "Trade infrastructure for verified, financeable, exportable agricultural supply, with Imani Pamoja as the tenant-zero proof case.",
   isPartOf: { "@id": `${baseUrl}/#website` },
   about: [
     { "@id": `${baseUrl}/#organization` },
-    "African organic exports",
+    "Agricultural bioeconomy",
+    "Trade infrastructure for agriculture",
+    "Specification-driven production",
     "Chemotype verification",
     "Smallholder agriculture",
   ],
@@ -52,15 +55,15 @@ const thesisPageSchema = {
   },
 } as const;
 
-const JOURNEY_STAGES: ReadonlyArray<{ name: string; weight: string; sub: string }> = [
-  { name: "Seedling", weight: "30%", sub: "cultivar fit" },
-  { name: "Soil", weight: "8%", sub: "pH, inputs" },
-  { name: "Growing", weight: "12%", sub: "stress events" },
-  { name: "Harvest", weight: "18%", sub: "bloom, timing" },
-  { name: "Field to Still", weight: "8%", sub: "hours, temp" },
-  { name: "Processing", weight: "15%", sub: "pressure, time" },
-  { name: "QC", weight: "5%", sub: "GC-MS vs target" },
-  { name: "EU Logistics", weight: "4%", sub: "cool, dark, fast" },
+const JOURNEY_STAGES: ReadonlyArray<{ name: string; signal: string; sub: string }> = [
+  { name: "Producer", signal: "Identity", sub: "farmer, plot, consent" },
+  { name: "Cell", signal: "Context", sub: "location, crop, group" },
+  { name: "Specification", signal: "Target", sub: "buyer end state" },
+  { name: "Field", signal: "Evidence", sub: "stage logs, inspections" },
+  { name: "Sensing", signal: "Risk", sub: "weather, NDVI, alerts" },
+  { name: "Quality", signal: "Lab", sub: "QC and chemistry" },
+  { name: "Lot", signal: "Custody", sub: "mass balance, movement" },
+  { name: "Buyer", signal: "Packet", sub: "ready evidence" },
 ];
 
 export default function ThesisPage() {
@@ -69,6 +72,7 @@ export default function ThesisPage() {
       <Schema
         data={[
           thesisPageSchema,
+          faqPage(CATEGORY_FAQS),
           breadcrumbList([{ name: "Company thesis", path: "/thesis" }]),
         ]}
       />
@@ -87,12 +91,13 @@ export default function ThesisPage() {
             Investor thesis
           </p>
           <h1 className="mt-5 max-w-4xl font-display text-4xl leading-[1.05] text-cream-50 md:text-6xl">
-            Chemotype-verification infrastructure for African organic exports.
+            Trade infrastructure for the agricultural bioeconomy.
           </h1>
           <p className="mt-8 max-w-3xl text-base text-cream-50/85 md:text-lg">
-            Climate-resilient agriculture with value addition in Kenya and blockchain provenance. We
-            turn voice, paper, and community-led informality into structured field data that prices
-            specs for buyers, prices risk for insurers, and fuels research for African institutions.
+            MoedimAI turns voice, paper, community-led informality, satellite signals, quality
+            records, and buyer specifications into a governed operating graph. Imani Pamoja is the
+            tenant-zero proof case; the category is verified, financeable, exportable agricultural
+            supply.
           </p>
         </div>
       </section>
@@ -105,14 +110,13 @@ export default function ThesisPage() {
           </div>
           <ol className="mt-4 grid grid-cols-2 gap-3 md:grid-cols-4 lg:grid-cols-8">
             {JOURNEY_STAGES.map((stage, idx) => {
-              const weightNum = parseInt(stage.weight, 10);
-              const isHigh = weightNum >= 15;
+              const isTarget = stage.name === "Specification" || stage.name === "Buyer";
               return (
                 <li
                   key={stage.name}
                   className={[
                     "rounded-md border p-4",
-                    isHigh
+                    isTarget
                       ? "border-gold-500/50 bg-gold-500/10"
                       : "border-teal-300/30 bg-teal-500/5",
                   ].join(" ")}
@@ -123,19 +127,19 @@ export default function ThesisPage() {
                   <p
                     className={[
                       "mt-1 font-display text-lg leading-tight",
-                      isHigh ? "text-gold-500" : "text-teal-300",
+                      isTarget ? "text-gold-500" : "text-teal-300",
                     ].join(" ")}
                   >
                     {stage.name}
                   </p>
-                  <p className="mt-2 font-display text-2xl text-cream-50">{stage.weight}</p>
+                  <p className="mt-2 font-display text-2xl text-cream-50">{stage.signal}</p>
                   <p className="mt-1 text-xs text-cream-50/65">{stage.sub}</p>
                 </li>
               );
             })}
           </ol>
           <h2 id="journey" className="sr-only">
-            The chemotype journey
+            The specification-driven operating journey
           </h2>
         </div>
       </section>
@@ -150,9 +154,9 @@ export default function ThesisPage() {
               Biomass to finished product
             </h3>
             <p className="mt-4 text-sm text-cream-50/80 md:text-base">
-              We buy biomass from farmers at above-market prices, distill, cold-press, dry, and
-              package in Kenya. Finished essential oils, cold-press oils, and botanical powders ship
-              to EU, US, and local buyers.
+              MoedimAI helps convert informal production into structured, buyer-ready supply.
+              Processing, quality, and packaging evidence stay tied to farmer, cell, lot, and buyer
+              records instead of being trapped in disconnected files.
             </p>
           </article>
           <article className="rounded-lg border border-cream-50/10 bg-navy-900/40 p-6">
@@ -163,18 +167,18 @@ export default function ThesisPage() {
               One foundation, three outcomes
             </h3>
             <p className="mt-4 text-sm text-cream-50/80 md:text-base">
-              Every farmer converts to EU 2018/848 and USDA NOP. No synthetic pesticides means no
-              chemical residues, no chemical exposure for families, and soil that regenerates.
-              Satellite and market data pre-empt unfavourable climate conditions.
+              Organic, EUDR, GLOBALG.A.P., buyer, funder, and certifier requirements become
+              operating evidence instead of last-minute paperwork. Satellite and weather signals
+              help teams pre-empt risk before it becomes a buyer or certification failure.
             </p>
           </article>
           <article className="rounded-lg border border-cream-50/10 bg-navy-900/40 p-6">
             <p className="text-xs uppercase tracking-[0.16em] text-gold-500">03 · The data layer</p>
             <h3 className="mt-4 font-display text-2xl text-cream-50">The dataset is the asset</h3>
             <p className="mt-4 text-sm text-cream-50/80 md:text-base">
-              Every stage log, soil test, GC-MS result, and harvest weight is structured and
-              queryable across nine export-ready crops. By end of 2027 we will hold a library of
-              African chemotype profiles tied to operational decisions at smallholder scale.
+              Every permitted field record, quality result, custody event, and buyer packet
+              compounds into a paired field-and-lab dataset. Sensing and prediction are live today;
+              assistant workflows and closed-loop actuation remain on the roadmap.
             </p>
           </article>
         </div>
@@ -222,21 +226,21 @@ export default function ThesisPage() {
         <div className="container py-16 md:py-20">
           <dl className="grid grid-cols-2 gap-8 md:grid-cols-4">
             <div>
-              <dt className="font-display text-4xl text-gold-500 md:text-5xl">300</dt>
-              <dd className="mt-3 text-sm text-cream-50/75">Farmers live, 3,000 in pipeline</dd>
+              <dt className="font-display text-4xl text-gold-500 md:text-5xl">600+</dt>
+              <dd className="mt-3 text-sm text-cream-50/75">Farmers onboarded</dd>
             </div>
             <div>
-              <dt className="font-display text-4xl text-gold-500 md:text-5xl">9</dt>
-              <dd className="mt-3 text-sm text-cream-50/75">Crops, including tree crops</dd>
+              <dt className="font-display text-4xl text-gold-500 md:text-5xl">~900</dt>
+              <dd className="mt-3 text-sm text-cream-50/75">Acres under management</dd>
             </div>
             <div>
-              <dt className="font-display text-4xl text-gold-500 md:text-5xl">5-10 t/day</dt>
-              <dd className="mt-3 text-sm text-cream-50/75">Processing capacity</dd>
+              <dt className="font-display text-4xl text-gold-500 md:text-5xl">20</dt>
+              <dd className="mt-3 text-sm text-cream-50/75">Operating cells</dd>
             </div>
             <div>
-              <dt className="font-display text-3xl text-gold-500 md:text-4xl">Multi-layer</dt>
+              <dt className="font-display text-3xl text-gold-500 md:text-4xl">3 lines</dt>
               <dd className="mt-3 text-sm text-cream-50/75">
-                Supply available across own farms and partner inventory.
+                Baobab, moringa, and avocado oil proof-case lines.
               </dd>
             </div>
           </dl>
@@ -271,6 +275,26 @@ export default function ThesisPage() {
         </div>
       </section>
 
+      <section className="border-t border-cream-50/10">
+        <div className="container py-16 md:py-20">
+          <p className="text-xs uppercase tracking-[0.22em] text-gold-500">Common questions</p>
+          <h2 className="mt-4 max-w-3xl font-display text-3xl text-cream-50 md:text-4xl">
+            The category MoedimAI is building.
+          </h2>
+          <div className="mt-10 grid gap-5 md:grid-cols-2">
+            {CATEGORY_FAQS.map((faq) => (
+              <article
+                key={faq.question}
+                className="rounded-lg border border-cream-50/10 bg-navy-900/40 p-6"
+              >
+                <h3 className="font-display text-xl text-cream-50">{faq.question}</h3>
+                <p className="mt-3 text-sm leading-6 text-cream-50/75">{faq.answer}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="border-t border-cream-50/10 bg-navy-800/40">
         <div className="container py-16 md:py-20">
           <h2 className="font-display text-3xl text-cream-50 md:text-4xl">
@@ -280,22 +304,22 @@ export default function ThesisPage() {
             For investor materials, partnership inquiries, or research collaboration, contact Vivian
             Nwakah, Founder and CEO, at{" "}
             <a
-              href="mailto:info@moedim.ai"
+              href="mailto:vivian@moedim.ai"
               className="text-gold-500 underline-offset-4 hover:underline"
             >
-              info@moedim.ai
+              vivian@moedim.ai
             </a>
             .
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-3">
             <a
-              href="mailto:info@moedim.ai?subject=Investor%20information%20request"
+              href="mailto:vivian@moedim.ai?subject=Investor%20information%20request"
               className="inline-flex h-12 items-center justify-center rounded-md bg-gold-500 px-6 text-sm font-medium text-navy-900 transition-colors hover:bg-gold-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-300 focus-visible:ring-offset-2 focus-visible:ring-offset-navy-900"
             >
               Contact now
             </a>
             <a
-              href="mailto:info@moedim.ai?subject=Book%20a%20call"
+              href="mailto:vivian@moedim.ai?subject=Book%20a%20call"
               className="inline-flex h-12 items-center justify-center rounded-md border border-gold-500 px-6 text-sm font-medium text-cream-50 transition-colors hover:bg-gold-500/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-500 focus-visible:ring-offset-2 focus-visible:ring-offset-navy-900"
             >
               Book a call

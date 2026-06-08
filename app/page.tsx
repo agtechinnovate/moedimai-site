@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { BrandMark } from "@/components/layout/brand-mark";
+import { CATEGORY_FAQS } from "@/lib/content/seo";
+import { Schema, faqPage } from "@/lib/schema";
 
 interface AudienceDoor {
   eyebrow: string;
@@ -11,23 +13,23 @@ interface AudienceDoor {
 
 const DOORS: AudienceDoor[] = [
   {
-    eyebrow: "I SOURCE COSMETIC INGREDIENTS",
-    title: "Buyer supply desk",
-    body: "Thirteen Kenyan botanicals available now in bulk. GC-MS specifications, lot-level traceability, samples on request, and direct shipping from Mount Kenya to your facility.",
+    eyebrow: "I BUY VERIFIED SUPPLY",
+    title: "Buyer-grade supply",
+    body: "Evaluate buyer-ready agricultural supply with origin records, quality evidence, lot traceability, and export documentation tied to one operating graph.",
     href: "/buyers",
-    cta: "View buyer supply desk",
+    cta: "View proof case",
   },
   {
     eyebrow: "I AM AN INVESTOR OR PARTNER",
     title: "Company thesis",
-    body: "MoedimAI is building chemotype-verification infrastructure for African organic exports. Three hundred farmers live, three thousand in pipeline, nine crops, 5 to 10 tonnes per day of processing capacity once the second distillation partner is online.",
+    body: "MoedimAI is trade infrastructure for the agricultural bioeconomy: a multi-tenant operating system for verified, financeable, exportable supply.",
     href: "/thesis",
     cta: "Read the thesis",
   },
   {
     eyebrow: "I AM A FARMER",
     title: "Jaribu by MoedimAI",
-    body: "Above-market prices for your biomass, organic input support, and a path to certified export markets. We're enrolling smallholder farmers across Mount Kenya and expanding.",
+    body: "Farmer intake, cell planning, organic support, and buyer-readiness evidence for smallholder producers entering verified supply networks.",
     href: "/jaribu",
     cta: "Get in touch",
   },
@@ -36,6 +38,7 @@ const DOORS: AudienceDoor[] = [
 export default function HomePage() {
   return (
     <>
+      <Schema data={faqPage(CATEGORY_FAQS)} />
       <section className="relative overflow-hidden">
         <div
           aria-hidden
@@ -55,21 +58,21 @@ export default function HomePage() {
             Rooted in Africa. Refined for the world.
           </p>
           <h1 className="mt-5 max-w-3xl font-display text-4xl leading-[1.05] text-cream-50 md:text-6xl">
-            Verified African botanicals,
+            Trade infrastructure
             <br />
-            traceable to the lot.
+            for the agricultural bioeconomy.
           </h1>
           <p className="mt-6 max-w-2xl text-base text-cream-50/90 md:text-lg">
-            Thirteen Kenyan-grown botanical oils, sold by the bottle and by the kilogram. Every lot
-            is GC-MS profiled, traceable from farm to dispatch, and shipped worldwide from our Mount
-            Kenya operations.
+            MoedimAI turns fragmented production into verified, financeable, exportable,
+            buyer-ready supply through one governed operating graph. The Imani Pamoja botanical
+            network is the tenant-zero proof case, not the category boundary.
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-3">
             <Link
               href="/buyers"
               className="inline-flex h-12 items-center justify-center rounded-md bg-gold-500 px-6 text-sm font-medium text-navy-900 transition-colors hover:bg-gold-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-300 focus-visible:ring-offset-2 focus-visible:ring-offset-navy-900"
             >
-              Buyer supply desk
+              View proof case
             </Link>
             <Link
               href="/thesis"
@@ -80,16 +83,16 @@ export default function HomePage() {
           </div>
           <dl className="mt-12 grid max-w-3xl grid-cols-2 gap-x-8 gap-y-4 text-sm md:grid-cols-4">
             <div>
-              <dt className="text-cream-50/70">Origin</dt>
-              <dd className="mt-1 text-cream-50">Mount Kenya</dd>
+              <dt className="text-cream-50/70">Proof case</dt>
+              <dd className="mt-1 text-cream-50">Imani Pamoja</dd>
             </div>
             <div>
-              <dt className="text-cream-50/70">EU operations</dt>
-              <dd className="mt-1 text-cream-50">Rotterdam</dd>
+              <dt className="text-cream-50/70">Farmers</dt>
+              <dd className="mt-1 text-cream-50">600+ onboarded</dd>
             </div>
             <div>
-              <dt className="text-cream-50/70">US holding</dt>
-              <dd className="mt-1 text-cream-50">Delaware</dd>
+              <dt className="text-cream-50/70">Coverage</dt>
+              <dd className="mt-1 text-cream-50">~900 acres, 20 cells</dd>
             </div>
             <div>
               <dt className="text-cream-50/70">Trust mark</dt>
@@ -110,12 +113,33 @@ export default function HomePage() {
             Choose your path
           </h2>
           <p className="mt-3 max-w-2xl text-sm text-cream-50/70 md:text-base">
-            One brand, three doors. Each one takes you where you want to go.
+            One operating graph, three public entry points: enterprise buyers, capital partners,
+            and producers entering verified supply.
           </p>
 
           <div className="mt-10 grid gap-6 md:grid-cols-3">
             {DOORS.map((door) => (
               <AudienceDoorCard key={door.href} door={door} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="border-t border-cream-50/10">
+        <div className="container py-16 md:py-20">
+          <p className="text-xs uppercase tracking-[0.22em] text-gold-500">Common questions</p>
+          <h2 className="mt-4 max-w-3xl font-display text-3xl text-cream-50 md:text-4xl">
+            Clear answers for buyers, partners, and search systems.
+          </h2>
+          <div className="mt-10 grid gap-5 md:grid-cols-2">
+            {CATEGORY_FAQS.slice(0, 6).map((faq) => (
+              <article
+                key={faq.question}
+                className="rounded-lg border border-cream-50/10 bg-navy-900/40 p-6"
+              >
+                <h3 className="font-display text-xl text-cream-50">{faq.question}</h3>
+                <p className="mt-3 text-sm leading-6 text-cream-50/75">{faq.answer}</p>
+              </article>
             ))}
           </div>
         </div>

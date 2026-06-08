@@ -25,26 +25,28 @@ export const metadata: Metadata = {
   metadataBase: new URL(PUBLIC_SITE_URL),
   applicationName: "MoedimAI",
   title: {
-    default: "MoedimAI | Kenyan essential oils and verified botanical supply",
+    default: "MoedimAI | Trade infrastructure for the agricultural bioeconomy",
     template: "%s · MoedimAI",
   },
   description:
-    "MoedimAI supplies Kenyan essential oils, cold-pressed botanical oils, and verified African agricultural supply with lot traceability, GC-MS profiles, and buyer-ready documentation.",
+    "MoedimAI turns fragmented agricultural production into verified, financeable, exportable, buyer-ready supply through one governed operating graph.",
   keywords: [
-    "Kenyan essential oils",
-    "African botanicals",
-    "organic rosemary oil Kenya",
-    "lavender essential oil Kenya",
-    "moringa oil Kenya",
-    "baobab oil supplier",
-    "GC-MS essential oil supplier",
-    "traceable botanical ingredients",
+    "trade infrastructure for agriculture",
+    "agricultural bioeconomy operating system",
+    "verifiable agricultural supply chain",
+    "specification-driven agricultural production",
+    "buyer-grade supply verification",
+    "financeable agricultural supply",
+    "multi-tenant agritech platform",
+    "smallholder farm verification",
+    "chemotype verification platform",
+    "EUDR due diligence supply chain",
     "verified agricultural supply chain",
-    "Mount Kenya botanicals",
+    "African botanicals proof case",
   ],
   creator: "MoedimAI",
   publisher: "MoedimAI",
-  category: "Agricultural ingredients",
+  category: "Agricultural technology",
   alternates: {
     canonical: "/",
     types: {
@@ -59,9 +61,9 @@ export const metadata: Metadata = {
     type: "website",
     url: "/",
     siteName: "MoedimAI",
-    title: "MoedimAI | Kenyan essential oils and verified botanical supply",
+    title: "MoedimAI | Trade infrastructure for the agricultural bioeconomy",
     description:
-      "Kenyan essential oils and cold-pressed botanical oils backed by lot traceability, GC-MS profiles, and buyer-ready documentation.",
+      "Verified, financeable, exportable agricultural supply through one governed operating graph.",
     images: [
       {
         url: "/images/lavender-field.jpg",
@@ -73,9 +75,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "MoedimAI | Kenyan essential oils and verified botanical supply",
+    title: "MoedimAI | Trade infrastructure for the agricultural bioeconomy",
     description:
-      "Traceable African botanicals for cosmetic, fragrance, and wellness buyers.",
+      "An operating system for buyer-grade agricultural supply.",
     images: ["/images/lavender-field.jpg"],
   },
 };
