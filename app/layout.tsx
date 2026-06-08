@@ -70,6 +70,11 @@ export const metadata: Metadata = {
   creator: "MoedimAI",
   publisher: "MoedimAI",
   category: "Agricultural production management",
+  verification: {
+    other: {
+      "msvalidate.01": "F590464E50673F8106374C2FC6DAB795",
+    },
+  },
   manifest: "/site.webmanifest",
   icons: {
     icon: [
