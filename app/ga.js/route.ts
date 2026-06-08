@@ -23,6 +23,20 @@ function gaScript(measurementId: string) {
     window.gtag("event", eventName, params || {});
   };
 
+  function cleanLinkUrl(href) {
+    if (!href) return "";
+    if (href.indexOf("mailto:") === 0 || href.indexOf("mail.google.com/mail") !== -1) {
+      return "email_link";
+    }
+
+    try {
+      var url = new URL(href, window.location.href);
+      return url.origin + url.pathname;
+    } catch (error) {
+      return href.split("?")[0].split("#")[0].slice(0, 160);
+    }
+  }
+
   document.addEventListener("click", function(event) {
     var target = event.target && event.target.closest ? event.target.closest("a,button") : null;
     if (!target) return;
@@ -38,7 +52,7 @@ function gaScript(measurementId: string) {
     window.moedimTrack(eventName, {
       event_category: "website_cta",
       event_label: label.trim().slice(0, 120),
-      link_url: href,
+      link_url: cleanLinkUrl(href),
       page_path: window.location.pathname
     });
   }, { passive: true });
