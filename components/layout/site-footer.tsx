@@ -11,8 +11,8 @@ export function SiteFooter() {
           <div>
             <img src="/images/moedimai-logo-dark.png" alt="MoedimAI" className="h-10 w-auto" />
             <p className="mt-4 max-w-xs text-sm text-cream-50/70">
-              MoedimAI turns fragmented agricultural production into verified, financeable,
-              exportable, buyer-ready supply.
+              MoedimAI helps companies manage African crop programs from farmer networks and
+              growing to harvest readiness, benchmarking, and distribution.
             </p>
           </div>
           <div>
@@ -57,7 +57,7 @@ export function SiteFooter() {
         </div>
         <div className="mt-10 flex flex-col items-start justify-between gap-2 border-t border-cream-50/10 pt-6 text-xs text-cream-50/50 md:flex-row md:items-center">
           <p>© {year} MoedimAI. All rights reserved.</p>
-          <p>From African soil to the world.</p>
+          <p>From African farms to distribution and export.</p>
         </div>
       </div>
     </footer>

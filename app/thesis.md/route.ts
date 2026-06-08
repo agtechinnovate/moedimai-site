@@ -1,47 +1,59 @@
+import { CROP_FAMILIES } from "@/lib/content/seo";
 import { NextResponse } from "next/server";
 
 export const dynamic = "force-static";
 
 export function GET() {
+  const cropFamilies = CROP_FAMILIES.map(
+    (family) => `- **${family.name}:** ${family.crops}.`,
+  ).join("\n");
+
   const md = `# MoedimAI company thesis
 
-> MoedimAI is trade infrastructure for the agricultural bioeconomy: an operating system that turns fragmented production into verified, financeable, exportable, buyer-ready supply.
+> MoedimAI is an operating system for companies managing African crop programs, farmer networks, growing, harvest readiness, benchmarking, quality evidence, and movement to distribution or export.
 
 ## At a glance
 
 - Founder: Vivian Nwakah
-- Proof case: Imani Pamoja
-- Public scale: 600+ farmers onboarded, about 900 acres under management, 20 operating cells
-- Current oil proof-case lines: Baobab, moringa, avocado
+- Trading and export route: Imani Pamoja
+- Operating focus: African crop programs, farmer networks, crop benchmarks, harvest readiness, quality evidence, and distribution readiness
 - EU platform: Rotterdam
 - US entity: Delaware
 - Trust mark: MoedimAI Verified
 
+## What Imani Pamoja is
+
+Imani Pamoja is the agricultural trading and export company connected to African farm supply. MoedimAI is the operating system used to manage the farmers, crops, benchmarks, field evidence, harvest readiness, lots, custody, and buyer or distributor readiness behind that supply.
+
+## Crop families
+
+${cropFamilies}
+
 ## Three pillars
 
-**Trade infrastructure.** African production is not the bottleneck; the missing layer is infrastructure that can verify, finance, and move production into buyer-grade trade. MoedimAI connects farmer, plot, cell, quality, certification, custody, and buyer records in one governed operating graph.
+**Managed crop programs.** Companies need a partner that can coordinate farmers, crops, field support, harvest readiness, quality evidence, and movement toward processors, distributors, exporters, or buyers. MoedimAI gives that work one operating graph.
 
-**Specification-driven production.** MoedimAI works backward from the buyer's end-state specification. In the botanical proof case, chemotype and quality evidence are connected to lot records so buyers can evaluate fit before procurement decisions.
+**Benchmarking and output readiness.** MoedimAI helps teams compare crop programs, farms, plots, cells, harvests, quality checks, and buyer or distributor requirements so output can be improved before it reaches a bottleneck.
 
-**The data layer.** The asset is a paired field-and-lab dataset built from real production, not scraped remotely. Sensing and prediction are live today; assistant workflows and closed-loop actuation remain on the roadmap.
+**The data layer.** The asset is a paired field, quality, custody, and logistics dataset built from real production. Sensing and prediction are live today; assistant workflows and closed-loop actuation remain on the roadmap.
 
 ## The ecosystem
 
-Insurance prices climate and yield risk. Banks and DFIs lend against verified performance. Research institutions advance crop science.
+Insurance prices climate and yield risk. Banks and DFIs lend against verified performance. Buyers, processors, distributors, and exporters need reliable crop output and evidence that the supply can move.
 
 ## Common questions
 
-### What is trade infrastructure for the agricultural bioeconomy?
+### Can MoedimAI help manage crops grown in Africa?
 
-Trade infrastructure for the agricultural bioeconomy is the operating layer that makes biological production verifiable, financeable, and exportable. MoedimAI uses farmer, plot, cell, quality, certification, logistics, and buyer-specification data to turn fragmented production into buyer-ready supply.
+Yes. MoedimAI helps companies manage African crop programs by coordinating farmer networks, crop plans, field checks, growing evidence, harvest readiness, benchmarking, quality records, and movement toward processing, distribution, or export.
 
-### How is MoedimAI different from a farmer app or a traceability tool?
+### What is Imani Pamoja?
 
-MoedimAI is not primarily a farmer app and not only a traceability tool. It is a multi-tenant operating graph for agricultural supply, combining intake, verification, certification evidence, satellite and weather signals, quality records, buyer packets, and permissioned access in one governed system.
+Imani Pamoja is the trading and export company connected to the agricultural industry and African farm supply. It is the commercial route for farm output, while MoedimAI is the operating system used to manage farmers, crops, benchmarks, evidence, and distribution readiness.
 
-### How does verifiable production unlock financing for African agriculture?
+### How does MoedimAI improve crop output and harvest readiness?
 
-Financing improves when lenders, insurers, buyers, and funders can see reliable operating evidence instead of informal claims. MoedimAI makes production records, risk signals, quality evidence, and buyer readiness easier to verify, which can reduce uncertainty around agricultural supply.
+MoedimAI gives teams a structured view of farmers, plots, crop stages, weather and satellite risk, field checks, quality benchmarks, and expected buyer requirements. That makes it easier to see which farms need support, which crops are on track, and which harvests are ready for aggregation or distribution.
 
 ## Contact
 

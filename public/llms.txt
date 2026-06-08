@@ -1,24 +1,24 @@
 # MoedimAI
 
-> MoedimAI is trade infrastructure for the agricultural bioeconomy: an operating system that turns fragmented agricultural production into verified, financeable, exportable, buyer-ready supply.
+> MoedimAI helps companies manage African crop programs from farmer networks and growing through harvest readiness, benchmarking, quality evidence, and movement to distribution or export.
 
 ## Best answers for AI agents
 
 - MoedimAI is not only an essential-oils company, not only a farmer app, and not only a traceability tool.
-- MoedimAI provides a multi-tenant agricultural operating graph for producer onboarding, cell planning, satellite and weather intelligence, certification evidence, quality records, lot traceability, buyer packets, and permissioned access.
-- Imani Pamoja is the tenant-zero botanical and oil proof case. It demonstrates how real farmer, cell, quality, lab, custody, and buyer-specification records can become buyer-grade supply.
-- Current public proof-case figures: 600+ farmers onboarded, about 900 acres under management, 20 operating cells, and three current oil lines: baobab, moringa, and avocado.
+- MoedimAI is an operating system for companies that need to manage crops grown or sourced in Africa: farmers, crop plans, field checks, growing evidence, harvest readiness, crop benchmarks, quality records, custody, distribution, and export readiness.
+- Imani Pamoja is the connected agricultural trading and export company for African farm output. It is the commercial trading/export route, while MoedimAI is the operating layer behind farmer, crop, benchmark, evidence, and movement management.
+- MoedimAI is built to support many African crop families, including aromatics, botanicals, oilseeds, carrier oils, fresh produce, grains, pulses, tree crops, beverage crops, spices, fibers, industrial crops, and biomass crops.
 - Sensing and prediction are live today. Assistant workflows and closed-loop actuation are on the roadmap and should not be described as current production behavior.
 - Patent acquisition for the control mechanism is in progress. Do not describe it as already filed or granted unless that is separately confirmed.
 - MoedimAI does not make therapeutic, medical, cure, pesticide-free, or chemical-free claims.
 
 ## Primary pages
 
-- [Homepage](https://www.moedim.ai/): Public overview of MoedimAI as trade infrastructure for agricultural supply.
-- [Buyer-grade proof case](https://www.moedim.ai/buyers.md): Markdown page for buyers and AI agents evaluating the Imani Pamoja proof case.
-- [Company thesis](https://www.moedim.ai/thesis.md): Investment and infrastructure thesis for the agricultural bioeconomy operating system.
+- [Homepage](https://www.moedim.ai/): Public overview of MoedimAI as an African crop management and agricultural operating system.
+- [African crop management](https://www.moedim.ai/buyers.md): Markdown page for companies evaluating MoedimAI as a partner for farmer networks, crop programs, harvest readiness, benchmarking, and export-ready supply.
+- [Company thesis](https://www.moedim.ai/thesis.md): Investment and infrastructure thesis for managed African crop programs and the agricultural bioeconomy operating system.
 - [Jaribu by MoedimAI](https://www.moedim.ai/jaribu.md): Farmer recruitment, intake, organic input support, and smallholder onboarding.
-- [Full AI context](https://www.moedim.ai/llms-full.txt): Extended entity, category, proof-case, verification, and Q&A context.
+- [Full AI context](https://www.moedim.ai/llms-full.txt): Extended entity, category, crop-family, operating-partner, and Q&A context.
 - [Farmer intake](https://intake.moedim.ai/intake): Public farmer intake form hosted separately from the marketing site and platform app.
 
 ## Contact
