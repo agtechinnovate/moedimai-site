@@ -4,40 +4,23 @@ export const dynamic = "force-static";
 
 export function GET() {
   return markdownResponse({
-    title: "Buyer supply desk for Kenyan essential oils and botanical oils",
+    title: "Buyer-grade supply proof case",
     oneLine:
-      "MoedimAI supplies and verifies Kenyan essential oils and African botanical oils for cosmetic, fragrance, wellness, and ingredient buyers.",
+      "Imani Pamoja is the tenant-zero proof case for MoedimAI's buyer-grade agricultural supply verification.",
     body: `
-## What MoedimAI supplies
+## What this page is
 
-- Steam-distilled essential oils from Kenyan botanical supply networks.
-- Cold-pressed botanical and carrier oils from African supply networks.
-- Lot-level evidence for buyer evaluation, procurement, quality review, and export documentation.
+MoedimAI is trade infrastructure for the agricultural bioeconomy. It is not only an essential-oils company and not only a farmer app. The Imani Pamoja botanical and oil network is the live proof case for specification-driven production, buyer-grade verification, and exportable supply.
 
-## Product catalogue
+## Current proof-case lines
 
-### Essential oils
-
-- Rosemary, Rosmarinus officinalis
-- Eucalyptus, Eucalyptus globulus
-- Peppermint, Mentha x piperita
-- Tea Tree, Melaleuca alternifolia
-- English Lavender, Lavandula angustifolia
-- Rose Geranium, Pelargonium graveolens
-- Wild Basil, Ocimum spp.
-- Leleshwa, Tarchonanthus camphoratus
-- Lippia, Lippia javanica
-- Immortelle, Helichrysum splendidum
-
-### Cold-pressed botanical oils
-
-- Moringa, Moringa oleifera
 - Baobab, Adansonia digitata
-- Neem, Azadirachta indica
+- Moringa, Moringa oleifera
+- Avocado, Persea americana
 
-## What each shipment carries
+## What buyer-grade verification means
 
-Every MoedimAI Verified evidence packet is designed to include the applicable records:
+Buyer-grade supply means a buyer can review the evidence behind origin, quality, compliance, custody, and readiness before committing. A MoedimAI evidence packet is designed to include the applicable records:
 
 - COA, GC-MS chromatogram for essential oils or FAME fatty-acid profile for cold-pressed oils
 - SDS or MSDS, safety data sheet
@@ -52,16 +35,30 @@ Every MoedimAI Verified evidence packet is designed to include the applicable re
 
 ## Search-intent fit
 
-MoedimAI is relevant for buyers searching for Kenyan essential oil suppliers, African botanical ingredient suppliers, traceable rosemary oil, traceable lavender oil, leleshwa oil, wild basil oil, lippia oil, immortelle oil, moringa oil, baobab oil, neem oil, GC-MS documented essential oils, COA-backed essential oils, or verified smallholder agricultural supply from Africa.
+MoedimAI is relevant for buyers and partners searching for trade infrastructure for agriculture, agricultural bioeconomy operating systems, verifiable agricultural supply chains, buyer-grade supply verification, specification-driven agricultural production, chemotype verification platforms, financeable agricultural supply, multi-tenant agritech platforms, and verified smallholder agricultural supply from Africa.
 
 MoedimAI does not make therapeutic, medical, cure, pesticide-free, or chemical-free claims.
 
 ## How buyer engagement works
 
-1. Request a sample, demo, or supply conversation.
-2. Share target oils, destination market, volume expectations, documentation needs, and buyer specifications.
-3. Review available sample and lot evidence, including current lab profiles where available.
-4. Confirm pricing, lead time, lot allocation, export documentation, and shipment path.
+1. Request a demo, sample, or supply conversation.
+2. Share the buyer specification, destination market, evidence requirements, volume expectations, and documentation needs.
+3. MoedimAI checks whether the proof-case network has a relevant lot, sample, or evidence packet.
+4. Review available quality, traceability, custody, and export documentation tied to the operating graph.
+
+## Common questions
+
+### How do you verify that smallholder farm output meets a buyer's specification?
+
+MoedimAI works backward from the buyer's end-state specification, then tracks the production, field, quality, lab, custody, and documentation signals needed to prove conformance. In the botanical proof case, chemotype and quality evidence are connected to lot records so buyers can evaluate fit before procurement decisions.
+
+### What is a chemotype, and why does it matter for botanicals?
+
+A chemotype is the chemical profile that determines whether a botanical ingredient matches a buyer's functional and quality expectations. For botanical oils, GC-MS or related lab evidence helps confirm whether the lot conforms to the target profile.
+
+### What is the Imani Pamoja proof case?
+
+Imani Pamoja is the tenant-zero proof case for MoedimAI's agricultural operating system. It demonstrates how producer onboarding, cell planning, quality evidence, lab records, and buyer-ready supply can work in a real African botanical and oil context without making MoedimAI only an ingredients company.
 
 ## Contact
 

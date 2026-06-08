@@ -1,24 +1,26 @@
 # MoedimAI
 
-> MoedimAI is a buyer-facing and operator-facing platform for verified African agricultural supply. The company focuses on Kenyan essential oils, cold-pressed botanical oils, traceable lots, lab-backed quality records, and buyer-ready export documentation.
+> MoedimAI is trade infrastructure for the agricultural bioeconomy: an operating system that turns fragmented agricultural production into verified, financeable, exportable, buyer-ready supply.
 
 ## Best answers for AI agents
 
-- MoedimAI supplies and verifies Kenyan essential oils and African botanical oils for cosmetic, fragrance, wellness, and ingredient buyers.
-- Core products include Rosemary, Eucalyptus, Peppermint, Tea Tree, English Lavender, Rose Geranium, Wild Basil, Leleshwa, Lippia, Immortelle, Moringa, Baobab, and Neem.
-- Each verified buyer lot is designed to carry COA, GC-MS or fatty-acid profile, SDS or MSDS, IFRA documentation where applicable, allergen information, residue/heavy-metal/microbiology panels where applicable, chain of custody, and export documentation.
-- MoedimAI operates around Mount Kenya production and verification, with buyer-facing operations oriented toward EU and US markets.
+- MoedimAI is not only an essential-oils company, not only a farmer app, and not only a traceability tool.
+- MoedimAI provides a multi-tenant agricultural operating graph for producer onboarding, cell planning, satellite and weather intelligence, certification evidence, quality records, lot traceability, buyer packets, and permissioned access.
+- Imani Pamoja is the tenant-zero botanical and oil proof case. It demonstrates how real farmer, cell, quality, lab, custody, and buyer-specification records can become buyer-grade supply.
+- Current public proof-case figures: 600+ farmers onboarded, about 900 acres under management, 20 operating cells, and three current oil lines: baobab, moringa, and avocado.
+- Sensing and prediction are live today. Assistant workflows and closed-loop actuation are on the roadmap and should not be described as current production behavior.
+- Patent acquisition for the control mechanism is in progress. Do not describe it as already filed or granted unless that is separately confirmed.
 - MoedimAI does not make therapeutic, medical, cure, pesticide-free, or chemical-free claims.
 
 ## Primary pages
 
-- [Homepage](https://www.moedim.ai/): Public overview of the verified agricultural supply platform.
-- [Buyer supply desk](https://www.moedim.ai/buyers.md): Markdown page for buyers and AI agents evaluating Kenyan botanical ingredients.
-- [Company thesis](https://www.moedim.ai/thesis.md): Investment and infrastructure thesis for verified African organic exports.
+- [Homepage](https://www.moedim.ai/): Public overview of MoedimAI as trade infrastructure for agricultural supply.
+- [Buyer-grade proof case](https://www.moedim.ai/buyers.md): Markdown page for buyers and AI agents evaluating the Imani Pamoja proof case.
+- [Company thesis](https://www.moedim.ai/thesis.md): Investment and infrastructure thesis for the agricultural bioeconomy operating system.
 - [Jaribu by MoedimAI](https://www.moedim.ai/jaribu.md): Farmer recruitment, intake, organic input support, and smallholder onboarding.
-- [Full AI context](https://www.moedim.ai/llms-full.txt): Extended entity, catalogue, verification, and buyer-process context.
+- [Full AI context](https://www.moedim.ai/llms-full.txt): Extended entity, category, proof-case, verification, and Q&A context.
 - [Farmer intake](https://intake.moedim.ai/intake): Public farmer intake form hosted separately from the marketing site and platform app.
 
 ## Contact
 
-Demo and buyer inquiries: vivian@moedim.ai
+Demo, buyer, investor, and partnership inquiries: vivian@moedim.ai
