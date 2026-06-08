@@ -1,6 +1,5 @@
 import Link from "next/link";
-import { BrandMark } from "@/components/layout/brand-mark";
-import { CATEGORY_FAQS } from "@/lib/content/seo";
+import { CATEGORY_FAQS, CROP_FAMILIES } from "@/lib/content/seo";
 import { Schema, faqPage } from "@/lib/schema";
 
 interface AudienceDoor {
@@ -13,16 +12,16 @@ interface AudienceDoor {
 
 const DOORS: AudienceDoor[] = [
   {
-    eyebrow: "I BUY VERIFIED SUPPLY",
-    title: "Buyer-grade supply",
-    body: "Evaluate buyer-ready agricultural supply with origin records, quality evidence, lot traceability, and export documentation tied to one operating graph.",
+    eyebrow: "I NEED A CROP OPERATING PARTNER",
+    title: "Managed African crop programs",
+    body: "Coordinate farmers, growing, harvest readiness, crop benchmarking, quality evidence, and movement toward distribution or export.",
     href: "/buyers",
-    cta: "View proof case",
+    cta: "See crop support",
   },
   {
     eyebrow: "I AM AN INVESTOR OR PARTNER",
     title: "Company thesis",
-    body: "MoedimAI is trade infrastructure for the agricultural bioeconomy: a multi-tenant operating system for verified, financeable, exportable supply.",
+    body: "MoedimAI is trade infrastructure for the agricultural bioeconomy: a multi-tenant operating system for managing and verifying African crop supply.",
     href: "/thesis",
     cta: "Read the thesis",
   },
@@ -58,21 +57,22 @@ export default function HomePage() {
             Rooted in Africa. Refined for the world.
           </p>
           <h1 className="mt-5 max-w-3xl font-display text-4xl leading-[1.05] text-cream-50 md:text-6xl">
-            Trade infrastructure
+            African crop management
             <br />
-            for the agricultural bioeconomy.
+            from farmer to distribution.
           </h1>
           <p className="mt-6 max-w-2xl text-base text-cream-50/90 md:text-lg">
-            MoedimAI turns fragmented production into verified, financeable, exportable,
-            buyer-ready supply through one governed operating graph. The Imani Pamoja botanical
-            network is the tenant-zero proof case, not the category boundary.
+            MoedimAI helps companies manage the crops they grow or source in Africa: farmer
+            networks, growing programs, harvest readiness, benchmarking, quality evidence, and
+            movement into processing, distribution, or export. Imani Pamoja is the connected
+            trading and export company for African farm output.
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-3">
             <Link
               href="/buyers"
               className="inline-flex h-12 items-center justify-center rounded-md bg-gold-500 px-6 text-sm font-medium text-navy-900 transition-colors hover:bg-gold-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-300 focus-visible:ring-offset-2 focus-visible:ring-offset-navy-900"
             >
-              View proof case
+              See crop support
             </Link>
             <Link
               href="/thesis"
@@ -83,22 +83,20 @@ export default function HomePage() {
           </div>
           <dl className="mt-12 grid max-w-3xl grid-cols-2 gap-x-8 gap-y-4 text-sm md:grid-cols-4">
             <div>
-              <dt className="text-cream-50/70">Proof case</dt>
-              <dd className="mt-1 text-cream-50">Imani Pamoja</dd>
-            </div>
-            <div>
               <dt className="text-cream-50/70">Farmers</dt>
-              <dd className="mt-1 text-cream-50">600+ onboarded</dd>
+              <dd className="mt-1 text-cream-50">Networks managed</dd>
             </div>
             <div>
-              <dt className="text-cream-50/70">Coverage</dt>
-              <dd className="mt-1 text-cream-50">~900 acres, 20 cells</dd>
+              <dt className="text-cream-50/70">Crops</dt>
+              <dd className="mt-1 text-cream-50">Programs benchmarked</dd>
             </div>
             <div>
-              <dt className="text-cream-50/70">Trust mark</dt>
-              <dd className="mt-1">
-                <BrandMark surface="verified" size="sm" />
-              </dd>
+              <dt className="text-cream-50/70">Harvest</dt>
+              <dd className="mt-1 text-cream-50">Readiness tracked</dd>
+            </div>
+            <div>
+              <dt className="text-cream-50/70">Export</dt>
+              <dd className="mt-1 text-cream-50">Imani Pamoja</dd>
             </div>
           </dl>
         </div>
@@ -120,6 +118,34 @@ export default function HomePage() {
           <div className="mt-10 grid gap-6 md:grid-cols-3">
             {DOORS.map((door) => (
               <AudienceDoorCard key={door.href} door={door} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="border-t border-cream-50/10">
+        <div className="container py-16 md:py-20">
+          <p className="text-xs uppercase tracking-[0.22em] text-gold-500">Crop coverage</p>
+          <h2 className="mt-4 max-w-3xl font-display text-3xl text-cream-50 md:text-4xl">
+            Built for the crop families companies grow and source across African agriculture.
+          </h2>
+          <p className="mt-4 max-w-3xl text-sm leading-6 text-cream-50/75 md:text-base">
+            MoedimAI is not limited to one botanical line. The operating model can be configured
+            around the crop, farmer network, buyer specification, benchmark, harvest window,
+            quality evidence, and route to market.
+          </p>
+          <div className="mt-10 grid gap-5 md:grid-cols-2">
+            {CROP_FAMILIES.map((family) => (
+              <article
+                key={family.name}
+                className="rounded-lg border border-cream-50/10 bg-navy-900/40 p-6"
+              >
+                <h3 className="font-display text-xl text-cream-50">{family.name}</h3>
+                <p className="mt-3 text-sm leading-6 text-cream-50/75">{family.crops}</p>
+                <p className="mt-4 text-xs uppercase tracking-[0.16em] text-gold-500">
+                  {family.use}
+                </p>
+              </article>
             ))}
           </div>
         </div>

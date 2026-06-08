@@ -18,7 +18,7 @@ export const organizationSchema = {
     url: `${baseUrl}/images/moedimai-logo-light.png`,
   },
   description:
-    "MoedimAI is trade infrastructure for the agricultural bioeconomy, turning fragmented production into verified, financeable, exportable, buyer-ready supply.",
+    "MoedimAI helps companies manage African crop programs, farmer networks, growing, harvest readiness, benchmarking, quality evidence, and movement to distribution or export.",
   foundingDate: "2024",
   founder: {
     "@type": "Person",
@@ -36,6 +36,14 @@ export const organizationSchema = {
     },
   ],
   knowsAbout: [
+    "African crop management",
+    "African agricultural export programs",
+    "Farmer network management",
+    "Crop program management",
+    "Harvest readiness benchmarking",
+    "Crop benchmarking",
+    "Agricultural distribution readiness",
+    "Farm production management",
     "Trade infrastructure for agriculture",
     "Agricultural bioeconomy operating systems",
     "Verifiable agricultural supply chains",
@@ -46,7 +54,15 @@ export const organizationSchema = {
     "Smallholder farm verification",
     "Satellite and weather intelligence for agriculture",
     "GC-MS chemotype verification",
-    "African botanical oil proof cases",
+    "African agricultural crop programs",
+    "Aromatic and essential-oil crops",
+    "Botanicals and natural ingredients",
+    "Oilseeds and carrier oils",
+    "Fresh produce and horticulture",
+    "Grains, pulses, and staples",
+    "Beverage and tree crops",
+    "Spices and specialty crops",
+    "Fiber, industrial, and biomass crops",
     "Agricultural supply chain",
     "Smallholder farmer programs",
     "EU organic certification",
@@ -68,12 +84,17 @@ export const organizationSchema = {
     availableLanguage: ["English", "Swahili"],
   },
   makesOffer: [
+    "African crop program management",
+    "Farmer network operations",
+    "Crop benchmarking and harvest readiness",
+    "Distribution and export readiness support",
+    "Imani Pamoja trading and export route",
     "Agricultural bioeconomy operating system",
     "Specification-driven supply verification",
     "Buyer-ready traceability and documentation packets",
     "Satellite and weather operating intelligence",
     "Enterprise agricultural operating graph",
-    "Imani Pamoja botanical proof case",
+    "African agricultural crop program support",
   ],
 } as const;
 
@@ -87,7 +108,7 @@ export const websiteSchema = {
   url: baseUrl,
   name: "MoedimAI",
   description:
-    "Trade infrastructure for the agricultural bioeconomy: verified, financeable, exportable, buyer-ready supply.",
+    "African crop management, farmer network operations, harvest readiness, benchmarking, and export-ready agricultural supply.",
   publisher: { "@id": `${baseUrl}/#organization` },
   inLanguage: "en",
 } as const;

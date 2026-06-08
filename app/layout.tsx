@@ -25,12 +25,22 @@ export const metadata: Metadata = {
   metadataBase: new URL(PUBLIC_SITE_URL),
   applicationName: "MoedimAI",
   title: {
-    default: "MoedimAI | Trade infrastructure for the agricultural bioeconomy",
+    default: "MoedimAI | African crop management and export-ready supply",
     template: "%s · MoedimAI",
   },
   description:
-    "MoedimAI turns fragmented agricultural production into verified, financeable, exportable, buyer-ready supply through one governed operating graph.",
+    "MoedimAI helps companies manage African crop programs, farmer networks, growing, harvest readiness, benchmarking, quality evidence, and movement to distribution or export.",
   keywords: [
+    "African crop management partner",
+    "manage crops grown in Africa",
+    "African agricultural export partner",
+    "farmer network management Africa",
+    "crop program management Africa",
+    "harvest readiness benchmarking",
+    "crop benchmarking platform",
+    "export-ready agricultural supply",
+    "agricultural distribution readiness",
+    "African farm production management",
     "trade infrastructure for agriculture",
     "agricultural bioeconomy operating system",
     "verifiable agricultural supply chain",
@@ -42,11 +52,11 @@ export const metadata: Metadata = {
     "chemotype verification platform",
     "EUDR due diligence supply chain",
     "verified agricultural supply chain",
-    "African botanicals proof case",
+    "African agricultural crop programs",
   ],
   creator: "MoedimAI",
   publisher: "MoedimAI",
-  category: "Agricultural technology",
+  category: "Agricultural production management",
   alternates: {
     canonical: "/",
     types: {
@@ -61,9 +71,9 @@ export const metadata: Metadata = {
     type: "website",
     url: "/",
     siteName: "MoedimAI",
-    title: "MoedimAI | Trade infrastructure for the agricultural bioeconomy",
+    title: "MoedimAI | African crop management and export-ready supply",
     description:
-      "Verified, financeable, exportable agricultural supply through one governed operating graph.",
+      "Farmer network management, crop benchmarking, harvest readiness, quality evidence, and movement to distribution or export.",
     images: [
       {
         url: "/images/lavender-field.jpg",
@@ -75,9 +85,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "MoedimAI | Trade infrastructure for the agricultural bioeconomy",
+    title: "MoedimAI | African crop management and export-ready supply",
     description:
-      "An operating system for buyer-grade agricultural supply.",
+      "An operating system for managing African crop programs from farm to distribution.",
     images: ["/images/lavender-field.jpg"],
   },
 };

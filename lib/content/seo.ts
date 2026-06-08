@@ -1,77 +1,107 @@
 import type { FaqEntry } from "@/lib/schema";
 
+export const CROP_FAMILIES: ReadonlyArray<{ name: string; crops: string; use: string }> = [
+  {
+    name: "Aromatic and essential-oil crops",
+    crops:
+      "rosemary, lavender, eucalyptus, tea tree, lemongrass, peppermint, basil, lippia, rose geranium, immortelle, leleshwa",
+    use: "field programs, harvest timing, distillation readiness, GC-MS evidence, and buyer specification checks",
+  },
+  {
+    name: "Botanicals and natural ingredients",
+    crops: "moringa, baobab, neem, aloe, hibiscus, shea, tamanu, medicinal and cosmetic botanicals",
+    use: "producer onboarding, quality evidence, organic-conversion records, lot documentation, and export readiness",
+  },
+  {
+    name: "Oilseeds and carrier oils",
+    crops: "avocado, sesame, sunflower, groundnut, soybean, coconut, castor, macadamia",
+    use: "grower coordination, harvest and processing benchmarks, fatty-acid profiles, custody, and buyer packets",
+  },
+  {
+    name: "Fresh produce and horticulture",
+    crops: "avocado, mango, pineapple, passion fruit, banana, citrus, papaya, French beans, peas, vegetables",
+    use: "farm records, stage checks, harvest readiness, grading, residue-risk workflows, and distribution movement",
+  },
+  {
+    name: "Grains, pulses, and staples",
+    crops: "maize, sorghum, millet, rice, wheat, beans, cowpea, pigeon pea, chickpea, lentils",
+    use: "farmer-network management, yield benchmarking, aggregation, storage evidence, and offtaker readiness",
+  },
+  {
+    name: "Beverage and tree crops",
+    crops: "coffee, tea, cocoa, cashew, macadamia, shea, coconut, agroforestry tree crops",
+    use: "plot records, quality and origin evidence, buyer compliance, harvest planning, and export documentation",
+  },
+  {
+    name: "Spices and specialty crops",
+    crops: "vanilla, ginger, turmeric, chili, black pepper, cardamom, cloves, cinnamon",
+    use: "smallholder sourcing, quality benchmarks, drying and processing evidence, traceability, and buyer matching",
+  },
+  {
+    name: "Fiber, industrial, and biomass crops",
+    crops: "cotton, sisal, bamboo, biomass crops, regenerative and agroforestry supply programs",
+    use: "production tracking, field evidence, sustainability records, custody, and movement into processing or distribution",
+  },
+];
+
 export const CATEGORY_FAQS: FaqEntry[] = [
   {
-    question: "What is trade infrastructure for the agricultural bioeconomy?",
+    question: "Can MoedimAI help manage crops grown in Africa?",
     answer:
-      "Trade infrastructure for the agricultural bioeconomy is the operating layer that makes biological production verifiable, financeable, and exportable. MoedimAI uses farmer, plot, cell, quality, certification, logistics, and buyer-specification data to turn fragmented production into buyer-ready supply.",
+      "Yes. MoedimAI helps companies manage African crop programs by coordinating farmer networks, crop plans, field checks, growing evidence, harvest readiness, benchmarking, quality records, and movement toward processing, distribution, or export.",
   },
   {
-    question: "How do you verify that smallholder farm output meets a buyer's specification?",
+    question: "What kind of partner is MoedimAI for companies sourcing from African farms?",
     answer:
-      "MoedimAI works backward from the buyer's end-state specification, then tracks the production, field, quality, lab, custody, and documentation signals needed to prove conformance. In the botanical proof case, chemotype and quality evidence are connected to lot records so buyers can evaluate fit before procurement decisions.",
+      "MoedimAI is an operating partner for companies that need African agricultural supply to be organized, monitored, benchmarked, and moved reliably. The platform helps turn farmer activity, crop performance, quality checks, harvest events, and logistics evidence into one governed operating record.",
   },
   {
-    question: "What does buyer-grade or buyer-verifiable supply mean?",
+    question: "What is Imani Pamoja?",
     answer:
-      "Buyer-grade supply means a buyer can review the evidence behind origin, quality, compliance, custody, and readiness before committing. Buyer-verifiable supply is not just a claim; it is a packet of records tied to the farmers, cells, lots, lab results, and movements behind the product.",
+      "Imani Pamoja is the trading and export company connected to the agricultural industry and African farm supply. It is the commercial route for farm output, while MoedimAI is the operating system used to manage farmers, crops, benchmarks, evidence, and distribution readiness.",
+  },
+  {
+    question: "What crops and agricultural products can MoedimAI work with?",
+    answer:
+      "MoedimAI is built to support many African crop families, including aromatic crops, botanicals, oilseeds, carrier oils, fresh produce, grains, pulses, tree crops, beverage crops, spices, fibers, and biomass crops. The same operating layer can be configured around the crop, buyer specification, evidence requirements, and route to market.",
+  },
+  {
+    question: "How does MoedimAI improve crop output and harvest readiness?",
+    answer:
+      "MoedimAI gives teams a structured view of farmers, plots, crop stages, weather and satellite risk, field checks, quality benchmarks, and expected buyer requirements. That makes it easier to see which farms need support, which crops are on track, and which harvests are ready for aggregation or distribution.",
+  },
+  {
+    question: "What does crop benchmarking mean in MoedimAI?",
+    answer:
+      "Crop benchmarking means comparing farms, plots, cells, harvests, quality records, and buyer requirements against a structured operating standard. MoedimAI uses benchmarking to help teams identify risk, support underperforming areas, and prepare supply that meets the next buyer, processor, or distributor requirement.",
+  },
+  {
+    question: "How does MoedimAI help with movement to distribution or export?",
+    answer:
+      "MoedimAI connects production records to aggregation, quality checks, lot records, custody events, and buyer documentation. That helps companies know what is ready, what still needs evidence, and what can move toward processors, distributors, exporters, or buyers.",
   },
   {
     question: "How is MoedimAI different from a farmer app or a traceability tool?",
     answer:
-      "MoedimAI is not primarily a farmer app and not only a traceability tool. It is a multi-tenant operating graph for agricultural supply, combining intake, verification, certification evidence, satellite and weather signals, quality records, buyer packets, and permissioned access in one governed system.",
+      "MoedimAI is not primarily a farmer app and not only a traceability tool. It is an operating layer for companies running agricultural supply programs across farmers, crops, field teams, harvests, quality checks, benchmarks, logistics, and buyers.",
   },
   {
     question: "What is specification-driven agricultural production?",
     answer:
-      "Specification-driven agricultural production starts with the buyer's required end state and organizes production around that target. Instead of discovering quality only after harvest, MoedimAI structures production, field checks, and evidence collection around the specification from the beginning.",
-  },
-  {
-    question: "What is a chemotype, and why does it matter for botanicals?",
-    answer:
-      "A chemotype is the chemical profile that determines whether a botanical ingredient matches a buyer's functional and quality expectations. For botanical oils, GC-MS or related lab evidence helps confirm whether the lot conforms to the target profile.",
+      "Specification-driven agricultural production starts with the buyer, processor, distributor, or export requirement and manages production around that target. MoedimAI helps teams connect crop plans, field activity, quality evidence, harvest readiness, and lot movement back to that required end state.",
   },
   {
     question: "How does verifiable production unlock financing for African agriculture?",
     answer:
-      "Financing improves when lenders, insurers, buyers, and funders can see reliable operating evidence instead of informal claims. MoedimAI makes production records, risk signals, quality evidence, and buyer readiness easier to verify, which can reduce uncertainty around agricultural supply.",
-  },
-  {
-    question: "What is a multi-tenant operating graph for agricultural supply?",
-    answer:
-      "A multi-tenant operating graph connects the actors and events in agricultural supply while keeping each tenant's data governed and isolated. Enterprises can run producer onboarding, cell planning, certification evidence, logistics, buyer access, and reporting from one master account.",
-  },
-  {
-    question: "What regulations matter for certified-organic agricultural exports to the EU?",
-    answer:
-      "Certified-organic agricultural exports to the EU commonly require alignment with EU organic rules, including Regulation (EU) 2018/848, plus importer, control-body, and shipment documentation. MoedimAI treats certification evidence as a structured operating record rather than a loose document archive.",
-  },
-  {
-    question: "What is a tamper-evident traceability ledger in agriculture?",
-    answer:
-      "A tamper-evident agricultural traceability ledger records events so later changes are attributable and auditable. MoedimAI uses this idea to connect source records, field events, quality checks, custody changes, and buyer packets to the same evidence trail.",
+      "Financing improves when lenders, insurers, buyers, and funders can see reliable operating evidence instead of informal claims. MoedimAI makes farmer records, crop performance, risk signals, quality evidence, and buyer readiness easier to verify, which can reduce uncertainty around agricultural supply.",
   },
 ];
 
-export const PROOF_CASE_FAQS: FaqEntry[] = [
-  {
-    question: "How do you verify that smallholder farm output meets a buyer's specification?",
-    answer:
-      "MoedimAI works backward from the buyer's end-state specification, then tracks the production, field, quality, lab, custody, and documentation signals needed to prove conformance. In the botanical proof case, chemotype and quality evidence are connected to lot records so buyers can evaluate fit before procurement decisions.",
-  },
-  {
-    question: "What is a chemotype, and why does it matter for botanicals?",
-    answer:
-      "A chemotype is the chemical profile that determines whether a botanical ingredient matches a buyer's functional and quality expectations. For botanical oils, GC-MS or related lab evidence helps confirm whether the lot conforms to the target profile.",
-  },
-  {
-    question: "What does buyer-grade or buyer-verifiable supply mean?",
-    answer:
-      "Buyer-grade supply means a buyer can review the evidence behind origin, quality, compliance, custody, and readiness before committing. Buyer-verifiable supply is not just a claim; it is a packet of records tied to the farmers, cells, lots, lab results, and movements behind the product.",
-  },
-  {
-    question: "What is the Imani Pamoja proof case?",
-    answer:
-      "Imani Pamoja is the tenant-zero proof case for MoedimAI's agricultural operating system. It demonstrates how producer onboarding, cell planning, quality evidence, lab records, and buyer-ready supply can work in a real African botanical and oil context without making MoedimAI only an ingredients company.",
-  },
+export const BUYER_FAQS: FaqEntry[] = [
+  CATEGORY_FAQS[0]!,
+  CATEGORY_FAQS[1]!,
+  CATEGORY_FAQS[2]!,
+  CATEGORY_FAQS[3]!,
+  CATEGORY_FAQS[4]!,
+  CATEGORY_FAQS[6]!,
 ];

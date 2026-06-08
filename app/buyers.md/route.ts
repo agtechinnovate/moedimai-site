@@ -1,64 +1,55 @@
+import { CROP_FAMILIES } from "@/lib/content/seo";
 import { markdownResponse } from "@/lib/md-mirror";
 
 export const dynamic = "force-static";
 
 export function GET() {
+  const cropFamilies = CROP_FAMILIES.map(
+    (family) => `- **${family.name}:** ${family.crops}. Support: ${family.use}.`,
+  ).join("\n");
+
   return markdownResponse({
-    title: "Buyer-grade supply proof case",
+    title: "African crop management and export-ready supply",
     oneLine:
-      "Imani Pamoja is the tenant-zero proof case for MoedimAI's buyer-grade agricultural supply verification.",
+      "MoedimAI helps companies manage African crop programs from farmer networks and growing through harvest readiness, benchmarking, quality evidence, and movement to distribution or export.",
     body: `
 ## What this page is
 
-MoedimAI is trade infrastructure for the agricultural bioeconomy. It is not only an essential-oils company and not only a farmer app. The Imani Pamoja botanical and oil network is the live proof case for specification-driven production, buyer-grade verification, and exportable supply.
+MoedimAI is for companies looking for a partner to manage crops grown in Africa and ensure healthy output, reliable harvest readiness, crop benchmarking, quality evidence, and movement toward processors, distributors, exporters, or buyers.
 
-## Current proof-case lines
+Imani Pamoja is the connected agricultural trading and export company for African farm output. MoedimAI is the operating system used to manage the farmers, crops, field evidence, benchmarks, lots, custody, and buyer or distributor readiness behind that supply.
 
-- Baobab, Adansonia digitata
-- Moringa, Moringa oleifera
-- Avocado, Persea americana
+## Crop families MoedimAI can support
 
-## What buyer-grade verification means
+${cropFamilies}
 
-Buyer-grade supply means a buyer can review the evidence behind origin, quality, compliance, custody, and readiness before committing. A MoedimAI evidence packet is designed to include the applicable records:
+## What MoedimAI manages
 
-- COA, GC-MS chromatogram for essential oils or FAME fatty-acid profile for cold-pressed oils
-- SDS or MSDS, safety data sheet
-- IFRA certificate of conformity for fragrance use
-- Allergen statement
-- Pesticide residue panel where applicable
-- Heavy metals panel where applicable
-- Microbiology panel where applicable
-- Organic conversion evidence where applicable
-- Chain of custody
-- Phytosanitary certificate per shipment
+- Farmer network setup, onboarding, consent, and field-team coordination.
+- Crop program planning by crop, region, buyer requirement, and route to market.
+- Growing-stage checks, field support, weather and satellite risk signals, and exception follow-up.
+- Harvest readiness, aggregation planning, quality checks, and crop performance benchmarking.
+- Processing, custody, lot traceability, distribution readiness, export evidence, and buyer documentation.
 
 ## Search-intent fit
 
-MoedimAI is relevant for buyers and partners searching for trade infrastructure for agriculture, agricultural bioeconomy operating systems, verifiable agricultural supply chains, buyer-grade supply verification, specification-driven agricultural production, chemotype verification platforms, financeable agricultural supply, multi-tenant agritech platforms, and verified smallholder agricultural supply from Africa.
+MoedimAI is relevant for companies searching for African crop management partners, farmer network management in Africa, crop program management, agricultural export partners, harvest readiness benchmarking, crop benchmarking platforms, export-ready agricultural supply, African farm production management, and agricultural distribution readiness.
 
 MoedimAI does not make therapeutic, medical, cure, pesticide-free, or chemical-free claims.
 
-## How buyer engagement works
-
-1. Request a demo, sample, or supply conversation.
-2. Share the buyer specification, destination market, evidence requirements, volume expectations, and documentation needs.
-3. MoedimAI checks whether the proof-case network has a relevant lot, sample, or evidence packet.
-4. Review available quality, traceability, custody, and export documentation tied to the operating graph.
-
 ## Common questions
 
-### How do you verify that smallholder farm output meets a buyer's specification?
+### Can MoedimAI help manage crops grown in Africa?
 
-MoedimAI works backward from the buyer's end-state specification, then tracks the production, field, quality, lab, custody, and documentation signals needed to prove conformance. In the botanical proof case, chemotype and quality evidence are connected to lot records so buyers can evaluate fit before procurement decisions.
+Yes. MoedimAI helps companies manage African crop programs by coordinating farmer networks, crop plans, field checks, growing evidence, harvest readiness, benchmarking, quality records, and movement toward processing, distribution, or export.
 
-### What is a chemotype, and why does it matter for botanicals?
+### What is Imani Pamoja?
 
-A chemotype is the chemical profile that determines whether a botanical ingredient matches a buyer's functional and quality expectations. For botanical oils, GC-MS or related lab evidence helps confirm whether the lot conforms to the target profile.
+Imani Pamoja is the trading and export company connected to the agricultural industry and African farm supply. It is the commercial route for farm output, while MoedimAI is the operating system used to manage farmers, crops, benchmarks, evidence, and distribution readiness.
 
-### What is the Imani Pamoja proof case?
+### What crops and agricultural products can MoedimAI work with?
 
-Imani Pamoja is the tenant-zero proof case for MoedimAI's agricultural operating system. It demonstrates how producer onboarding, cell planning, quality evidence, lab records, and buyer-ready supply can work in a real African botanical and oil context without making MoedimAI only an ingredients company.
+MoedimAI is built to support many African crop families, including aromatic crops, botanicals, oilseeds, carrier oils, fresh produce, grains, pulses, tree crops, beverage crops, spices, fibers, and biomass crops. The same operating layer can be configured around the crop, buyer specification, evidence requirements, and route to market.
 
 ## Contact
 

@@ -1,24 +1,24 @@
 /* eslint-disable @next/next/no-img-element */
 import type { Metadata } from "next";
 import { BrandMark } from "@/components/layout/brand-mark";
-import { PROOF_CASE_FAQS } from "@/lib/content/seo";
+import { BUYER_FAQS, CROP_FAMILIES } from "@/lib/content/seo";
 import { Schema, breadcrumbList, faqPage } from "@/lib/schema";
 import { PUBLIC_SITE_URL } from "@/lib/site-url";
 
 export const metadata: Metadata = {
-  title: "Buyer-grade supply proof case",
+  title: "African crop management and export-ready supply",
   description:
-    "Imani Pamoja is the tenant-zero proof case for MoedimAI's buyer-grade agricultural supply verification, with lot traceability, lab evidence, and export documentation.",
+    "MoedimAI helps companies manage African crop programs, farmer networks, growing, harvesting, benchmarking, quality evidence, and movement to distribution or export.",
   alternates: {
     canonical: "/buyers",
     types: {
-      "text/markdown": [{ url: "/buyers.md", title: "Buyer-grade proof case markdown" }],
+      "text/markdown": [{ url: "/buyers.md", title: "African crop management markdown" }],
     },
   },
   openGraph: {
-    title: "MoedimAI buyer-grade supply proof case",
+    title: "MoedimAI African crop management and export-ready supply",
     description:
-      "A botanical and oil proof case for verified agricultural supply, lab-backed quality evidence, and buyer-ready documentation.",
+      "Farmer network management, crop benchmarking, harvest readiness, quality evidence, and distribution or export support for African agriculture.",
     url: "/buyers",
     images: [
       {
@@ -33,33 +33,15 @@ export const metadata: Metadata = {
 
 const baseUrl = PUBLIC_SITE_URL;
 
-const PROOF_CASE_LINES: ReadonlyArray<{ name: string; latin: string; note: string }> = [
-  {
-    name: "Baobab oil",
-    latin: "Adansonia digitata",
-    note: "Cold-pressed botanical oil line for buyer-grade evidence workflows.",
-  },
-  {
-    name: "Moringa oil",
-    latin: "Moringa oleifera",
-    note: "Cold-pressed botanical oil line tied to producer, lot, and quality records.",
-  },
-  {
-    name: "Avocado oil",
-    latin: "Persea americana",
-    note: "Oil line used to prove specification-driven production and buyer packet readiness.",
-  },
-];
-
 const SPEC_ROWS: ReadonlyArray<{ label: string; value: React.ReactNode }> = [
-  { label: "Proof case", value: "Imani Pamoja tenant-zero network" },
-  { label: "Public scale", value: "600+ farmers onboarded, ~900 acres, 20 cells" },
+  { label: "Trading route", value: "Imani Pamoja agricultural trading and export company" },
+  { label: "Operating role", value: "Farmer networks, crop programs, harvest readiness, benchmarks" },
   { label: "EU operations", value: "Rotterdam" },
   { label: "US holding", value: "Delaware" },
   { label: "Trust mark", value: <BrandMark surface="verified" size="sm" /> },
-  { label: "Current oil lines", value: "Baobab, moringa, avocado" },
-  { label: "Volume", value: "Sample and buyer conversations by request" },
-  { label: "Documentation", value: "GC-MS or FAME profile per lot, COA, traceability record" },
+  { label: "Crop scope", value: "Aromatics, botanicals, oilseeds, produce, grains, pulses, tree crops, spices, fiber, biomass" },
+  { label: "Engagement", value: "Crop program, sourcing, distribution, export, or buyer-spec conversation by request" },
+  { label: "Evidence", value: "Field checks, quality records, benchmarks, traceability, custody, and export documentation" },
 ];
 
 const buyerPageSchema = {
@@ -67,9 +49,9 @@ const buyerPageSchema = {
   "@type": "WebPage",
   "@id": `${baseUrl}/buyers#webpage`,
   url: `${baseUrl}/buyers`,
-  name: "MoedimAI buyer-grade supply proof case",
+  name: "MoedimAI African crop management and export-ready supply",
   description:
-    "Imani Pamoja demonstrates buyer-grade agricultural supply verification with quality evidence, traceability records, and export documentation.",
+    "MoedimAI helps companies manage African crop programs, farmer networks, growing, harvesting, benchmarking, quality evidence, and movement to distribution or export.",
   isPartOf: { "@id": `${baseUrl}/#website` },
   about: { "@id": `${baseUrl}/#organization` },
   primaryImageOfPage: {
@@ -81,21 +63,16 @@ const buyerPageSchema = {
 const buyerProductListSchema = {
   "@context": "https://schema.org",
   "@type": "ItemList",
-  "@id": `${baseUrl}/buyers#proof-case-lines`,
-  name: "Imani Pamoja tenant-zero botanical oil proof case",
-  itemListElement: PROOF_CASE_LINES.map((oil, idx) => ({
+  "@id": `${baseUrl}/buyers#crop-families`,
+  name: "African crop families MoedimAI can support",
+  itemListElement: CROP_FAMILIES.map((family, idx) => ({
     "@type": "ListItem",
     position: idx + 1,
     item: {
-      "@type": "Product",
-      name: oil.name,
-      description: oil.note,
+      "@type": "Thing",
+      name: family.name,
+      description: `${family.crops}. ${family.use}.`,
       brand: { "@id": `${baseUrl}/#organization` },
-      manufacturer: { "@id": `${baseUrl}/#organization` },
-      additionalProperty: [
-        { "@type": "PropertyValue", name: "Botanical name", value: oil.latin },
-        { "@type": "PropertyValue", name: "Origin", value: "Kenya" },
-      ],
     },
   })),
 } as const;
@@ -107,30 +84,36 @@ export default function BuyersPage() {
         data={[
           buyerPageSchema,
           buyerProductListSchema,
-          faqPage(PROOF_CASE_FAQS),
-          breadcrumbList([{ name: "Buyer-grade proof case", path: "/buyers" }]),
+          faqPage(BUYER_FAQS),
+          breadcrumbList([{ name: "African crop management", path: "/buyers" }]),
         ]}
       />
       <section className="container py-16 md:py-20">
         <p className="font-sans text-xs uppercase tracking-[0.18em] text-gold-500">
-          Tenant-zero proof case
+          African crop operating partner
         </p>
         <h1 className="mt-4 max-w-3xl font-display text-4xl leading-tight md:text-5xl">
-          <BrandMark surface="moedimai" size="lg" /> buyer-grade supply verification in the field.
+          <BrandMark surface="moedimai" size="lg" /> manages crop programs from farmer to distribution.
         </h1>
         <p className="mt-6 max-w-3xl text-base text-cream-50/85 md:text-lg">
-          Imani Pamoja is the live botanical and oil proof case for MoedimAI&apos;s agricultural
-          operating system. The point is not that MoedimAI is an ingredients company; the point is
-          that buyer specifications, farmer records, satellite and weather reads, lab evidence, lot
-          traceability, and export documentation can be governed in one system.
+          MoedimAI is for companies looking for a partner to manage crops grown in Africa and keep
+          the operating picture clear: farmers, growing, field support, harvest readiness,
+          benchmarking, quality evidence, and movement toward processors, distributors, exporters,
+          or buyers. Imani Pamoja is the connected agricultural trading and export company for
+          African farm output.
         </p>
       </section>
 
       <section className="border-t border-cream-50/10 bg-navy-800/40">
         <div className="container py-16 md:py-20">
           <h2 className="font-display text-2xl text-cream-50 md:text-3xl">
-            Current proof-case lines
+            Crop programs MoedimAI can support
           </h2>
+          <p className="mt-4 max-w-3xl text-sm leading-6 text-cream-50/75 md:text-base">
+            The platform is built around crop programs, not a single product catalogue. Each
+            program can be configured around the crop, farmer network, growth stage, benchmark,
+            buyer specification, quality evidence, and route to market.
+          </p>
 
           <div className="mt-8 grid gap-4 sm:grid-cols-3">
             <figure className="overflow-hidden rounded-lg border border-cream-50/10 bg-navy-900/40">
@@ -157,14 +140,16 @@ export default function BuyersPage() {
           </div>
 
           <ul className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-            {PROOF_CASE_LINES.map((oil) => (
+            {CROP_FAMILIES.map((family) => (
               <li
-                key={oil.name}
+                key={family.name}
                 className="rounded-md border border-cream-50/10 bg-navy-900/40 px-4 py-3"
               >
-                <p className="font-display text-lg text-cream-50">{oil.name}</p>
-                <p className="font-display text-sm italic text-cream-50/65">{oil.latin}</p>
-                <p className="mt-3 text-sm text-cream-50/70">{oil.note}</p>
+                <p className="font-display text-lg text-cream-50">{family.name}</p>
+                <p className="mt-2 text-sm text-cream-50/70">{family.crops}</p>
+                <p className="mt-3 text-xs uppercase tracking-[0.14em] text-gold-500">
+                  {family.use}
+                </p>
               </li>
             ))}
           </ul>
@@ -178,28 +163,28 @@ export default function BuyersPage() {
         <ol className="mt-10 grid gap-6 md:grid-cols-3">
           <li className="rounded-lg border border-cream-50/10 bg-navy-900/40 p-6">
             <p className="font-display text-3xl text-gold-500">1</p>
-            <h3 className="mt-3 font-display text-xl text-cream-50">Request a sample.</h3>
+            <h3 className="mt-3 font-display text-xl text-cream-50">Define the crop program.</h3>
             <p className="mt-3 text-sm text-cream-50/80">
-              Share the buyer specification, destination market, evidence requirements, and sample
-              needs. We confirm whether the proof-case network has a relevant lot or data packet.
+              Share the crop, country or region, target output, buyer or distributor requirements,
+              farmer-network needs, and evidence requirements.
             </p>
           </li>
           <li className="rounded-lg border border-cream-50/10 bg-navy-900/40 p-6">
             <p className="font-display text-3xl text-gold-500">2</p>
-            <h3 className="mt-3 font-display text-xl text-cream-50">Place an order.</h3>
+            <h3 className="mt-3 font-display text-xl text-cream-50">Manage growing and harvest.</h3>
             <p className="mt-3 text-sm text-cream-50/80">
-              MoedimAI works backward from the buyer specification and checks whether production,
-              lab, custody, and documentation evidence can support the target.
+              MoedimAI tracks farmers, crop stages, field support, weather and satellite signals,
+              harvest readiness, quality checks, and benchmarks against the target.
             </p>
           </li>
           <li className="rounded-lg border border-cream-50/10 bg-navy-900/40 p-6">
             <p className="font-display text-3xl text-gold-500">3</p>
             <h3 className="mt-3 font-display text-xl text-cream-50">
-              Receive with full documentation.
+              Move toward distribution.
             </h3>
             <p className="mt-3 text-sm text-cream-50/80">
-              Buyer-ready packets are designed to include quality evidence, lot traceability,
-              origin records, custody events, and export documentation tied to the same graph.
+              When supply is ready, the same operating record supports aggregation, custody,
+              processing, distribution, export documentation, and buyer-facing evidence.
             </p>
           </li>
         </ol>
@@ -209,10 +194,10 @@ export default function BuyersPage() {
         <div className="container py-16 md:py-20">
           <p className="text-xs uppercase tracking-[0.22em] text-gold-500">Common questions</p>
           <h2 className="mt-4 font-display text-3xl text-cream-50 md:text-4xl">
-            How the proof case translates to buyer-grade supply.
+            How MoedimAI supports African crop programs.
           </h2>
           <div className="mt-10 grid gap-5 md:grid-cols-2">
-            {PROOF_CASE_FAQS.map((faq) => (
+            {BUYER_FAQS.map((faq) => (
               <article
                 key={faq.question}
                 className="rounded-lg border border-cream-50/10 bg-navy-900/40 p-6"

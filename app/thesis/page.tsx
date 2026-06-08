@@ -5,9 +5,9 @@ import { Schema, breadcrumbList, faqPage } from "@/lib/schema";
 import { PUBLIC_SITE_URL } from "@/lib/site-url";
 
 export const metadata: Metadata = {
-  title: "Agricultural bioeconomy operating system thesis",
+  title: "African crop management operating system thesis",
   description:
-    "MoedimAI is trade infrastructure for the agricultural bioeconomy: a multi-tenant operating graph for verified, financeable, exportable agricultural supply.",
+    "MoedimAI is an operating system for managing African crop programs, farmer networks, harvest readiness, benchmarking, and export-ready agricultural supply.",
   alternates: {
     canonical: "/thesis",
     types: {
@@ -15,9 +15,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "MoedimAI agricultural bioeconomy thesis",
+    title: "MoedimAI African crop management thesis",
     description:
-      "Trade infrastructure for verified, financeable, exportable agricultural supply, with Imani Pamoja as the tenant-zero proof case.",
+      "A thesis for managing African crop programs from farmer networks and growing to harvest readiness, benchmarking, distribution, and export.",
     url: "/thesis",
     images: [
       {
@@ -37,9 +37,9 @@ const thesisPageSchema = {
   "@type": "WebPage",
   "@id": `${baseUrl}/thesis#webpage`,
   url: `${baseUrl}/thesis`,
-  name: "MoedimAI agricultural bioeconomy thesis",
+  name: "MoedimAI African crop management thesis",
   description:
-    "Trade infrastructure for verified, financeable, exportable agricultural supply, with Imani Pamoja as the tenant-zero proof case.",
+    "An operating thesis for managing African crop programs from farmer networks and growing to harvest readiness, benchmarking, distribution, and export.",
   isPartOf: { "@id": `${baseUrl}/#website` },
   about: [
     { "@id": `${baseUrl}/#organization` },
@@ -91,13 +91,13 @@ export default function ThesisPage() {
             Investor thesis
           </p>
           <h1 className="mt-5 max-w-4xl font-display text-4xl leading-[1.05] text-cream-50 md:text-6xl">
-            Trade infrastructure for the agricultural bioeconomy.
+            The operating system for managed African crop programs.
           </h1>
           <p className="mt-8 max-w-3xl text-base text-cream-50/85 md:text-lg">
-            MoedimAI turns voice, paper, community-led informality, satellite signals, quality
-            records, and buyer specifications into a governed operating graph. Imani Pamoja is the
-            tenant-zero proof case; the category is verified, financeable, exportable agricultural
-            supply.
+            MoedimAI turns farmer networks, crop plans, field support, weather and satellite
+            signals, quality records, benchmarks, and buyer or distributor requirements into a
+            governed operating graph. Imani Pamoja is the connected agricultural trading and export
+            company for African farm output.
           </p>
         </div>
       </section>
@@ -151,12 +151,12 @@ export default function ThesisPage() {
               01 · Value addition in Kenya
             </p>
             <h3 className="mt-4 font-display text-2xl text-cream-50">
-              Biomass to finished product
+              Farmers to managed crop programs
             </h3>
             <p className="mt-4 text-sm text-cream-50/80 md:text-base">
-              MoedimAI helps convert informal production into structured, buyer-ready supply.
-              Processing, quality, and packaging evidence stay tied to farmer, cell, lot, and buyer
-              records instead of being trapped in disconnected files.
+              MoedimAI helps companies organize farmer networks, crop plans, field teams, and
+              growing-stage evidence so African crop programs can be managed against a clear output
+              target.
             </p>
           </article>
           <article className="rounded-lg border border-cream-50/10 bg-navy-900/40 p-6">
@@ -164,21 +164,21 @@ export default function ThesisPage() {
               02 · Organic, climate, health
             </p>
             <h3 className="mt-4 font-display text-2xl text-cream-50">
-              One foundation, three outcomes
+              Output, risk, and readiness
             </h3>
             <p className="mt-4 text-sm text-cream-50/80 md:text-base">
-              Organic, EUDR, GLOBALG.A.P., buyer, funder, and certifier requirements become
-              operating evidence instead of last-minute paperwork. Satellite and weather signals
-              help teams pre-empt risk before it becomes a buyer or certification failure.
+              Crop performance, harvest readiness, quality evidence, and distribution requirements
+              become operating facts instead of scattered field notes. Satellite and weather signals
+              help teams pre-empt risk before it affects output.
             </p>
           </article>
           <article className="rounded-lg border border-cream-50/10 bg-navy-900/40 p-6">
             <p className="text-xs uppercase tracking-[0.16em] text-gold-500">03 · The data layer</p>
             <h3 className="mt-4 font-display text-2xl text-cream-50">The dataset is the asset</h3>
             <p className="mt-4 text-sm text-cream-50/80 md:text-base">
-              Every permitted field record, quality result, custody event, and buyer packet
-              compounds into a paired field-and-lab dataset. Sensing and prediction are live today;
-              assistant workflows and closed-loop actuation remain on the roadmap.
+              Every permitted field record, benchmark, quality result, custody event, and buyer or
+              distributor packet compounds into a dataset companies can use to manage better crop
+              programs over time.
             </p>
           </article>
         </div>
@@ -189,8 +189,9 @@ export default function ThesisPage() {
           <div className="border-l-2 border-gold-500 pl-6">
             <p className="text-xs uppercase tracking-[0.22em] text-gold-500">The ecosystem</p>
             <p className="mt-3 text-base text-cream-50/85 md:text-lg">
-              Insurance prices climate and yield risk. Banks and DFIs lend against verified
-              performance. Research institutions advance crop science.
+              Companies need partners that can manage farmers, crops, output, quality, and
+              distribution readiness together. Insurance, banks, DFIs, buyers, processors, and
+              exporters all benefit when crop performance is visible and benchmarked.
             </p>
           </div>
         </div>
@@ -226,22 +227,20 @@ export default function ThesisPage() {
         <div className="container py-16 md:py-20">
           <dl className="grid grid-cols-2 gap-8 md:grid-cols-4">
             <div>
-              <dt className="font-display text-4xl text-gold-500 md:text-5xl">600+</dt>
-              <dd className="mt-3 text-sm text-cream-50/75">Farmers onboarded</dd>
+              <dt className="font-display text-3xl text-gold-500 md:text-4xl">Farmers</dt>
+              <dd className="mt-3 text-sm text-cream-50/75">Network setup and field coordination</dd>
             </div>
             <div>
-              <dt className="font-display text-4xl text-gold-500 md:text-5xl">~900</dt>
-              <dd className="mt-3 text-sm text-cream-50/75">Acres under management</dd>
+              <dt className="font-display text-3xl text-gold-500 md:text-4xl">Crops</dt>
+              <dd className="mt-3 text-sm text-cream-50/75">Program planning and growing support</dd>
             </div>
             <div>
-              <dt className="font-display text-4xl text-gold-500 md:text-5xl">20</dt>
-              <dd className="mt-3 text-sm text-cream-50/75">Operating cells</dd>
+              <dt className="font-display text-3xl text-gold-500 md:text-4xl">Benchmarks</dt>
+              <dd className="mt-3 text-sm text-cream-50/75">Output, quality, and harvest readiness</dd>
             </div>
             <div>
-              <dt className="font-display text-3xl text-gold-500 md:text-4xl">3 lines</dt>
-              <dd className="mt-3 text-sm text-cream-50/75">
-                Baobab, moringa, and avocado oil proof-case lines.
-              </dd>
+              <dt className="font-display text-3xl text-gold-500 md:text-4xl">Export</dt>
+              <dd className="mt-3 text-sm text-cream-50/75">Distribution readiness through Imani Pamoja</dd>
             </div>
           </dl>
         </div>
@@ -256,12 +255,12 @@ export default function ThesisPage() {
               <dd className="text-cream-50">Vivian Nwakah</dd>
             </div>
             <div className="flex justify-between gap-4 border-b border-cream-50/10 pb-3">
-              <dt className="text-cream-50/60">Operations</dt>
-              <dd className="text-cream-50">Mount Kenya</dd>
+              <dt className="text-cream-50/60">Operating focus</dt>
+              <dd className="text-cream-50">African crop programs</dd>
             </div>
             <div className="flex justify-between gap-4 border-b border-cream-50/10 pb-3">
-              <dt className="text-cream-50/60">EU platform</dt>
-              <dd className="text-cream-50">Rotterdam</dd>
+              <dt className="text-cream-50/60">Trading route</dt>
+              <dd className="text-cream-50">Imani Pamoja</dd>
             </div>
             <div className="flex justify-between gap-4 border-b border-cream-50/10 pb-3">
               <dt className="text-cream-50/60">US entity</dt>
