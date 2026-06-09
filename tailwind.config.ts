@@ -38,9 +38,9 @@ const config: Config = {
       colors: {
         // Brand palette aligned with the MoedimAI deck and demo.
         navy: {
-          900: "#0A1A3A",
-          800: "#16264A",
-          700: "#1F3158",
+          900: "#0A0D13",
+          800: "#0E121B",
+          700: "#121826",
         },
         gold: {
           500: "#C9A961",

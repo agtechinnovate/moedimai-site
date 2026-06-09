@@ -25,6 +25,12 @@ const nextConfig = {
           destination: "/index_1.html",
         },
       ],
+      afterFiles: [
+        {
+          source: "/:slug.md",
+          destination: "/md/:slug",
+        },
+      ],
     };
   },
   // GEO + brand discipline: stable canonical URLs.
