@@ -25,12 +25,21 @@ export const metadata: Metadata = {
   metadataBase: new URL(PUBLIC_SITE_URL),
   applicationName: "MoedimAI",
   title: {
-    default: "MoedimAI | AI for African bioeconomy and crop management",
+    default: "MoedimAI | Technology infrastructure for Africa's agricultural bioeconomy",
     template: "%s · MoedimAI",
   },
   description:
-    "MoedimAI uses technology and AI to help companies manage African bioeconomy supply chains: crops, farmers, satellite and weather intelligence, value addition, logistics routing, and export-ready supply.",
+    "MoedimAI is building the technology infrastructure layer for Africa's agricultural bioeconomy, connecting farmers, processors, certifiers, buyers, funders, and programme operators on one governed operating graph.",
   keywords: [
+    "Africa bioeconomy infrastructure",
+    "technology infrastructure for Africa's agricultural bioeconomy",
+    "bioeconomy operating system",
+    "bioeconomy MRV platform",
+    "bioeconomy observatory software",
+    "verified bioeconomy supply chains",
+    "AfCFTA agricultural trade infrastructure",
+    "climate MRV for African agriculture",
+    "AI for bioeconomy value chains",
     "African crop management partner",
     "manage crops grown in Africa",
     "African agricultural export partner",
@@ -104,9 +113,9 @@ export const metadata: Metadata = {
     type: "website",
     url: "/",
     siteName: "MoedimAI",
-    title: "MoedimAI | AI for African bioeconomy and crop management",
+    title: "MoedimAI | Technology infrastructure for Africa's agricultural bioeconomy",
     description:
-      "Technology and AI for African bioeconomy supply chains, crop management, value addition, logistics routing, and export-ready supply.",
+      "AI and operating infrastructure for African bioeconomy supply chains, crop management, value addition, verification, logistics routing, and buyer-ready supply.",
     images: [
       {
         url: "/images/lavender-field.jpg",
@@ -118,9 +127,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "MoedimAI | AI for African bioeconomy and crop management",
+    title: "MoedimAI | Technology infrastructure for Africa's agricultural bioeconomy",
     description:
-      "Technology and AI for African bioeconomy supply chains from farm to distribution.",
+      "AI and operating infrastructure for African bioeconomy supply chains from farm to distribution.",
     images: ["/images/lavender-field.jpg"],
   },
 };
@@ -128,7 +137,7 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#0A1A3A",
+  themeColor: "#0A0D13",
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
