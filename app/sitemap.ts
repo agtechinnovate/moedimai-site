@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { PUBLIC_SITE_URL } from "@/lib/site-url";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const lastModified = new Date("2026-06-08");
+  const lastModified = new Date("2026-06-09");
 
   return [
     { url: `${PUBLIC_SITE_URL}/`, lastModified, changeFrequency: "weekly", priority: 1.0 },
