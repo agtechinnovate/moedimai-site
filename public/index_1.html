@@ -465,15 +465,22 @@ nav{position:sticky;top:0;z-index:50;backdrop-filter:blur(12px);background:rgba(
 .infra{margin-top:26px;font-family:var(--mono);font-size:12.5px;color:var(--faint);text-align:center;line-height:1.75}
 @media(max-width:820px){.trust-grid{grid-template-columns:1fr}}
 
-.founder{border-top:1px solid var(--line);background:rgba(255,255,255,.018)}
-.founder-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:34px;align-items:start}
-.founder-photo{margin-top:20px;max-width:300px;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--panel)}
-.founder-photo img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 34%}
-.founder h2{font-family:var(--sans);font-size:28px;line-height:1.25;letter-spacing:0;color:var(--ink)}
-.founder p{font-size:14px;line-height:1.75;color:var(--muted)}
+.founder{border-top:1px solid var(--line);background:linear-gradient(180deg,rgba(255,255,255,.02),rgba(255,255,255,.008))}
+.founder-wrap{display:grid;grid-template-columns:330px minmax(0,1fr);gap:42px;align-items:center;max-width:1040px;padding:80px 28px}
+.founder-card{display:grid;grid-template-columns:112px minmax(0,1fr);gap:18px;align-items:center;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:19px 0}
+.founder-photo{width:112px;border:1px solid var(--line-cy);border-radius:999px;overflow:hidden;background:var(--panel);box-shadow:0 18px 38px rgba(0,0,0,.35)}
+.founder-photo img{display:block;width:100%;aspect-ratio:1;object-fit:cover;object-position:center 28%;transform:scale(1.08)}
+.founder-name{font-family:var(--sans);font-size:25px;line-height:1.15;letter-spacing:0;color:var(--ink)}
+.founder-role{font-size:13.5px;color:var(--muted);line-height:1.5;margin-top:5px}
+.founder-link{display:inline-flex;margin-top:10px;color:var(--cyan-bri);font-weight:650;font-size:13.5px}
+.founder-story{max-width:650px}
+.founder-story h2{font-family:var(--serif);font-size:34px;line-height:1.14;letter-spacing:-.01em;color:var(--ink);margin:10px 0 14px}
+.founder-story p{font-size:15px;line-height:1.76;color:var(--muted);max-width:58em}
+.founder-story p + p{margin-top:11px}
 .founder .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
-.founder .chips span{border:1px solid var(--line-cy);border-radius:999px;padding:6px 10px;font-family:var(--mono);font-size:11px;color:var(--cyan-bri)}
-@media(max-width:820px){.founder-grid{grid-template-columns:1fr}.founder h2{font-size:24px}}
+.founder .chips span{border:1px solid var(--line-cy);border-radius:999px;padding:6px 10px;font-family:var(--mono);font-size:11px;color:var(--cyan-bri);background:rgba(74,144,194,.045)}
+@media(max-width:900px){.founder-wrap{grid-template-columns:1fr;gap:24px;padding:66px 24px}.founder-card{max-width:420px}.founder-story h2{font-size:29px}}
+@media(max-width:520px){.founder-wrap{padding:56px 22px}.founder-card{grid-template-columns:88px 1fr}.founder-photo{width:88px}.founder-name{font-size:22px}.founder-story h2{font-size:25px}}
 
 .final{text-align:center;padding:94px 0}
 .final h2{font-size:45px;color:var(--ink);margin-bottom:24px}
@@ -982,24 +989,29 @@ footer{border-top:1px solid var(--line);padding:44px 0 38px;background:rgba(0,0,
 </section>
 
 <section class="founder" id="about">
-  <div class="wrap sec founder-grid">
-    <div class="rev">
-      <div class="eyebrow">About MoedimAI</div>
-      <h2>Founded by Vivian Nwakah to build the technology layer for Africa's bioeconomy.</h2>
+  <div class="wrap sec founder-wrap">
+    <div class="founder-card rev">
       <div class="founder-photo">
         <img src="/images/vivian-nwakah-headshot.jpg" alt="Vivian Nwakah, founder and CEO of MoedimAI">
       </div>
+      <div>
+        <div class="eyebrow">Founder</div>
+        <h2 class="founder-name">Vivian Nwakah</h2>
+        <p class="founder-role">Founder and CEO, MoedimAI</p>
+        <a class="founder-link" href="https://www.linkedin.com/in/viviannwakah/" target="_blank" rel="noopener noreferrer" data-analytics-event="linkedin_click" data-analytics-label="homepage founder linkedin">View on LinkedIn</a>
+      </div>
+    </div>
+    <div class="founder-story rev">
+      <div class="eyebrow">About MoedimAI</div>
+      <h2>Technology and AI for Africa's bioeconomy supply chains.</h2>
+      <p>Vivian Nwakah founded MoedimAI to build the operating layer companies use to manage African crop programs: farmers, growing, harvest readiness, benchmarking, value addition, processing, logistics, and buyer-ready evidence.</p>
+      <p>Before MoedimAI, Vivian founded Medsaf, one of Nigeria's first tech-enabled pharmaceutical procurement platforms, scaling verified medicine access and standardized procurement workflows across 950+ hospitals and clinics. She later led AI-enabled systems work at Pfizer.</p>
+      <p>At MoedimAI, that operating-infrastructure experience is applied to bioeconomy supply chains, turning field, hub, processing, distillation, lab, certification, and logistics evidence into governed supply records.</p>
       <div class="chips">
         <span>AI operating intelligence</span>
         <span>Bioeconomy supply chains</span>
         <span>African crop programs</span>
       </div>
-    </div>
-    <div class="rev">
-      <p>Vivian Nwakah is a founder and systems builder focused on AI, chemotype traceability, compliance infrastructure, and regulated markets. She builds infrastructure that turns fragmented, informal markets into regulated, benchmarkable supply systems.</p>
-      <p style="margin-top:12px">Before MoedimAI, Vivian founded Medsaf, one of Nigeria's first tech-enabled pharmaceutical procurement platforms, scaling verified medicine access and standardized procurement workflows across 950+ hospitals and clinics. She later led AI-enabled systems work at Pfizer.</p>
-      <p style="margin-top:12px">At MoedimAI, Vivian applies that operating-infrastructure experience to African bioeconomy supply chains: converting field, hub, processing, distillation, lab, certification, and logistics evidence into buyer-verifiable supply packages and certifier-ready audit trails.</p>
-      <p style="margin-top:14px"><a href="https://www.linkedin.com/in/viviannwakah/" target="_blank" rel="noopener noreferrer" data-analytics-event="linkedin_click" data-analytics-label="homepage founder linkedin" style="color:var(--cyan-bri);font-weight:650">View Vivian on LinkedIn</a></p>
     </div>
   </div>
 </section>
