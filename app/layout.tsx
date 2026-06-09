@@ -81,6 +81,7 @@ export const metadata: Metadata = {
   category: "Agricultural production management",
   verification: {
     other: {
+      "facebook-domain-verification": "o67ward8eo3mj6v9dr1fpytr7p2czj",
       "msvalidate.01": "F590464E50673F8106374C2FC6DAB795",
     },
   },
