@@ -43,10 +43,10 @@ export function generateMetadata({ params }: { params: PageParams }): Metadata {
       url: `/${page.slug}`,
       images: [
         {
-          url: "/images/lavender-field.jpg",
+          url: "/images/moedimai-social-card.png",
           width: 1200,
           height: 630,
-          alt: "MoedimAI African bioeconomy operating layer",
+          alt: "MoedimAI technology infrastructure for Africa's agricultural bioeconomy",
         },
       ],
     },
@@ -54,7 +54,7 @@ export function generateMetadata({ params }: { params: PageParams }): Metadata {
       card: "summary_large_image",
       title: page.title,
       description: page.description,
-      images: ["/images/lavender-field.jpg"],
+      images: ["/images/moedimai-social-card.png"],
     },
   };
 }
@@ -132,9 +132,7 @@ export default function CategoryLeadershipPage({ params }: { params: PageParams 
               ))}
 
               <section>
-                <h2 className="font-sans text-2xl font-semibold text-cream-50">
-                  Direct answers
-                </h2>
+                <h2 className="font-sans text-2xl font-semibold text-cream-50">Direct answers</h2>
                 <div className="mt-5 grid gap-4">
                   {page.faqs.map((faq) => (
                     <div
@@ -144,7 +142,7 @@ export default function CategoryLeadershipPage({ params }: { params: PageParams 
                       <h3 className="font-sans text-base font-semibold text-cream-50">
                         {faq.question}
                       </h3>
-                      <p className="mt-3 text-sm leading-6 text-cream-50/72">{faq.answer}</p>
+                      <p className="text-cream-50/72 mt-3 text-sm leading-6">{faq.answer}</p>
                     </div>
                   ))}
                 </div>
