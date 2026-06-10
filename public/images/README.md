@@ -12,6 +12,7 @@ Only 2 photos per direction from Vivian: founder and QC team.
 ## Consumer and buyer pages
 
 - `lavender-field.jpg` Lavender field at sunset. Used as `/` homepage hero background.
+- `moedimai-social-card.png` Branded 1200x630 preview card for WhatsApp, Facebook, LinkedIn, X, and crawler link previews.
 - `rosemary-plant.jpg` Rosemary close-up. Used on the `/buyers` catalogue strip.
 - `immortelle-jar.jpg` Dried immortelle in a glass jar. Used on the `/buyers` catalogue strip.
 - `botanical-powder.jpg` Cold-pressed botanical powder with scoop. Used on the `/buyers` catalogue strip.

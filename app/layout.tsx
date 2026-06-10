@@ -114,24 +114,24 @@ export const metadata: Metadata = {
     type: "website",
     url: "/",
     siteName: "MoedimAI",
-    title: "MoedimAI | Technology infrastructure for Africa's agricultural bioeconomy",
+    title: "MoedimAI",
     description:
-      "AI and operating infrastructure for African bioeconomy supply chains, crop management, value addition, verification, logistics routing, and buyer-ready supply.",
+      "Technology infrastructure for Africa's agricultural bioeconomy: AI-enabled crop operations, value addition, logistics routing, verification, and buyer-ready supply.",
     images: [
       {
-        url: "/images/lavender-field.jpg",
+        url: "/images/moedimai-social-card.png",
         width: 1200,
         height: 630,
-        alt: "MoedimAI Kenyan botanical field",
+        alt: "MoedimAI technology infrastructure for Africa's agricultural bioeconomy",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "MoedimAI | Technology infrastructure for Africa's agricultural bioeconomy",
+    title: "MoedimAI",
     description:
-      "AI and operating infrastructure for African bioeconomy supply chains from farm to distribution.",
-    images: ["/images/lavender-field.jpg"],
+      "Technology infrastructure for Africa's agricultural bioeconomy: AI-enabled crop operations, value addition, logistics routing, verification, and buyer-ready supply.",
+    images: ["/images/moedimai-social-card.png"],
   },
 };
 
