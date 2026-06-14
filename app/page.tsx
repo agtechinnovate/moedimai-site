@@ -12,16 +12,16 @@ interface AudienceDoor {
 
 const DOORS: AudienceDoor[] = [
   {
-    eyebrow: "I NEED A CROP OPERATING PARTNER",
-    title: "Managed African crop programs",
-    body: "Coordinate farmers, growing, harvest readiness, crop benchmarking, quality evidence, and movement toward distribution or export.",
+    eyebrow: "I NEED A SUPPLY-CHAIN PARTNER",
+    title: "Supply chain benchmarking",
+    body: "Benchmark buyer-ready outcomes back to source across farmers, growing, value addition, quality evidence, logistics, distribution, and export.",
     href: "/buyers",
-    cta: "See crop support",
+    cta: "See supply-chain support",
   },
   {
     eyebrow: "I AM AN INVESTOR OR PARTNER",
     title: "AI for the bioeconomy",
-    body: "Technology and AI for African bioeconomy supply chains: crops, satellite and weather signals, processing, logistics, and buyer-ready evidence.",
+    body: "Technology and AI for African bioeconomy supply chains: source records, satellite and weather signals, processing, logistics, verification, and buyer-ready outcomes.",
     href: "/bioeconomy",
     cta: "See bioeconomy layer",
   },
@@ -57,16 +57,16 @@ export default function HomePage() {
             Rooted in Africa. Refined for the world.
           </p>
           <h1 className="mt-5 max-w-3xl font-display text-4xl leading-[1.05] text-cream-50 md:text-6xl">
-            African crop management
+            AI supply chain platform
             <br />
-            from farmer to distribution.
+            driving Africa&apos;s bioeconomy.
           </h1>
           <p className="mt-6 max-w-2xl text-base text-cream-50/90 md:text-lg">
-            MoedimAI helps companies manage the crops they grow or source in Africa: farmer
-            networks, growing programs, AI-supported satellite and weather intelligence, harvest
-            readiness, benchmarking, value addition, logistics routing, quality evidence, and
-            movement into processing, distribution, or export. Imani Pamoja is the connected
-            trading and export company for African farm output.
+            MoedimAI is the technology layer for bioeconomy supply chains. It benchmarks buyer-ready
+            outcomes back to the beginning and throughout the supply chain: farmer networks, crop
+            programs, AI-supported satellite and weather intelligence, harvest readiness, value
+            addition, processing, quality evidence, logistics routing, distribution, and export.
+            Imani Pamoja is the connected trading and export company for African farm output.
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-3">
             <Link
@@ -75,7 +75,7 @@ export default function HomePage() {
               data-analytics-label="home hero crop support"
               className="inline-flex h-12 items-center justify-center rounded-md bg-gold-500 px-6 text-sm font-medium text-navy-900 transition-colors hover:bg-gold-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-300 focus-visible:ring-offset-2 focus-visible:ring-offset-navy-900"
             >
-              See crop support
+              See supply-chain support
             </Link>
             <Link
               href="/bioeconomy"
@@ -93,11 +93,11 @@ export default function HomePage() {
             </div>
             <div>
               <dt className="text-cream-50/70">Crops</dt>
-              <dd className="mt-1 text-cream-50">Programs benchmarked</dd>
+              <dd className="mt-1 text-cream-50">Source benchmarked</dd>
             </div>
             <div>
-              <dt className="text-cream-50/70">Harvest</dt>
-              <dd className="mt-1 text-cream-50">Readiness tracked</dd>
+              <dt className="text-cream-50/70">Supply</dt>
+              <dd className="mt-1 text-cream-50">Outcome benchmarked</dd>
             </div>
             <div>
               <dt className="text-cream-50/70">Export</dt>
@@ -116,8 +116,8 @@ export default function HomePage() {
             Choose your path
           </h2>
           <p className="mt-3 max-w-2xl text-sm text-cream-50/70 md:text-base">
-            One operating graph, three public entry points: enterprise buyers, capital partners,
-            and producers entering verified supply.
+            One operating graph, three public entry points: enterprise supply-chain teams, capital
+            partners, and producers entering verified supply.
           </p>
 
           <div className="mt-10 grid gap-6 md:grid-cols-3">
@@ -131,14 +131,17 @@ export default function HomePage() {
       <section className="border-t border-cream-50/10">
         <div className="container py-16 md:py-20">
           <div className="mb-10 rounded-md border border-cream-50/10 bg-navy-800/35 p-5 md:p-6">
-            <p className="text-xs uppercase tracking-[0.2em] text-gold-500">Bioeconomy technology</p>
+            <p className="text-xs uppercase tracking-[0.2em] text-gold-500">
+              Bioeconomy technology
+            </p>
             <h2 className="mt-3 max-w-3xl font-sans text-xl font-semibold leading-snug text-cream-50 md:text-2xl">
               Technology and AI for Africa&apos;s bioeconomy supply chains.
             </h2>
             <p className="mt-3 max-w-3xl text-sm leading-6 text-cream-50/75">
-              MoedimAI connects crop production, satellite and weather signals, value addition,
-              processing, steam distillation, drying, cold press, logistics routing, quality
-              evidence, and export readiness in one governed operating layer.
+              MoedimAI is the technology layer that connects source records, crop production,
+              satellite and weather signals, value addition, processing, steam distillation, drying,
+              cold press, logistics routing, quality evidence, distribution readiness, export
+              pathways, and buyer specifications in one governed supply-chain benchmarking layer.
             </p>
             <Link
               href="/bioeconomy"
@@ -155,8 +158,8 @@ export default function HomePage() {
           </h2>
           <p className="mt-4 max-w-3xl text-sm leading-6 text-cream-50/75 md:text-base">
             MoedimAI is not limited to one botanical line. The operating model can be configured
-            around the crop, farmer network, buyer specification, benchmark, harvest window,
-            quality evidence, and route to market.
+            around the crop, farmer network, buyer specification, benchmark, harvest window, quality
+            evidence, and route to market.
           </p>
           <div className="mt-10 grid gap-5 md:grid-cols-2">
             {CROP_FAMILIES.map((family) => (

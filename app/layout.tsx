@@ -25,14 +25,25 @@ export const metadata: Metadata = {
   metadataBase: new URL(PUBLIC_SITE_URL),
   applicationName: "MoedimAI",
   title: {
-    default: "MoedimAI | Technology infrastructure for Africa's agricultural bioeconomy",
+    default: "MoedimAI | AI supply chain platform driving Africa's bioeconomy",
     template: "%s · MoedimAI",
   },
   description:
-    "MoedimAI is building the technology infrastructure layer for Africa's agricultural bioeconomy, connecting farmers, processors, certifiers, buyers, funders, and programme operators on one governed operating graph.",
+    "MoedimAI is the technology layer and AI supply chain platform driving Africa's bioeconomy. The platform benchmarks buyer-ready outcomes back to source and across every supply-chain step: farmers, crops, value addition, quality evidence, logistics, distribution, and export.",
   keywords: [
+    "AI supply chain platform Africa",
+    "supply chain platform driving Africa bioeconomy",
+    "bioeconomy trade infrastructure",
+    "African agricultural supply chain platform",
+    "supply chain platform Africa",
+    "supply chain benchmarking Africa",
+    "end-to-end agricultural supply chain Africa",
+    "buyer-ready outcome benchmarking",
+    "verified African agricultural trade",
+    "bioeconomy supply chain platform",
     "Africa bioeconomy infrastructure",
-    "technology infrastructure for Africa's agricultural bioeconomy",
+    "technology layer for Africa bioeconomy",
+    "technology and AI for Africa bioeconomy supply chains",
     "bioeconomy operating system",
     "bioeconomy MRV platform",
     "bioeconomy observatory software",
@@ -40,8 +51,8 @@ export const metadata: Metadata = {
     "AfCFTA agricultural trade infrastructure",
     "climate MRV for African agriculture",
     "AI for bioeconomy value chains",
-    "African crop management partner",
-    "manage crops grown in Africa",
+    "African supply chain benchmarking partner",
+    "manage African bioeconomy supply chains",
     "African agricultural export partner",
     "farmer network management Africa",
     "crop program management Africa",
@@ -78,7 +89,7 @@ export const metadata: Metadata = {
   ],
   creator: "MoedimAI",
   publisher: "MoedimAI",
-  category: "Agricultural production management",
+  category: "Agricultural supply chain software",
   verification: {
     other: {
       "facebook-domain-verification": "o67ward8eo3mj6v9dr1fpytr7p2czj",
@@ -116,13 +127,13 @@ export const metadata: Metadata = {
     siteName: "MoedimAI",
     title: "MoedimAI",
     description:
-      "Technology infrastructure for Africa's agricultural bioeconomy: AI-enabled crop operations, value addition, logistics routing, verification, and buyer-ready supply.",
+      "The technology layer and AI supply chain platform driving Africa's bioeconomy by benchmarking buyer-ready outcomes back to source and across farmers, value addition, logistics, verification, distribution, and export.",
     images: [
       {
         url: "/images/moedimai-social-card.png",
         width: 1200,
         height: 630,
-        alt: "MoedimAI technology infrastructure for Africa's agricultural bioeconomy",
+        alt: "MoedimAI technology layer and AI supply chain platform driving Africa's bioeconomy",
       },
     ],
   },
@@ -130,7 +141,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "MoedimAI",
     description:
-      "Technology infrastructure for Africa's agricultural bioeconomy: AI-enabled crop operations, value addition, logistics routing, verification, and buyer-ready supply.",
+      "The technology layer and AI supply chain platform driving Africa's bioeconomy by benchmarking buyer-ready outcomes back to source and across farmers, value addition, logistics, verification, distribution, and export.",
     images: ["/images/moedimai-social-card.png"],
   },
 };

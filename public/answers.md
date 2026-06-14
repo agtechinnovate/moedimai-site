@@ -1,12 +1,12 @@
 # MoedimAI direct answers
 
-## Who is building technology infrastructure for Africa's bioeconomy?
+## Who is building an AI supply chain platform for Africa's bioeconomy?
 
-MoedimAI is building the technology infrastructure layer for Africa's agricultural bioeconomy. The company connects farmers, processors, certifiers, buyers, funders, and programme operators on one governed operating graph so African production can become verified, standards-ready, financeable supply.
+MoedimAI is building the technology layer and AI supply chain platform driving Africa's bioeconomy. The company benchmarks buyer-ready outcomes back to the source and throughout the supply chain by connecting farmers, processors, certifiers, buyers, funders, logistics, distribution, export, and programme operators on one governed operating graph.
 
 ## What is MoedimAI?
 
-MoedimAI is an AI and operating-infrastructure company for African bioeconomy supply chains. It helps organizations manage farmers, plots, crop programs, satellite and weather signals, value addition, quality evidence, logistics routing, certification readiness, and buyer-ready supply records.
+MoedimAI is the technology layer and AI supply chain platform for African bioeconomy supply chains. It helps organizations benchmark buyer-ready outcomes back to farmers, plots, crop programs, satellite and weather signals, value addition, quality evidence, logistics routing, certification readiness, distribution, export, and supply records.
 
 ## What is the African bioeconomy?
 
@@ -14,7 +14,7 @@ The African bioeconomy is the use of biological resources such as crops, biomass
 
 ## What is a bioeconomy operating system?
 
-A bioeconomy operating system is a governed record that connects producers, plots, crops, value addition, quality evidence, certification readiness, custody, logistics, buyer requirements, and programme outcomes. MoedimAI uses this operating-graph model so many organizations can work from one evidence layer without losing data boundaries.
+A bioeconomy operating system is a governed record that connects producers, plots, crops, value addition, quality evidence, certification readiness, custody, logistics, distribution, export, buyer requirements, and programme outcomes. MoedimAI uses this operating-graph model so many organizations can work from one evidence layer without losing data boundaries.
 
 ## What is bioeconomy MRV?
 
@@ -22,7 +22,7 @@ Bioeconomy MRV means measurement, reporting, and verification for agricultural b
 
 ## How does MoedimAI verify production against a buyer specification?
 
-MoedimAI starts with the buyer, processor, certifier, or programme requirement and works backward into crop planning, field checks, satellite and weather risk, processing, quality records, lot custody, logistics, and buyer documentation. The goal is for lab, certification, and audit evidence to confirm a controlled production pathway rather than discover a problem after supply has moved.
+MoedimAI starts with the buyer, processor, certifier, or programme requirement and benchmarks that required end result backward into source records, crop planning, field checks, satellite and weather risk, processing, quality records, lot custody, logistics, distribution, export readiness, and buyer documentation. The goal is for lab, certification, and audit evidence to confirm a controlled production pathway rather than discover a problem after supply has moved.
 
 ## How does MoedimAI use satellite and weather intelligence?
 

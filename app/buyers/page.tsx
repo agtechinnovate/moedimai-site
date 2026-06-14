@@ -6,19 +6,19 @@ import { Schema, breadcrumbList, faqPage } from "@/lib/schema";
 import { PUBLIC_SITE_URL } from "@/lib/site-url";
 
 export const metadata: Metadata = {
-  title: "African crop management and export-ready supply",
+  title: "African supply chain platform and export-ready supply",
   description:
-    "MoedimAI helps companies manage African crop programs, farmer networks, growing, harvesting, benchmarking, quality evidence, and movement to distribution or export.",
+    "MoedimAI benchmarks African supply from source to buyer-ready output across farmer networks, crops, value addition, quality evidence, logistics, distribution, and export.",
   alternates: {
     canonical: "/buyers",
     types: {
-      "text/markdown": [{ url: "/buyers.md", title: "African crop management markdown" }],
+      "text/markdown": [{ url: "/buyers.md", title: "African supply chain platform markdown" }],
     },
   },
   openGraph: {
-    title: "MoedimAI African crop management and export-ready supply",
+    title: "MoedimAI African supply chain platform and export-ready supply",
     description:
-      "Farmer network management, crop benchmarking, harvest readiness, quality evidence, and distribution or export support for African agriculture.",
+      "Supply chain benchmarking from source to buyer-ready output across farmer networks, value addition, quality evidence, logistics, distribution, and export.",
     url: "/buyers",
     images: [
       {
@@ -35,14 +35,28 @@ const baseUrl = PUBLIC_SITE_URL;
 
 const SPEC_ROWS: ReadonlyArray<{ label: string; value: React.ReactNode }> = [
   { label: "Trading route", value: "Imani Pamoja agricultural trading and export company" },
-  { label: "Operating role", value: "Farmer networks, crop programs, harvest readiness, benchmarks" },
-  { label: "Technology layer", value: "AI-supported satellite/weather intelligence, operating graph, evidence, logistics" },
+  { label: "Operating role", value: "Supply chain benchmarking from source to buyer-ready output" },
+  {
+    label: "Technology layer",
+    value: "AI-supported satellite/weather intelligence, operating graph, evidence, logistics",
+  },
   { label: "EU operations", value: "Rotterdam" },
   { label: "US holding", value: "Delaware" },
   { label: "Trust mark", value: <BrandMark surface="verified" size="sm" /> },
-  { label: "Crop scope", value: "Aromatics, botanicals, oilseeds, produce, grains, pulses, tree crops, spices, fiber, biomass" },
-  { label: "Engagement", value: "Crop program, sourcing, distribution, export, or buyer-spec conversation by request" },
-  { label: "Evidence", value: "Field checks, quality records, benchmarks, traceability, custody, and export documentation" },
+  {
+    label: "Crop scope",
+    value:
+      "Aromatics, botanicals, oilseeds, produce, grains, pulses, tree crops, spices, fiber, biomass",
+  },
+  {
+    label: "Engagement",
+    value: "Supply-chain, sourcing, distribution, export, or buyer-spec conversation by request",
+  },
+  {
+    label: "Evidence",
+    value:
+      "Field checks, quality records, benchmarks, traceability, custody, and export documentation",
+  },
 ];
 
 const buyerPageSchema = {
@@ -50,9 +64,9 @@ const buyerPageSchema = {
   "@type": "WebPage",
   "@id": `${baseUrl}/buyers#webpage`,
   url: `${baseUrl}/buyers`,
-  name: "MoedimAI African crop management and export-ready supply",
+  name: "MoedimAI African supply chain platform and export-ready supply",
   description:
-    "MoedimAI helps companies manage African crop programs, farmer networks, growing, harvesting, benchmarking, quality evidence, and movement to distribution or export.",
+    "MoedimAI benchmarks African supply from source to buyer-ready output across farmer networks, crops, value addition, quality evidence, logistics, distribution, and export.",
   isPartOf: { "@id": `${baseUrl}/#website` },
   about: { "@id": `${baseUrl}/#organization` },
   primaryImageOfPage: {
@@ -86,21 +100,22 @@ export default function BuyersPage() {
           buyerPageSchema,
           buyerProductListSchema,
           faqPage(BUYER_FAQS),
-          breadcrumbList([{ name: "African crop management", path: "/buyers" }]),
+          breadcrumbList([{ name: "African supply chain platform", path: "/buyers" }]),
         ]}
       />
       <section className="container py-16 md:py-20">
         <p className="font-sans text-xs uppercase tracking-[0.18em] text-gold-500">
-          African crop operating partner
+          African supply chain platform
         </p>
         <h1 className="mt-4 max-w-3xl font-display text-4xl leading-tight md:text-5xl">
-          <BrandMark surface="moedimai" size="lg" /> manages crop programs from farmer to distribution.
+          <BrandMark surface="moedimai" size="lg" /> benchmarks supply from source to buyer-ready
+          output.
         </h1>
         <p className="mt-6 max-w-3xl text-base text-cream-50/85 md:text-lg">
-          MoedimAI is for companies looking for a technology operating partner to manage crops
-          grown in Africa and keep the operating picture clear: farmers, AI-supported satellite and
-          weather intelligence, growing, field support, harvest readiness, value addition,
-          benchmarking, quality evidence, logistics routing, and movement toward processors,
+          MoedimAI is for companies looking for an AI supply chain platform to benchmark African
+          bioeconomy supply from buyer-ready outcome back to source: farmers, AI-supported satellite
+          and weather intelligence, growing, field support, harvest readiness, value addition,
+          quality evidence, logistics routing, distribution, export, and movement toward processors,
           distributors, exporters, or buyers. Imani Pamoja is the connected agricultural trading and
           export company for African farm output.
         </p>
@@ -109,12 +124,13 @@ export default function BuyersPage() {
       <section className="border-t border-cream-50/10 bg-navy-800/40">
         <div className="container py-16 md:py-20">
           <h2 className="font-display text-2xl text-cream-50 md:text-3xl">
-            Crop programs MoedimAI can support
+            Supply chains and crop families MoedimAI can support
           </h2>
           <p className="mt-4 max-w-3xl text-sm leading-6 text-cream-50/75 md:text-base">
-            The platform is built around crop programs, not a single product catalogue. Each
-            program can be configured around the crop, farmer network, growth stage, benchmark,
-            buyer specification, quality evidence, and route to market.
+            The platform is built around end-to-end supply chains, not a single product catalogue.
+            Each program can be configured around the buyer-ready outcome, crop, source records,
+            farmer network, value-addition step, quality evidence, logistics route, and route to
+            market.
           </p>
 
           <div className="mt-8 grid gap-4 sm:grid-cols-3">
@@ -182,9 +198,7 @@ export default function BuyersPage() {
           </li>
           <li className="rounded-lg border border-cream-50/10 bg-navy-900/40 p-6">
             <p className="font-display text-3xl text-gold-500">3</p>
-            <h3 className="mt-3 font-display text-xl text-cream-50">
-              Move toward distribution.
-            </h3>
+            <h3 className="mt-3 font-display text-xl text-cream-50">Move toward distribution.</h3>
             <p className="mt-3 text-sm text-cream-50/80">
               When supply is ready, the same operating record supports aggregation, custody,
               processing, distribution, export documentation, and buyer-facing evidence.

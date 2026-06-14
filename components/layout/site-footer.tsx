@@ -9,8 +9,8 @@ export function SiteFooter() {
           <div>
             <img src="/images/moedimai-logo-dark.png" alt="MoedimAI" className="h-10 w-auto" />
             <p className="mt-4 max-w-xs text-sm text-cream-50/70">
-              MoedimAI is building the technology infrastructure layer for Africa&apos;s
-              agricultural bioeconomy.
+              MoedimAI is the technology layer and AI supply-chain benchmarking platform for
+              Africa&apos;s bioeconomy.
             </p>
           </div>
           <div>
@@ -28,7 +28,9 @@ export function SiteFooter() {
               </a>
             </p>
             <p className="mt-4 text-sm text-cream-50/80">Kenya · Netherlands · United States</p>
-            <p className="mt-2 text-xs text-cream-50/55">AI, operating intelligence, value addition, verification, and movement.</p>
+            <p className="mt-2 text-xs text-cream-50/55">
+              Source, value addition, verification, logistics, and buyer-ready output.
+            </p>
           </div>
         </div>
         <div className="mt-10 flex flex-col items-start justify-between gap-2 border-t border-cream-50/10 pt-6 text-xs text-cream-50/50 md:flex-row md:items-center">

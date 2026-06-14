@@ -5,9 +5,9 @@ import { Schema, breadcrumbList, faqPage } from "@/lib/schema";
 import { PUBLIC_SITE_URL } from "@/lib/site-url";
 
 export const metadata: Metadata = {
-  title: "African crop management operating system thesis",
+  title: "AI supply chain platform thesis for Africa's bioeconomy",
   description:
-    "MoedimAI is an operating system for managing African crop programs, farmer networks, harvest readiness, benchmarking, and export-ready agricultural supply.",
+    "MoedimAI is the technology layer and AI supply chain platform driving Africa's bioeconomy by benchmarking buyer-ready outcomes back to source and across farmer networks, value addition, quality evidence, logistics, distribution, and export.",
   alternates: {
     canonical: "/thesis",
     types: {
@@ -15,9 +15,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "MoedimAI African crop management thesis",
+    title: "MoedimAI AI supply chain platform thesis",
     description:
-      "A thesis for managing African crop programs from farmer networks and growing to harvest readiness, benchmarking, distribution, and export.",
+      "A thesis for benchmarking African bioeconomy supply from buyer-ready outcomes back to source and across every supply-chain step.",
     url: "/thesis",
     images: [
       {
@@ -37,9 +37,9 @@ const thesisPageSchema = {
   "@type": "WebPage",
   "@id": `${baseUrl}/thesis#webpage`,
   url: `${baseUrl}/thesis`,
-  name: "MoedimAI African crop management thesis",
+  name: "MoedimAI AI supply chain platform thesis",
   description:
-    "An operating thesis for managing African crop programs from farmer networks and growing to harvest readiness, benchmarking, distribution, and export.",
+    "An operating thesis for benchmarking African bioeconomy supply from buyer-ready outcomes back to source and across farmer networks, value addition, quality evidence, logistics, distribution, and export.",
   isPartOf: { "@id": `${baseUrl}/#website` },
   about: [
     { "@id": `${baseUrl}/#organization` },
@@ -91,13 +91,14 @@ export default function ThesisPage() {
             Investor thesis
           </p>
           <h1 className="mt-5 max-w-4xl font-display text-4xl leading-[1.05] text-cream-50 md:text-6xl">
-            The operating system for managed African crop programs.
+            The AI supply chain platform driving Africa&apos;s bioeconomy.
           </h1>
           <p className="mt-8 max-w-3xl text-base text-cream-50/85 md:text-lg">
-            MoedimAI turns farmer networks, crop plans, field support, AI-supported weather and
-            satellite signals, value addition, quality records, logistics routing, benchmarks, and
-            buyer or distributor requirements into a governed operating graph. Imani Pamoja is the
-            connected agricultural trading and export company for African farm output.
+            MoedimAI is the technology layer for bioeconomy supply chains. It benchmarks buyer-ready
+            outcomes back to the source and across the supply chain: farmer networks, crop plans,
+            field support, AI-supported weather and satellite signals, value addition, quality
+            records, logistics routing, distribution, export, and buyer requirements. Imani Pamoja
+            is the connected agricultural trading and export route.
           </p>
         </div>
       </section>
@@ -147,12 +148,14 @@ export default function ThesisPage() {
       <section className="container py-16 md:py-20">
         <div className="grid gap-6 md:grid-cols-3">
           <article className="rounded-lg border border-cream-50/10 bg-navy-900/40 p-6">
-            <p className="text-xs uppercase tracking-[0.16em] text-gold-500">01 · Technology layer</p>
-            <h3 className="mt-4 font-display text-2xl text-cream-50">AI for the bioeconomy</h3>
+            <p className="text-xs uppercase tracking-[0.16em] text-gold-500">
+              01 · Supply-chain layer
+            </p>
+            <h3 className="mt-4 font-display text-2xl text-cream-50">AI for bioeconomy supply</h3>
             <p className="mt-4 text-sm text-cream-50/80 md:text-base">
-              MoedimAI helps companies organize farmer networks, crop plans, field teams,
-              satellite and weather signals, growing-stage evidence, value addition, and logistics
-              so African bioeconomy supply chains can be managed against a clear output target.
+              MoedimAI helps companies organize farmer networks, crop plans, field teams, satellite
+              and weather signals, growing-stage evidence, value addition, and logistics so African
+              bioeconomy supply chains can be benchmarked against a clear buyer-ready output target.
             </p>
           </article>
           <article className="rounded-lg border border-cream-50/10 bg-navy-900/40 p-6">
@@ -163,7 +166,7 @@ export default function ThesisPage() {
               Output, risk, and readiness
             </h3>
             <p className="mt-4 text-sm text-cream-50/80 md:text-base">
-              Crop performance, harvest readiness, quality evidence, and distribution requirements
+              Source performance, harvest readiness, quality evidence, and distribution requirements
               become operating facts instead of scattered field notes. Satellite and weather signals
               help teams pre-empt risk before it affects output.
             </p>
@@ -173,8 +176,8 @@ export default function ThesisPage() {
             <h3 className="mt-4 font-display text-2xl text-cream-50">The dataset is the asset</h3>
             <p className="mt-4 text-sm text-cream-50/80 md:text-base">
               Every permitted field record, benchmark, quality result, custody event, and buyer or
-              distributor packet compounds into a dataset companies can use to manage better crop
-              programs over time.
+              distributor packet compounds into a dataset companies can use to manage stronger
+              supply-chain programs over time.
             </p>
           </article>
         </div>
@@ -185,9 +188,10 @@ export default function ThesisPage() {
           <div className="border-l-2 border-gold-500 pl-6">
             <p className="text-xs uppercase tracking-[0.22em] text-gold-500">The ecosystem</p>
             <p className="mt-3 text-base text-cream-50/85 md:text-lg">
-              Companies need partners that can manage farmers, crops, output, quality, and
-              distribution readiness together. Insurance, banks, DFIs, buyers, processors, and
-              exporters all benefit when crop performance is visible and benchmarked.
+              Companies need partners that can manage source, value addition, output, quality,
+              distribution readiness, and export evidence together. Insurance, banks, DFIs, buyers,
+              processors, and exporters all benefit when supply performance is visible and
+              benchmarked.
             </p>
           </div>
         </div>
@@ -224,19 +228,27 @@ export default function ThesisPage() {
           <dl className="grid grid-cols-2 gap-8 md:grid-cols-4">
             <div>
               <dt className="font-display text-3xl text-gold-500 md:text-4xl">Farmers</dt>
-              <dd className="mt-3 text-sm text-cream-50/75">Network setup and field coordination</dd>
+              <dd className="mt-3 text-sm text-cream-50/75">
+                Network setup and field coordination
+              </dd>
             </div>
             <div>
               <dt className="font-display text-3xl text-gold-500 md:text-4xl">Crops</dt>
-              <dd className="mt-3 text-sm text-cream-50/75">Program planning and growing support</dd>
+              <dd className="mt-3 text-sm text-cream-50/75">
+                Program planning and growing support
+              </dd>
             </div>
             <div>
               <dt className="font-display text-3xl text-gold-500 md:text-4xl">Benchmarks</dt>
-              <dd className="mt-3 text-sm text-cream-50/75">Output, quality, and harvest readiness</dd>
+              <dd className="mt-3 text-sm text-cream-50/75">
+                Output, quality, and harvest readiness
+              </dd>
             </div>
             <div>
               <dt className="font-display text-3xl text-gold-500 md:text-4xl">Export</dt>
-              <dd className="mt-3 text-sm text-cream-50/75">Distribution readiness through Imani Pamoja</dd>
+              <dd className="mt-3 text-sm text-cream-50/75">
+                Distribution readiness through Imani Pamoja
+              </dd>
             </div>
           </dl>
         </div>

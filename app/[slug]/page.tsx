@@ -46,7 +46,7 @@ export function generateMetadata({ params }: { params: PageParams }): Metadata {
           url: "/images/moedimai-social-card.png",
           width: 1200,
           height: 630,
-          alt: "MoedimAI technology infrastructure for Africa's agricultural bioeconomy",
+          alt: "MoedimAI AI supply chain platform driving Africa's bioeconomy",
         },
       ],
     },
@@ -84,7 +84,7 @@ export default function CategoryLeadershipPage({ params }: { params: PageParams 
     author: { "@id": `${PUBLIC_SITE_URL}/about#founder` },
     publisher: { "@id": `${PUBLIC_SITE_URL}/#organization` },
     mainEntityOfPage: pageUrl,
-    about: [page.ownedPhrase, "MoedimAI", "Africa's agricultural bioeconomy"],
+    about: [page.ownedPhrase, "MoedimAI", "AI supply chain platform Africa", "Africa's bioeconomy"],
     isPartOf: { "@id": `${PUBLIC_SITE_URL}/#website` },
   } as const;
 

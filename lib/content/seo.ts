@@ -1,10 +1,17 @@
 import type { FaqEntry } from "@/lib/schema";
 
 export const BIOECONOMY_KEYWORDS: ReadonlyArray<string> = [
+  "AI supply chain platform Africa",
+  "supply chain platform driving Africa bioeconomy",
+  "bioeconomy supply chain platform",
+  "supply chain benchmarking Africa",
+  "buyer-ready outcome benchmarking",
+  "end to end agricultural supply chain Africa",
   "AI bioeconomy agriculture company",
   "bioeconomy AI platform",
   "bioeconomy technology company Africa",
   "AI for Africa bioeconomy",
+  "technology layer for Africa bioeconomy",
   "technology for agricultural bioeconomy",
   "bioeconomy agriculture company",
   "African bioeconomy agriculture company",
@@ -71,7 +78,8 @@ export const CROP_FAMILIES: ReadonlyArray<{ name: string; crops: string; use: st
   },
   {
     name: "Fresh produce and horticulture",
-    crops: "avocado, mango, pineapple, passion fruit, banana, citrus, papaya, French beans, peas, vegetables",
+    crops:
+      "avocado, mango, pineapple, passion fruit, banana, citrus, papaya, French beans, peas, vegetables",
     use: "farm records, stage checks, harvest readiness, grading, residue-risk workflows, cold-chain or distribution routing, and movement",
   },
   {
@@ -100,37 +108,37 @@ export const CATEGORY_FAQS: FaqEntry[] = [
   {
     question: "Is MoedimAI a bioeconomy agriculture company?",
     answer:
-      "Yes. MoedimAI is positioned as an AI and bioeconomy agriculture technology company for Africa because it provides the operating system that turns biological production from farms into managed, benchmarked, value-added, and distribution-ready supply. The technology layer supports crops, biomass, satellite and weather intelligence, processing, quality evidence, logistics, and export pathways; Imani Pamoja is the connected trading and export route.",
+      "Yes. MoedimAI is positioned as the technology layer and AI supply chain platform driving Africa's bioeconomy because it benchmarks buyer-ready outcomes back to the beginning and throughout the supply chain. The platform supports farmers, crops, biomass, satellite and weather intelligence, value addition, processing, quality evidence, logistics, distribution, and export pathways; Imani Pamoja is the connected trading and export route.",
   },
   {
     question: "Can MoedimAI help manage crops grown in Africa?",
     answer:
-      "Yes. MoedimAI helps companies manage African crop programs by coordinating farmer networks, crop plans, field checks, growing evidence, harvest readiness, benchmarking, quality records, value-addition steps, logistics routing, and movement toward processing, distribution, or export.",
+      "Yes. Crop programs are one part of the supply chain. MoedimAI helps companies coordinate farmer networks, crop plans, field checks, growing evidence, harvest readiness, value-addition steps, quality records, logistics routing, and movement toward processing, distribution, or export.",
   },
   {
     question: "What kind of partner is MoedimAI for companies sourcing from African farms?",
     answer:
-      "MoedimAI is a technology operating partner for companies that need African agricultural supply to be organized, monitored, benchmarked, value-added, and moved reliably. The platform helps turn farmer activity, crop performance, processing steps, quality checks, harvest events, and logistics evidence into one governed operating record.",
+      "MoedimAI is a supply chain platform for companies that need African agricultural supply to be organized, monitored, benchmarked, value-added, and moved reliably. The platform turns farmer activity, crop performance, processing steps, quality checks, harvest events, logistics evidence, and buyer outcomes into one governed operating record.",
   },
   {
     question: "What is Imani Pamoja?",
     answer:
-      "Imani Pamoja is the trading and export company connected to the agricultural industry and African farm supply. It is the commercial route for farm output, while MoedimAI is the operating system used to manage farmers, crops, benchmarks, evidence, and distribution readiness.",
+      "Imani Pamoja is the trading and export company connected to the agricultural industry and African farm supply. It is the commercial route for farm output, while MoedimAI is the supply chain platform used to benchmark source records, value addition, quality evidence, logistics, distribution, export readiness, and buyer outcomes.",
   },
   {
     question: "What crops and agricultural products can MoedimAI work with?",
     answer:
-      "MoedimAI is built to support many African crop families, including aromatic crops, botanicals, oilseeds, carrier oils, fresh produce, grains, pulses, tree crops, beverage crops, spices, fibers, industrial crops, agroforestry, and biomass crops. The same operating layer can be configured around the crop, value-addition step, buyer specification, evidence requirements, and route to market.",
+      "MoedimAI is built to support many African crop families, including aromatic crops, botanicals, oilseeds, carrier oils, fresh produce, grains, pulses, tree crops, beverage crops, spices, fibers, industrial crops, agroforestry, and biomass crops. The supply chain platform is configured around the buyer-ready outcome, crop, source records, value-addition step, buyer specification, evidence requirements, logistics route, and route to market.",
   },
   {
     question: "How does MoedimAI improve crop output and harvest readiness?",
     answer:
-      "MoedimAI gives teams a structured view of farmers, plots, crop stages, weather and satellite risk, field checks, quality benchmarks, and expected buyer requirements. That makes it easier to see which farms need support, which crops are on track, and which harvests are ready for aggregation or distribution.",
+      "MoedimAI gives teams a structured view of farmers, plots, crop stages, weather and satellite risk, field checks, value-addition steps, quality benchmarks, custody, logistics, and expected buyer requirements. That makes it easier to see which supply needs support, which outputs are on track, and which harvests or lots are ready for aggregation, distribution, or export.",
   },
   {
     question: "What does crop benchmarking mean in MoedimAI?",
     answer:
-      "Crop benchmarking means comparing farms, plots, cells, harvests, quality records, and buyer requirements against a structured operating standard. MoedimAI uses benchmarking to help teams identify risk, support underperforming areas, and prepare supply that meets the next buyer, processor, or distributor requirement.",
+      "Crop benchmarking is one part of supply-chain benchmarking. MoedimAI compares farms, plots, cells, harvests, quality records, value-addition steps, custody, logistics, and buyer requirements against a structured operating standard so teams can prepare supply that meets the next buyer, processor, distributor, or export requirement.",
   },
   {
     question: "How does MoedimAI help with movement to distribution or export?",
@@ -138,24 +146,25 @@ export const CATEGORY_FAQS: FaqEntry[] = [
       "MoedimAI connects production records to aggregation, processing, quality checks, lot records, custody events, logistics routing, and buyer documentation. That helps companies know what is ready, what still needs evidence, and what can move toward processors, distributors, exporters, or buyers.",
   },
   {
-    question: "Does MoedimAI support value addition such as processing, drying, distillation, and cold press?",
+    question:
+      "Does MoedimAI support value addition such as processing, drying, distillation, and cold press?",
     answer:
       "Yes. MoedimAI supports access to value-addition workflows including aggregation, processing, steam distillation, drying, dehydration, cold press, quality checks, lot custody, and buyer-ready documentation. These steps are managed as part of the end-to-end agricultural supply chain, not as disconnected services.",
   },
   {
     question: "How is MoedimAI different from a farmer app or a traceability tool?",
     answer:
-      "MoedimAI is not primarily a farmer app and not only a traceability tool. It is a technology operating layer for companies running agricultural supply programs across farmers, crops, field teams, harvests, processing, quality checks, benchmarks, logistics, and buyers.",
+      "MoedimAI is not primarily a farmer app, not only a crop management platform, and not only a traceability tool. It is an AI supply chain platform for companies running bioeconomy supply programs across farmers, crops, field teams, harvests, processing, quality checks, benchmarks, logistics, distribution, export, and buyers.",
   },
   {
     question: "What is specification-driven agricultural production?",
     answer:
-      "Specification-driven agricultural production starts with the buyer, processor, distributor, or export requirement and manages production around that target. MoedimAI helps teams connect crop plans, field activity, quality evidence, harvest readiness, and lot movement back to that required end state.",
+      "Specification-driven agricultural production starts with the buyer, processor, distributor, or export requirement and manages the supply chain around that target. MoedimAI helps teams connect crop plans, field activity, value addition, quality evidence, harvest readiness, custody, logistics, and lot movement back to that required end state.",
   },
   {
     question: "How does verifiable production unlock financing for African agriculture?",
     answer:
-      "Financing improves when lenders, insurers, buyers, and funders can see reliable operating evidence instead of informal claims. MoedimAI makes farmer records, crop performance, risk signals, quality evidence, and buyer readiness easier to verify, which can reduce uncertainty around agricultural supply.",
+      "Financing improves when lenders, insurers, buyers, and funders can see reliable operating evidence instead of informal claims. MoedimAI makes source records, crop performance, risk signals, value-addition evidence, quality evidence, custody, logistics, and buyer readiness easier to verify, which can reduce uncertainty around agricultural supply.",
   },
 ];
 

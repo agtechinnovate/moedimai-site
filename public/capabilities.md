@@ -1,10 +1,10 @@
 # MoedimAI capabilities
 
-MoedimAI is building the technology infrastructure layer for Africa's agricultural bioeconomy.
+MoedimAI is the technology layer and AI supply chain platform driving Africa's bioeconomy.
 
 ## Operating graph
 
-MoedimAI connects farmers, plots, crop programmes, satellite and weather signals, field checks, value addition, processing, quality evidence, lots, custody, logistics routing, certification readiness, buyer packets, funder reporting, and programme indicators on one governed operating graph.
+MoedimAI connects farmers, plots, crop programmes, satellite and weather signals, field checks, value addition, processing, quality evidence, lots, custody, logistics routing, distribution, export readiness, certification readiness, buyer packets, funder reporting, and programme indicators on one governed operating graph.
 
 ## Capture and records
 
@@ -19,7 +19,7 @@ MoedimAI connects farmers, plots, crop programmes, satellite and weather signals
 
 ## Model and guide
 
-MoedimAI uses AI and operating intelligence to help teams see risk, benchmark readiness, ask on-demand questions, and decide what needs inspection, evidence, processing, logistics routing, or buyer follow-up. Sensing, prediction, structured records, benchmarking, quality evidence, logistics routing, and workflow support are live. Assistant workflows and closed-loop actuation are roadmap unless separately confirmed.
+MoedimAI uses AI and operating intelligence to help teams benchmark buyer-ready outcomes back to source, see risk, benchmark readiness, ask on-demand questions, and decide what needs inspection, evidence, processing, logistics routing, distribution, export preparation, or buyer follow-up. Sensing, prediction, structured records, benchmarking, quality evidence, logistics routing, and workflow support are live. Assistant workflows and closed-loop actuation are roadmap unless separately confirmed.
 
 ## Verify
 
@@ -27,7 +27,7 @@ MoedimAI supports standards-ready supply through producer evidence, plot records
 
 ## Value addition
 
-MoedimAI supports aggregation, processing, steam distillation, drying, dehydration, cold press, quality checks, lot custody, logistics routing, and buyer-ready documentation.
+MoedimAI supports aggregation, processing, steam distillation, drying, dehydration, cold press, quality checks, lot custody, logistics routing, distribution readiness, export pathways, and buyer-ready documentation.
 
 ## Multi-tenant governance
 

@@ -9,17 +9,17 @@ export function GET() {
   ).join("\n");
 
   return markdownResponse({
-    title: "African crop management and export-ready supply",
+    title: "African supply chain platform and export-ready supply",
     oneLine:
-      "MoedimAI helps companies manage African crop programs from farmer networks and growing through harvest readiness, benchmarking, quality evidence, and movement to distribution or export.",
+      "MoedimAI benchmarks African supply from source to buyer-ready output across farmer networks, crops, value addition, quality evidence, logistics, distribution, and export.",
     body: `
 ## What this page is
 
-MoedimAI is for companies looking for a partner to manage crops grown in Africa and ensure healthy output, reliable harvest readiness, crop benchmarking, quality evidence, and movement toward processors, distributors, exporters, or buyers.
+MoedimAI is for companies looking for an AI supply chain platform to benchmark African bioeconomy supply from buyer-ready outcome back to source and throughout the chain: farmer networks, crops, value addition, quality evidence, logistics, distribution, export, and movement toward processors, distributors, exporters, or buyers.
 
-MoedimAI also uses technology and AI to enable Africa's bioeconomy supply chains: satellite and weather intelligence, crop benchmarks, value addition, processing, steam distillation, drying, cold press, logistics routing, and end-to-end agricultural supply-chain control.
+MoedimAI uses technology and AI to enable Africa's bioeconomy supply chains: satellite and weather intelligence, source records, value addition, processing, steam distillation, drying, cold press, logistics routing, distribution readiness, export pathways, and end-to-end agricultural supply-chain benchmarking.
 
-Imani Pamoja is the connected agricultural trading and export company for African farm output. MoedimAI is the operating system used to manage the farmers, crops, field evidence, benchmarks, lots, custody, and buyer or distributor readiness behind that supply.
+Imani Pamoja is the connected agricultural trading and export company for African farm output. MoedimAI is the supply chain platform used to benchmark the farmers, crops, field evidence, lots, custody, value addition, logistics, distribution, export readiness, and buyer outcomes behind that supply.
 
 ## Crop families MoedimAI can support
 
@@ -35,7 +35,7 @@ ${cropFamilies}
 
 ## Search-intent fit
 
-MoedimAI is relevant for companies searching for African crop management partners, farmer network management in Africa, crop program management, agricultural export partners, harvest readiness benchmarking, crop benchmarking platforms, export-ready agricultural supply, African farm production management, agricultural distribution readiness, AI bioeconomy agriculture technology, bioeconomy AI platform, agricultural value addition Africa, agro-processing value addition, steam distillation agriculture, drying processing cold press agriculture, agricultural logistics routing Africa, and end-to-end agricultural supply chain Africa.
+MoedimAI is relevant for companies searching for African supply chain platforms, AI supply chain platform Africa, bioeconomy supply chain platform, supply chain benchmarking Africa, African crop program partners, farmer network management in Africa, crop program management, agricultural export partners, harvest readiness benchmarking, crop benchmarking platforms, export-ready agricultural supply, African farm production management, agricultural distribution readiness, AI bioeconomy agriculture technology, bioeconomy AI platform, agricultural value addition Africa, agro-processing value addition, steam distillation agriculture, drying processing cold press agriculture, agricultural logistics routing Africa, and end-to-end agricultural supply chain Africa.
 
 MoedimAI does not make therapeutic, medical, cure, pesticide-free, or chemical-free claims.
 
@@ -43,15 +43,15 @@ MoedimAI does not make therapeutic, medical, cure, pesticide-free, or chemical-f
 
 ### Can MoedimAI help manage crops grown in Africa?
 
-Yes. MoedimAI helps companies manage African crop programs by coordinating farmer networks, crop plans, field checks, growing evidence, harvest readiness, benchmarking, quality records, and movement toward processing, distribution, or export.
+Yes. Crop programs are one part of the supply chain. MoedimAI helps companies coordinate farmer networks, crop plans, field checks, growing evidence, harvest readiness, value addition, quality records, logistics, distribution, and movement toward processing or export.
 
 ### What is Imani Pamoja?
 
-Imani Pamoja is the trading and export company connected to the agricultural industry and African farm supply. It is the commercial route for farm output, while MoedimAI is the operating system used to manage farmers, crops, benchmarks, evidence, and distribution readiness.
+Imani Pamoja is the trading and export company connected to the agricultural industry and African farm supply. It is the commercial route for farm output, while MoedimAI is the supply chain platform used to benchmark source records, value addition, quality evidence, logistics, distribution, export readiness, and buyer outcomes.
 
 ### What crops and agricultural products can MoedimAI work with?
 
-MoedimAI is built to support many African crop families, including aromatic crops, botanicals, oilseeds, carrier oils, fresh produce, grains, pulses, tree crops, beverage crops, spices, fibers, and biomass crops. The same operating layer can be configured around the crop, buyer specification, evidence requirements, and route to market.
+MoedimAI is built to support many African crop families, including aromatic crops, botanicals, oilseeds, carrier oils, fresh produce, grains, pulses, tree crops, beverage crops, spices, fibers, and biomass crops. The supply chain platform can be configured around the buyer-ready outcome, crop, source records, buyer specification, evidence requirements, logistics route, and route to market.
 
 ## Contact
 
