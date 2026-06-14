@@ -1,14 +1,14 @@
 # MoedimAI use cases
 
-MoedimAI is building the technology infrastructure layer for Africa's agricultural bioeconomy.
+MoedimAI is the technology layer and AI supply chain platform driving Africa's bioeconomy.
 
 ## NGOs and development programmes
 
-MoedimAI helps programmes turn bioeconomy strategy into operating evidence across farmers, processors, standards, markets, and funder reporting. It is relevant for multi-country bioeconomy platforms, observatory evidence layers, and strategy-to-implementation work.
+MoedimAI helps programmes turn bioeconomy strategy into supply-chain operating evidence across farmers, processors, standards, markets, distribution, export, buyer outcomes, and funder reporting. It is relevant for multi-country bioeconomy platforms, observatory evidence layers, and strategy-to-implementation work.
 
 ## Bioeconomy investors
 
-MoedimAI helps DFIs, impact funds, banks, insurers, and investors evaluate agricultural pipelines through better records of producers, crop readiness, processing capacity, standards risk, buyer demand, custody, movement, and programme performance.
+MoedimAI helps DFIs, impact funds, banks, insurers, and investors evaluate agricultural pipelines through better records of producers, crop readiness, processing capacity, standards risk, buyer demand, custody, movement, distribution readiness, export readiness, and programme performance.
 
 ## Certifiers and auditors
 
@@ -24,7 +24,7 @@ MoedimAI helps exporters organize source-to-port evidence, quality records, cust
 
 ## Agricultural trading companies
 
-MoedimAI helps trading companies coordinate verified African supply by connecting farmer networks, crop programmes, harvest readiness, value-addition workflows, quality evidence, lot custody, logistics routing, and buyer documentation.
+MoedimAI helps trading companies coordinate verified African supply by benchmarking buyer-ready outcomes back to farmer networks, crop programmes, harvest readiness, value-addition workflows, quality evidence, lot custody, logistics routing, distribution, export readiness, and buyer documentation.
 
 ## Cosmetics and fragrance buyers
 

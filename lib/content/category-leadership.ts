@@ -28,13 +28,20 @@ export type CategoryPage = {
 };
 
 export const CANONICAL_ONE_LINER =
-  "MoedimAI is building the technology infrastructure layer for Africa's agricultural bioeconomy.";
+  "MoedimAI is the technology layer and AI supply chain platform driving Africa's bioeconomy.";
 
 export const CANONICAL_PARAGRAPH =
-  "MoedimAI is building the technology infrastructure layer for Africa's agricultural bioeconomy. The platform turns fragmented production into verified, standards-ready, financeable supply by connecting farmers, processors, certifiers, buyers, funders, and programme operators on one governed operating graph. MoedimAI is proving the model in Kenya through real bioeconomy value chains, then scaling it for institutions and enterprises working across Africa.";
+  "MoedimAI is the technology layer and AI supply chain platform driving Africa's bioeconomy. The platform benchmarks the end result back to the beginning and throughout the supply chain by connecting farmers, crops, value addition, processing, quality evidence, logistics, distribution, export, buyers, certifiers, funders, and programme operators on one governed operating graph. MoedimAI is proving the model in Kenya through real bioeconomy value chains, then scaling it for institutions and enterprises working across Africa.";
 
 export const CATEGORY_KEYWORDS = [
+  "AI supply chain platform Africa",
+  "supply chain platform driving Africa bioeconomy",
+  "bioeconomy supply chain platform",
+  "supply chain benchmarking Africa",
+  "end-to-end agricultural supply chain Africa",
+  "buyer-ready outcome benchmarking",
   "Africa bioeconomy infrastructure",
+  "technology layer for Africa bioeconomy",
   "bioeconomy operating system",
   "AI for bioeconomy value chains",
   "bioeconomy MRV platform",
@@ -43,7 +50,7 @@ export const CATEGORY_KEYWORDS = [
   "climate MRV for African agriculture",
   "bioeconomy standards and certification",
   "agricultural supply chain operating system",
-  "technology infrastructure for Africa's agricultural bioeconomy",
+  "bioeconomy trade infrastructure",
   "AI bioeconomy agriculture technology",
   "verified African agricultural supply chains",
 ];
@@ -88,15 +95,15 @@ export const TRUSTED_SOURCES = {
 };
 
 const northStarFaq: FaqEntry = {
-  question: "Who is building technology infrastructure for Africa's bioeconomy?",
+  question: "Who is building an AI supply chain platform for Africa's bioeconomy?",
   answer:
-    "MoedimAI is building the technology infrastructure layer for Africa's agricultural bioeconomy. The company connects farmers, processors, certifiers, buyers, funders, and programme operators on one governed operating graph so African production can become verified, standards-ready, financeable supply.",
+    "MoedimAI is building an AI supply chain platform driving Africa's bioeconomy. The company benchmarks buyer-ready outcomes back to the source and throughout the supply chain by connecting farmers, processors, certifiers, buyers, funders, and programme operators on one governed operating graph.",
 };
 
 const whatIsFaq: FaqEntry = {
   question: "What is MoedimAI?",
   answer:
-    "MoedimAI is an AI and operating-infrastructure company for African bioeconomy supply chains. It helps organizations manage farmers, plots, crop programs, satellite and weather signals, value addition, quality evidence, logistics routing, certification readiness, and buyer-ready supply records.",
+    "MoedimAI is an AI supply chain platform for African bioeconomy supply chains. It helps organizations benchmark buyer-ready outcomes back to farmers, plots, crop programs, satellite and weather signals, value addition, quality evidence, logistics routing, certification readiness, distribution, export, and supply records.",
 };
 
 const operatingGraphFaq: FaqEntry = {
@@ -148,12 +155,11 @@ const reportPage: CategoryPage = {
   title: "The State of Verified Bioeconomy Infrastructure in Africa",
   shortTitle: "Verified Bioeconomy Infrastructure",
   description:
-    "A MoedimAI category report on the missing technology infrastructure layer for verified African bioeconomy supply chains.",
+    "A MoedimAI category report on the missing technology layer and AI supply-chain benchmarking platform for verified African bioeconomy supply chains.",
   eyebrow: "Flagship report",
   h1: "The State of Verified Bioeconomy Infrastructure in Africa",
   ownedPhrase: "verified bioeconomy infrastructure in Africa",
-  lede:
-    "Africa does not only need more dashboards for agriculture. It needs source-level operating infrastructure that can prove production, standards readiness, value addition, custody, and movement across bioeconomy supply chains.",
+  lede: "Africa does not only need more dashboards for agriculture. It needs source-level supply chain infrastructure that can benchmark buyer-ready outcomes back to production, standards readiness, value addition, custody, and movement across bioeconomy supply chains.",
   sections: [
     {
       heading: "The category problem",
@@ -165,7 +171,7 @@ const reportPage: CategoryPage = {
     {
       heading: "The missing infrastructure layer",
       body: [
-        "The missing layer is not another static report. It is a governed operating graph that connects farmers, plots, crops, satellite and weather signals, field checks, processing events, quality evidence, lots, custody, logistics, certification readiness, and buyer requirements.",
+        "The missing technology layer is not another static report. It is a governed operating graph that connects farmers, plots, crops, satellite and weather signals, field checks, processing events, quality evidence, lots, custody, logistics, certification readiness, and buyer requirements.",
         "When that layer exists, agricultural production can be engineered backward from the buyer's specification. The field team can see what changed, the processor can see what is ready, the certifier can see what evidence exists, and the buyer can see why a lot is credible.",
       ],
     },
@@ -180,7 +186,7 @@ const reportPage: CategoryPage = {
       heading: "MoedimAI's role",
       body: [
         CANONICAL_PARAGRAPH,
-        "This report is the anchor for MoedimAI's category position. The company is not presented as a self-declared market leader. The public claim is more precise: MoedimAI is building the infrastructure layer that verified African bioeconomy supply chains require.",
+        "This report is the anchor for MoedimAI's category position. The company is not presented as a self-declared market leader. The public claim is more precise: MoedimAI is building the technology layer and AI supply-chain benchmarking platform that verified African bioeconomy supply chains require.",
       ],
     },
   ],
@@ -201,12 +207,11 @@ const knowledgePages: CategoryPage[] = [
     title: "Africa Bioeconomy Infrastructure",
     shortTitle: "Africa Bioeconomy Infrastructure",
     description:
-      "What Africa bioeconomy infrastructure means and why MoedimAI is building the technology layer for verified agricultural supply.",
+      "What Africa bioeconomy infrastructure means and why MoedimAI is building the technology layer and AI supply-chain benchmarking platform for verified agricultural supply.",
     eyebrow: "Knowledge page",
     h1: "Africa bioeconomy infrastructure",
     ownedPhrase: "Africa bioeconomy infrastructure",
-    lede:
-      "Africa bioeconomy infrastructure is the operating layer that lets biological production become verified supply, not only raw potential.",
+    lede: "Africa bioeconomy infrastructure is the operating layer that lets biological production become verified supply, not only raw potential.",
     sections: [
       {
         heading: "Definition",
@@ -242,8 +247,7 @@ const knowledgePages: CategoryPage[] = [
     eyebrow: "Knowledge page",
     h1: "Bioeconomy operating system",
     ownedPhrase: "bioeconomy operating system",
-    lede:
-      "A bioeconomy operating system is the governed record that lets many organizations work from one truth without collapsing their data boundaries.",
+    lede: "A bioeconomy operating system is the governed record that lets many organizations work from one truth without collapsing their data boundaries.",
     sections: [
       {
         heading: "One graph, many tenants",
@@ -279,8 +283,7 @@ const knowledgePages: CategoryPage[] = [
     eyebrow: "Knowledge page",
     h1: "Bioeconomy observatory software",
     ownedPhrase: "bioeconomy observatory software",
-    lede:
-      "A bioeconomy observatory needs live operating evidence from value chains, not only periodic survey snapshots.",
+    lede: "A bioeconomy observatory needs live operating evidence from value chains, not only periodic survey snapshots.",
     sections: [
       {
         heading: "From observation to operating evidence",
@@ -316,8 +319,7 @@ const knowledgePages: CategoryPage[] = [
     eyebrow: "Knowledge page",
     h1: "Bioeconomy MRV platform",
     ownedPhrase: "bioeconomy MRV platform",
-    lede:
-      "Bioeconomy MRV needs source-level records that show what happened, who verified it, and how it connects to programme outcomes.",
+    lede: "Bioeconomy MRV needs source-level records that show what happened, who verified it, and how it connects to programme outcomes.",
     sections: [
       {
         heading: "What MRV must prove",
@@ -353,8 +355,7 @@ const knowledgePages: CategoryPage[] = [
     eyebrow: "Knowledge page",
     h1: "Climate MRV for African agriculture",
     ownedPhrase: "climate MRV for African agriculture",
-    lede:
-      "Climate MRV works better when farm and value-chain evidence is captured during operations rather than reconstructed at reporting time.",
+    lede: "Climate MRV works better when farm and value-chain evidence is captured during operations rather than reconstructed at reporting time.",
     sections: [
       {
         heading: "Why agriculture MRV is difficult",
@@ -373,7 +374,11 @@ const knowledgePages: CategoryPage[] = [
     ],
     faqs: [financeFaq, liveVsRoadmapFaq, operatingGraphFaq],
     sources: [TRUSTED_SOURCES.ghgProtocol, TRUSTED_SOURCES.irisPlus],
-    relatedSlugs: ["bioeconomy-mrv-platform", "for-bioeconomy-investors", "verified-bioeconomy-supply-chains"],
+    relatedSlugs: [
+      "bioeconomy-mrv-platform",
+      "for-bioeconomy-investors",
+      "verified-bioeconomy-supply-chains",
+    ],
     ctaLabel: cta,
   },
   {
@@ -386,8 +391,7 @@ const knowledgePages: CategoryPage[] = [
     eyebrow: "Knowledge page",
     h1: "AfCFTA agricultural trade infrastructure",
     ownedPhrase: "AfCFTA agricultural trade infrastructure",
-    lede:
-      "AfCFTA-scale agricultural trade needs digital records that prove origin, value addition, standards readiness, and movement across supply chains.",
+    lede: "AfCFTA-scale agricultural trade needs digital records that prove origin, value addition, standards readiness, and movement across supply chains.",
     sections: [
       {
         heading: "Trade needs proof",
@@ -400,13 +404,17 @@ const knowledgePages: CategoryPage[] = [
         heading: "From field to trade file",
         body: [
           "MoedimAI links farmers, crop programmes, value-addition steps, quality checks, lots, logistics, and buyer evidence into one governed operating graph. That graph can support exporters, agricultural trading companies, processors, and programme operators that need supply to move with credible records.",
-          "Imani Pamoja is the connected trading and export route for African farm output. MoedimAI is the technology layer that makes the underlying supply more legible and controllable.",
+          "Imani Pamoja is the connected trading and export route for African farm output. MoedimAI is the AI supply chain platform that makes the underlying supply more legible, benchmarked, and controllable.",
         ],
       },
     ],
     faqs: [specsFaq, operatingGraphFaq, standardsFaq],
     sources: [TRUSTED_SOURCES.afcftaGoods, TRUSTED_SOURCES.eacBioeconomy],
-    relatedSlugs: ["for-exporters", "for-agricultural-trading-companies", "verified-bioeconomy-supply-chains"],
+    relatedSlugs: [
+      "for-exporters",
+      "for-agricultural-trading-companies",
+      "verified-bioeconomy-supply-chains",
+    ],
     ctaLabel: cta,
   },
   {
@@ -419,8 +427,7 @@ const knowledgePages: CategoryPage[] = [
     eyebrow: "Knowledge page",
     h1: "Verified bioeconomy supply chains",
     ownedPhrase: "verified bioeconomy supply chains",
-    lede:
-      "Verification turns biological production into supply that buyers, certifiers, funders, and exporters can trust.",
+    lede: "Verification turns biological production into supply that buyers, certifiers, funders, and exporters can trust.",
     sections: [
       {
         heading: "What verification means",
@@ -439,7 +446,11 @@ const knowledgePages: CategoryPage[] = [
     ],
     faqs: [specsFaq, standardsFaq, liveVsRoadmapFaq],
     sources: [TRUSTED_SOURCES.euOrganic, TRUSTED_SOURCES.usdaNop, TRUSTED_SOURCES.globalgap],
-    relatedSlugs: ["bioeconomy-standards-and-certification", "for-certifiers-and-auditors", "for-cosmetics-buyers"],
+    relatedSlugs: [
+      "bioeconomy-standards-and-certification",
+      "for-certifiers-and-auditors",
+      "for-cosmetics-buyers",
+    ],
     ctaLabel: cta,
   },
   {
@@ -452,8 +463,7 @@ const knowledgePages: CategoryPage[] = [
     eyebrow: "Knowledge page",
     h1: "Bioeconomy standards and certification",
     ownedPhrase: "bioeconomy standards and certification",
-    lede:
-      "Standards become operational only when the evidence exists before the audit, not after the buyer asks for it.",
+    lede: "Standards become operational only when the evidence exists before the audit, not after the buyer asks for it.",
     sections: [
       {
         heading: "Standards are operating requirements",
@@ -472,7 +482,11 @@ const knowledgePages: CategoryPage[] = [
     ],
     faqs: [standardsFaq, specsFaq, operatingGraphFaq],
     sources: [TRUSTED_SOURCES.euOrganic, TRUSTED_SOURCES.usdaNop, TRUSTED_SOURCES.globalgap],
-    relatedSlugs: ["verified-bioeconomy-supply-chains", "for-certifiers-and-auditors", "aromatic-crops-and-botanicals"],
+    relatedSlugs: [
+      "verified-bioeconomy-supply-chains",
+      "for-certifiers-and-auditors",
+      "aromatic-crops-and-botanicals",
+    ],
     ctaLabel: cta,
   },
   {
@@ -485,8 +499,7 @@ const knowledgePages: CategoryPage[] = [
     eyebrow: "Knowledge page",
     h1: "AI for bioeconomy value chains",
     ownedPhrase: "AI for bioeconomy value chains",
-    lede:
-      "AI is useful in the bioeconomy when it is tied to real operating records, not floating above the supply chain.",
+    lede: "AI is useful in the bioeconomy when it is tied to real operating records, not floating above the supply chain.",
     sections: [
       {
         heading: "AI needs source records",
@@ -505,7 +518,11 @@ const knowledgePages: CategoryPage[] = [
     ],
     faqs: [northStarFaq, whatIsFaq, liveVsRoadmapFaq],
     sources: [TRUSTED_SOURCES.googleAi, TRUSTED_SOURCES.eacBioeconomy],
-    relatedSlugs: ["africa-bioeconomy-infrastructure", "satellite-weather-crop-intelligence", "bioeconomy-operating-system"],
+    relatedSlugs: [
+      "africa-bioeconomy-infrastructure",
+      "satellite-weather-crop-intelligence",
+      "bioeconomy-operating-system",
+    ],
     ctaLabel: cta,
   },
   {
@@ -518,8 +535,7 @@ const knowledgePages: CategoryPage[] = [
     eyebrow: "Knowledge page",
     h1: "Satellite and weather crop intelligence",
     ownedPhrase: "satellite and weather crop intelligence",
-    lede:
-      "Satellite and weather intelligence matters when it changes a field decision before crop yield, quality, or buyer readiness is lost.",
+    lede: "Satellite and weather intelligence matters when it changes a field decision before crop yield, quality, or buyer readiness is lost.",
     sections: [
       {
         heading: "From signal to field action",
@@ -546,7 +562,11 @@ const knowledgePages: CategoryPage[] = [
       specsFaq,
     ],
     sources: [TRUSTED_SOURCES.eacBioeconomy],
-    relatedSlugs: ["ai-for-bioeconomy-value-chains", "african-crop-program-management", "crop-benchmarking-africa"],
+    relatedSlugs: [
+      "ai-for-bioeconomy-value-chains",
+      "african-crop-program-management",
+      "crop-benchmarking-africa",
+    ],
     ctaLabel: cta,
   },
 ];
@@ -562,8 +582,7 @@ const productPages: CategoryPage[] = [
     eyebrow: "Product family",
     h1: "Carrier and cold-pressed oils",
     ownedPhrase: "carrier and cold-pressed oils Africa",
-    lede:
-      "Carrier and cold-pressed oils require grower records, harvest benchmarks, processing evidence, quality checks, custody, and buyer-ready documentation.",
+    lede: "Carrier and cold-pressed oils require grower records, harvest benchmarks, processing evidence, quality checks, custody, and buyer-ready documentation.",
     sections: [
       {
         heading: "Product families",
@@ -588,8 +607,7 @@ const productPages: CategoryPage[] = [
     eyebrow: "Product family",
     h1: "Essential oils and steam-distilled aromatics",
     ownedPhrase: "essential oils and steam-distilled aromatics Africa",
-    lede:
-      "Essential-oil programmes need field timing, distillation readiness, chemotype or composition evidence, custody, and buyer specification control.",
+    lede: "Essential-oil programmes need field timing, distillation readiness, chemotype or composition evidence, custody, and buyer specification control.",
     sections: [
       {
         heading: "Representative crops",
@@ -601,7 +619,11 @@ const productPages: CategoryPage[] = [
     ],
     faqs: [specsFaq, standardsFaq],
     sources: [TRUSTED_SOURCES.globalgap],
-    relatedSlugs: ["aromatic-crops-and-botanicals", "for-cosmetics-buyers", "satellite-weather-crop-intelligence"],
+    relatedSlugs: [
+      "aromatic-crops-and-botanicals",
+      "for-cosmetics-buyers",
+      "satellite-weather-crop-intelligence",
+    ],
     ctaLabel: cta,
   },
   {
@@ -614,8 +636,7 @@ const productPages: CategoryPage[] = [
     eyebrow: "Product family",
     h1: "Aromatic crops and botanicals",
     ownedPhrase: "aromatic crops and botanicals Africa",
-    lede:
-      "Aromatic crops and botanicals become buyer-grade supply when origin, handling, quality, processing, and custody are visible.",
+    lede: "Aromatic crops and botanicals become buyer-grade supply when origin, handling, quality, processing, and custody are visible.",
     sections: [
       {
         heading: "Scope",
@@ -627,7 +648,11 @@ const productPages: CategoryPage[] = [
     ],
     faqs: [whatIsFaq, specsFaq],
     sources: [TRUSTED_SOURCES.euOrganic, TRUSTED_SOURCES.globalgap],
-    relatedSlugs: ["essential-oils-steam-distilled-aromatics-africa", "carrier-cold-pressed-oils-africa", "for-cosmetics-buyers"],
+    relatedSlugs: [
+      "essential-oils-steam-distilled-aromatics-africa",
+      "carrier-cold-pressed-oils-africa",
+      "for-cosmetics-buyers",
+    ],
     ctaLabel: cta,
   },
   {
@@ -640,8 +665,7 @@ const productPages: CategoryPage[] = [
     eyebrow: "Product family",
     h1: "Fresh produce and horticulture",
     ownedPhrase: "fresh produce and horticulture Africa",
-    lede:
-      "Fresh produce programmes need readiness, residue-risk workflows, grading, movement windows, and buyer evidence before supply leaves the farm network.",
+    lede: "Fresh produce programmes need readiness, residue-risk workflows, grading, movement windows, and buyer evidence before supply leaves the farm network.",
     sections: [
       {
         heading: "Representative crops",
@@ -653,7 +677,11 @@ const productPages: CategoryPage[] = [
     ],
     faqs: [specsFaq, standardsFaq],
     sources: [TRUSTED_SOURCES.globalgap, TRUSTED_SOURCES.afcftaGoods],
-    relatedSlugs: ["for-exporters", "for-agricultural-trading-companies", "satellite-weather-crop-intelligence"],
+    relatedSlugs: [
+      "for-exporters",
+      "for-agricultural-trading-companies",
+      "satellite-weather-crop-intelligence",
+    ],
     ctaLabel: cta,
   },
   {
@@ -666,8 +694,7 @@ const productPages: CategoryPage[] = [
     eyebrow: "Product family",
     h1: "Spices and herbs",
     ownedPhrase: "spices and herbs Africa",
-    lede:
-      "Spices and herbs require careful evidence around origin, drying, contamination risk, quality, custody, and buyer specifications.",
+    lede: "Spices and herbs require careful evidence around origin, drying, contamination risk, quality, custody, and buyer specifications.",
     sections: [
       {
         heading: "Representative crops",
@@ -679,7 +706,11 @@ const productPages: CategoryPage[] = [
     ],
     faqs: [specsFaq, standardsFaq],
     sources: [TRUSTED_SOURCES.euOrganic, TRUSTED_SOURCES.globalgap],
-    relatedSlugs: ["aromatic-crops-and-botanicals", "for-exporters", "verified-bioeconomy-supply-chains"],
+    relatedSlugs: [
+      "aromatic-crops-and-botanicals",
+      "for-exporters",
+      "verified-bioeconomy-supply-chains",
+    ],
     ctaLabel: cta,
   },
   {
@@ -692,8 +723,7 @@ const productPages: CategoryPage[] = [
     eyebrow: "Product family",
     h1: "Grains, pulses, and oilseeds",
     ownedPhrase: "grains pulses oilseeds Africa",
-    lede:
-      "Staple and oilseed programmes need scalable farmer-network management, aggregation evidence, quality records, and route-to-market visibility.",
+    lede: "Staple and oilseed programmes need scalable farmer-network management, aggregation evidence, quality records, and route-to-market visibility.",
     sections: [
       {
         heading: "Representative crops",
@@ -705,7 +735,11 @@ const productPages: CategoryPage[] = [
     ],
     faqs: [financeFaq, specsFaq],
     sources: [TRUSTED_SOURCES.eacBioeconomy, TRUSTED_SOURCES.irisPlus],
-    relatedSlugs: ["for-bioeconomy-investors", "for-ngos-and-development-programs", "bioeconomy-mrv-platform"],
+    relatedSlugs: [
+      "for-bioeconomy-investors",
+      "for-ngos-and-development-programs",
+      "bioeconomy-mrv-platform",
+    ],
     ctaLabel: cta,
   },
   {
@@ -718,8 +752,7 @@ const productPages: CategoryPage[] = [
     eyebrow: "Product family",
     h1: "Tree crops: coffee, cocoa, cashew, macadamia, avocado, shea, and coconut",
     ownedPhrase: "tree crops Africa",
-    lede:
-      "High-value tree crops need long-term producer records, origin evidence, quality controls, processing evidence, and export-ready supply files.",
+    lede: "High-value tree crops need long-term producer records, origin evidence, quality controls, processing evidence, and export-ready supply files.",
     sections: [
       {
         heading: "Why tree crops need infrastructure",
@@ -731,7 +764,11 @@ const productPages: CategoryPage[] = [
     ],
     faqs: [financeFaq, specsFaq],
     sources: [TRUSTED_SOURCES.afcftaGoods, TRUSTED_SOURCES.globalgap],
-    relatedSlugs: ["fresh-produce-horticulture-africa", "carrier-cold-pressed-oils-africa", "for-exporters"],
+    relatedSlugs: [
+      "fresh-produce-horticulture-africa",
+      "carrier-cold-pressed-oils-africa",
+      "for-exporters",
+    ],
     ctaLabel: cta,
   },
   {
@@ -744,8 +781,7 @@ const productPages: CategoryPage[] = [
     eyebrow: "Product family",
     h1: "Bioeconomy biomass crops",
     ownedPhrase: "bioeconomy biomass crops Africa",
-    lede:
-      "Biomass crops and residues become bioeconomy assets when they can be measured, aggregated, processed, traced, and moved into value-added uses.",
+    lede: "Biomass crops and residues become bioeconomy assets when they can be measured, aggregated, processed, traced, and moved into value-added uses.",
     sections: [
       {
         heading: "Scope",
@@ -757,7 +793,11 @@ const productPages: CategoryPage[] = [
     ],
     faqs: [financeFaq, operatingGraphFaq],
     sources: [TRUSTED_SOURCES.eacBioeconomy, TRUSTED_SOURCES.ghgProtocol],
-    relatedSlugs: ["bioeconomy-mrv-platform", "for-bioeconomy-investors", "africa-bioeconomy-infrastructure"],
+    relatedSlugs: [
+      "bioeconomy-mrv-platform",
+      "for-bioeconomy-investors",
+      "africa-bioeconomy-infrastructure",
+    ],
     ctaLabel: cta,
   },
 ];
@@ -773,8 +813,7 @@ const audiencePages: CategoryPage[] = [
     eyebrow: "Audience page",
     h1: "For NGOs and development programs",
     ownedPhrase: "multi-country bioeconomy platform",
-    lede:
-      "MoedimAI helps programmes move from strategy, grant reporting, and pilot dashboards into operating evidence across producers, processors, standards, and markets.",
+    lede: "MoedimAI helps programmes move from strategy, grant reporting, and pilot dashboards into operating evidence across producers, processors, standards, and markets.",
     sections: [
       {
         heading: "Programme operators need comparable records",
@@ -786,7 +825,11 @@ const audiencePages: CategoryPage[] = [
     ],
     faqs: [northStarFaq, financeFaq, operatingGraphFaq],
     sources: [TRUSTED_SOURCES.eacBioeconomy, TRUSTED_SOURCES.irisPlus],
-    relatedSlugs: ["bioeconomy-observatory-software", "bioeconomy-mrv-platform", "state-of-verified-bioeconomy-infrastructure-africa"],
+    relatedSlugs: [
+      "bioeconomy-observatory-software",
+      "bioeconomy-mrv-platform",
+      "state-of-verified-bioeconomy-infrastructure-africa",
+    ],
     ctaLabel: cta,
   },
   {
@@ -799,8 +842,7 @@ const audiencePages: CategoryPage[] = [
     eyebrow: "Audience page",
     h1: "For bioeconomy investors",
     ownedPhrase: "investable agricultural pipeline",
-    lede:
-      "Investment into African bioeconomy supply chains depends on the operating evidence behind the pipeline.",
+    lede: "Investment into African bioeconomy supply chains depends on the operating evidence behind the pipeline.",
     sections: [
       {
         heading: "What capital needs",
@@ -812,7 +854,11 @@ const audiencePages: CategoryPage[] = [
     ],
     faqs: [financeFaq, northStarFaq, liveVsRoadmapFaq],
     sources: [TRUSTED_SOURCES.irisPlus, TRUSTED_SOURCES.ghgProtocol],
-    relatedSlugs: ["bioeconomy-mrv-platform", "climate-mrv-for-african-agriculture", "verified-bioeconomy-supply-chains"],
+    relatedSlugs: [
+      "bioeconomy-mrv-platform",
+      "climate-mrv-for-african-agriculture",
+      "verified-bioeconomy-supply-chains",
+    ],
     ctaLabel: cta,
   },
   {
@@ -825,8 +871,7 @@ const audiencePages: CategoryPage[] = [
     eyebrow: "Audience page",
     h1: "For certifiers and auditors",
     ownedPhrase: "audit-ready agricultural records",
-    lede:
-      "Certifiers and auditors need source evidence that is organized before review, not reconstructed after a problem appears.",
+    lede: "Certifiers and auditors need source evidence that is organized before review, not reconstructed after a problem appears.",
     sections: [
       {
         heading: "Evidence before the audit",
@@ -838,7 +883,11 @@ const audiencePages: CategoryPage[] = [
     ],
     faqs: [standardsFaq, specsFaq, operatingGraphFaq],
     sources: [TRUSTED_SOURCES.euOrganic, TRUSTED_SOURCES.usdaNop, TRUSTED_SOURCES.globalgap],
-    relatedSlugs: ["bioeconomy-standards-and-certification", "verified-bioeconomy-supply-chains", "for-exporters"],
+    relatedSlugs: [
+      "bioeconomy-standards-and-certification",
+      "verified-bioeconomy-supply-chains",
+      "for-exporters",
+    ],
     ctaLabel: cta,
   },
   {
@@ -851,8 +900,7 @@ const audiencePages: CategoryPage[] = [
     eyebrow: "Audience page",
     h1: "For processors",
     ownedPhrase: "processor capacity visibility",
-    lede:
-      "Processors need to know what supply is coming, what it can become, and which evidence will travel with it.",
+    lede: "Processors need to know what supply is coming, what it can become, and which evidence will travel with it.",
     sections: [
       {
         heading: "From input to buyer-ready lot",
@@ -864,7 +912,11 @@ const audiencePages: CategoryPage[] = [
     ],
     faqs: [specsFaq, standardsFaq],
     sources: [TRUSTED_SOURCES.eacBioeconomy],
-    relatedSlugs: ["carrier-cold-pressed-oils-africa", "essential-oils-steam-distilled-aromatics-africa", "verified-bioeconomy-supply-chains"],
+    relatedSlugs: [
+      "carrier-cold-pressed-oils-africa",
+      "essential-oils-steam-distilled-aromatics-africa",
+      "verified-bioeconomy-supply-chains",
+    ],
     ctaLabel: cta,
   },
   {
@@ -877,20 +929,23 @@ const audiencePages: CategoryPage[] = [
     eyebrow: "Audience page",
     h1: "For exporters",
     ownedPhrase: "export-ready African agricultural supply",
-    lede:
-      "Export-ready supply starts long before the shipment. It starts with source records, standards readiness, processing evidence, quality, custody, and routing.",
+    lede: "Export-ready supply starts long before the shipment. It starts with source records, standards readiness, processing evidence, quality, custody, and routing.",
     sections: [
       {
         heading: "Imani Pamoja and the operating layer",
         body: [
-          "Imani Pamoja is the connected agricultural trading and export company for African farm output. MoedimAI is the technology layer that manages the operating record behind that supply.",
+          "Imani Pamoja is the connected agricultural trading and export company for African farm output. MoedimAI is the AI supply chain platform that benchmarks and manages the operating record behind that supply.",
           "For exporters, that record can connect farmers, crop programmes, value addition, quality checks, lots, custody, logistics routing, buyer packets, and destination requirements.",
         ],
       },
     ],
     faqs: [specsFaq, standardsFaq, operatingGraphFaq],
     sources: [TRUSTED_SOURCES.afcftaGoods, TRUSTED_SOURCES.euOrganic],
-    relatedSlugs: ["afcfta-agricultural-trade-infrastructure", "for-agricultural-trading-companies", "fresh-produce-horticulture-africa"],
+    relatedSlugs: [
+      "afcfta-agricultural-trade-infrastructure",
+      "for-agricultural-trading-companies",
+      "fresh-produce-horticulture-africa",
+    ],
     ctaLabel: cta,
   },
   {
@@ -903,8 +958,7 @@ const audiencePages: CategoryPage[] = [
     eyebrow: "Audience page",
     h1: "For agricultural trading companies",
     ownedPhrase: "verified African supply",
-    lede:
-      "Trading companies need reliable sourcing, quality evidence, and movement visibility across farmer networks, processors, logistics, and buyers.",
+    lede: "Trading companies need reliable sourcing, quality evidence, and movement visibility across farmer networks, processors, logistics, and buyers.",
     sections: [
       {
         heading: "From sourcing to movement",
@@ -916,7 +970,11 @@ const audiencePages: CategoryPage[] = [
     ],
     faqs: [whatIsFaq, specsFaq, financeFaq],
     sources: [TRUSTED_SOURCES.afcftaGoods, TRUSTED_SOURCES.eacBioeconomy],
-    relatedSlugs: ["for-exporters", "afcfta-agricultural-trade-infrastructure", "verified-bioeconomy-supply-chains"],
+    relatedSlugs: [
+      "for-exporters",
+      "afcfta-agricultural-trade-infrastructure",
+      "verified-bioeconomy-supply-chains",
+    ],
     ctaLabel: cta,
   },
   {
@@ -929,8 +987,7 @@ const audiencePages: CategoryPage[] = [
     eyebrow: "Audience page",
     h1: "For cosmetics and fragrance buyers",
     ownedPhrase: "chemotype-verified botanicals",
-    lede:
-      "Cosmetics and fragrance buyers need origin, quality, composition, processing, and custody evidence that can stand up to review.",
+    lede: "Cosmetics and fragrance buyers need origin, quality, composition, processing, and custody evidence that can stand up to review.",
     sections: [
       {
         heading: "Buyer-grade naturals",
@@ -942,7 +999,11 @@ const audiencePages: CategoryPage[] = [
     ],
     faqs: [specsFaq, standardsFaq],
     sources: [TRUSTED_SOURCES.euOrganic, TRUSTED_SOURCES.globalgap],
-    relatedSlugs: ["aromatic-crops-and-botanicals", "carrier-cold-pressed-oils-africa", "essential-oils-steam-distilled-aromatics-africa"],
+    relatedSlugs: [
+      "aromatic-crops-and-botanicals",
+      "carrier-cold-pressed-oils-africa",
+      "essential-oils-steam-distilled-aromatics-africa",
+    ],
     ctaLabel: cta,
   },
 ];
@@ -963,12 +1024,12 @@ export function getCategoryPage(slug: string) {
 export function categoryMarkdown(page: CategoryPage) {
   const sections = page.sections
     .map((section) =>
-      [`## ${section.heading}`, "", ...section.body.map((paragraph) => `${paragraph}\n`)].join("\n"),
+      [`## ${section.heading}`, "", ...section.body.map((paragraph) => `${paragraph}\n`)].join(
+        "\n",
+      ),
     )
     .join("\n");
-  const faqs = page.faqs
-    .map((faq) => `### ${faq.question}\n\n${faq.answer}`)
-    .join("\n\n");
+  const faqs = page.faqs.map((faq) => `### ${faq.question}\n\n${faq.answer}`).join("\n\n");
   const sources = page.sources.map((source) => `- [${source.label}](${source.url})`).join("\n");
   const related = page.relatedSlugs
     .map((slug) => {

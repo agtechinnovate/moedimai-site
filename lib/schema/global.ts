@@ -18,8 +18,8 @@ export const organizationSchema = {
     url: `${baseUrl}/images/moedimai-logo-light.png`,
   },
   description:
-    "MoedimAI is building the technology infrastructure layer for Africa's agricultural bioeconomy. The platform turns fragmented production into verified, standards-ready, financeable supply by connecting farmers, processors, certifiers, buyers, funders, and programme operators on one governed operating graph.",
-  slogan: "Technology infrastructure for Africa's agricultural bioeconomy",
+    "MoedimAI is the technology layer and AI supply chain platform driving Africa's bioeconomy. The platform benchmarks the end result back to the beginning and throughout the supply chain by connecting farmers, crops, value addition, processing, quality evidence, logistics, distribution, export, buyers, certifiers, funders, and programme operators on one governed operating graph.",
+  slogan: "Technology layer and AI supply chain platform driving Africa's bioeconomy",
   foundingDate: "2024",
   founder: {
     "@type": "Person",
@@ -40,7 +40,15 @@ export const organizationSchema = {
     },
   ],
   knowsAbout: [
-    "African crop management",
+    "AI supply chain platform Africa",
+    "Supply chain platform for Africa's bioeconomy",
+    "Supply chain benchmarking Africa",
+    "Technology layer for Africa bioeconomy",
+    "End-to-end supply chain benchmarking",
+    "Buyer-ready outcome benchmarking",
+    "Verified African agricultural trade",
+    "Bioeconomy supply chain platform",
+    "African supply chain benchmarking",
     "African agricultural export programs",
     "Farmer network management",
     "Crop program management",
@@ -49,6 +57,7 @@ export const organizationSchema = {
     "Agricultural distribution readiness",
     "Farm production management",
     "Trade infrastructure for agriculture",
+    "Bioeconomy trade infrastructure",
     "Africa bioeconomy infrastructure",
     "Bioeconomy operating system",
     "Bioeconomy MRV platform",
@@ -110,7 +119,11 @@ export const organizationSchema = {
     availableLanguage: ["English", "Swahili"],
   },
   makesOffer: [
-    "Technology infrastructure for Africa's agricultural bioeconomy",
+    "AI supply chain platform driving Africa's bioeconomy",
+    "End-to-end supply chain benchmarking",
+    "Buyer-ready outcome benchmarking",
+    "Bioeconomy trade infrastructure",
+    "Bioeconomy supply chain platform",
     "Bioeconomy operating system",
     "Bioeconomy MRV platform",
     "Bioeconomy observatory software",
@@ -149,7 +162,7 @@ export const websiteSchema = {
   url: baseUrl,
   name: "MoedimAI",
   description:
-    "Technology infrastructure for Africa's agricultural bioeconomy, including AI-enabled crop operations, value addition, verification, MRV, logistics routing, and buyer-ready supply.",
+    "Technology layer and AI supply-chain benchmarking platform driving Africa's bioeconomy, including source records, value addition, verification, MRV, logistics routing, distribution, export, and buyer-ready supply.",
   publisher: { "@id": `${baseUrl}/#organization` },
   inLanguage: "en",
   hasPart: [

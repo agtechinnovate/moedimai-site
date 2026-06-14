@@ -7,7 +7,7 @@ import { PUBLIC_SITE_URL } from "@/lib/site-url";
 export const metadata: Metadata = {
   title: "About MoedimAI",
   description:
-    "About MoedimAI and founder Vivian Nwakah, who builds technology and AI infrastructure for African crop programs, bioeconomy supply chains, regulated compliance, value addition, logistics, and export-ready agricultural supply.",
+    "About MoedimAI and founder Vivian Nwakah. MoedimAI is the technology layer and AI supply chain platform driving Africa's bioeconomy by benchmarking buyer-ready outcomes back to source and across value addition, logistics, distribution, and export.",
   alternates: {
     canonical: "/about",
     types: {
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "About MoedimAI",
     description:
-      "Technology and AI for African crop programs, bioeconomy supply chains, value addition, logistics, and export-ready agricultural supply.",
+      "The technology layer and AI supply chain platform driving Africa's bioeconomy from source records through value addition, logistics, distribution, export, and buyer-ready outcomes.",
     url: "/about",
   },
 };
@@ -32,8 +32,10 @@ const founderSchema = {
   sameAs: ["https://www.linkedin.com/in/viviannwakah/"],
   worksFor: { "@id": `${PUBLIC_SITE_URL}/#organization` },
   knowsAbout: [
+    "AI supply chain platform Africa",
+    "Supply chain benchmarking Africa",
     "AI for Africa bioeconomy",
-    "African crop management",
+    "African bioeconomy supply chains",
     "Chemotype traceability",
     "Compliance infrastructure",
     "Regulated markets",
@@ -52,7 +54,7 @@ const aboutPageSchema = {
   url: `${PUBLIC_SITE_URL}/about`,
   name: "About MoedimAI",
   description:
-    "MoedimAI uses technology and AI to help companies manage African crop programs and bioeconomy supply chains from farmer networks through value addition, logistics, distribution, and export-ready evidence.",
+    "MoedimAI is the technology layer and AI supply chain platform driving Africa's bioeconomy by benchmarking buyer-ready outcomes back to source and across farmer networks, value addition, quality evidence, logistics, distribution, and export.",
   about: { "@id": `${PUBLIC_SITE_URL}/#organization` },
   primaryImageOfPage: {
     "@type": "ImageObject",
@@ -61,9 +63,9 @@ const aboutPageSchema = {
 };
 
 const OPERATING_SCOPE = [
-  "Farmer networks, field teams, and crop programs",
-  "Satellite and weather intelligence for crop risk and readiness",
-  "Harvest benchmarking, quality evidence, and buyer specifications",
+  "Source records, farmer networks, field teams, and crop programs",
+  "Satellite and weather intelligence for supply risk and readiness",
+  "Buyer specifications benchmarked back to harvests, quality evidence, and source records",
   "Value addition: processing, steam distillation, drying, dehydration, and cold press",
   "Lots, custody records, logistics routing, distribution readiness, and export evidence",
 ];
@@ -104,13 +106,14 @@ export default function AboutPage() {
             About MoedimAI
           </p>
           <h1 className="mt-5 max-w-4xl font-sans text-3xl font-semibold leading-tight text-cream-50 md:text-5xl">
-            Technology and AI for Africa&apos;s bioeconomy supply chains.
+            The technology layer for Africa&apos;s bioeconomy supply chains.
           </h1>
-          <p className="mt-6 max-w-3xl text-base leading-7 text-cream-50/78 md:text-lg">
-            MoedimAI helps companies manage the crops they grow or source in Africa. The platform
+          <p className="text-cream-50/78 mt-6 max-w-3xl text-base leading-7 md:text-lg">
+            MoedimAI helps companies benchmark African bioeconomy supply from the buyer-ready end
+            state back to the source, and across every supply-chain step in between. The platform
             connects farmer networks, crop programs, satellite and weather signals, harvest
-            readiness, value addition, quality evidence, logistics routing, and buyer-ready
-            documentation in one operating layer.
+            readiness, value addition, quality evidence, logistics routing, distribution, export,
+            and buyer-ready documentation in one operating layer.
           </p>
         </div>
       </section>
@@ -118,9 +121,7 @@ export default function AboutPage() {
       <section className="border-b border-cream-50/10 bg-navy-800/35">
         <div className="container grid gap-8 py-14 md:grid-cols-[0.9fr_1.1fr] md:py-16">
           <div>
-            <p className="font-sans text-xs uppercase tracking-[0.18em] text-gold-500">
-              Founder
-            </p>
+            <p className="font-sans text-xs uppercase tracking-[0.18em] text-gold-500">Founder</p>
             <h2 className="mt-3 font-sans text-2xl font-semibold text-cream-50 md:text-3xl">
               Founded by Vivian Nwakah.
             </h2>
@@ -135,18 +136,17 @@ export default function AboutPage() {
               />
             </div>
           </div>
-          <div className="space-y-5 text-sm leading-7 text-cream-50/76 md:text-base">
+          <div className="text-cream-50/76 space-y-5 text-sm leading-7 md:text-base">
             <p>
-              Vivian Nwakah is a founder and systems builder focused on AI, chemotype
-              traceability, compliance infrastructure, and regulated markets. She builds the
-              infrastructure that turns fragmented, informal markets into regulated,
-              benchmarkable supply systems.
+              Vivian Nwakah is a founder and systems builder focused on AI, chemotype traceability,
+              compliance infrastructure, and regulated markets. She builds the infrastructure that
+              turns fragmented, informal markets into regulated, benchmarkable supply systems.
             </p>
             <p>
               Through MoedimAI, she is applying that operating-infrastructure pattern to African
-              bioeconomy supply chains: converting field, hub, processing, distillation, lab,
-              certification, and logistics evidence into buyer-verifiable supply packages and
-              certifier-ready audit trails.
+              bioeconomy supply chains: benchmarking buyer-ready outcomes back to field, hub,
+              processing, distillation, lab, certification, logistics, distribution, and export
+              evidence so supply can become buyer-verifiable and certifier-ready.
             </p>
           </div>
         </div>
@@ -162,9 +162,12 @@ export default function AboutPage() {
           </h2>
           <div className="mt-8 grid gap-4 md:grid-cols-2">
             {EXPERIENCE.map((item) => (
-              <div key={item.label} className="rounded-md border border-cream-50/10 bg-navy-900/50 p-5">
+              <div
+                key={item.label}
+                className="rounded-md border border-cream-50/10 bg-navy-900/50 p-5"
+              >
                 <h3 className="font-sans text-base font-semibold text-cream-50">{item.label}</h3>
-                <p className="mt-2 text-sm leading-6 text-cream-50/72">{item.body}</p>
+                <p className="text-cream-50/72 mt-2 text-sm leading-6">{item.body}</p>
               </div>
             ))}
           </div>
@@ -182,7 +185,7 @@ export default function AboutPage() {
           <div className="mt-8 grid gap-4 md:grid-cols-2">
             {OPERATING_SCOPE.map((item) => (
               <div key={item} className="rounded-md border border-cream-50/10 bg-navy-900/50 p-5">
-                <p className="text-sm leading-6 text-cream-50/78">{item}</p>
+                <p className="text-cream-50/78 text-sm leading-6">{item}</p>
               </div>
             ))}
           </div>
@@ -198,9 +201,9 @@ export default function AboutPage() {
             <h2 className="mt-3 font-sans text-2xl font-semibold text-cream-50">
               For buyers, partners, investors, and press.
             </h2>
-            <p className="mt-4 max-w-2xl text-sm leading-6 text-cream-50/76">
-              Use the public MoedimAI contact email for demo requests, crop-program partnerships,
-              buyer introductions, and bioeconomy technology conversations.
+            <p className="text-cream-50/76 mt-4 max-w-2xl text-sm leading-6">
+              Use the public MoedimAI contact email for demo requests, bioeconomy supply-chain
+              partnerships, buyer introductions, and technology conversations.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <a

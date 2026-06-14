@@ -1,6 +1,6 @@
 # MoedimAI products and crop families
 
-MoedimAI supports African agricultural bioeconomy supply chains across multiple crop and product families. The workflow is configured around the crop, farmer network, buyer specification, value-addition step, evidence requirement, and route to market.
+MoedimAI supports African agricultural bioeconomy supply chains across multiple crop and product families. The workflow is configured around the buyer-ready outcome, crop, source records, farmer network, value-addition step, evidence requirement, logistics route, distribution path, and route to market.
 
 ## Carrier and cold-pressed oils
 
