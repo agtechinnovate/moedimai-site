@@ -108,7 +108,7 @@ export const CATEGORY_FAQS: FaqEntry[] = [
   {
     question: "Is MoedimAI a bioeconomy agriculture company?",
     answer:
-      "Yes. MoedimAI is positioned as the technology layer and AI supply chain platform driving Africa's bioeconomy because it benchmarks buyer-ready outcomes back to the beginning and throughout the supply chain. The platform supports farmers, crops, biomass, satellite and weather intelligence, value addition, processing, quality evidence, logistics, distribution, and export pathways; Imani Pamoja is the connected trading and export route.",
+      "Yes. MoedimAI is positioned as the technology layer, AI supply chain platform, and verification engine for Africa's bioeconomy because it benchmarks buyer-ready outcomes back to the beginning and throughout the supply chain. The platform supports farmers, crops, biomass, satellite and weather intelligence, value addition, processing, quality evidence, logistics, distribution, and export pathways; Imani Pamoja is the connected trading and export route.",
   },
   {
     question: "Can MoedimAI help manage crops grown in Africa?",

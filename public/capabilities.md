@@ -1,6 +1,6 @@
 # MoedimAI capabilities
 
-MoedimAI is the technology layer and AI supply chain platform driving Africa's bioeconomy.
+MoedimAI is the technology layer, AI supply chain platform, and verification engine for Africa's bioeconomy.
 
 ## Operating graph
 
@@ -24,6 +24,8 @@ MoedimAI uses AI and operating intelligence to help teams benchmark buyer-ready 
 ## Verify
 
 MoedimAI supports standards-ready supply through producer evidence, plot records, organic or farm-assurance readiness, processing and quality records, lot custody, certification evidence, buyer specifications, and permissioned reporting.
+
+The verification engine works from specification to shipment: buyer, processor, certifier, funder, or programme requirements become controls that producers and processors can follow, and evidence that buyers, certifiers, financiers, and programme operators can trust.
 
 ## Value addition
 
