@@ -18,8 +18,9 @@ export const organizationSchema = {
     url: `${baseUrl}/images/moedimai-logo-light.png`,
   },
   description:
-    "MoedimAI is the technology layer and AI supply chain platform driving Africa's bioeconomy. The platform benchmarks the end result back to the beginning and throughout the supply chain by connecting farmers, crops, value addition, processing, quality evidence, logistics, distribution, export, buyers, certifiers, funders, and programme operators on one governed operating graph.",
-  slogan: "Technology layer and AI supply chain platform driving Africa's bioeconomy",
+    "MoedimAI is the technology layer, AI supply chain platform, and verification engine for Africa's bioeconomy. The platform benchmarks the end result back to the beginning and throughout the supply chain, turning buyer specifications into controls and evidence from soil to shipment.",
+  slogan:
+    "Technology layer, AI supply chain platform, and verification engine for Africa's bioeconomy",
   foundingDate: "2024",
   founder: {
     "@type": "Person",
@@ -40,6 +41,10 @@ export const organizationSchema = {
     },
   ],
   knowsAbout: [
+    "Verification engine for bioeconomy trade",
+    "AI supply chain verification engine",
+    "Bioeconomy verification engine",
+    "Verified bioeconomy trade platform",
     "AI supply chain platform Africa",
     "Supply chain platform for Africa's bioeconomy",
     "Supply chain benchmarking Africa",
@@ -82,8 +87,10 @@ export const organizationSchema = {
     "End-to-end agricultural supply chain",
     "Verifiable agricultural supply chains",
     "Specification-driven agricultural production",
+    "Buyer specification to shipment evidence",
     "Buyer-grade supply verification",
     "Financeable agricultural supply",
+    "Bankable agricultural supply",
     "Multi-tenant agritech platforms",
     "Smallholder farm verification",
     "Satellite and weather intelligence for agriculture",
@@ -119,6 +126,8 @@ export const organizationSchema = {
     availableLanguage: ["English", "Swahili"],
   },
   makesOffer: [
+    "Verification engine for bioeconomy trade",
+    "Buyer specification to shipment evidence",
     "AI supply chain platform driving Africa's bioeconomy",
     "End-to-end supply chain benchmarking",
     "Buyer-ready outcome benchmarking",
@@ -162,7 +171,7 @@ export const websiteSchema = {
   url: baseUrl,
   name: "MoedimAI",
   description:
-    "Technology layer and AI supply-chain benchmarking platform driving Africa's bioeconomy, including source records, value addition, verification, MRV, logistics routing, distribution, export, and buyer-ready supply.",
+    "Technology layer, AI supply-chain benchmarking platform, and verification engine for Africa's bioeconomy, including buyer specifications, source records, value addition, verification, MRV, logistics routing, distribution, export, and buyer-ready supply.",
   publisher: { "@id": `${baseUrl}/#organization` },
   inLanguage: "en",
   hasPart: [

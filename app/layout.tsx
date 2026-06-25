@@ -25,12 +25,16 @@ export const metadata: Metadata = {
   metadataBase: new URL(PUBLIC_SITE_URL),
   applicationName: "MoedimAI",
   title: {
-    default: "MoedimAI | AI supply chain platform driving Africa's bioeconomy",
+    default: "MoedimAI | AI supply chain platform and verification engine",
     template: "%s · MoedimAI",
   },
   description:
-    "MoedimAI is the technology layer and AI supply chain platform driving Africa's bioeconomy. The platform benchmarks buyer-ready outcomes back to source and across every supply-chain step: farmers, crops, value addition, quality evidence, logistics, distribution, and export.",
+    "MoedimAI is the technology layer, AI supply chain platform, and verification engine for Africa's bioeconomy. The platform benchmarks buyer-ready outcomes back to source, turning buyer specifications into controls and evidence from soil to shipment.",
   keywords: [
+    "verification engine for bioeconomy trade",
+    "AI supply chain verification engine",
+    "bioeconomy verification engine",
+    "verified bioeconomy trade platform",
     "AI supply chain platform Africa",
     "supply chain platform driving Africa bioeconomy",
     "bioeconomy trade infrastructure",
@@ -78,8 +82,10 @@ export const metadata: Metadata = {
     "end to end agricultural supply chain Africa",
     "verifiable agricultural supply chain",
     "specification-driven agricultural production",
+    "buyer specification to shipment evidence",
     "buyer-grade supply verification",
     "financeable agricultural supply",
+    "bankable agricultural supply",
     "multi-tenant agritech platform",
     "smallholder farm verification",
     "chemotype verification platform",
@@ -127,13 +133,13 @@ export const metadata: Metadata = {
     siteName: "MoedimAI",
     title: "MoedimAI",
     description:
-      "The technology layer and AI supply chain platform driving Africa's bioeconomy by benchmarking buyer-ready outcomes back to source and across farmers, value addition, logistics, verification, distribution, and export.",
+      "The technology layer, AI supply chain platform, and verification engine for Africa's bioeconomy, turning buyer specifications into controls and evidence from soil to shipment.",
     images: [
       {
         url: "/images/moedimai-social-card.png",
         width: 1200,
         height: 630,
-        alt: "MoedimAI technology layer and AI supply chain platform driving Africa's bioeconomy",
+        alt: "MoedimAI technology layer, AI supply chain platform, and verification engine for Africa's bioeconomy",
       },
     ],
   },
@@ -141,7 +147,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "MoedimAI",
     description:
-      "The technology layer and AI supply chain platform driving Africa's bioeconomy by benchmarking buyer-ready outcomes back to source and across farmers, value addition, logistics, verification, distribution, and export.",
+      "The technology layer, AI supply chain platform, and verification engine for Africa's bioeconomy, turning buyer specifications into controls and evidence from soil to shipment.",
     images: ["/images/moedimai-social-card.png"],
   },
 };

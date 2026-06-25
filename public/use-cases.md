@@ -1,6 +1,6 @@
 # MoedimAI use cases
 
-MoedimAI is the technology layer and AI supply chain platform driving Africa's bioeconomy.
+MoedimAI is the technology layer, AI supply chain platform, and verification engine for Africa's bioeconomy.
 
 ## NGOs and development programmes
 

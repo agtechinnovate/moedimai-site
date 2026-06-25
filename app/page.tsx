@@ -34,6 +34,24 @@ const DOORS: AudienceDoor[] = [
   },
 ];
 
+const VERIFICATION_STAGES = [
+  { name: "Soil & site", detail: "EUDR, organic, and source context" },
+  { name: "Planting & inputs", detail: "Approved inputs and field evidence" },
+  { name: "Cultivation", detail: "GLOBALG.A.P. and crop-stage controls" },
+  { name: "Harvest", detail: "Plot-level traceability and readiness" },
+  { name: "Processing", detail: "Steam distillation, drying, cold press" },
+  { name: "Certification", detail: "COA, NOP, DDS, and buyer packets" },
+  { name: "Shipment", detail: "Custody, logistics, distribution, export" },
+];
+
+const INDUSTRY_MARKETS = [
+  "Cosmetic actives and oils",
+  "Pharmaceutical pre-grade actives",
+  "Nutraceutical standardized extracts",
+  "Chemical bio-based feedstocks",
+  "Food and beverage flavor and function",
+];
+
 export default function HomePage() {
   return (
     <>
@@ -57,7 +75,7 @@ export default function HomePage() {
             Rooted in Africa. Refined for the world.
           </p>
           <h1 className="mt-5 max-w-3xl font-display text-4xl leading-[1.05] text-cream-50 md:text-6xl">
-            AI supply chain platform
+            AI supply chain platform and verification engine
             <br />
             driving Africa&apos;s bioeconomy.
           </h1>
@@ -174,6 +192,72 @@ export default function HomePage() {
                 </p>
               </article>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section
+        aria-labelledby="verification-engine"
+        className="border-t border-cream-50/10 bg-navy-900"
+      >
+        <div className="container grid gap-10 py-16 md:grid-cols-[0.9fr_1.1fr] md:py-20">
+          <div>
+            <p className="text-xs uppercase tracking-[0.22em] text-gold-500">Verification engine</p>
+            <h2
+              id="verification-engine"
+              className="mt-4 max-w-xl scroll-mt-28 font-display text-3xl leading-tight text-cream-50 md:text-4xl"
+            >
+              From buyer specification to shipment evidence.
+            </h2>
+            <p className="mt-5 max-w-xl text-sm leading-6 text-cream-50/75 md:text-base">
+              MoedimAI benchmarks agricultural production against international standards at every
+              stage, from soil to shipment. A buyer&apos;s specification becomes controls that
+              producers and processors can follow, and evidence that buyers, certifiers, and
+              financiers can trust.
+            </p>
+            <div className="mt-6 rounded-md border-l-2 border-gold-500 bg-cream-50/[0.04] p-5 text-sm leading-6 text-cream-50/85">
+              Built in Kenya and scaling across Africa, MoedimAI turns verified production into
+              sustainable export revenue for African producers and more bankable supply for global
+              markets.
+            </div>
+          </div>
+
+          <div className="rounded-lg border border-cream-50/10 bg-navy-800/45 p-5 md:p-6">
+            <div className="flex flex-wrap gap-2">
+              {INDUSTRY_MARKETS.map((market) => (
+                <span
+                  key={market}
+                  className="rounded-md border border-cream-50/10 bg-navy-900/60 px-3 py-2 text-xs text-cream-50/75"
+                >
+                  {market}
+                </span>
+              ))}
+            </div>
+            <div className="mt-7 grid gap-3 md:grid-cols-2">
+              {VERIFICATION_STAGES.map((stage, index) => (
+                <div
+                  key={stage.name}
+                  className="rounded-md border border-cream-50/10 bg-navy-900/55 p-4"
+                >
+                  <p className="font-sans text-[11px] uppercase tracking-[0.18em] text-gold-500">
+                    {String(index + 1).padStart(2, "0")}
+                  </p>
+                  <h3 className="mt-2 font-sans text-base font-semibold text-cream-50">
+                    {stage.name}
+                  </h3>
+                  <p className="text-cream-50/68 mt-1 text-sm leading-5">{stage.detail}</p>
+                </div>
+              ))}
+            </div>
+            <div className="mt-6 rounded-md border border-gold-500/30 bg-gold-500/10 p-4">
+              <p className="font-sans text-xs uppercase tracking-[0.18em] text-gold-500">
+                Evidence out
+              </p>
+              <p className="mt-2 text-sm leading-6 text-cream-50/85">
+                Verified, certifier-ready, bankable supply for EU, US, Asia, AfCFTA, and
+                intra-African trade routes.
+              </p>
+            </div>
           </div>
         </div>
       </section>

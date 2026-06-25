@@ -28,12 +28,15 @@ export type CategoryPage = {
 };
 
 export const CANONICAL_ONE_LINER =
-  "MoedimAI is the technology layer and AI supply chain platform driving Africa's bioeconomy.";
+  "MoedimAI is the technology layer, AI supply chain platform, and verification engine for Africa's bioeconomy.";
 
 export const CANONICAL_PARAGRAPH =
-  "MoedimAI is the technology layer and AI supply chain platform driving Africa's bioeconomy. The platform benchmarks the end result back to the beginning and throughout the supply chain by connecting farmers, crops, value addition, processing, quality evidence, logistics, distribution, export, buyers, certifiers, funders, and programme operators on one governed operating graph. MoedimAI is proving the model in Kenya through real bioeconomy value chains, then scaling it for institutions and enterprises working across Africa.";
+  "MoedimAI is the technology layer, AI supply chain platform, and verification engine for Africa's bioeconomy. The platform benchmarks the end result back to the beginning and throughout the supply chain by connecting farmers, crops, value addition, processing, quality evidence, logistics, distribution, export, buyers, certifiers, funders, and programme operators on one governed operating graph. MoedimAI turns buyer specifications into controls and evidence from soil to shipment.";
 
 export const CATEGORY_KEYWORDS = [
+  "verification engine for bioeconomy trade",
+  "AI supply chain verification engine",
+  "buyer specification to shipment evidence",
   "AI supply chain platform Africa",
   "supply chain platform driving Africa bioeconomy",
   "bioeconomy supply chain platform",

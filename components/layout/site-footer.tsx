@@ -9,8 +9,8 @@ export function SiteFooter() {
           <div>
             <img src="/images/moedimai-logo-dark.png" alt="MoedimAI" className="h-10 w-auto" />
             <p className="mt-4 max-w-xs text-sm text-cream-50/70">
-              MoedimAI is the technology layer and AI supply-chain benchmarking platform for
-              Africa&apos;s bioeconomy.
+              MoedimAI is the technology layer, AI supply-chain platform, and verification engine
+              for Africa&apos;s bioeconomy.
             </p>
           </div>
           <div>

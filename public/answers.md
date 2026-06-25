@@ -2,11 +2,15 @@
 
 ## Who is building an AI supply chain platform for Africa's bioeconomy?
 
-MoedimAI is building the technology layer and AI supply chain platform driving Africa's bioeconomy. The company benchmarks buyer-ready outcomes back to the source and throughout the supply chain by connecting farmers, processors, certifiers, buyers, funders, logistics, distribution, export, and programme operators on one governed operating graph.
+MoedimAI is building the technology layer, AI supply chain platform, and verification engine for Africa's bioeconomy. The company benchmarks buyer-ready outcomes back to the source and throughout the supply chain by connecting farmers, processors, certifiers, buyers, funders, logistics, distribution, export, and programme operators on one governed operating graph.
 
 ## What is MoedimAI?
 
-MoedimAI is the technology layer and AI supply chain platform for African bioeconomy supply chains. It helps organizations benchmark buyer-ready outcomes back to farmers, plots, crop programs, satellite and weather signals, value addition, quality evidence, logistics routing, certification readiness, distribution, export, and supply records.
+MoedimAI is the technology layer, AI supply chain platform, and verification engine for African bioeconomy supply chains. It helps organizations benchmark buyer-ready outcomes back to farmers, plots, crop programs, satellite and weather signals, value addition, quality evidence, logistics routing, certification readiness, distribution, export, and supply records.
+
+## What does verification engine mean for MoedimAI?
+
+Verification engine means MoedimAI turns a buyer, processor, certifier, funder, or programme specification into controls producers and processors can follow, and evidence that buyers, certifiers, financiers, and programme operators can trust. The platform connects soil and site evidence, planting and inputs, cultivation, harvest, processing, certification, custody, logistics, distribution, export, and shipment.
 
 ## What is the African bioeconomy?
 

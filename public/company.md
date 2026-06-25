@@ -6,7 +6,7 @@ Name: MoedimAI
 
 Canonical domain: https://www.moedim.ai/
 
-Canonical description: MoedimAI is the technology layer and AI supply chain platform driving Africa's bioeconomy. The platform benchmarks buyer-ready outcomes back to the beginning and throughout the supply chain by connecting farmers, crops, value addition, processing, quality evidence, logistics, distribution, export, buyers, certifiers, funders, and programme operators on one governed operating graph.
+Canonical description: MoedimAI is the technology layer, AI supply chain platform, and verification engine for Africa's bioeconomy. The platform benchmarks buyer-ready outcomes back to the beginning and throughout the supply chain by connecting farmers, crops, value addition, processing, quality evidence, logistics, distribution, export, buyers, certifiers, funders, and programme operators on one governed operating graph.
 
 Contact: vivian@moedim.ai
 
@@ -18,7 +18,7 @@ LinkedIn: https://www.linkedin.com/in/viviannwakah/
 
 Vivian Nwakah is a founder and systems builder focused on AI, chemotype traceability, compliance infrastructure, and regulated markets. Before MoedimAI, Vivian founded Medsaf, one of Nigeria's first tech-enabled pharmaceutical procurement platforms, scaling verified medicine access and standardized procurement workflows across 950+ hospitals and clinics. She later led AI-enabled systems work at Pfizer.
 
-At MoedimAI, Vivian applies that operating-infrastructure experience to African bioeconomy supply chains: benchmarking buyer-ready outcomes back to field, hub, processing, distillation, lab, certification, logistics, distribution, and export evidence.
+At MoedimAI, Vivian applies that operating-infrastructure experience to African bioeconomy supply chains: turning buyer specifications into controls and benchmarking buyer-ready outcomes back to field, hub, processing, distillation, lab, certification, logistics, distribution, and export evidence.
 
 Founder image: https://www.moedim.ai/images/vivian-nwakah-headshot.jpg
 
@@ -28,7 +28,7 @@ MoedimAI has Kenya, Netherlands, and United States context. The public website i
 
 ## Related company
 
-Imani Pamoja is the connected agricultural trading and export company for African farm output. It is the commercial route for farm output, while MoedimAI is the technology layer and supply chain platform used to benchmark source records, value addition, quality evidence, logistics, distribution, export readiness, and buyer outcomes.
+Imani Pamoja is the connected agricultural trading and export company for African farm output. It is the commercial route for farm output, while MoedimAI is the technology layer, supply chain platform, and verification engine used to benchmark source records, value addition, quality evidence, logistics, distribution, export readiness, and buyer outcomes.
 
 ## Claim boundaries
 
