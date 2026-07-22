@@ -16,12 +16,17 @@ type PageParams = {
   slug: string;
 };
 
+type PageProps = {
+  params: Promise<PageParams>;
+};
+
 export function generateStaticParams(): PageParams[] {
   return CATEGORY_PAGES.map((page) => ({ slug: page.slug }));
 }
 
-export function generateMetadata({ params }: { params: PageParams }): Metadata {
-  const page = getCategoryPage(params.slug);
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const page = getCategoryPage(slug);
   if (!page) {
     return {};
   }
@@ -59,8 +64,9 @@ export function generateMetadata({ params }: { params: PageParams }): Metadata {
   };
 }
 
-export default function CategoryLeadershipPage({ params }: { params: PageParams }) {
-  const page = getCategoryPage(params.slug);
+export default async function CategoryLeadershipPage({ params }: PageProps) {
+  const { slug } = await params;
+  const page = getCategoryPage(slug);
 
   if (!page) {
     notFound();

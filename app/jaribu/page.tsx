@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 import type { Metadata } from "next";
 import { Schema, breadcrumbList } from "@/lib/schema";
 import { PUBLIC_SITE_URL } from "@/lib/site-url";
@@ -75,10 +74,7 @@ export default function JaribuPage() {
   return (
     <>
       <Schema
-        data={[
-          jaribuPageSchema,
-          breadcrumbList([{ name: "Jaribu by MoedimAI", path: "/jaribu" }]),
-        ]}
+        data={[jaribuPageSchema, breadcrumbList([{ name: "Jaribu by MoedimAI", path: "/jaribu" }])]}
       />
       <section className="relative overflow-hidden">
         <div

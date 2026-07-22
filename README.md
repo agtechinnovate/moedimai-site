@@ -3,16 +3,16 @@
 Sprint **W2: GEO, CMS, and data foundation** (current).
 Previous sprint: W1 — Foundation and brand system (merged).
 
-Dedicated Next.js 14 App Router app for the Moedim / MoedimAI public site. This repository is the dedicated public website repo.
+Dedicated Next.js 16 App Router app for the Moedim / MoedimAI public site. This repository is the dedicated public website repo.
 
 This is the _website_ app — distinct from the platform app at `app.moedim.ai` and the public farmer intake surface at `intake.moedim.ai`.
 
-| Surface                                          | URL                                          | Owner                                   |
-| ------------------------------------------------ | -------------------------------------------- | --------------------------------------- |
-| Public website (this app)                        | `www.moedim.ai`                              | Website implementation owner per sprint |
-| Farmer intake (separate app)                     | `intake.moedim.ai/intake`                    | Platform/intake implementation owner    |
-| Platform app (separate codebase)                 | `app.moedim.ai`                              | Platform team                           |
-| Website light admin (this app, subdomain routed) | `manage.moedim.ai` (added in Sprints W3+)    | Website implementation owner            |
+| Surface                                          | URL                                       | Owner                                   |
+| ------------------------------------------------ | ----------------------------------------- | --------------------------------------- |
+| Public website (this app)                        | `www.moedim.ai`                           | Website implementation owner per sprint |
+| Farmer intake (separate app)                     | `intake.moedim.ai/intake`                 | Platform/intake implementation owner    |
+| Platform app (separate codebase)                 | `app.moedim.ai`                           | Platform team                           |
+| Website light admin (this app, subdomain routed) | `manage.moedim.ai` (added in Sprints W3+) | Website implementation owner            |
 
 The canonical public brand URL is `https://www.moedim.ai`. The apex `https://moedim.ai` should redirect to `https://www.moedim.ai` once DNS points at the website host. The legacy `https://www.moedimai.com` can remain live during transition and should eventually redirect to the canonical `www.moedim.ai` domain after sign-off. Do not merge this website with `app.moedim.ai` or embed the intake app in this repo.
 
@@ -59,7 +59,7 @@ The canonical public brand URL is `https://www.moedim.ai`. The apex `https://moe
 
 ## Local development
 
-Prerequisites: Node 18.17+; Node 20 is recommended for parity with CI.
+Prerequisites: Node 22.12+ for parity with CI and the current Sanity toolchain.
 
 ```bash
 cp .env.example .env.local      # optional; all env values default safely
@@ -158,7 +158,7 @@ npm run check:client-secrets    # fail if a server-only env reference
 ├── next.config.mjs
 ├── tsconfig.json
 ├── components.json
-├── .eslintrc.json
+├── eslint.config.mjs
 ├── .prettierrc
 ├── .gitignore
 ├── .env.example
@@ -185,12 +185,15 @@ Use the `<BrandMark surface="…" />` component rather than hardcoding wordmark 
 `.github/workflows/website-ci.yml` runs on PRs and pushes to main:
 
 1. `npm ci`
-2. `npm run lint`
-3. `npm run typecheck`
-4. `npm run build`
-5. `./scripts/check-client-secrets.sh` — fail if any server-only env name appears in `.next/static/**`
+2. `npm audit --audit-level=low`
+3. `npm run lint`
+4. `npm run typecheck`
+5. `npm run build`
+6. `./scripts/check-client-secrets.sh` — fail if any server-only env name appears in `.next/static/**`
 
 PRs fail on any warning or error.
+
+Dependabot checks npm and GitHub Actions weekly. Gitleaks and the client-bundle secret check run on every pull request and push to `main`.
 
 ---
 
