@@ -1,0 +1,11 @@
+* @agtechinnovate
+
+# Security-sensitive public-site paths require owner review.
+/.github/ @agtechinnovate
+/app/.well-known/security.txt/ @agtechinnovate
+/app/privacy/ @agtechinnovate
+/app/security/ @agtechinnovate
+/next.config.mjs @agtechinnovate
+/package.json @agtechinnovate
+/package-lock.json @agtechinnovate
+/SECURITY.md @agtechinnovate

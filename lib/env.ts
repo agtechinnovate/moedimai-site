@@ -65,7 +65,6 @@ const publicParsed = publicSchema.safeParse({
 });
 
 if (!publicParsed.success) {
-  // eslint-disable-next-line no-console
   console.error(
     "❌ Invalid public environment variables:",
     publicParsed.error.flatten().fieldErrors,
@@ -101,7 +100,6 @@ export function getServerEnv() {
   });
 
   if (!parsed.success) {
-    // eslint-disable-next-line no-console
     console.error("❌ Invalid server environment variables:", parsed.error.flatten().fieldErrors);
     throw new Error("Invalid server environment variables");
   }
