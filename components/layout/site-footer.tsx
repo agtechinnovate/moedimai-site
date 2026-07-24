@@ -36,6 +36,9 @@ export function SiteFooter() {
         <div className="mt-10 flex flex-col items-start justify-between gap-2 border-t border-cream-50/10 pt-6 text-xs text-cream-50/50 md:flex-row md:items-center">
           <p>© {year} MoedimAI Incorporated. All rights reserved.</p>
           <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
+            <a href="/contact" className="underline-offset-4 hover:text-cream-50 hover:underline">
+              Contact
+            </a>
             <a href="/privacy" className="underline-offset-4 hover:text-cream-50 hover:underline">
               Privacy
             </a>

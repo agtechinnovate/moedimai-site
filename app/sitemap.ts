@@ -40,6 +40,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${PUBLIC_SITE_URL}/thesis`, lastModified, changeFrequency: "monthly", priority: 0.8 },
     { url: `${PUBLIC_SITE_URL}/jaribu`, lastModified, changeFrequency: "monthly", priority: 0.7 },
     {
+      url: `${PUBLIC_SITE_URL}/contact`,
+      lastModified: securityLastModified,
+      changeFrequency: "monthly",
+      priority: 0.6,
+    },
+    {
       url: `${PUBLIC_SITE_URL}/privacy`,
       lastModified: securityLastModified,
       changeFrequency: "monthly",
