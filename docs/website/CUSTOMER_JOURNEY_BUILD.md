@@ -363,7 +363,7 @@ Three workflows fire in parallel:
 
 **10a. eTIMS invoice submission** (Slade360 per W-A4):
 - Vercel Cron `etims-submit-pending` every 60s picks up `paid` orders without `etims_invoices.status='success'`
-- Builds payload: seller (Moedim Africa Ltd KE entity for KE orders, Moedai LLC for international), buyer, line items, VAT, total
+- Builds payload: seller (Moedim Africa Ltd KE entity for KE orders; the W-A3-approved seller-of-record for international orders), buyer, line items, VAT, total. MoedimAI Incorporated is the public privacy-controller identity, not an automatic payment-seller approval.
 - POSTs to integrator
 - Success: stores `kra_invoice_number`, `digital_signature`, `qr_code_data`, `verification_url`; generates PDF via `lib/etims/pdf.ts`, stores in Supabase Storage at `etims-invoices/{orderNumber}.pdf`
 - Failure: increments `retry_count`, exponential backoff (1m / 5m / 30m / 2h / 12h). After 5 attempts: `failed`, surfaces in admin retry queue.

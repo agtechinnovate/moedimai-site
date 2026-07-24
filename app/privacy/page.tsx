@@ -19,6 +19,10 @@ const SECTIONS = [
     "Authorized Moedim staff and approved program participants receive only the access needed for their work. Infrastructure, authentication, communications, mapping and monitoring providers process limited information for Moedim under their applicable terms and reviewed controls. Buyer, certifier, auditor, partner or regulator disclosure is scoped to an approved purpose or legal requirement.",
   ],
   [
+    "Moedim Field map services",
+    "Google Maps may process map requests, device metadata, map interactions and SDK diagnostics to deliver and improve its maps. Mapbox processes the map and tile requests needed to render or download approved offline packs; optional Mapbox location telemetry is disabled in Moedim Field. Moedim does not use either mapping provider for advertising.",
+  ],
+  [
     "International processing",
     "Moedim uses service providers and teams in more than one country. Our internal privacy register records processing regions, transfer purposes, safeguard decisions, evidence and the next required review. Items that still need legal or provider confirmation remain visibly due rather than being presented as approved.",
   ],
@@ -40,9 +44,9 @@ export default function PrivacyPage() {
         Your information should support the work you agreed to—not become an open-ended asset.
       </h1>
       <p className="mt-6 max-w-3xl text-base leading-relaxed text-cream-50/85">
-        This notice explains the main ways Moedai LLC and the relevant Moedim operating organization
-        handle personal information through moedim.ai, the Moedim operating platform, public intake,
-        field tools and approved communications. Last updated 22 July 2026.
+        This notice explains the main ways MoedimAI Incorporated and the relevant Moedim operating
+        organization handle personal information through moedim.ai, the Moedim operating platform,
+        public intake, field tools and approved communications. Last updated 23 July 2026.
       </p>
       <div className="mt-12 grid max-w-4xl gap-4 md:grid-cols-2">
         {SECTIONS.map(([title, body]) => (

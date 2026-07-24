@@ -401,7 +401,7 @@ Recommended decisions:
 |---|---|
 | CMS | Sanity. |
 | Portal auth | Supabase Auth magic links. |
-| Stripe entity | US Moedai LLC, unless legal/tax advice says otherwise. |
+| Stripe entity | Not yet approved; MoedimAI Incorporated is the confirmed public website/privacy entity, while the payment seller-of-record requires legal/accounting approval. |
 | eTIMS integrator | Slade360, pending final due diligence. |
 | KE fulfillment | Pickup Mtaani + Sendy hybrid. |
 | Designer | Use a designer for homepage/product/press visual polish. |
@@ -473,7 +473,7 @@ Lead with:
 |---|---|---|
 | W-A1 | CMS | Sanity. |
 | W-A2 | Portal auth | Supabase Auth magic links. |
-| W-A3 | Stripe entity | US Moedai LLC unless accountant/lawyer advises otherwise. |
+| W-A3 | Stripe entity | Confirm the payment seller-of-record with accountant/lawyer before checkout; do not infer it from the MoedimAI Incorporated public privacy identity. |
 | W-A4 | eTIMS integrator | Slade360 pending final quote and API fit. |
 | W-A5 | Fulfillment Kenya | Pickup Mtaani + Sendy hybrid. |
 | W-A6 | Press/farmer photography | Commission early; do not rely on stock imagery. |

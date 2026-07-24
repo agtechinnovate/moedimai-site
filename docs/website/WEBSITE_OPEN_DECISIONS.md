@@ -2,7 +2,7 @@
 
 > Supersedes `/Users/obi/Documents/MoedimAI_Open_Decisions.md` (v1 draft).
 > Restructured around V3's W-A IDs plus W2 prerequisite decisions.
-> Updated: 2026-05-17
+> Updated: 2026-07-23
 
 ---
 
@@ -16,6 +16,21 @@ Every open decision below has:
 - **Recommendation** — current best-guess answer if no input
 
 Decisions are locked into the relevant W-sprint brief at sprint open and tracked here for cross-sprint visibility.
+
+### Public legal identity — privacy and website copy
+
+**Status:** locked
+
+**Owner:** Obi
+
+**Locked answer:** `MoedimAI Incorporated`
+
+**Confirmed:** 2026-07-23
+
+This is the public privacy-controller and website copyright identity. It does
+not, by itself, approve a Stripe account, payment flow, tax treatment, or
+seller-of-record. Those remain subject to the separate W-A3 legal/accounting
+gate.
 
 ---
 
@@ -41,7 +56,10 @@ Inherited from [`MOEDIMAI_MASTER_WEBSITE_PLAN_V3.md`](./MOEDIMAI_MASTER_WEBSITE_
 
 **Status:** recommended
 **Owner:** Vivian + accountant + lawyer
-**Recommendation:** Stripe US under Moedai LLC (Delaware), unless tax/legal advice says otherwise
+**Recommendation:** Do not enable international checkout until accountant and
+lawyer confirm whether MoedimAI Incorporated or another approved entity is the
+Stripe seller-of-record. The public privacy-controller identity is MoedimAI
+Incorporated.
 **Deadline:** W7 start (International checkout)
 
 ### W-A4 — eTIMS integrator
@@ -297,7 +315,7 @@ Decisions made and no longer in play.
 | Closed-9 | Slack notifications | No (use email + dashboard) | User direction |
 | Closed-10 | Buyer portal sample/mock docs at launch | Allowed with status label | W0 §2.6 |
 | Closed-11 | Legal entity for KRA/M-Pesa | Moedim Africa Ltd as Kenya seller-of-record | W0 + Vivian confirmation |
-| Closed-12 | Legal entity for international | Moedai LLC (Delaware) via Stripe US | W0 §2 + V3 §10 |
+| Closed-12 | Public legal identity for international website/privacy | MoedimAI Incorporated; payment seller-of-record requires separate W-A3 approval | Obi direction 2026-07-23 |
 | Closed-13 | DNS boundary for admin surfaces | `admin.moedimai.com` = existing platform admin only; `manage.moedimai.com` = website light admin. No DNS collision. | W0 cleanup commit 2026-05-17 |
 | Closed-14 | Website Supabase region | `eu-west-1` (Ireland) with `eu-west-2` fallback. EU placement chosen for EU-buyer data residency. | W2 sprint-open |
 
