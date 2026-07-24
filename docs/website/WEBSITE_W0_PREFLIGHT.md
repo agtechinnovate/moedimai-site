@@ -182,8 +182,8 @@ To be populated by Vivian + designer during W0/W1.
 | Item | Value |
 |---|---|
 | Seller-of-record for KE retail orders | Moedim Africa Ltd (Kenya) — or as confirmed by Vivian + accountant before W6 |
-| Seller-of-record for international retail orders | Moedai LLC (Delaware) via Stripe US |
-| Holding entity | Moedai LLC (Delaware) |
+| Seller-of-record for international retail orders | Not yet approved; confirm under W-A3 before international checkout |
+| Public privacy-controller / website entity | MoedimAI Incorporated (confirmed 2026-07-23) |
 | EU operations entity | Moedim EU BV (Netherlands, in formation) |
 | KRA PIN | Moedim Africa Ltd (confirmed) — used for eTIMS + M-Pesa Paybill |
 | Banking entity for M-Pesa settlement | Confirmed before W6 with Vivian |
