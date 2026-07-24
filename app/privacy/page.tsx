@@ -23,6 +23,10 @@ const SECTIONS = [
     "Google Maps may process map requests, device metadata, map interactions and SDK diagnostics to deliver and improve its maps. Mapbox processes the map and tile requests needed to render or download approved offline packs; optional Mapbox location telemetry is disabled in Moedim Field. Moedim does not use either mapping provider for advertising.",
   ],
   [
+    "Moedim Field QR scanning",
+    "Moedim Field uses Google ML Kit through the phone camera to scan approved QR codes. QR camera images and decoded values are processed on the device and are not sent to Google by ML Kit. The SDK may send limited app, device, installation, performance and usage information to Google for service diagnostics and analytics. Moedim does not use this information for advertising or tracking.",
+  ],
+  [
     "International processing",
     "Moedim uses service providers and teams in more than one country. Our internal privacy register records processing regions, transfer purposes, safeguard decisions, evidence and the next required review. Items that still need legal or provider confirmation remain visibly due rather than being presented as approved.",
   ],
@@ -46,7 +50,7 @@ export default function PrivacyPage() {
       <p className="mt-6 max-w-3xl text-base leading-relaxed text-cream-50/85">
         This notice explains the main ways MoedimAI Incorporated and the relevant Moedim operating
         organization handle personal information through moedim.ai, the Moedim operating platform,
-        public intake, field tools and approved communications. Last updated 23 July 2026.
+        public intake, field tools and approved communications. Last updated 24 July 2026.
       </p>
       <div className="mt-12 grid max-w-4xl gap-4 md:grid-cols-2">
         {SECTIONS.map(([title, body]) => (
