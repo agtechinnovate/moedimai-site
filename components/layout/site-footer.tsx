@@ -17,6 +17,16 @@ export function SiteFooter() {
             </h2>
             <p className="mt-4 text-sm">
               <a
+                href="https://www.moedimharvest.com/"
+                data-analytics-event="outbound_click"
+                data-analytics-label="footer moedim harvest"
+                className="text-gold-500 underline-offset-4 hover:underline"
+              >
+                Visit Moedim Harvest
+              </a>
+            </p>
+            <p className="mt-4 text-sm">
+              <a
                 href="mailto:vivian@moedim.ai"
                 data-analytics-event="email_click"
                 data-analytics-label="footer email"
