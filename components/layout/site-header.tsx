@@ -12,16 +12,28 @@ export function SiteHeader() {
             className="h-10 w-auto shrink-0 md:h-12"
           />
         </Link>
-        <a
-          href="https://mail.google.com/mail/?view=cm&fs=1&to=vivian%40moedim.ai&su=MoedimAI%20demo%20request"
-          target="_blank"
-          rel="noopener noreferrer"
-          data-analytics-event="demo_click"
-          data-analytics-label="header request demo"
-          className="inline-flex h-11 items-center justify-center rounded-md bg-gold-500 px-5 text-sm font-medium text-navy-900 transition-colors hover:bg-gold-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-300 focus-visible:ring-offset-2 focus-visible:ring-offset-navy-900"
-        >
-          Request a demo
-        </a>
+        <div className="flex w-full items-center gap-3 sm:w-auto">
+          <a
+            href="https://www.moedimharvest.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-analytics-event="harvest_click"
+            data-analytics-label="header moedim harvest"
+            className="inline-flex h-11 flex-1 items-center justify-center rounded-md border border-cream-50/25 px-5 text-sm font-medium text-cream-50 transition-colors hover:border-gold-500 hover:text-gold-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-300 focus-visible:ring-offset-2 focus-visible:ring-offset-navy-900 sm:flex-none"
+          >
+            Moedim Harvest
+          </a>
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=vivian%40moedim.ai&su=MoedimAI%20demo%20request"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-analytics-event="demo_click"
+            data-analytics-label="header request demo"
+            className="inline-flex h-11 flex-1 items-center justify-center rounded-md bg-gold-500 px-5 text-sm font-medium text-navy-900 transition-colors hover:bg-gold-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-300 focus-visible:ring-offset-2 focus-visible:ring-offset-navy-900 sm:flex-none"
+          >
+            Request a demo
+          </a>
+        </div>
       </div>
     </header>
   );

@@ -25,6 +25,21 @@ export function SiteFooter() {
                 vivian@moedim.ai
               </a>
             </p>
+            <p className="mt-4 text-sm">
+              <a
+                href="https://www.moedimharvest.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-analytics-event="harvest_click"
+                data-analytics-label="footer moedim harvest"
+                className="text-gold-500 underline-offset-4 hover:underline"
+              >
+                Moedim Harvest ↗
+              </a>
+            </p>
+            <p className="mt-2 text-xs text-cream-50/55">
+              Kenyan ingredient growing programs for global buyers.
+            </p>
             <p className="mt-4 text-sm text-cream-50/80">Kenya · Netherlands · United States</p>
             <p className="mt-2 text-xs text-cream-50/55">
               Source, value addition, verification, logistics, and buyer-ready output.
