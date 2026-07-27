@@ -12,16 +12,26 @@ export function SiteHeader() {
             className="h-10 w-auto shrink-0 md:h-12"
           />
         </Link>
-        <a
-          href="https://mail.google.com/mail/?view=cm&fs=1&to=vivian%40moedim.ai&su=MoedimAI%20demo%20request"
-          target="_blank"
-          rel="noopener noreferrer"
-          data-analytics-event="demo_click"
-          data-analytics-label="header request demo"
-          className="inline-flex h-11 items-center justify-center rounded-md bg-gold-500 px-5 text-sm font-medium text-navy-900 transition-colors hover:bg-gold-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-300 focus-visible:ring-offset-2 focus-visible:ring-offset-navy-900"
-        >
-          Request a demo
-        </a>
+        <div className="flex items-center gap-4">
+          <a
+            href="https://www.moedimharvest.com/"
+            data-analytics-event="outbound_click"
+            data-analytics-label="header moedim harvest"
+            className="text-sm font-medium text-cream-50/80 underline-offset-4 transition-colors hover:text-gold-300 hover:underline"
+          >
+            Moedim Harvest
+          </a>
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=vivian%40moedim.ai&su=MoedimAI%20demo%20request"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-analytics-event="demo_click"
+            data-analytics-label="header request demo"
+            className="inline-flex h-11 items-center justify-center rounded-md bg-gold-500 px-5 text-sm font-medium text-navy-900 transition-colors hover:bg-gold-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-300 focus-visible:ring-offset-2 focus-visible:ring-offset-navy-900"
+          >
+            Request a demo
+          </a>
+        </div>
       </div>
     </header>
   );
