@@ -97,8 +97,9 @@ export default function ThesisPage() {
             MoedimAI is the technology layer for bioeconomy supply chains. It benchmarks buyer-ready
             outcomes back to the source and across the supply chain: farmer networks, crop plans,
             field support, AI-supported weather and satellite signals, value addition, quality
-            records, logistics routing, distribution, export, and buyer requirements. Imani Pamoja
-            is the connected agricultural trading and export route.
+            records, logistics routing, distribution, export, and buyer requirements. Moedim Harvest
+            is the separate sister company for agricultural supply programmes and global
+            distribution.
           </p>
         </div>
       </section>
@@ -247,7 +248,7 @@ export default function ThesisPage() {
             <div>
               <dt className="font-display text-3xl text-gold-500 md:text-4xl">Export</dt>
               <dd className="mt-3 text-sm text-cream-50/75">
-                Distribution readiness through Imani Pamoja
+                Product sourcing and distribution through Moedim Harvest
               </dd>
             </div>
           </dl>
@@ -267,8 +268,8 @@ export default function ThesisPage() {
               <dd className="text-cream-50">African crop programs</dd>
             </div>
             <div className="flex justify-between gap-4 border-b border-cream-50/10 pb-3">
-              <dt className="text-cream-50/60">Trading route</dt>
-              <dd className="text-cream-50">Imani Pamoja</dd>
+              <dt className="text-cream-50/60">Sister company</dt>
+              <dd className="text-cream-50">Moedim Harvest</dd>
             </div>
             <div className="flex justify-between gap-4 border-b border-cream-50/10 pb-3">
               <dt className="text-cream-50/60">US entity</dt>

@@ -45,7 +45,7 @@ export default function PrivacyPage() {
     <section className="container py-16 md:py-20">
       <p className="font-sans text-xs uppercase tracking-[0.18em] text-gold-500">Privacy notice</p>
       <h1 className="mt-4 max-w-3xl font-display text-4xl leading-tight md:text-5xl">
-        Your information should support the work you agreed to—not become an open-ended asset.
+        Your information should support the work you agreed to, not become an open-ended asset.
       </h1>
       <p className="mt-6 max-w-3xl text-base leading-relaxed text-cream-50/85">
         This notice explains the main ways MoedimAI Incorporated and the relevant Moedim operating

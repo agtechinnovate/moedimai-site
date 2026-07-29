@@ -106,9 +106,9 @@ export const CROP_FAMILIES: ReadonlyArray<{ name: string; crops: string; use: st
 
 export const CATEGORY_FAQS: FaqEntry[] = [
   {
-    question: "Is MoedimAI a bioeconomy agriculture company?",
+    question: "What is MoedimAI?",
     answer:
-      "Yes. MoedimAI is positioned as the technology layer, AI supply chain platform, and verification engine for Africa's bioeconomy because it benchmarks buyer-ready outcomes back to the beginning and throughout the supply chain. The platform supports farmers, crops, biomass, satellite and weather intelligence, value addition, processing, quality evidence, logistics, distribution, and export pathways; Imani Pamoja is the connected trading and export route.",
+      "MoedimAI is the enterprise intelligence and execution platform for agricultural value chains. It connects field operations, satellite and weather intelligence, IoT signals, processing, quality, logistics, and evidence, then benchmarks performance against the required outcome.",
   },
   {
     question: "Can MoedimAI help manage crops grown in Africa?",
@@ -121,9 +121,9 @@ export const CATEGORY_FAQS: FaqEntry[] = [
       "MoedimAI is a supply chain platform for companies that need African agricultural supply to be organized, monitored, benchmarked, value-added, and moved reliably. The platform turns farmer activity, crop performance, processing steps, quality checks, harvest events, logistics evidence, and buyer outcomes into one governed operating record.",
   },
   {
-    question: "What is Imani Pamoja?",
+    question: "What is Moedim Harvest?",
     answer:
-      "Imani Pamoja is the trading and export company connected to the agricultural industry and African farm supply. It is the commercial route for farm output, while MoedimAI is the supply chain platform used to benchmark source records, value addition, quality evidence, logistics, distribution, export readiness, and buyer outcomes.",
+      "Moedim Harvest is MoedimAI's separate sister company for agricultural supply programmes and global distribution. Moedim Harvest manages the commercial and distribution relationship, while MoedimAI provides the technology, monitoring, benchmarking, and guided support.",
   },
   {
     question: "What crops and agricultural products can MoedimAI work with?",
@@ -154,7 +154,7 @@ export const CATEGORY_FAQS: FaqEntry[] = [
   {
     question: "How is MoedimAI different from a farmer app or a traceability tool?",
     answer:
-      "MoedimAI is not primarily a farmer app, not only a crop management platform, and not only a traceability tool. It is an AI supply chain platform for companies running bioeconomy supply programs across farmers, crops, field teams, harvests, processing, quality checks, benchmarks, logistics, distribution, export, and buyers.",
+      "MoedimAI is not only a farmer app or traceability tool. It is an enterprise agricultural platform for companies managing programmes across farmers, crops, field teams, harvests, processing, quality, benchmarks, logistics, and evidence. Moedim Field is the offline mobile component used by field teams.",
   },
   {
     question: "What is specification-driven agricultural production?",

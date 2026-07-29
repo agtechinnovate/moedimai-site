@@ -56,20 +56,12 @@ const nextConfig = {
     ];
   },
   async rewrites() {
-    return {
-      beforeFiles: [
-        {
-          source: "/",
-          destination: "/index_1.html",
-        },
-      ],
-      afterFiles: [
-        {
-          source: "/:slug.md",
-          destination: "/md/:slug",
-        },
-      ],
-    };
+    return [
+      {
+        source: "/:slug.md",
+        destination: "/md/:slug",
+      },
+    ];
   },
   // GEO + brand discipline: stable canonical URLs.
   // We add hreflang / sitemap / structured-data scaffolding in W2.

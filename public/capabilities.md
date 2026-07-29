@@ -1,40 +1,46 @@
 # MoedimAI capabilities
 
-MoedimAI is the technology layer, AI supply chain platform, and verification engine for Africa's bioeconomy.
+MoedimAI is the enterprise intelligence and execution platform for agricultural value chains.
 
-## Operating graph
+## Requirements and benchmarking
 
-MoedimAI connects farmers, plots, crop programmes, satellite and weather signals, field checks, value addition, processing, quality evidence, lots, custody, logistics routing, distribution, export readiness, certification readiness, buyer packets, funder reporting, and programme indicators on one governed operating graph.
+MoedimAI turns customer, market, certification, and programme requirements into structured operating benchmarks. Teams can compare field activity, production, processing, quality, logistics, and evidence with the required result.
 
-## Capture and records
+## Moedim Field
 
-- Farmer and organization onboarding.
-- Plot and crop-program records.
-- Field-team workflows.
-- Satellite and weather signals.
-- Crop-stage and harvest-readiness checks.
-- Value-addition and processing records.
-- Quality evidence and buyer packet records.
-- Custody, lot, logistics, and movement records.
+Moedim Field is the platform's offline mobile component. Field teams can view assigned work, record structured observations, and preserve evidence where connectivity is limited. Records synchronize with the enterprise platform when a connection is available.
 
-## Model and guide
+## Connected intelligence
 
-MoedimAI uses AI and operating intelligence to help teams benchmark buyer-ready outcomes back to source, see risk, benchmark readiness, ask on-demand questions, and decide what needs inspection, evidence, processing, logistics routing, distribution, export preparation, or buyer follow-up. Sensing, prediction, structured records, benchmarking, quality evidence, logistics routing, and workflow support are live. Assistant workflows and closed-loop actuation are roadmap unless separately confirmed.
+- Satellite observations.
+- Weather intelligence.
+- Drone and field-testing inputs.
+- IoT and equipment signals.
+- Field-team observations.
+- Laboratory and quality evidence.
 
-## Verify
+These sources are connected to the same operating record so the platform can identify patterns, gaps, risks, and follow-up needs.
 
-MoedimAI supports standards-ready supply through producer evidence, plot records, organic or farm-assurance readiness, processing and quality records, lot custody, certification evidence, buyer specifications, and permissioned reporting.
+## End-to-end operating record
 
-The verification engine works from specification to shipment: buyer, processor, certifier, funder, or programme requirements become controls that producers and processors can follow, and evidence that buyers, certifiers, financiers, and programme operators can trust.
+MoedimAI can connect organizations, producers, plots, agricultural programmes, field activity, harvests, processing, quality evidence, lots, custody, logistics, documentation, and required outcomes on one governed operating graph.
 
-## Value addition
+## AI-supported guidance
 
-MoedimAI supports aggregation, processing, steam distillation, drying, dehydration, cold press, quality checks, lot custody, logistics routing, distribution readiness, export pathways, and buyer-ready documentation.
+MoedimAI uses operating intelligence to help teams monitor progress, identify risk, benchmark readiness, and prioritize inspection or follow-up. Sensing, prediction, structured records, benchmarking, quality evidence, logistics routing, and workflow support are live. Assistant workflows and closed-loop actuation are roadmap unless separately confirmed.
 
-## Multi-tenant governance
+## Verification and documentation
 
-MoedimAI is designed for many organizations under governed access boundaries: farmers, processors, certifiers, buyers, funders, programme operators, exporters, trading companies, NGOs, insurers, and institutions can each receive scoped views of the same operating evidence.
+The platform supports standards-ready supply through source records, field evidence, processing records, quality evidence, lot custody, requirement checks, and permissioned reporting. Blockchain-backed documentation strengthens the history behind important records. MoedimAI does not replace an independent certifier or auditor.
 
-## Not claimed
+## Guided implementation
 
-MoedimAI does not claim to be a certifying body, a medical or therapeutic product company, a guarantee of yield, or a substitute for independent audit. It organizes the operating evidence that makes supply more verifiable.
+MoedimAI supports requirement definition, operating-model configuration, benchmark design, training, adoption, review, and continuous improvement. The technology and implementation support are designed to work together.
+
+## Multi-organization governance
+
+MoedimAI is designed for organizations that require governed access boundaries. Companies, programme operators, processors, certifiers, buyers, funders, and partners can receive appropriately scoped views of operating evidence.
+
+## Claim boundaries
+
+MoedimAI does not claim to be a certifying body, a medical or therapeutic product company, a guarantee of yield, or a substitute for independent audit. It organizes the operating evidence that makes agricultural activity more visible and verifiable.

@@ -15,15 +15,15 @@ export function GET() {
 ## At a glance
 
 - Founder: Vivian Nwakah
-- Trading and export route: Imani Pamoja
+- Agricultural product sourcing and global distribution: Moedim Harvest
 - Operating focus: AI-enabled bioeconomy supply chains, source records, farmer networks, crop programs, buyer-ready outcome benchmarking, harvest readiness, value addition, logistics routing, quality evidence, distribution, and export readiness
 - EU platform: Rotterdam
 - US entity: Delaware
 - Trust mark: MoedimAI Verified
 
-## What Imani Pamoja is
+## What Moedim Harvest is
 
-Imani Pamoja is the agricultural trading and export company connected to African farm supply. MoedimAI is the AI supply chain platform used to benchmark and manage the source records, crop programs, field evidence, harvest readiness, lots, custody, logistics, and buyer or distributor readiness behind that supply.
+Moedim Harvest is MoedimAI's separate sister company for agricultural supply programmes and global distribution. MoedimAI provides the technology, monitoring, benchmarking, and guided support behind those programmes.
 
 ## Crop families
 
@@ -49,9 +49,9 @@ Insurance prices climate and yield risk. Banks and DFIs lend against verified pe
 
 Yes, as part of the wider supply chain. MoedimAI helps companies manage African crop programs by coordinating farmer networks, crop plans, field checks, growing evidence, harvest readiness, benchmarking, quality records, and movement toward processing, distribution, or export.
 
-### What is Imani Pamoja?
+### What is Moedim Harvest?
 
-Imani Pamoja is the trading and export company connected to the agricultural industry and African farm supply. It is the commercial route for farm output, while MoedimAI is the AI supply chain platform used to benchmark source records, crop programs, evidence, logistics, and distribution readiness.
+Moedim Harvest manages agricultural product sourcing, commercial relationships, and global distribution. Buyers seeking products work with Moedim Harvest, while organizations seeking the technology platform and guided support work with MoedimAI.
 
 ### How does MoedimAI improve crop output and harvest readiness?
 

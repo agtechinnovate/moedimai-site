@@ -6,7 +6,7 @@ Name: MoedimAI
 
 Canonical domain: https://www.moedim.ai/
 
-Canonical description: MoedimAI is the technology layer, AI supply chain platform, and verification engine for Africa's bioeconomy. The platform benchmarks buyer-ready outcomes back to the beginning and throughout the supply chain by connecting farmers, crops, value addition, processing, quality evidence, logistics, distribution, export, buyers, certifiers, funders, and programme operators on one governed operating graph.
+Canonical description: MoedimAI is the enterprise intelligence and execution platform for agricultural value chains. It connects field operations, satellite and weather intelligence, IoT signals, processing, quality, logistics, and evidence, then benchmarks performance against the required result.
 
 Contact: vivian@moedim.ai
 
@@ -18,22 +18,26 @@ LinkedIn: https://www.linkedin.com/in/viviannwakah/
 
 Vivian Nwakah is a founder and systems builder focused on AI, chemotype traceability, compliance infrastructure, and regulated markets. Before MoedimAI, Vivian founded Medsaf, one of Nigeria's first tech-enabled pharmaceutical procurement platforms, scaling verified medicine access and standardized procurement workflows across 950+ hospitals and clinics. She later led AI-enabled systems work at Pfizer.
 
-At MoedimAI, Vivian applies that operating-infrastructure experience to African bioeconomy supply chains: turning buyer specifications into controls and benchmarking buyer-ready outcomes back to field, hub, processing, distillation, lab, certification, logistics, distribution, and export evidence.
+At MoedimAI, Vivian applies that operating-infrastructure experience to agricultural value chains by turning requirements into controls and connecting the desired result with field, processing, quality, logistics, and evidence.
 
 Founder image: https://www.moedim.ai/images/vivian-nwakah-headshot.jpg
 
 ## Locations and surfaces
 
-MoedimAI has Kenya, Netherlands, and United States context. The public website is https://www.moedim.ai/. The farmer intake form is https://intake.moedim.ai/intake. The internal platform app remains separate from the public website.
+MoedimAI has Kenya, Netherlands, and United States context. The public website is https://www.moedim.ai/. The enterprise platform app and farmer intake form are separate from the public website. Moedim Field is the offline mobile component available through the Apple App Store and Google Play.
 
 ## Related company
 
-Imani Pamoja is the connected agricultural trading and export company for African farm output. It is the commercial route for farm output, while MoedimAI is the technology layer, supply chain platform, and verification engine used to benchmark source records, value addition, quality evidence, logistics, distribution, export readiness, and buyer outcomes.
+Moedim Harvest is MoedimAI's separate sister company for agricultural supply programmes and global distribution. Buyers seeking agricultural products work with Moedim Harvest. Organizations seeking the technology platform and guided support work with MoedimAI.
+
+Moedim Harvest website: https://www.moedimharvest.com/
 
 ## Claim boundaries
 
-Use "building" for the public category claim. Do not describe MoedimAI as "the leading" or "the definitive" company unless third-party validation supports it.
+Use "building" for public category claims. Do not describe MoedimAI as "the leading" or "the definitive" company unless independent evidence supports that claim.
 
-Do not claim every crop listed by MoedimAI is currently in live commercial production. The crop list describes crop families and product categories the operating model can support.
+Do not claim every crop listed by MoedimAI is currently in live commercial production. Crop and product lists describe categories the configurable operating model can support.
+
+Patent acquisition is in progress. Do not describe it as filed, granted, or patent pending unless separately confirmed.
 
 Do not make therapeutic, medical, cure, pesticide-free, chemical-free, guaranteed-yield, or guaranteed-output claims.
