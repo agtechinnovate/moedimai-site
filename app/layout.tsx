@@ -136,7 +136,7 @@ export const metadata: Metadata = {
       "Connect field operations, satellite and weather intelligence, IoT signals, processing, quality, logistics, and evidence against the required outcome.",
     images: [
       {
-        url: "/images/moedimai-social-card-enterprise-intelligence-black.png",
+        url: "/images/moedimai-social-card.png?v=20260730-black-gold",
         width: 1200,
         height: 630,
         alt: "Gold MoedimAI flower and Enterprise intelligence for agricultural value chains",
@@ -148,7 +148,7 @@ export const metadata: Metadata = {
     title: "Enterprise intelligence for agricultural value chains",
     description:
       "Connect field operations, satellite and weather intelligence, IoT signals, processing, quality, logistics, and evidence against the required outcome.",
-    images: ["/images/moedimai-social-card-enterprise-intelligence-black.png"],
+    images: ["/images/moedimai-social-card.png?v=20260730-black-gold"],
   },
 };
 
