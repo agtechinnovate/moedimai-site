@@ -1,83 +1,92 @@
-# MoedimAI website design QA
+# MoedimAI homepage visual-restoration QA
 
 ## Comparison target
 
 - Source visual truth:
-  - `/Users/obi/.codex/visualizations/2026/07/28/019faab2-e2b1-7202-856f-979b7f9d022a/moedimai-enterprise-site-updated/implementation-home-final.png`
-  - `/Users/obi/.codex/visualizations/2026/07/28/019faab2-e2b1-7202-856f-979b7f9d022a/moedimai-enterprise-site-updated/implementation-field-moringa-avocado.png`
-  - `/Users/obi/.codex/visualizations/2026/07/28/019faab2-e2b1-7202-856f-979b7f9d022a/moedimai-enterprise-site-updated/implementation-harvest-section.png`
-  - `/Users/obi/.codex/visualizations/2026/07/28/019faab2-e2b1-7202-856f-979b7f9d022a/moedimai-enterprise-site-updated/implementation-about-restored.png`
+  - `/Users/obi/.codex/visualizations/2026/07/28/019faab2-e2b1-7202-856f-979b7f9d022a/moedimai-production-visual-restoration-2026-07-30/qa-source-home-top-1440.png`
+  - `/private/tmp/moedimai-site-production-update/public/images/moedimai-command-center.png`
+  - `/private/tmp/moedimai-site-production-update/public/images/moedimai-value-chain-engine.png`
+  - `/private/tmp/moedimai-site-production-update/public/images/moedim-field-moringa-avocado.png`
 - Browser-rendered implementation:
-  - `/Users/obi/.codex/visualizations/2026/07/28/019faab2-e2b1-7202-856f-979b7f9d022a/moedimai-production-design-qa-2026-07-29/design-qa-implementation-hero-2.png`
-  - `/Users/obi/.codex/visualizations/2026/07/28/019faab2-e2b1-7202-856f-979b7f9d022a/moedimai-production-design-qa-2026-07-29/design-qa-implementation-field.png`
-  - `/Users/obi/.codex/visualizations/2026/07/28/019faab2-e2b1-7202-856f-979b7f9d022a/moedimai-production-design-qa-2026-07-29/design-qa-implementation-harvest.png`
-  - `/Users/obi/.codex/visualizations/2026/07/28/019faab2-e2b1-7202-856f-979b7f9d022a/moedimai-production-design-qa-2026-07-29/design-qa-implementation-about-2.png`
+  - `/Users/obi/.codex/visualizations/2026/07/28/019faab2-e2b1-7202-856f-979b7f9d022a/moedimai-production-visual-restoration-2026-07-30/qa-implementation-home-top-visual.png`
+  - `/Users/obi/.codex/visualizations/2026/07/28/019faab2-e2b1-7202-856f-979b7f9d022a/moedimai-production-visual-restoration-2026-07-30/qa-implementation-command.png`
+  - `/Users/obi/.codex/visualizations/2026/07/28/019faab2-e2b1-7202-856f-979b7f9d022a/moedimai-production-visual-restoration-2026-07-30/qa-implementation-journey.png`
+  - `/Users/obi/.codex/visualizations/2026/07/28/019faab2-e2b1-7202-856f-979b7f9d022a/moedimai-production-visual-restoration-2026-07-30/qa-implementation-field.png`
+  - `/Users/obi/.codex/visualizations/2026/07/28/019faab2-e2b1-7202-856f-979b7f9d022a/moedimai-production-visual-restoration-2026-07-30/qa-implementation-mobile-top-final.png`
+  - `/Users/obi/.codex/visualizations/2026/07/28/019faab2-e2b1-7202-856f-979b7f9d022a/moedimai-production-visual-restoration-2026-07-30/qa-implementation-mobile-command.png`
+  - `/Users/obi/.codex/visualizations/2026/07/28/019faab2-e2b1-7202-856f-979b7f9d022a/moedimai-production-visual-restoration-2026-07-30/qa-production-local-home.png`
 - Side-by-side evidence:
-  - `/Users/obi/.codex/visualizations/2026/07/28/019faab2-e2b1-7202-856f-979b7f9d022a/moedimai-production-design-qa-2026-07-29/design-qa-comparison-hero-2.png`
-  - `/Users/obi/.codex/visualizations/2026/07/28/019faab2-e2b1-7202-856f-979b7f9d022a/moedimai-production-design-qa-2026-07-29/design-qa-comparison-field.png`
-  - `/Users/obi/.codex/visualizations/2026/07/28/019faab2-e2b1-7202-856f-979b7f9d022a/moedimai-production-design-qa-2026-07-29/design-qa-comparison-harvest.png`
-  - `/Users/obi/.codex/visualizations/2026/07/28/019faab2-e2b1-7202-856f-979b7f9d022a/moedimai-production-design-qa-2026-07-29/design-qa-comparison-about-2.png`
-- Viewport: 1280 × 720 CSS pixels
-- Source pixels: 1280 × 720
-- Implementation pixels: 1280 × 720
-- Density normalization: 1 CSS pixel to 1 output pixel
-- State: public desktop homepage, anchored Moedim Field section, anchored Moedim Harvest section, and public About page
-- Capture method: rendered inside the Codex in-app browser, with a temporary same-origin rasterization helper removed before the final build
+  - `/Users/obi/.codex/visualizations/2026/07/28/019faab2-e2b1-7202-856f-979b7f9d022a/moedimai-production-visual-restoration-2026-07-30/qa-home-source-left-implementation-right.png`
+  - `/Users/obi/.codex/visualizations/2026/07/28/019faab2-e2b1-7202-856f-979b7f9d022a/moedimai-production-visual-restoration-2026-07-30/qa-graphics-source-left-implementation-right.png`
+- Durable evidence folder:
+  - `/Users/obi/.codex/visualizations/2026/07/28/019faab2-e2b1-7202-856f-979b7f9d022a/moedimai-production-visual-restoration-2026-07-30`
+- Desktop viewport: 1440 × 900 CSS pixels
+- Mobile viewport: 390 × 844 CSS pixels
+- Source and implementation density: 1 CSS pixel to 1 output pixel
+- State: public homepage, restored command-center preview, restored value-chain graphic, restored Moedim Field preview
 
 ## Findings
 
 No actionable P0, P1, or P2 issues remain.
 
-- Fonts and typography: Fraunces and Inter match the production design system and approved hierarchy. The rasterization helper compresses some whitespace in large Fraunces headings, but the browser DOM text, wrapping, font assignment, and accessible name contain the correct spaces. This is a capture artifact, not a page defect.
-- Spacing and layout rhythm: hero, field, Harvest, and About sections maintain the approved hierarchy and responsive grid structure. Production navigation uses `About` instead of the mock's earlier `Company` label to preserve the requested founder page.
-- Colors and visual tokens: MoedimAI navy, cream, gold, and blue remain dominant. Moedim Harvest cream, indigo, gold, and teal are limited to the sister-company section.
-- Image quality and asset fidelity: the approved 1800 × 1200 Baobab image is used in the Harvest section. The source file is sharp and correctly identified as a Harvest programme image.
-- Copy and content: the platform is presented as enterprise agricultural intelligence and execution. Satellite, weather, testing, drones, IoT, AI-supported benchmarking, guided support, Moedim Field, and the Moedim Harvest separation are explicit. Moedim Field examples contain Moringa and Avocado only.
-- Interaction and accessibility: heading order, region names, link names, anchor destinations, and external-link attributes are present. Platform and Moedim Field anchors settle below the sticky header. No browser console errors were recorded in the main user journey.
+- Fonts and typography: the production Fraunces and Inter hierarchy remains consistent with the approved design. The copy is unchanged except for removing repeated summary cards.
+- Spacing and layout rhythm: the hero now introduces the product preview immediately after the primary actions. The two large platform graphics create deliberate visual breaks before the capability cards. Mobile spacing shows both primary actions before the first visual.
+- Colors and visual tokens: navy, cream, gold, blue, green and restrained rust accents match the approved MoedimAI visual system. Moedim Harvest colors remain limited to its own sister-company section.
+- Image quality and asset fidelity: the command center, value-chain engine and Moedim Field previews are direct captures of the approved graphics. Side-by-side comparison shows no material crop, subject or text drift.
+- Copy and content: the enterprise agricultural platform story, satellite, weather, IoT, benchmarking, guided support, store availability and Moedim Harvest separation remain intact.
+- Responsive behavior: the wide platform graphics use a contained horizontal-scroll region at 390 pixels. The document itself remains 390 pixels wide, and a visible instruction explains how to view the complete graphic.
+- Accessibility: the restored graphics have descriptive alt text and named, keyboard-focusable scroll regions. Screenshots cannot establish full accessibility compliance, so keyboard, screen-reader and contrast testing remain separate checks.
 
 ## Comparison history
 
 ### Iteration 1
 
-- [P2] The production hero lacked the subtle 48-pixel operating-grid background shown in the approved visual.
-  - Fix: added the approved low-opacity blue grid treatment to the homepage hero.
-  - Post-fix evidence: `design-qa-comparison-hero-2.png`.
-- [P1] The existing About hero still led with the earlier bioeconomy-only positioning, while the approved About visual used the enterprise agricultural platform story.
-  - Fix: updated the About metadata, structured data, hero, operating scope, founder context, company separation, and contact copy while preserving Vivian Nwakah's founder profile and image.
-  - Post-fix evidence: `design-qa-comparison-about-2.png`.
+- [P1] The production homepage omitted the approved command-center and value-chain graphics, replacing them with repetitive text cards.
+  - Fix: restored both approved graphics as real image assets, removed the duplicate summary-card blocks and returned the command-center preview to the hero.
+  - Post-fix evidence: `qa-home-source-left-implementation-right.png` and `qa-graphics-source-left-implementation-right.png`.
+- [P1] The Moedim Field preview had been recreated as a simplified coded phone instead of preserving the approved visual.
+  - Fix: restored the approved Moedim Field preview with Moringa and Avocado records.
+  - Post-fix evidence: `qa-graphics-source-left-implementation-right.png`.
 
 ### Iteration 2
 
-- No actionable P0, P1, or P2 differences found.
-- The absence of an unverified web form is intentional. The production site uses the established email inquiry path until a governed contact backend exists.
-- Store availability is stated without clickable store badges because exact listing URLs are not yet verified in the repository.
+- [P2] The full desktop graphics became too small to read when reduced to the mobile viewport.
+  - Fix: used a contained horizontal-scroll region with a visible mobile instruction, descriptive alt text and keyboard focus.
+  - Post-fix evidence: `qa-implementation-mobile-command.png`.
+- [P2] The mobile hero showed only text and pushed the first visual below the initial screen.
+  - Fix: tightened mobile hero spacing and line height while preserving the approved copy and desktop hierarchy.
+  - Post-fix evidence: `qa-implementation-mobile-top-final.png`.
+
+### Iteration 3
+
+- No actionable P0, P1 or P2 differences remain.
+- Moving the command-center preview into the hero is intentional. It restores the stronger original product-led composition and directly answers the request for a less text-dominant homepage.
 
 ## Primary interactions tested
 
-- Home to Platform anchor.
-- Home to Moedim Field anchor.
-- Moedim Field section content scan for Moringa, Avocado, and absence of Rosemary.
-- Home to About route.
-- Founder content presence.
-- Moedim Harvest external URLs and platform email URLs inspected.
-- Production browser console checked with no errors.
-- No camera, microphone, location, recording, or other hardware-capture control was used.
+- Desktop homepage rendered at 1440 × 900.
+- Mobile homepage rendered at 390 × 844 with no document-level horizontal overflow.
+- Mobile menu opened and exposed the full navigation.
+- Mobile About navigation reached `/about`.
+- Command-center and value-chain graphics remained readable through contained horizontal scrolling.
+- Moedim Field preview visibly contains Moringa and Avocado.
+- The optimized production build rendered without browser console errors or warnings.
+- No camera, microphone, location, recording or other hardware-capture control was used.
 
 ## Implementation checklist
 
-- [x] Enterprise agricultural platform positioning.
-- [x] Requirements-first benchmark story.
-- [x] Satellite, weather, drone, testing, and IoT signal story.
-- [x] Moedim Field offline execution with Moringa and Avocado examples.
-- [x] Guided implementation and support.
-- [x] Moedim Harvest company and buyer-route separation.
-- [x] About page and founder content preserved and updated.
-- [x] Metadata, structured data, and AI-readable files aligned.
-- [x] No em dashes in changed public copy.
-- [x] Build, lint, typecheck, formatting, and client-secret checks.
+- [x] Approved command-center product preview restored.
+- [x] Approved end-to-end value-chain graphic restored.
+- [x] Approved Moedim Field visual restored with Moringa and Avocado.
+- [x] Repetitive summary cards removed.
+- [x] Enterprise agricultural platform copy preserved.
+- [x] About page preserved.
+- [x] Moedim Harvest branding remains isolated to the Harvest section.
+- [x] Desktop and mobile visual checks completed.
+- [x] Lint and production build passed.
 
 ## Follow-up polish
 
-- [P3] Replace the non-clickable store availability labels with official store badges when the exact Apple App Store and Google Play listing URLs are provided.
+- [P3] Replace the non-clickable store availability labels with official store badges when the exact Apple App Store and Google Play listing URLs are verified.
 
 final result: passed
