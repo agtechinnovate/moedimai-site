@@ -1,35 +1,35 @@
 # MoedimAI use cases
 
-MoedimAI is the technology layer, AI supply chain platform, and verification engine for Africa's bioeconomy.
+MoedimAI is the enterprise intelligence and execution platform for agricultural value chains.
 
-## NGOs and development programmes
+## Agricultural companies and programme operators
 
-MoedimAI helps programmes turn bioeconomy strategy into supply-chain operating evidence across farmers, processors, standards, markets, distribution, export, buyer outcomes, and funder reporting. It is relevant for multi-country bioeconomy platforms, observatory evidence layers, and strategy-to-implementation work.
+MoedimAI helps organizations turn commercial, market, certification, and programme requirements into operating benchmarks across field teams, producers, processing, quality, logistics, and evidence.
 
-## Bioeconomy investors
+## Cooperatives and farmer organizations
 
-MoedimAI helps DFIs, impact funds, banks, insurers, and investors evaluate agricultural pipelines through better records of producers, crop readiness, processing capacity, standards risk, buyer demand, custody, movement, distribution readiness, export readiness, and programme performance.
+MoedimAI helps cooperatives and producer organizations coordinate membership, plots, programmes, field work, harvest readiness, aggregation, quality evidence, and buyer or funder reporting.
+
+## NGOs, governments, and development programmes
+
+MoedimAI helps programmes connect strategy with structured agricultural operating evidence across organizations, regions, field teams, requirements, outcomes, and funder reporting.
+
+## Investors, banks, and insurers
+
+MoedimAI helps financial and development institutions evaluate agricultural programmes through better records of participants, operating progress, risk signals, processing, quality, market readiness, and programme performance.
 
 ## Certifiers and auditors
 
-MoedimAI helps operators prepare audit-ready records for certifiers, auditors, ICS teams, and buyer compliance reviewers. It supports producer records, plot records, conversion evidence, field checks, processing, quality, custody, and buyer packet readiness.
+MoedimAI helps operators prepare review-ready records for certifiers, auditors, internal control teams, and buyer compliance reviewers. It supports source records, field checks, processing, quality, custody, and requirement evidence.
 
-## Processors
+## Processors and exporters
 
-MoedimAI helps processors see incoming supply, harvest readiness, aggregation, intake, steam distillation, drying, dehydration, cold press, quality evidence, lot creation, and buyer-ready movement.
+MoedimAI helps processors and exporters coordinate incoming supply, harvest readiness, aggregation, intake, processing, quality evidence, lot creation, logistics, and buyer documentation.
 
-## Exporters
+## Buyers and product sourcing
 
-MoedimAI helps exporters organize source-to-port evidence, quality records, custody, logistics routing, and buyer documentation. Imani Pamoja is the connected trading and export route for African farm output.
+MoedimAI provides the technology and operating evidence behind agricultural programmes. Buyers seeking agricultural products, sourcing support, and global distribution work with the separate sister company, Moedim Harvest, at https://www.moedimharvest.com/.
 
-## Agricultural trading companies
+## Field execution
 
-MoedimAI helps trading companies coordinate verified African supply by benchmarking buyer-ready outcomes back to farmer networks, crop programmes, harvest readiness, value-addition workflows, quality evidence, lot custody, logistics routing, distribution, export readiness, and buyer documentation.
-
-## Cosmetics and fragrance buyers
-
-MoedimAI helps buyers evaluate African botanicals, carrier oils, essential oils, dried botanicals, cold-pressed oils, steam-distilled products, quality evidence, origin records, composition evidence, custody, and buyer specifications.
-
-## Farmer intake
-
-The farmer-facing intake surface is hosted separately at https://intake.moedim.ai/intake. The public marketing site remains separate from the farmer intake app and the internal platform app.
+Moedim Field gives field teams an offline way to view assigned work, record observations, and preserve evidence where connectivity is limited. The mobile app synchronizes those records with the MoedimAI platform when a connection is available.

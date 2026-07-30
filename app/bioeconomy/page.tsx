@@ -142,12 +142,12 @@ export default function BioeconomyPage() {
               </p>
             </article>
             <article className="rounded-md border border-cream-50/10 bg-navy-900/50 p-5">
-              <p className="text-xs uppercase tracking-[0.16em] text-gold-500">Route</p>
-              <h2 className="mt-3 font-sans text-xl font-semibold text-cream-50">Imani Pamoja</h2>
+              <p className="text-xs uppercase tracking-[0.16em] text-gold-500">Sister company</p>
+              <h2 className="mt-3 font-sans text-xl font-semibold text-cream-50">Moedim Harvest</h2>
               <p className="text-cream-50/72 mt-3 text-sm leading-6">
-                Imani Pamoja is the connected agricultural trading and export company for African
-                farm output. MoedimAI benchmarks and manages the operating record behind that
-                supply.
+                Moedim Harvest manages agricultural supply programmes and global distribution.
+                MoedimAI provides the technology, monitoring, benchmarking, and guided support
+                behind those programmes.
               </p>
             </article>
             <article className="rounded-md border border-cream-50/10 bg-navy-900/50 p-5">

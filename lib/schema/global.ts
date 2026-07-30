@@ -18,9 +18,8 @@ export const organizationSchema = {
     url: `${baseUrl}/images/moedimai-logo-light.png`,
   },
   description:
-    "MoedimAI is the technology layer, AI supply chain platform, and verification engine for Africa's bioeconomy. The platform benchmarks the end result back to the beginning and throughout the supply chain, turning buyer specifications into controls and evidence from soil to shipment.",
-  slogan:
-    "Technology layer, AI supply chain platform, and verification engine for Africa's bioeconomy",
+    "MoedimAI is the enterprise intelligence and execution platform for agricultural value chains. It connects field operations, satellite and weather intelligence, IoT signals, processing, quality, logistics, and evidence against the required result.",
+  slogan: "Enterprise intelligence for agricultural value chains",
   foundingDate: "2024",
   founder: {
     "@type": "Person",
@@ -140,7 +139,7 @@ export const organizationSchema = {
     "Farmer network operations",
     "Crop benchmarking and harvest readiness",
     "Distribution and export readiness support",
-    "Imani Pamoja trading and export route",
+    "Moedim Harvest global agricultural sourcing and distribution",
     "Agricultural bioeconomy operating system",
     "AI bioeconomy agriculture technology",
     "Value-addition processing modules",
@@ -171,7 +170,7 @@ export const websiteSchema = {
   url: baseUrl,
   name: "MoedimAI",
   description:
-    "Technology layer, AI supply-chain benchmarking platform, and verification engine for Africa's bioeconomy, including buyer specifications, source records, value addition, verification, MRV, logistics routing, distribution, export, and buyer-ready supply.",
+    "Enterprise intelligence and execution for agricultural value chains, including requirements, field operations, satellite and weather intelligence, IoT signals, processing, quality, logistics, and evidence.",
   publisher: { "@id": `${baseUrl}/#organization` },
   inLanguage: "en",
   hasPart: [

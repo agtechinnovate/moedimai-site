@@ -407,7 +407,7 @@ const knowledgePages: CategoryPage[] = [
         heading: "From field to trade file",
         body: [
           "MoedimAI links farmers, crop programmes, value-addition steps, quality checks, lots, logistics, and buyer evidence into one governed operating graph. That graph can support exporters, agricultural trading companies, processors, and programme operators that need supply to move with credible records.",
-          "Imani Pamoja is the connected trading and export route for African farm output. MoedimAI is the AI supply chain platform that makes the underlying supply more legible, benchmarked, and controllable.",
+          "Moedim Harvest is MoedimAI's separate sister company for agricultural supply programmes and global distribution. MoedimAI provides the technology, monitoring, benchmarking, and guided support behind those programmes.",
         ],
       },
     ],
@@ -935,9 +935,9 @@ const audiencePages: CategoryPage[] = [
     lede: "Export-ready supply starts long before the shipment. It starts with source records, standards readiness, processing evidence, quality, custody, and routing.",
     sections: [
       {
-        heading: "Imani Pamoja and the operating layer",
+        heading: "Moedim Harvest and the operating layer",
         body: [
-          "Imani Pamoja is the connected agricultural trading and export company for African farm output. MoedimAI is the AI supply chain platform that benchmarks and manages the operating record behind that supply.",
+          "Moedim Harvest is MoedimAI's separate sister company for agricultural supply programmes and global distribution. MoedimAI provides the technology, monitoring, benchmarking, and guided support behind those programmes.",
           "For exporters, that record can connect farmers, crop programmes, value addition, quality checks, lots, custody, logistics routing, buyer packets, and destination requirements.",
         ],
       },

@@ -34,7 +34,10 @@ export const metadata: Metadata = {
 const baseUrl = PUBLIC_SITE_URL;
 
 const SPEC_ROWS: ReadonlyArray<{ label: string; value: React.ReactNode }> = [
-  { label: "Trading route", value: "Imani Pamoja agricultural trading and export company" },
+  {
+    label: "Product sourcing",
+    value: "Moedim Harvest agricultural supply programmes and global distribution",
+  },
   { label: "Operating role", value: "Supply chain benchmarking from source to buyer-ready output" },
   {
     label: "Technology layer",
@@ -116,8 +119,8 @@ export default function BuyersPage() {
           bioeconomy supply from buyer-ready outcome back to source: farmers, AI-supported satellite
           and weather intelligence, growing, field support, harvest readiness, value addition,
           quality evidence, logistics routing, distribution, export, and movement toward processors,
-          distributors, exporters, or buyers. Imani Pamoja is the connected agricultural trading and
-          export company for African farm output.
+          distributors, exporters, or buyers. Moedim Harvest is the separate sister company for
+          agricultural supply programmes and global distribution.
         </p>
       </section>
 

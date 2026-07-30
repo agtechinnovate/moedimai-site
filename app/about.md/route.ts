@@ -4,10 +4,10 @@ export function GET() {
   return markdownResponse({
     title: "About MoedimAI",
     oneLine:
-      "MoedimAI is the technology layer and AI supply chain platform driving Africa's bioeconomy, founded by Vivian Nwakah.",
-    body: `MoedimAI uses technology and AI to help companies benchmark African bioeconomy supply from buyer-ready outcome back to source.
+      "MoedimAI is the enterprise intelligence and execution platform for agricultural value chains, founded by Vivian Nwakah.",
+    body: `MoedimAI helps companies, institutions, and programmes monitor and benchmark agricultural operations from field activity to the required commercial, quality, certification, or programme outcome.
 
-The platform connects farmer networks, crop programs, satellite and weather signals, harvest readiness, value addition, quality evidence, logistics routing, distribution readiness, export documentation, and buyer specifications in one supply chain operating layer.
+The platform connects Moedim Field, satellite and weather intelligence, IoT signals, testing, processing, quality, logistics, and evidence in one governed agricultural operating layer.
 
 ## Founder Bio
 
@@ -15,7 +15,7 @@ MoedimAI was founded by Vivian Nwakah, a founder and systems builder focused on 
 
 Vivian builds infrastructure that turns fragmented, informal markets into regulated, benchmarkable supply systems. Before MoedimAI, she founded Medsaf, one of Nigeria's first tech-enabled pharmaceutical procurement platforms, scaling verified medicine access and standardized procurement workflows across 950+ hospitals and clinics. She later led AI-enabled systems work at Pfizer, translating executive priorities into governance, workflow change, and controlled operating-model adoption.
 
-At MoedimAI, Vivian applies that operating-infrastructure experience to African bioeconomy supply chains: benchmarking buyer-ready outcomes back to field, hub, processing, distillation, lab, certification, logistics, distribution, and export evidence.
+At MoedimAI, Vivian applies that operating-infrastructure experience to agricultural value chains by connecting the required outcome with field activity, remote intelligence, processing, laboratory, certification, logistics, and delivery evidence.
 
 Vivian has spoken or appeared as a panelist at Harvard University, Stanford University, Princeton University, and the Milken Institute. She has engaged with the African Union, Africa CDC, and AMREF, has been featured in Forbes, Financial Times, and BBC, and is a recipient of VivaTech Best Female Founder and Seedstars Winner recognition.
 
@@ -25,17 +25,17 @@ LinkedIn: https://www.linkedin.com/in/viviannwakah/
 
 ## What MoedimAI Supports
 
-- Farmer networks, field teams, and crop programs.
-- AI-supported satellite and weather intelligence.
-- Harvest readiness, crop benchmarking, and buyer specification evidence.
-- Value addition such as processing, steam distillation, drying, dehydration, and cold press.
-- Lots, custody, logistics routing, distribution readiness, and export-ready documentation.
+- Organizations, producer networks, field teams, and agricultural programmes.
+- Moedim Field, satellite, weather, testing, drone, and IoT intelligence.
+- Customer, market, certification, and programme requirements translated into benchmarks.
+- Processing, quality, documentation, and custody evidence.
+- Logistics, delivery readiness, and verified outcome records.
 
 ## Positioning
 
-MoedimAI is best described as the technology layer and AI supply chain platform driving Africa's bioeconomy and an operating graph for end-to-end agricultural supply-chain benchmarking.
+MoedimAI is best described as the enterprise intelligence and execution platform for agricultural value chains.
 
-Imani Pamoja is the connected agricultural trading and export route for African farm output. MoedimAI is the supply chain platform used to benchmark the operating record behind that supply.
+Moedim Harvest is MoedimAI's separate sister company for agricultural supply programmes and global distribution. MoedimAI provides the technology, monitoring, benchmarking, and guided support behind those programmes.
 
 Contact: vivian@moedim.ai`,
   });

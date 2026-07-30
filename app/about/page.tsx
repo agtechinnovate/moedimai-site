@@ -7,7 +7,7 @@ import { PUBLIC_SITE_URL } from "@/lib/site-url";
 export const metadata: Metadata = {
   title: "About MoedimAI",
   description:
-    "About MoedimAI and founder Vivian Nwakah. MoedimAI is the technology layer and AI supply chain platform driving Africa's bioeconomy by benchmarking buyer-ready outcomes back to source and across value addition, logistics, distribution, and export.",
+    "About MoedimAI and founder Vivian Nwakah. MoedimAI is the enterprise intelligence and execution platform for agricultural value chains.",
   alternates: {
     canonical: "/about",
     types: {
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "About MoedimAI",
     description:
-      "The technology layer and AI supply chain platform driving Africa's bioeconomy from source records through value addition, logistics, distribution, export, and buyer-ready outcomes.",
+      "Enterprise agricultural technology developed through real operating experience, connecting field work, remote intelligence, processing, quality, logistics, and evidence.",
     url: "/about",
   },
 };
@@ -54,20 +54,20 @@ const aboutPageSchema = {
   url: `${PUBLIC_SITE_URL}/about`,
   name: "About MoedimAI",
   description:
-    "MoedimAI is the technology layer and AI supply chain platform driving Africa's bioeconomy by benchmarking buyer-ready outcomes back to source and across farmer networks, value addition, quality evidence, logistics, distribution, and export.",
+    "MoedimAI is the enterprise intelligence and execution platform for agricultural value chains, founded by Vivian Nwakah.",
   about: { "@id": `${PUBLIC_SITE_URL}/#organization` },
   primaryImageOfPage: {
     "@type": "ImageObject",
-    url: `${PUBLIC_SITE_URL}/images/lavender-field.jpg`,
+    url: `${PUBLIC_SITE_URL}/images/vivian-nwakah-headshot.jpg`,
   },
 };
 
 const OPERATING_SCOPE = [
-  "Source records, farmer networks, field teams, and crop programs",
-  "Satellite and weather intelligence for supply risk and readiness",
-  "Buyer specifications benchmarked back to harvests, quality evidence, and source records",
-  "Value addition: processing, steam distillation, drying, dehydration, and cold press",
-  "Lots, custody records, logistics routing, distribution readiness, and export evidence",
+  "Source records, organizations, producer networks, field teams, and agricultural programmes",
+  "Moedim Field, satellite, weather, testing, drone, and IoT intelligence",
+  "Customer, market, certification, and programme requirements translated into benchmarks",
+  "Processing, quality, documentation, and custody evidence",
+  "Logistics, delivery readiness, and verified outcome records",
 ];
 
 const EXPERIENCE = [
@@ -105,15 +105,33 @@ export default function AboutPage() {
           <p className="font-sans text-xs uppercase tracking-[0.18em] text-gold-500">
             About MoedimAI
           </p>
-          <h1 className="mt-5 max-w-4xl font-sans text-3xl font-semibold leading-tight text-cream-50 md:text-5xl">
-            The technology layer for Africa&apos;s bioeconomy supply chains.
+          <h1 className="mt-5 max-w-4xl font-display text-3xl leading-tight text-cream-50 md:text-5xl">
+            Agricultural technology developed through real operating experience.
           </h1>
           <p className="text-cream-50/78 mt-6 max-w-3xl text-base leading-7 md:text-lg">
-            MoedimAI helps companies benchmark African bioeconomy supply from the buyer-ready end
-            state back to the source, and across every supply-chain step in between. The platform
-            connects farmer networks, crop programs, satellite and weather signals, harvest
-            readiness, value addition, quality evidence, logistics routing, distribution, export,
-            and buyer-ready documentation in one operating layer.
+            MoedimAI Inc. is a Delaware public benefit corporation building the intelligence and
+            execution platform for agriculture. The platform connects field operations, remote
+            intelligence, processing, quality, logistics, and evidence so organizations can
+            benchmark performance against the result they need to deliver.
+          </p>
+          <p className="text-cream-50/72 mt-4 max-w-3xl text-base leading-7">
+            The model is being proven through real agricultural value chains in Kenya and is
+            designed for enterprises and institutions operating across crops, countries, and
+            destination markets.
+          </p>
+          <p className="text-cream-50/72 mt-4 max-w-3xl text-base leading-7">
+            Our separate sister company{" "}
+            <a
+              href="https://www.moedimharvest.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gold-500 underline-offset-4 hover:underline"
+            >
+              Moedim Harvest
+            </a>{" "}
+            develops agricultural supply programmes and distributes products to global markets.
+            MoedimAI provides the technology, monitoring, benchmarking, and guided support behind
+            the operation.
           </p>
         </div>
       </section>
@@ -143,10 +161,10 @@ export default function AboutPage() {
               turns fragmented, informal markets into regulated, benchmarkable supply systems.
             </p>
             <p>
-              Through MoedimAI, she is applying that operating-infrastructure pattern to African
-              bioeconomy supply chains: benchmarking buyer-ready outcomes back to field, hub,
-              processing, distillation, lab, certification, logistics, distribution, and export
-              evidence so supply can become buyer-verifiable and certifier-ready.
+              Through MoedimAI, she is applying that operating-infrastructure pattern to
+              agricultural value chains by connecting the required outcome with field activity,
+              remote intelligence, processing, laboratory, certification, logistics, and delivery
+              evidence.
             </p>
           </div>
         </div>
@@ -199,11 +217,11 @@ export default function AboutPage() {
               Public contact
             </p>
             <h2 className="mt-3 font-sans text-2xl font-semibold text-cream-50">
-              For buyers, partners, investors, and press.
+              For platform, investor, partnership, and press inquiries.
             </h2>
             <p className="text-cream-50/76 mt-4 max-w-2xl text-sm leading-6">
-              Use the public MoedimAI contact email for demo requests, bioeconomy supply-chain
-              partnerships, buyer introductions, and technology conversations.
+              Use the public MoedimAI contact email for platform information, deployment
+              conversations, strategic partnerships, investor discussions, and press inquiries.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <a
@@ -225,13 +243,23 @@ export default function AboutPage() {
                 Vivian on LinkedIn
               </a>
               <Link
-                href="/bioeconomy"
-                data-analytics-event="bioeconomy_click"
-                data-analytics-label="about bioeconomy"
+                href="/#platform"
+                data-analytics-event="platform_click"
+                data-analytics-label="about platform"
                 className="inline-flex h-11 items-center justify-center rounded-md border border-gold-500 px-5 text-sm font-medium text-cream-50 transition-colors hover:bg-gold-500/10"
               >
-                See bioeconomy layer
+                Explore the platform
               </Link>
+              <a
+                href="https://www.moedimharvest.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-analytics-event="harvest_click"
+                data-analytics-label="about product sourcing"
+                className="inline-flex h-11 items-center justify-center rounded-md border border-cream-50/25 px-5 text-sm font-medium text-cream-50 transition-colors hover:border-gold-500 hover:text-gold-300"
+              >
+                Agricultural product sourcing
+              </a>
             </div>
           </div>
         </div>

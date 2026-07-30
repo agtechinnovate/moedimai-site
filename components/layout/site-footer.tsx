@@ -7,9 +7,23 @@ export function SiteFooter() {
           <div>
             <img src="/images/moedimai-logo-dark.png" alt="MoedimAI" className="h-10 w-auto" />
             <p className="mt-4 max-w-xs text-sm text-cream-50/70">
-              MoedimAI is the technology layer, AI supply-chain platform, and verification engine
-              for Africa&apos;s bioeconomy.
+              MoedimAI is the enterprise intelligence and execution platform for agricultural value
+              chains.
             </p>
+            <div className="mt-5 flex flex-wrap gap-x-5 gap-y-2 text-sm">
+              <a href="/#platform" className="text-cream-50/70 hover:text-gold-300">
+                Platform
+              </a>
+              <a href="/#moedim-field" className="text-cream-50/70 hover:text-gold-300">
+                Moedim Field
+              </a>
+              <a href="/#enterprise-solutions" className="text-cream-50/70 hover:text-gold-300">
+                Enterprise Solutions
+              </a>
+              <a href="/about" className="text-cream-50/70 hover:text-gold-300">
+                About
+              </a>
+            </div>
           </div>
           <div>
             <h2 className="text-sm font-semibold uppercase tracking-wider text-cream-50/60">
@@ -34,15 +48,15 @@ export function SiteFooter() {
                 data-analytics-label="footer moedim harvest"
                 className="text-gold-500 underline-offset-4 hover:underline"
               >
-                Moedim Harvest ↗
+                Agricultural product sourcing: Moedim Harvest
               </a>
             </p>
             <p className="mt-2 text-xs text-cream-50/55">
-              Kenyan ingredient growing programs for global buyers.
+              Separate sister company for supply programmes and global distribution.
             </p>
             <p className="mt-4 text-sm text-cream-50/80">Kenya · Netherlands · United States</p>
             <p className="mt-2 text-xs text-cream-50/55">
-              Source, value addition, verification, logistics, and buyer-ready output.
+              Technology, monitoring and benchmarking from field activity to global delivery.
             </p>
           </div>
         </div>
@@ -55,7 +69,7 @@ export function SiteFooter() {
             <a href="/security" className="underline-offset-4 hover:text-cream-50 hover:underline">
               Security
             </a>
-            <span>From African farms to distribution and export.</span>
+            <span>Enterprise intelligence for agricultural value chains.</span>
           </div>
         </div>
       </div>

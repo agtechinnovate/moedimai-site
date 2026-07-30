@@ -25,11 +25,11 @@ export const metadata: Metadata = {
   metadataBase: new URL(PUBLIC_SITE_URL),
   applicationName: "MoedimAI",
   title: {
-    default: "MoedimAI | AI supply chain platform and verification engine",
+    default: "MoedimAI | Enterprise intelligence for agricultural value chains",
     template: "%s · MoedimAI",
   },
   description:
-    "MoedimAI is the technology layer, AI supply chain platform, and verification engine for Africa's bioeconomy. The platform benchmarks buyer-ready outcomes back to source, turning buyer specifications into controls and evidence from soil to shipment.",
+    "MoedimAI connects field operations, satellite and weather intelligence, IoT signals, processing, quality, logistics, and evidence in one enterprise agricultural platform.",
   keywords: [
     "verification engine for bioeconomy trade",
     "AI supply chain verification engine",
@@ -102,20 +102,20 @@ export const metadata: Metadata = {
       "msvalidate.01": "F590464E50673F8106374C2FC6DAB795",
     },
   },
-  manifest: "/site.webmanifest?v=20260609",
+  manifest: "/site.webmanifest?v=20260729",
   icons: {
     icon: [
-      { url: "/favicon.ico?v=20260609", sizes: "any" },
-      { url: "/favicon-16x16.png?v=20260609", sizes: "16x16", type: "image/png" },
-      { url: "/favicon-32x32.png?v=20260609", sizes: "32x32", type: "image/png" },
-      { url: "/favicon-48x48.png?v=20260609", sizes: "48x48", type: "image/png" },
-      { url: "/icon-48.png?v=20260609", sizes: "48x48", type: "image/png" },
-      { url: "/icon-96.png?v=20260609", sizes: "96x96", type: "image/png" },
-      { url: "/icon-192.png?v=20260609", sizes: "192x192", type: "image/png" },
-      { url: "/icon-512.png?v=20260609", sizes: "512x512", type: "image/png" },
-      { url: "/icon.png?v=20260609", sizes: "512x512", type: "image/png" },
+      { url: "/favicon.ico?v=20260729", sizes: "any" },
+      { url: "/favicon-16x16.png?v=20260729", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.png?v=20260729", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-48x48.png?v=20260729", sizes: "48x48", type: "image/png" },
+      { url: "/icon-48.png?v=20260729", sizes: "48x48", type: "image/png" },
+      { url: "/icon-96.png?v=20260729", sizes: "96x96", type: "image/png" },
+      { url: "/icon-192.png?v=20260729", sizes: "192x192", type: "image/png" },
+      { url: "/icon-512.png?v=20260729", sizes: "512x512", type: "image/png" },
+      { url: "/icon.png?v=20260729", sizes: "512x512", type: "image/png" },
     ],
-    apple: [{ url: "/apple-touch-icon.png?v=20260609", sizes: "180x180", type: "image/png" }],
+    apple: [{ url: "/apple-touch-icon.png?v=20260729", sizes: "180x180", type: "image/png" }],
   },
   alternates: {
     canonical: "/",
@@ -131,24 +131,24 @@ export const metadata: Metadata = {
     type: "website",
     url: "/",
     siteName: "MoedimAI",
-    title: "MoedimAI",
+    title: "Enterprise intelligence for agricultural value chains",
     description:
-      "The technology layer, AI supply chain platform, and verification engine for Africa's bioeconomy, turning buyer specifications into controls and evidence from soil to shipment.",
+      "Connect field operations, satellite and weather intelligence, IoT signals, processing, quality, logistics, and evidence against the required outcome.",
     images: [
       {
-        url: "/images/moedimai-social-card.png",
+        url: "/images/moedimai-social-card.png?v=20260730-black-gold",
         width: 1200,
         height: 630,
-        alt: "MoedimAI technology layer, AI supply chain platform, and verification engine for Africa's bioeconomy",
+        alt: "Gold MoedimAI flower and Enterprise intelligence for agricultural value chains",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "MoedimAI",
+    title: "Enterprise intelligence for agricultural value chains",
     description:
-      "The technology layer, AI supply chain platform, and verification engine for Africa's bioeconomy, turning buyer specifications into controls and evidence from soil to shipment.",
-    images: ["/images/moedimai-social-card.png"],
+      "Connect field operations, satellite and weather intelligence, IoT signals, processing, quality, logistics, and evidence against the required outcome.",
+    images: ["/images/moedimai-social-card.png?v=20260730-black-gold"],
   },
 };
 
