@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { InteractiveCommandCenter } from "@/components/home/interactive-command-center";
 import { FieldAppPreview, PlatformGraphic } from "@/components/home/platform-graphics";
 import { CATEGORY_FAQS } from "@/lib/content/seo";
 import { Schema, faqPage } from "@/lib/schema";
@@ -126,7 +127,7 @@ export default function HomePage() {
               Explore the platform
             </a>
           </div>
-          <PlatformGraphic kind="commandCenter" />
+          <InteractiveCommandCenter />
         </div>
       </section>
 

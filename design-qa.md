@@ -1,92 +1,82 @@
-# MoedimAI homepage visual-restoration QA
+# MoedimAI interactive command-center restoration QA
 
 ## Comparison target
 
 - Source visual truth:
-  - `/Users/obi/.codex/visualizations/2026/07/28/019faab2-e2b1-7202-856f-979b7f9d022a/moedimai-production-visual-restoration-2026-07-30/qa-source-home-top-1440.png`
-  - `/private/tmp/moedimai-site-production-update/public/images/moedimai-command-center.png`
-  - `/private/tmp/moedimai-site-production-update/public/images/moedimai-value-chain-engine.png`
-  - `/private/tmp/moedimai-site-production-update/public/images/moedim-field-moringa-avocado.png`
+  - `/Users/obi/Desktop/Screenshot 2026-07-30 at 4.57.44 AM.png`
+  - `/Users/obi/.codex/visualizations/2026/07/28/019faab2-e2b1-7202-856f-979b7f9d022a/moedimai-enterprise-site-updated/CommandCenter.dc.html`
 - Browser-rendered implementation:
-  - `/Users/obi/.codex/visualizations/2026/07/28/019faab2-e2b1-7202-856f-979b7f9d022a/moedimai-production-visual-restoration-2026-07-30/qa-implementation-home-top-visual.png`
-  - `/Users/obi/.codex/visualizations/2026/07/28/019faab2-e2b1-7202-856f-979b7f9d022a/moedimai-production-visual-restoration-2026-07-30/qa-implementation-command.png`
-  - `/Users/obi/.codex/visualizations/2026/07/28/019faab2-e2b1-7202-856f-979b7f9d022a/moedimai-production-visual-restoration-2026-07-30/qa-implementation-journey.png`
-  - `/Users/obi/.codex/visualizations/2026/07/28/019faab2-e2b1-7202-856f-979b7f9d022a/moedimai-production-visual-restoration-2026-07-30/qa-implementation-field.png`
-  - `/Users/obi/.codex/visualizations/2026/07/28/019faab2-e2b1-7202-856f-979b7f9d022a/moedimai-production-visual-restoration-2026-07-30/qa-implementation-mobile-top-final.png`
-  - `/Users/obi/.codex/visualizations/2026/07/28/019faab2-e2b1-7202-856f-979b7f9d022a/moedimai-production-visual-restoration-2026-07-30/qa-implementation-mobile-command.png`
-  - `/Users/obi/.codex/visualizations/2026/07/28/019faab2-e2b1-7202-856f-979b7f9d022a/moedimai-production-visual-restoration-2026-07-30/qa-production-local-home.png`
-- Side-by-side evidence:
-  - `/Users/obi/.codex/visualizations/2026/07/28/019faab2-e2b1-7202-856f-979b7f9d022a/moedimai-production-visual-restoration-2026-07-30/qa-home-source-left-implementation-right.png`
-  - `/Users/obi/.codex/visualizations/2026/07/28/019faab2-e2b1-7202-856f-979b7f9d022a/moedimai-production-visual-restoration-2026-07-30/qa-graphics-source-left-implementation-right.png`
-- Durable evidence folder:
-  - `/Users/obi/.codex/visualizations/2026/07/28/019faab2-e2b1-7202-856f-979b7f9d022a/moedimai-production-visual-restoration-2026-07-30`
-- Desktop viewport: 1440 × 900 CSS pixels
-- Mobile viewport: 390 × 844 CSS pixels
-- Source and implementation density: 1 CSS pixel to 1 output pixel
-- State: public homepage, restored command-center preview, restored value-chain graphic, restored Moedim Field preview
+  - `/Users/obi/.codex/visualizations/2026/07/28/019faab2-e2b1-7202-856f-979b7f9d022a/moedimai-interactive-command-center-restoration-2026-07-30/qa-local-command-center-component-v2.png`
+  - `/Users/obi/.codex/visualizations/2026/07/28/019faab2-e2b1-7202-856f-979b7f9d022a/moedimai-interactive-command-center-restoration-2026-07-30/qa-local-command-center-evidence-pack-state.png`
+  - `/Users/obi/.codex/visualizations/2026/07/28/019faab2-e2b1-7202-856f-979b7f9d022a/moedimai-interactive-command-center-restoration-2026-07-30/qa-local-mobile-command-center-focused.png`
+- Side-by-side comparison:
+  - `/Users/obi/.codex/visualizations/2026/07/28/019faab2-e2b1-7202-856f-979b7f9d022a/moedimai-interactive-command-center-restoration-2026-07-30/qa-source-left-implementation-right-v2.png`
+- Desktop viewport: 1440 x 1000 CSS pixels
+- Mobile viewport: 390 x 844 CSS pixels
+- Source pixels: 2690 x 1198 at 144 pixels per inch
+- Implementation component pixels: 1216 x 575 at 72 pixels per inch
+- Density normalization: source and implementation were independently resized to 600 pixels high before the side-by-side comparison. The comparison judges proportion, hierarchy, spacing, color and copy rather than raw pixel density.
+- State: public homepage, first command-center question selected for source comparison
 
 ## Findings
 
-No actionable P0, P1, or P2 issues remain.
+No actionable P0, P1 or P2 issues remain.
 
-- Fonts and typography: the production Fraunces and Inter hierarchy remains consistent with the approved design. The copy is unchanged except for removing repeated summary cards.
-- Spacing and layout rhythm: the hero now introduces the product preview immediately after the primary actions. The two large platform graphics create deliberate visual breaks before the capability cards. Mobile spacing shows both primary actions before the first visual.
-- Colors and visual tokens: navy, cream, gold, blue, green and restrained rust accents match the approved MoedimAI visual system. Moedim Harvest colors remain limited to its own sister-company section.
-- Image quality and asset fidelity: the command center, value-chain engine and Moedim Field previews are direct captures of the approved graphics. Side-by-side comparison shows no material crop, subject or text drift.
-- Copy and content: the enterprise agricultural platform story, satellite, weather, IoT, benchmarking, guided support, store availability and Moedim Harvest separation remain intact.
-- Responsive behavior: the wide platform graphics use a contained horizontal-scroll region at 390 pixels. The document itself remains 390 pixels wide, and a visible instruction explains how to view the complete graphic.
-- Accessibility: the restored graphics have descriptive alt text and named, keyboard-focusable scroll regions. Screenshots cannot establish full accessibility compliance, so keyboard, screen-reader and contrast testing remain separate checks.
+- Fonts and typography: the restored component uses the original Inter and monospaced hierarchy. Labels, questions, responses and prompt rows retain the same weight, scale and letter-spacing relationships as the approved design.
+- Spacing and layout rhythm: the two-column graph and decision-intelligence composition, header strip, response area and prompt list match the original structure. The implementation is slightly more compact vertically so it integrates cleanly into the current homepage without changing the surrounding hero.
+- Colors and visual tokens: navy, cream, blue, green and gold use the existing MoedimAI tokens and preserve the source contrast and visual hierarchy.
+- Image quality and asset fidelity: the static screenshot has been removed from the command-center position. The approved graph and decision panel are restored from the original interactive component definition, not replaced with a raster approximation or placeholder.
+- Copy and content: all four original questions, answer summaries and action labels are present. The reference screenshot contains a transient operating-system notification over the lower-right corner; that notification is intentionally excluded from the website component.
+- Affordances and interaction states: selectable questions are buttons with hover, focus and selected states. Selecting a question updates the question, result and action controls. Action controls also expose a selected state.
+- Responsive behavior: the desktop component remains fully visible at 1440 pixels. At 390 pixels, the component uses a contained horizontal-scroll region with a visible swipe instruction. The document remains 390 pixels wide, so the component does not create page-level horizontal overflow.
+- Accessibility: the interactive preview has a named region, semantic buttons, `aria-pressed` selected states and visible keyboard focus. Full screen-reader testing remains a separate audit.
 
 ## Comparison history
 
 ### Iteration 1
 
-- [P1] The production homepage omitted the approved command-center and value-chain graphics, replacing them with repetitive text cards.
-  - Fix: restored both approved graphics as real image assets, removed the duplicate summary-card blocks and returned the command-center preview to the hero.
-  - Post-fix evidence: `qa-home-source-left-implementation-right.png` and `qa-graphics-source-left-implementation-right.png`.
-- [P1] The Moedim Field preview had been recreated as a simplified coded phone instead of preserving the approved visual.
-  - Fix: restored the approved Moedim Field preview with Moringa and Avocado records.
-  - Post-fix evidence: `qa-graphics-source-left-implementation-right.png`.
+- [P1] The approved interactive command center had been replaced with a static screenshot.
+  - Fix: restored the command center as a React client component using the original scenarios, graph structure and state behavior.
+  - Post-fix evidence: `qa-source-left-implementation-right-v2.png`.
+- [P2] The existing wide graphic behavior needed to remain usable on small screens.
+  - Fix: contained horizontal scrolling inside the preview while preserving the mobile document width.
+  - Post-fix evidence: `qa-local-mobile-command-center-focused.png`.
 
 ### Iteration 2
 
-- [P2] The full desktop graphics became too small to read when reduced to the mobile viewport.
-  - Fix: used a contained horizontal-scroll region with a visible mobile instruction, descriptive alt text and keyboard focus.
-  - Post-fix evidence: `qa-implementation-mobile-command.png`.
-- [P2] The mobile hero showed only text and pushed the first visual below the initial screen.
-  - Fix: tightened mobile hero spacing and line height while preserving the approved copy and desktop hierarchy.
-  - Post-fix evidence: `qa-implementation-mobile-top-final.png`.
-
-### Iteration 3
-
+- All four question states were exercised and each displayed its corresponding answer:
+  - `Evidence pack assembled.`
+  - `4 gaps found.`
+  - `2 networks match.`
+  - `3 lots are ready.`
+- Action selection was exercised and exposed the expected `aria-pressed` state.
+- Post-fix evidence: `qa-local-command-center-evidence-pack-state.png`.
 - No actionable P0, P1 or P2 differences remain.
-- Moving the command-center preview into the hero is intentional. It restores the stronger original product-led composition and directly answers the request for a less text-dominant homepage.
 
 ## Primary interactions tested
 
-- Desktop homepage rendered at 1440 × 900.
-- Mobile homepage rendered at 390 × 844 with no document-level horizontal overflow.
-- Mobile menu opened and exposed the full navigation.
-- Mobile About navigation reached `/about`.
-- Command-center and value-chain graphics remained readable through contained horizontal scrolling.
-- Moedim Field preview visibly contains Moringa and Avocado.
-- The optimized production build rendered without browser console errors or warnings.
+- All four command-center questions selected successfully.
+- Each selected question updated the answer and action labels.
+- Action buttons changed their selected state.
+- Desktop layout rendered at 1440 x 1000.
+- Mobile layout rendered at 390 x 844 with no document-level horizontal overflow.
+- Browser error and warning log returned no entries after the interaction run.
 - No camera, microphone, location, recording or other hardware-capture control was used.
 
 ## Implementation checklist
 
-- [x] Approved command-center product preview restored.
-- [x] Approved end-to-end value-chain graphic restored.
-- [x] Approved Moedim Field visual restored with Moringa and Avocado.
-- [x] Repetitive summary cards removed.
-- [x] Enterprise agricultural platform copy preserved.
-- [x] About page preserved.
-- [x] Moedim Harvest branding remains isolated to the Harvest section.
-- [x] Desktop and mobile visual checks completed.
-- [x] Lint and production build passed.
+- [x] Static command-center screenshot removed from the homepage.
+- [x] Original interactive command-center composition restored.
+- [x] Four selectable questions restored.
+- [x] Four corresponding answer states restored.
+- [x] Action-button selected states added.
+- [x] Keyboard focus and semantic selected states included.
+- [x] Desktop and mobile browser checks completed.
+- [x] Side-by-side visual comparison completed.
+- [x] Lint, typecheck, formatting, production build and client-secret checks passed.
 
 ## Follow-up polish
 
-- [P3] Replace the non-clickable store availability labels with official store badges when the exact Apple App Store and Google Play listing URLs are verified.
+- No follow-up visual changes are required for this restoration.
 
 final result: passed

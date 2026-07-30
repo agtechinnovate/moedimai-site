@@ -7,12 +7,6 @@ const PLATFORM_GRAPHICS = {
     height: 606,
     alt: "MoedimAI decision and verification engine connecting field, remote, process, IoT and logistics intelligence across seven agricultural value-chain stages",
   },
-  commandCenter: {
-    src: "/images/moedimai-command-center.png",
-    width: 1200,
-    height: 588,
-    alt: "MoedimAI command center preview showing an agricultural operating graph and decision intelligence for lot readiness and evidence gaps",
-  },
 } as const;
 
 type PlatformGraphicProps = {
@@ -36,7 +30,7 @@ export function PlatformGraphic({ kind }: PlatformGraphicProps) {
           width={graphic.width}
           height={graphic.height}
           sizes="(min-width: 1280px) 1200px, 94vw"
-          loading={kind === "commandCenter" ? "eager" : "lazy"}
+          loading="lazy"
           className="h-auto w-full min-w-[900px]"
         />
       </div>
