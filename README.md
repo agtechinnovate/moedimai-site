@@ -185,11 +185,12 @@ Use the `<BrandMark surface="…" />` component rather than hardcoding wordmark 
 `.github/workflows/website-ci.yml` runs on PRs and pushes to main:
 
 1. `npm ci`
-2. `npm audit --audit-level=low`
-3. `npm run lint`
-4. `npm run typecheck`
-5. `npm run build`
-6. `./scripts/check-client-secrets.sh` — fail if any server-only env name appears in `.next/static/**`
+2. `npm audit --omit=dev --audit-level=low` (release-blocking runtime audit)
+3. `npm audit --include=dev --audit-level=high` (reported separately while upstream tooling advisories remain)
+4. `npm run lint`
+5. `npm run typecheck`
+6. `npm run build`
+7. `./scripts/check-client-secrets.sh` — fail if any server-only env name appears in `.next/static/**`
 
 PRs fail on any warning or error.
 
