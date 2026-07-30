@@ -131,24 +131,24 @@ export const metadata: Metadata = {
     type: "website",
     url: "/",
     siteName: "MoedimAI",
-    title: "MoedimAI | Enterprise intelligence for agricultural value chains",
+    title: "Enterprise intelligence for agricultural value chains",
     description:
       "Connect field operations, satellite and weather intelligence, IoT signals, processing, quality, logistics, and evidence against the required outcome.",
     images: [
       {
-        url: "/images/moedimai-social-card.png",
+        url: "/images/moedimai-social-card-enterprise-intelligence-black.png",
         width: 1200,
         height: 630,
-        alt: "MoedimAI enterprise intelligence for agricultural value chains",
+        alt: "Gold MoedimAI flower and Enterprise intelligence for agricultural value chains",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "MoedimAI | Enterprise intelligence for agricultural value chains",
+    title: "Enterprise intelligence for agricultural value chains",
     description:
       "Connect field operations, satellite and weather intelligence, IoT signals, processing, quality, logistics, and evidence against the required outcome.",
-    images: ["/images/moedimai-social-card.png"],
+    images: ["/images/moedimai-social-card-enterprise-intelligence-black.png"],
   },
 };
 
