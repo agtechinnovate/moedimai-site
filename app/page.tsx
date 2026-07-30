@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import { InteractiveCommandCenter } from "@/components/home/interactive-command-center";
 import { JourneyMap } from "@/components/home/journey-map";
 import { FieldAppPreview } from "@/components/home/platform-graphics";
 import { CATEGORY_FAQS } from "@/lib/content/seo";
@@ -128,7 +127,6 @@ export default function HomePage() {
               Explore the platform
             </a>
           </div>
-          <InteractiveCommandCenter />
         </div>
       </section>
 
