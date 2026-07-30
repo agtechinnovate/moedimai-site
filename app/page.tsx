@@ -1,7 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { InteractiveCommandCenter } from "@/components/home/interactive-command-center";
-import { FieldAppPreview, PlatformGraphic } from "@/components/home/platform-graphics";
+import { JourneyMap } from "@/components/home/journey-map";
+import { FieldAppPreview } from "@/components/home/platform-graphics";
 import { CATEGORY_FAQS } from "@/lib/content/seo";
 import { Schema, faqPage } from "@/lib/schema";
 
@@ -131,21 +132,18 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="border-b border-cream-50/10 bg-navy-800/40">
-        <div className="container py-16 md:py-20">
-          <p className="text-xs uppercase tracking-[0.22em] text-teal-300">
-            Connected agricultural intelligence
-          </p>
-          <h2 className="mt-4 max-w-3xl font-display text-3xl leading-tight text-cream-50 md:text-4xl">
-            Every relevant signal, connected to the outcome that matters.
+      <section id="journey" className="scroll-mt-20 border-b border-cream-50/10 bg-navy-900">
+        <div className="mx-auto max-w-[1200px] px-8 py-[72px]">
+          <p className="font-mono text-xs uppercase tracking-[0.26em] text-teal-300">The journey</p>
+          <h2 className="mt-4 max-w-3xl font-display text-[34px] font-medium leading-[1.15] text-cream-50">
+            One journey, segmented, with the right technology on each segment.
           </h2>
-          <p className="mt-5 max-w-3xl text-base leading-7 text-cream-50/70">
-            Agricultural performance cannot be understood from one source. MoedimAI combines field
-            observations, satellite imagery, weather conditions, drone and testing evidence, IoT
-            measurements, laboratory results, processing records and logistics events. The platform
-            evaluates these signals together and shows where attention is needed.
+          <p className="mt-5 max-w-3xl text-[15px] leading-[1.6] text-cream-50/70">
+            Field stages run on the Moedim Field app with satellite, drone, and testing. Processing
+            runs on patent-pending guidance and benchmarking. Logistics runs on sensors. And every
+            record lands on one blockchain document chain, from spec alignment to delivery.
           </p>
-          <PlatformGraphic kind="valueChain" />
+          <JourneyMap />
         </div>
       </section>
 
